@@ -22,42 +22,32 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
-        <link rel="stylesheet" href="/stylesheets/style.css" />
         <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
         <script src="/javascripts/setCSStrick.js"></script>
+        <script src="/javascripts/loadData.js"></script>
         <title>PAKDD</title>
     </head>
     <body>
-       <div id="paperListPage" data-role="page" data-add-back-btn="true">
+       <div id="programPage" data-role="page" data-add-back-btn="true">
               <div data-role="header" data-position="fixed" >
-	              
-                 <h1>Paper List</h1>
+	               
+                 <h1>Program</h1>
                   <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
-  		          <a href="/" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+  		          <a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
               </div>
 	             <div data-role="content" class="ui-content" role="main">
-                        <ul data-role="listview" id="list-browse-sessions" class="ui-listview">
-                           <li><a href="demoPaper" data-transition="fade"><h1>Demo Paper</h1></a></li>
-                           <li><a href="#"><h1>Full Paper</h1></a></li>
-                           <li><a href="#"><h1>Industry Full Paper</h1></a></li>
-                           <li><a href="#"><h1>Industry Short Paper</h1></a></li>
-                           <li><a href="#"><h1>PhD Forum Paper</h1></a></li>
-                           <li><a href="#"><h1>Short Paper</h1></a></li>
-                           <li><a href="#"><h1>Workshop</h1></a></li> 
-                        </ul>
-                     </div>
-              <div data-role="footer" data-position="fixed"> 
-                 <div data-role="navbar">
-                     <ul class="ui-grid-a">
-                        <li class="ui-block-a"><a href="#" class="ui-btn-active ui-state-persist">PaperList</a></li>
-                        <li class="ui-block-b"><a href="people" data-transition="fade">People</a></li>
-                     </ul>
-                 </div><!-- /navbar -->
-              </div> 
+                  <ul data-role="listview" id="list-browse-sessions" class="ui-listview">
+                     <li><a href="/program/2" rel="external" data-transition="fade"><h1>Tuesday</h1><h1>May 13 2014</h1></a></li>
+                     <li><a href="/program/3" rel="external" data-transition="fade"><h1>Wednesday</h1><h1>May 14 2014</h1></a></li>
+                     <li><a href="/program/4" rel="external" data-transition="fade"><h1>Thursday</h1><h1>May 15 2014</h1></a></li>
+                     <li><a href="/program/5" rel="external" data-transition="fade"><h1>Friday</h1><h1>May 16 2014</h1></a></li>
+
+                  </ul>
+               </div>
         </div>
-       
+
     </body>
 </html>

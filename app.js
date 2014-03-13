@@ -8,7 +8,7 @@ var routes = require('./routes');
 var info = require('./routes/info');
 var paperList = require('./routes/paperList');
 var people = require('./routes/people');
-var session = require('./routes/session');
+var program = require('./routes/program');
 var map = require('./routes/map');
 var http = require('http');
 var path = require('path');
@@ -33,13 +33,14 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get('/index.ejs', routes.index);
-app.get('/info.ejs', info.list);
-app.get('/paperList.ejs', paperList.list);
-app.get('/demoPaper.ejs', paperList.demoPaper);
-app.get('/people.ejs', people.list);
-app.get('/session.ejs', session.list);
-app.get('/map.ejs', map.show);
+app.get('/index', routes.index);
+app.get('/info', info.list);
+app.get('/paperList', paperList.list);
+app.get('/demoPaper', paperList.demoPaper);
+app.get('/people', people.list);
+app.get('/program', program.list);
+app.get('/program/:id', program.programday);
+app.get('/map', map.show);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

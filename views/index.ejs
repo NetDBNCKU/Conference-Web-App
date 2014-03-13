@@ -22,16 +22,17 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
-        <link rel="stylesheet" href="stylesheets/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
+        <link rel="stylesheet" href="/stylesheets/style.css" />
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
-	<script src="javascripts/setCSStrick.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+		
         <title>PAKDD</title>
     </head>
 <body class="ui-mobile-viewport ui-overlay-c" screen_capture_injected="true">
-	<div data-role="page" id="page-home" data-url="page-home">
+	<div data-role="page" id="page-home" >
+	<script src="/javascripts/setCSStrick.js"></script>
 	<div data-role="header" data-position="fixed" role="banner">
 		<h1 class="ui-title" role="heading" aria-level="1">PAKDD</h1>
   		<a href="/" data-icon="home" class="ui-btn-right">Home</a>
@@ -39,33 +40,33 @@
 		<div data-role="content" class="ui-content" role="main" >
 		<div class="ui-grid-a mainpage_grid">
 			<div class="ui-block-a">
-				<a href="session.ejs" >
+				<a href="program" data-transition="fade">
 					<div class="home_btn">
-					<img src="images/schedule.png"></img>
-					<div>Session</div>
+					<img src="/images/schedule.png"></img>
+					<div>Program</div>
 					</div>
 				</a>
 			</div>
 			<div class="ui-block-b">
-				<a href="map.ejs">
+				<a href="map" data-transition="fade">
 					<div class="home_btn">
-					<img src="images/map.png"></img>
+					<img src="/images/map.png"></img>
 					<div>Map</div>
 					</div>
 				</a>
 			</div>	
 			<div class="ui-block-a">
-				<a href="paperList.ejs">
+				<a href="paperList" data-transition="fade">
 					<div class="home_btn">
-					<img src="images/paper.png"></img>
+					<img src="/images/paper.png"></img>
 					<div>Paper</div>
 					</div>
 				</a>
 			</div>
 			<div class="ui-block-b">
-				<a href="info.ejs">
+				<a href="info" data-transition="fade">
 					<div class="home_btn">
-					<img src="images/information.png"></img>
+					<img src="/images/information.png"></img>
 					<div>Info</div>
 					</div>
 				</a>
@@ -74,6 +75,7 @@
 		</div><!-- /grid-a -->
 		</div> 
         </div>
+        
         <!--<script type="text/javascript" src="phonegap.js"></script>-->
     </body>
 </html>

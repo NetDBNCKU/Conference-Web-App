@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<program>
+	<date>
+		<time>Tuesday, May 13 2014</time>
+			<session>
+				<number>1A</number>
+				<name>Pattern Mining</name>
+				<paper>
+					<title>MalSpot: Multi^2 Malicious Network Behavior Patterns Analysis</title>
+					<author>Ching-Hao Mao, Chung-Jung Wu, Evangelos Papalexakis, Christos Faloutsos, Kuo-Chen Lee, Tien-Cheu Kao</author>
+					<type>regular</type>
+				</paper>
+				<paper>
+					<title>Extracting Diverse Patterns with Unbalanced Concept Hierarchy</title>
+					<author>Kumara Swamy Mittapally, P. Reddy, Somya Srivatsava</author>
+				</paper>
+			</session>
+			<session>
+				<number>1B</number>
+				<name>Social Network and Social Media (I)</name>
+				<paper>
+				</paper>
+			</session>
+	</date>
+	<date>
+		<time>Wednesday, May 14 2014</time>
+		<session>
+		</session>
+	</date>
+</program>
