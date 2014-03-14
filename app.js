@@ -39,7 +39,6 @@ app.get('/paperList', paperList.list);
 app.get('/demoPaper', paperList.demoPaper);
 app.get('/people', people.list);
 app.get('/program', program.list);
-app.get('/program/:id', program.programday);
 app.get('/map', map.show);
 
 http.createServer(app).listen(app.get('port'), function(){

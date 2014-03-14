@@ -6,7 +6,7 @@
 exports.list = function(req, res){
   res.render('program', { title: 'program' });
 };
-exports.programday = function(req, res){
+/*exports.programday = function(req, res){
   if(req.params.id == '2'){
     res.render('program_tuesday', {title: 'tuesday' });
   }
@@ -20,3 +20,4 @@ exports.programday = function(req, res){
     res.render('program_friday', {title: 'friday'});
   }
 }
+*/

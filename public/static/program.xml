@@ -1,6 +1,6 @@
 <program>
 	<day>
-		<date>Tuesday, May 14, 2014</date>
+		<date>Wednesday, May 14, 2014</date>
 			<session>
 				<ID>1A</ID>
 				<name>Pattern Mining</name>
@@ -268,7 +268,7 @@
 			</session>
 	</day>
 	<day>
-		<date>Wednesday, May 15, 2014</date>
+		<date>Thursday, May 15, 2014</date>
 			<session>
 				<ID>3A</ID>
 				<name>Temporal and Spatial Data</name>
@@ -421,7 +421,7 @@
 			</session>
 	</day>
 	<day>
-		<date>Thursday, May 16, 2014</date>
+		<date>Friday, May 16, 2014</date>
 			<session>
 				<ID>4A</ID>
 				<name>Novel Algorithms</name>

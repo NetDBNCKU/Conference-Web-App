@@ -27,12 +27,13 @@
         <link rel="stylesheet" href="/stylesheets/style.css" />
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
-		
+        <script src="/javascripts/loadXMLData.js"></script>
         <title>PAKDD</title>
     </head>
 <body class="ui-mobile-viewport ui-overlay-c" screen_capture_injected="true">
 	<div data-role="page" id="page-home" >
-	<script src="/javascripts/setCSStrick.js"></script>
+	
+		<script src="/javascripts/setCSStrick.js"></script>
 	<div data-role="header" data-position="fixed" role="banner">
 		<h1 class="ui-title" role="heading" aria-level="1">PAKDD</h1>
   		<a href="/" data-icon="home" class="ui-btn-right">Home</a>
@@ -40,7 +41,7 @@
 		<div data-role="content" class="ui-content" role="main" >
 		<div class="ui-grid-a mainpage_grid">
 			<div class="ui-block-a">
-				<a href="program" data-transition="fade">
+				<a href="program" rel="external" data-transition="fade">
 					<div class="home_btn">
 					<img src="/images/schedule.png"></img>
 					<div>Program</div>
@@ -71,7 +72,7 @@
 					</div>
 				</a>
 			</div>	
-			</a>
+			
 		</div><!-- /grid-a -->
 		</div> 
         </div>
