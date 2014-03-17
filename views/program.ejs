@@ -29,22 +29,31 @@
         <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
         <script src="/javascripts/setCSStrick.js"></script>
         <title>PAKDD</title>
+        <script>
+        .paddingtop{
+          padding-top:40px;
+        }
+        </script>
     </head>
     <body>
+
+
+
        <div id="programPage" data-role="page" data-add-back-btn="true">
         <script src="/javascripts/loadXMLData.js"></script>
-              <div data-role="header" data-position="fixed" >
+              <div data-role="header"  >
                  <h1>Program</h1>
                   <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
   		          <a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
               </div>
-	             <div data-role="content" class="ui-content" role="main">
+	             <div data-role="content" class="ui-content" role="main" >
                   <ul data-role="listview" id="list-browse-sessions" class="ui-listview">
                     
 
                   </ul>
                </div>
         </div>
+
 
 
 

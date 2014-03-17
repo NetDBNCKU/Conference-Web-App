@@ -13,7 +13,8 @@ $(document).on("pagecreate", '#programPage', function() {
     	$('#list-browse-sessions').empty();
         parseDay(data);
         $("#list-browse-sessions").listview('refresh');
-        createProgramList(data);
+
+        createProgramList(data);    //bug (content occupys header space) here !  3/15 found by MaoSH
     },'xml');
 
   
@@ -98,11 +99,14 @@ function createProgramList(data){
 		var day = $(this);
 		var date = day.find('date').text();
 		var dateID = date.split(',');
-		$('body').append('<div id="'+dateID[0]+'_program" data-role="page" >'
-                         +'<div data-role="header" data-position="fixed"><h1>'+date+'</h1><a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
+
+		
+		
+		$('body').append('<div id="'+dateID[0]+'_program" data-role="page" data-add-back-btn="true">'
+                         +'<div data-role="header" ><h1>'+date+'</h1><a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
                          +'<a href="#" class="ui-btn-left" data-rel="back">Back</a>'
                          +'</div>'
-                         +'<div data-role="content" class="ui-content" ><ul data-role="listview" id="list-browse-sessions-'+dateID[0]+'" class="ui-listview"></ul>'
+                         +'<div data-role="content" class="ui-content" role="main" ><ul data-role="listview" id="list-browse-sessions-'+dateID[0]+'" class="ui-listview"></ul>'
                          +'</div>'
                          +'</div>');
         
@@ -110,10 +114,10 @@ function createProgramList(data){
 				var ID = $(this).find('ID').text();
 				var sessionName = $(this).find('name').text();
 				$('body').append('<div id="'+ID+'_list" data-role="page" >'
-                                 +'<div data-role="header" data-position="fixed" ><h1>'+ID+' - '+sessionName+'</h1><a href="#" class="ui-btn-left" data-rel="back">Back</a>'
+                                 +'<div data-role="header"  ><h1>'+ID+' - '+sessionName+'</h1><a href="#" class="ui-btn-left" data-rel="back">Back</a>'
                                  +'<a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
                                  +'</div>'
-                                 +'<div data-role="content" class="ui-content" ><ul data-role="listview" data-inset="true" class="ui-listview" id="'+dateID[0]+'_session_'+ID+'" ></ul>'
+                                 +'<div data-role="content" class="ui-content"><ul data-role="listview" data-inset="true" class="ui-listview" id="'+dateID[0]+'_session_'+ID+'" ></ul>'
                                  +'</div>'
                                  +'</div>');
 		});
