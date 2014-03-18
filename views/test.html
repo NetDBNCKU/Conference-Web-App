@@ -28,7 +28,6 @@
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
         <script src="/javascripts/setCSStrick.js"></script>
-        <script src="/javascripts/loadXMLauthor.js"></script> 
         <title>PAKDD</title>
     </head>
     <body>
@@ -43,15 +42,24 @@
                 <a href="/" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
               </div>
                <div data-role="content" class="ui-content" role="main">
-                        <ul data-role="listview" id="list-paperList" class="ui-listview">
-                           
-                        </ul>
+               <h2>Paper title</h2>
+               <hr>
+               <p>Paper information</p>
+               <hr>
+               <h3>paper abstract</h3>
+               <hr>
+               <p> abstrcat content </p>
+               <hr>
+               <h3>authors</h3> 
+                <ul data-role="listview" id="list-paperList" class="ui-listview">
+                   
+                </ul>
                </div>
                <div data-role="footer" data-position="fixed"> 
                  <div data-role="navbar">
                      <ul class="ui-grid-a">
                         <li class="ui-block-a"><a href="#" class="ui-btn-active ui-state-persist" data-transition="fade">PaperList</a></li>
-                        <li class="ui-block-b"><a href="people" rel="external" data-transition="fade">People</a></li>
+                        <li class="ui-block-b"><a href="people"  data-transition="fade">People</a></li>
                      </ul>
                  </div><!-- /navbar -->
               </div> 

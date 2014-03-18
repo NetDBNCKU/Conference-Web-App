@@ -19,43 +19,41 @@
 -->
 <html>
     <head>
-        <meta charset="utf-8" />
+       <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
         <link rel="stylesheet" href="stylesheets/style.css" />
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
         <script src="/javascripts/setCSStrick.js"></script>
+        <script src="/javascripts/loadXMLauthor.js"></script> 
         <title>PAKDD</title>
     </head>
     <body>
        <div id="peoplePage" data-role="page" data-add-back-btn="true">
-              <div data-role="header" data-position="fixed" >
+              <div data-role="header" >
                  <h1>People</h1>
                   <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
   		 <a href="/" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
               </div>
 	      <div id="content" data-role="content">
-		<ul data-role="listview" data-autodividers="true" data-filter="true">
- 		 <li><a href="#">Adele</a></li>
- 		 <li><a href="#">Agnes</a></li>
- 		 <li><a href="#">Billy</a></li>
- 		 <li><a href="#">Calvin</a></li>
+		<ul data-role="listview" id="list-author" data-autodividers="true" data-filter="true">
 		</ul>
 	      </div>
               <div data-role="footer" data-position="fixed"> 
                  <div data-role="navbar">
                      <ul class="ui-grid-a">
-                        <li class="ui-block-a"><a href="paperList" data-transition="fade">PaperList</a></li>
+                        <li class="ui-block-a"><a href="paperList"  data-transition="fade">PaperList</a></li>
                         <li class="ui-block-b"><a href="#" class="ui-btn-active ui-state-persist">People</a></li>
                      </ul>
                  </div><!-- /navbar -->
               </div> 
-        </div>
+      </div>
+
         <!--<script type="text/javascript" src="phonegap.js"></script>-->
-        <script type="text/javascript" src="javascript/index.js"></script>
+        <!--<script type="text/javascript" src="javascripts/index.js"></script>-->
     </body>
 </html>
 
