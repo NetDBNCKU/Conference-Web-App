@@ -28,13 +28,11 @@
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
         <script src="/javascripts/setCSStrick.js"></script>
-        <script src="/javascripts/loadXMLauthor.js"></script> 
+        <script src="/javascripts/loadXMLpaper.js"></script>
         <title>PAKDD</title>
     </head>
     <body>
-       
-
-    
+      
        <div id="paperListPage" data-role="page" data-add-back-btn="true">
               <div data-role="header" >
                 
@@ -43,7 +41,7 @@
                 <a href="/" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
               </div>
                <div data-role="content" class="ui-content" role="main">
-                        <ul data-role="listview" id="list-paperList" class="ui-listview">
+                        <ul data-role="listview" id="list-paperList" class="ui-listview" data-autodividers="true" data-filter="true">
                            
                         </ul>
                </div>

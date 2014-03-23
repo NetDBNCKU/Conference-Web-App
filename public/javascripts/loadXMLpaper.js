@@ -5,7 +5,11 @@ $(document).on("pagecreate", '#paperListPage', function() {
     $.get('/static/paper.xml',function(data){
     	$('#list-paperList').empty();
         parsePaperList(data);
-        $("#list-paperList").listview('refresh');
+        $('#list-paperList').listview('refresh');
+        createPaperDetail(data);
+        $('#list-paperList').on('click','a',function(){
+
+        });
     },'xml');
 
   
@@ -14,62 +18,71 @@ $(document).on("pagecreate", '#paperListPage', function() {
 
 function parsePaperList(data){
 	var xmlData = $(data);
-	xmlData.find('author').each(function(){
-		var author = $(this);
-				$('#list-author').append('<li><a href="#">'
-													+'<h1>'
-													+author.text()
-													+'</h1>'+
-													'</a></li>');
+	var paperList = [];
+	var paperID;
+	var paperTitle;
+	var author;
+	xmlData.find('paper').each(function(){
+		 paperID = $(this).find('ID').text();
+		 paperTitle = $(this).find('title').text();
+		 author = $(this).find('authors').text();
+		
+		paperList.push(paperTitle+'%'+author+'%'+paperID);
 	});
+	paperList = paperList.sort();
+	var paperContent;
+	for( paper in paperList){
+		paperContent = paperList[paper].split('%');
+		$('#list-paperList').append('<li><a id = "'+paperContent[2]+'" href="#'+paperContent[2]+'_detail">'
+													+'<h1>'
+													+paperContent[0]
+													+'</h1>'
+													+'<p>'
+													+paperContent[1]
+													+'</p>'
+													+'</a></li>');
+	}
 	
 }
 
 
-function createProgramList(data){
-	var xmlData = $(data);
-	xmlData.find('day').each(function(){
-		var day = $(this);
-		var date = day.find('date').text();
-		var dateID = date.split(',');
+//Create Paper Details
 
-		
-		
-		$('body').append('<div id="'+dateID[0]+'_program" data-role="page" data-add-back-btn="true">'
-                         +'<div data-role="header" ><h1>'+date+'</h1><a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
-                         +'<a href="#" class="ui-btn-left" data-rel="back">Back</a>'
-                         +'</div>'
-                         +'<div data-role="content" class="ui-content" role="main" ><ul data-role="listview" id="list-browse-sessions-'+dateID[0]+'" class="ui-listview"></ul>'
-                         +'</div>'
-                         +'</div>');
-        
-		day.find('session').each(function(){
-				var ID = $(this).find('ID').text();
-				var sessionName = $(this).find('name').text();
-				$('body').append('<div id="'+ID+'_list" data-role="page" >'
-                                 +'<div data-role="header"  ><h1>'+ID+' - '+sessionName+'</h1><a href="#" class="ui-btn-left" data-rel="back">Back</a>'
-                                 +'<a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
-                                 +'</div>'
-                                 +'<div data-role="content" class="ui-content"><ul data-role="listview" data-inset="true" class="ui-listview" id="'+dateID[0]+'_session_'+ID+'" ></ul>'
-                                 +'</div>'
-                                 +'</div>');
-		});
+function createPaperDetail(data){
+	var paperlist = $(data);
+	
+	var paperTitle;
+	var abstract;
+	var paperID;
+	var authors;
+	var authorArray;
+	paperlist.find('paper').each(function(){
 
-		$(document).on("pagecreate", '#'+dateID[0]+'_program', function() {
-                    var page = $(this);
-                    // load data
-                       $('#list-browse-sessions-'+dateID[0]).empty();
-                       	parseSession(data,date);
-                       	$('#list-browse-sessions-'+dateID[0]).listview('refresh');
-                       	$('#list-browse-sessions-'+dateID[0]).on('click','a',function(){
-				    		var id = $(this).attr('id');	
-					    	parsePaperList(data,date,id,'#'+dateID[0]+'_session_'+id);
-					    	$('#'+dateID[0]+'_session_'+id).listview('refresh');
-						});
+		paperTitle = $(this).find('title').text();
+		paperID = $(this).find('ID').text();
+		abstract = $(this).find('abstract').text();
+		authors = $(this).find('authors').text();
+		authorArray = authors.split(';');
+		$('body').append('<div id="'+paperID+'_detail" data-role="page" data-add-back-btn="true">'
+	                 +'<div data-role="header" ><h1>Paper details</h1><a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
+	                 +'<a href="#" class="ui-btn-left" data-rel="back">Back</a>'
+	                 +'</div>'
+	                 +'<div data-role="content" class="ui-content" role="main" >'
+	                 +'<h2>'+paperTitle+'</h2>'
+	                 +'<hr>'
+	                 +'<p>'+authors+'</p><hr>'
+	       		 	 +'<h3>Abstract</h3><hr>'
+	       			 +'<div id="abstract">'
+	       			 +'<p>'
+	       			 +abstract
+	       			 +'</p>'
+	       			 +'</div>'
+	                 +'</div>'
+	                 +'</div>');	
 
-                   });
+	});
 
-		});
+	
 
 }
 
