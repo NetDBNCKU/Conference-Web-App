@@ -17,31 +17,60 @@
     specific language governing permissions and limitations
     under the License.
 -->
+
+
 <html>
     <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+        <link rel="stylesheet" href="style.css" />
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
-        <script src="/javascripts/setCSStrick.js"></script>
         <title>PAKDD</title>
     </head>
     <body>
-       <div id="InfoPage" data-role="page" data-add-back-btn="true">
-              <div data-role="header" data-position="fixed" >
-	              
-                 <h1>Info</h1>
-                  <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
-  		          <a href="/" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
-              </div>
-	             <div data-role="content" class="ui-content" role="main">
-                     
-                     </div>
-        </div>
        
+       <div id="Mon" data-role="page" data-title="Monday">
+              <div data-role="header" >
+                  <h1>Monday</h1>
+              </div>
+              <div data-role="content">
+                  <p>Monday content</p>
+              </div>
+              <div data-role="footer"
+                    data-id="main" data-position="fixed">
+                  <div data-role="navbar">
+                      <ul>
+                          <li><a href="#Mon" class="ui-btn-active ui-state-persist">Mon</a></li>
+                          <li><a href="#Tue" >Tue</a></li>
+                      </ul>
+                  </div>
+              </div>
+        </div>
+
+
+        <!--test -->
+        <div id="Tue" data-role="page" data-title="Tuesday">
+              <div data-role="header" >
+                 <h1>Tuesday</h1>
+              </div>
+              <div data-role="content"  >
+                     <p>Tuesday content</p>
+              </div>
+              <div data-role="footer"   data-position="fixed" data-id="main">
+                     <div data-role="navbar">
+                      <ul>
+                          <li><a href="#Mon" >Mon</a></li>
+                          <li><a href="#Tue" class="ui-btn-active ui-state-persist">Tue</a></li>
+                      </ul>
+                    </div>
+              </div>
+        </div>
     </body>
 </html>
+
+
 
