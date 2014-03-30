@@ -2,8 +2,13 @@
 
 $(document).on("pagecreate", '#peoplePage', function() {
   var page = $(this);
-   $.mobile.loading('show');
-    
+   
+    	$.mobile.loading( 'show', {
+			text: 'loading page',
+			textVisible: true,
+			theme: 'c',
+			html: ""
+		});
         $.get('/static/author.xml',function(data){
     	$('#list-author').empty();
         parseAuthor(data);
@@ -11,6 +16,7 @@ $(document).on("pagecreate", '#peoplePage', function() {
         $('#list-author').listview('refresh');
     	createAuthorInfo(data);
     },'xml');
+       
         
     
 });
@@ -77,11 +83,11 @@ function createAuthorInfo(data){
                          +'</div>'
                          +'</div>');	
 
-		$(document).on("pagebeforecreate",'#'+name+'_info', function(){
-			 $.mobile.loading('show');
-		});
+
+		
 
 		$(document).on("pagecreate",'#'+name+'_info', function(){
+
 				var page = $(this);
 			         // load data
                        $('#'+name+'_paperList').empty();
@@ -89,34 +95,37 @@ function createAuthorInfo(data){
                        	$('#'+name+'_paperList').listview('refresh');
                        	$('#'+name+'_paperList').on('click','a',function(){
 				    		// show paper details page
+				    		var paperID = $(this).attr('id');
+				    		window.location.href = '#'+paperID+'_detail';
+				    		
 						});
-			        $.mobile.loading('hide');
+			       
 			    });
 
+
 		});
+
+		$.mobile.loading( 'hide' );
 		
-		$.mobile.loading('hide');
 
 }
 
 // list all this author's papers
 function parseAuthroPaper(paperlist, authorName, paperIDandTitlelist){
-	$.mobile.loading('show');
+	
 
 	var paperID;
 	var paperTitle;
 	for(paper_id = 0; paper_id < paperIDandTitlelist.length; paper_id+=2){		
 		paperID = paperIDandTitlelist[paper_id];
 		paperTitle = paperIDandTitlelist[paper_id+1];
-		$('#'+authorName+'_paperList').append('<li><a id="'+paperID+'" href="#'+paperID+'_details"><h1>'
+		$('#'+authorName+'_paperList').append('<li><a id="'+paperID+'" href="#'+paperID+'_detail"><h1>'
 							+'Title: '+paperTitle
 							+'</h1></a></li>');
 		$('#'+authorName+'_paperList').listview('refresh');
-		 	$('#'+authorName+'_paperList').on('click','a',function(){
-		    		// show paper details page
-			});
+		 	
 	
 	}
-	$.mobile.loading('hide');
+	
 	
 }

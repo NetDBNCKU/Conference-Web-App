@@ -4,7 +4,7 @@ $(document).on("pagecreate", '#paperListPage', function() {
   // load data
     $.get('/static/paper.xml',function(data){
     	$('#list-paperList').empty();
-        parsePaperList(data);
+        parsePaperListForpaperList(data);
         $('#list-paperList').listview('refresh');
         createPaperDetail(data);
         $('#list-paperList').on('click','a',function(){
@@ -16,7 +16,7 @@ $(document).on("pagecreate", '#paperListPage', function() {
 
 });
 
-function parsePaperList(data){
+function parsePaperListForpaperList(data){
 	var xmlData = $(data);
 	var paperList = [];
 	var paperID;

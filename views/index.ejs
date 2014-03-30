@@ -27,55 +27,119 @@
         <link rel="stylesheet" href="/stylesheets/style.css" />
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+        <script src="/javascripts/loadXMLpaper.js"></script>
+        <script src="/javascripts/loadXMLauthor.js"></script>
         <script src="/javascripts/loadXMLData.js"></script>
+        
         <title>PAKDD</title>
     </head>
 <body class="ui-mobile-viewport ui-overlay-c" screen_capture_injected="true">
 	<div data-role="page" id="page-home" >
 	
 		<script src="/javascripts/setCSStrick.js"></script>
-	<div data-role="header" data-position="fixed" role="banner">
-		<h1 class="ui-title" role="heading" aria-level="1">PAKDD</h1>
-  		<a href="/" data-icon="home" class="ui-btn-right">Home</a>
-	</div><!-- /header -->
+		<div data-role="header" data-position="fixed" role="banner">
+			<h1 class="ui-title" role="heading" aria-level="1">PAKDD</h1>
+	  		<a href="/" data-icon="home" class="ui-btn-right">Home</a>
+		</div><!-- /header -->
 		<div data-role="content" class="ui-content" role="main" >
-		<div class="ui-grid-a mainpage_grid">
-			<div class="ui-block-a">
-				<a href="program" rel="external" data-transition="fade">
-					<div class="home_btn">
-					<img src="/images/schedule.png"></img>
-					<div>Program</div>
-					</div>
-				</a>
-			</div>
-			<div class="ui-block-b">
-				<a href="map" data-transition="fade">
-					<div class="home_btn">
-					<img src="/images/map.png"></img>
-					<div>Map</div>
-					</div>
-				</a>
-			</div>	
-			<div class="ui-block-a">
-				<a href="paperList" rel="external" data-transition="fade">
-					<div class="home_btn">
-					<img src="/images/paper.png"></img>
-					<div>Paper</div>
-					</div>
-				</a>
-			</div>
-			<div class="ui-block-b">
-				<a href="info" data-transition="fade">
-					<div class="home_btn">
-					<img src="/images/information.png"></img>
-					<div>Info</div>
-					</div>
-				</a>
-			</div>	
-			
-		</div><!-- /grid-a -->
+			<div class="ui-grid-a mainpage_grid">
+				<div class="ui-block-a">
+					<a href="#programPage"  data-transition="fade">
+						<div class="home_btn">
+						<img src="/images/schedule.png"></img>
+						<div>Program</div>
+						</div>
+					</a>
+				</div>
+				<div class="ui-block-b">
+					<a href="map" data-transition="fade">
+						<div class="home_btn">
+						<img src="/images/map.png"></img>
+						<div>Map</div>
+						</div>
+					</a>
+				</div>	
+				<div class="ui-block-a">
+					<a href="#paperListPage" data-transition="fade">
+						<div class="home_btn">
+						<img src="/images/paper.png"></img>
+						<div>Paper</div>
+						</div>
+					</a>
+				</div>
+				<div class="ui-block-b">
+					<a href="info" data-transition="fade">
+						<div class="home_btn">
+						<img src="/images/information.png"></img>
+						<div>Info</div>
+						</div>
+					</a>
+				</div>	
+				
+			</div><!-- /grid-a -->
 		</div> 
+		<div data-role="footer" data-position="fixed"> 
+                 
+        </div> 
+    </div>
+
+         <div id="paperListPage" data-role="page" data-add-back-btn="true">
+              <div data-role="header" >
+                
+                 <h1>Paper List</h1>
+                  <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
+                <a href="/" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+              </div>
+               <div data-role="content" class="ui-content" role="main">
+                        <ul data-role="listview" id="list-paperList" class="ui-listview" data-autodividers="true" data-filter="true">
+                           
+                        </ul>
+               </div>
+               <div id="paperListfooter" data-role="footer" data-position="fixed"> 
+                 <div data-role="navbar">
+                     <ul >
+                        <li ><a href="#" class="ui-btn-active ui-state-persist">PaperList</a></li>
+                        <li ><a href="#peoplePage">People</a></li>
+                     </ul>
+                 </div><!-- /navbar -->
+              </div> 
         </div>
+
+         <div id="peoplePage" data-role="page" data-add-back-btn="true">
+                <div data-role="header" >
+                   <h1>People</h1>
+                    <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
+    		            <a href="/" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+                </div>
+        	      <div id="content" data-role="content"  class="ui-content" role="main">
+              		<ul data-role="listview" id="list-author" data-autodividers="true" data-filter="true">
+              		</ul>
+        	      </div>
+                <div id="peoplePagefooter" data-role="footer" data-position="fixed"> 
+                   <div data-role="navbar">
+                       <ul >
+                          <li ><a href="#paperListPage">PaperList</a></li>
+                          <li ><a href="#" class="ui-btn-active ui-state-persist">People</a></li>
+                       </ul>
+                   </div><!-- /navbar -->
+                </div> 
+        </div>
+
+        <div id="programPage" data-role="page" data-add-back-btn="true">
+       
+              <div data-role="header"  >
+                 <h1>Program</h1>
+                  <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
+  		          <a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+              </div>
+	             <div data-role="content" class="ui-content" role="main" >
+                  <ul data-role="listview" id="list-browse-sessions" class="ui-listview">
+                    
+
+                  </ul>
+               </div>
+        </div>
+
         
         <!--<script type="text/javascript" src="phonegap.js"></script>-->
     </body>

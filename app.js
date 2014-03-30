@@ -37,7 +37,6 @@ app.get('/index', routes.index);
 app.get('/info', info.list);
 app.get('/paperList', paperList.list);
 app.get('/demoPaper', paperList.demoPaper);
-app.get('/people', people.list);
 app.get('/program', program.list);
 app.get('/map', map.show);
 
