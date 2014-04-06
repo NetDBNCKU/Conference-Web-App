@@ -1,0 +1,744 @@
+<workshop>
+	<name>Data Analytics for Targeted Healthcare</name>
+	<venue>An Ping Room (B2)</venue>
+	<activity>
+		<time>08:30-08:40</time>
+		<detail>Workshop Opening General Chair: Prof. Osmar Zaïane</detail>
+	</activity>
+	<activity>
+		<time>08:40-09:40</time>
+		<detail>Keynote I - Medical Big Data: Medical Data Mining and Innovative Applications Prof. Yanchun Zhang (Chair: Dr. Ji Zhang)</detail>
+	</activity>
+	<activity>
+		<time>09:40-10:00</time>
+		<detail>Coffee Break</detail>
+	</activity>
+	<activity>
+		<time>10:00-11:00</time>
+		<detail>Keynote II - Finding the Real Patterns Prof. Geoff Webb (Chair: Dr. Guandong Xu)</detail>
+	</activity>
+	<activity>
+		<session>
+			<name>Presentation Session I (Chair: Dr. Benyun Shi)</name>
+			<paper>
+				<time>11:00-11:15</time>
+				<title>Mining typical order sequences from EHR for building clinical pathways</title>
+				<author>Shoji Hirano and Shusaku Tsumoto</author>
+			</paper>
+			<paper>
+				<time>11:15-11:30</time>
+				<title>An empirical algorithm for bias correction based on GC estimation for single cell sequencing</title>
+				<author>Bo Xu, Tengpeng Li, Yi Luo and Ruotao Xu, Hongmin Cai</author>
+			</paper>
+			<paper>
+				<time>11:30-11:45</time>
+				<title>Aspect-Based Sentiment Analysis of Amazon Reviews for Fitness Tracking Devices</title>
+				<author>Alaa Shafaee, Hassan Issa, Stefan Agne, Stephan Baumann</author>
+			</paper>
+		</session>
+	</activity>
+	<activity>
+		<session>
+			<name>Presentation Session II (Chair: Dr. Yidong Li)</name>
+			<paper>
+				<time>11:45-12:00</time>
+				<title>Conversation Intention Perception based on Knowledge Base</title>
+				<author>Yizheng Chen, Huakang Li and Minyi Guo</author>
+			</paper>
+			<paper>
+				<time>12:00-12:15</time>
+				<title>An optimization method of fusing multiple decisions in object detection</title>
+				<author>Zhu Teng and Baopeng Zhang</author>
+			</paper>
+			<paper>
+				<time>12:15-12:30</time>
+				<title>Joint tree of combinatorial maps</title>
+				<author>Tao Wang, Congyan Lang and Songhe Feng</author>
+			</paper>
+		</session>
+	</activity>
+</workshop>
+<workshop>
+	<name>Biologically Inspired Data Mining Techniques</name>
+	<venue>East Gate Room (B1)</venue>
+	<activity>
+		<session>
+			<name>Session I (Yun Sing Koh)</name>
+			<paper>
+				<time>08:30-09:00</time>
+				<title>Opening and introduction to Bio-inspired data mining</title>
+				<author>Yun Sing Koh</author>
+			</paper>
+			<paper>
+				<time>09:00-09:20</time>
+				<title>Detecting the Data Group most Prone to a Specific Disguise Value</title>
+				<author>Wen-Yang Lin, Wen-Yu Feng</author>
+			</paper>
+		</session>
+	</activity>
+	<activity>
+		<time>09:20-09:50</time>
+		<detail>Coffee Break</detail>
+	</activity>
+	<activity>
+		<session>
+			<name>Session I (Yun Sing Koh)</name>
+			<paper>
+				<time>09:50-10:10</time>
+				<title>Association Rule Hiding Using Evolutionary Multi-objective Optimization by Deleting Transactions</title>
+				<author>Peng Cheng, Jeng-Shyang Pan, Chun-Wei Lin</author>
+			</paper>
+			<paper>
+				<time>10:10-10:30</time>
+				<title>An Efficient Drug-Target Interaction Mining Algorithm in Heterogeneous Biological Networks</title>
+				<author>Congcong Li, Jing Sun, Yun Xiong, Guangyong Zheng</author>
+			</paper>
+			<paper>
+				<time>10:30-10:50</time>
+				<title>Relative performance of Roulette wheel GA and Rank GA is dependent on chromosome parity</title>
+				<author>Mohd Abdul Hameed, Katta Padmaja, M.A. Malik, Husna Imroze</author>
+			</paper>
+			<paper>
+				<time>10:50-11:10</time>
+				<title>Comparison of Hemagglutinin and Neruaminidase of Influenza A Virus Subtype H1N1, H5N1, H5N2, and H7N9 using Apriori Algorithm</title>
+				<author>Dae Young Kim, Hye-Jun Kim, Junhyeok Bae, Taeseon Yoon</author>
+			</paper>
+			<paper>
+				<time>11:10-11:30</time>
+				<title>rRNA of Alphaproteobacteria Rickettsiales and mtDNA Pattern Analyzing with Apriori &amp; SVM</title>
+				<author>Seung Jae Lim, Shin Hyo Bang, Dae Seop Kim, Taeseon Yoon</author>
+			</paper>
+		</session>
+	</activity>
+	<activity>
+		<time>11:30</time>
+		<detail>Best Paper Award Conclusions and Closing</detail>
+	</activity>
+</workshop>
+<workshop>
+	<name>Mobile Data Management, Mining, and Computing on Social Networks</name>
+	<venue>An Ping Room (B2)</venue>
+	<activity>
+		<session>
+			<name>Mining in Social Networks(Session chair: Prof. Wang-Chien Lee in Pennsylvania State University)</name>
+			<paper>
+				<time>13:30-13:50pm</time>
+				<title>Information Diffusion Pattern Mining over Online Social Media</title>
+				<author>Hsueh-Chan Lu (National Taitung University) and Hui-Ju Hung (Academia Sinica)</author>
+			</paper>
+			<paper>
+				<time>13:50-14:10pm</time>
+				<title>Mining Uncertain Sequences on Hadoop Platfom</title>
+				<author>Zi-Yun Sun (National Chung Hsing University), Ming-Che Tsai (National Chung Hsing University), Hsiao-Ping Tsai (National Chung Hsing University)</author>
+			</paper>
+			<paper>
+				<time>14:10-14:30pm</time>
+				<title>Mining similar users using semantic properties of annotation tags</title>
+				<author>Oleksii Vedernikov (National Chiao Tung University), Wen-Yuan Zhu (National Chiao Tung University), Wen-Chih Peng (National Chiao Tung University)</author>
+			</paper>
+		</session>
+	</activity>
+	<activity>
+		<time>14:30-14:40pm</time>
+		<detail>Coffee Break</detail>
+	</activity>
+	<activity>
+		<session>
+			<name>Mobile Social Networks(Session chair: Dr. De-Nian Yang in Academia Sinica)</name>
+			<paper>
+				<time>14:40-15:00pm</time>
+				<title>Predicting Locations of Mobile Users Based on Behavior Semantic Mining</title>
+				<author>Huei-Yu Lung (National Taiwan University of Science and Technology), Chih-Heng Chung (National Taiwan University of Science and Technology), Bi-Ru Dai (National Taiwan University of Science and Technology)</author>
+			</paper>
+			<paper>
+				<time>15:00-15:20pm</time>
+				<title>Mining Frequent Progressive Usage Patterns across Multiple Mobile Broadcasting Channels</title>
+				<author>Bijay Prasad Jaysawal (National Cheng Kung University) and Jen-Wei Huang (National Cheng Kung University)</author>
+			</paper>
+			<paper>
+				<time>15:20-15:40pm</time>
+				<title>Efficient Gossiping Dissemination in Mobile Peer-to-Peer Environment Based on Neighborhood Detection</title>
+				<author>Yu-Jen Lin (National Cheng Kung University), Bo-Heng Chen (National Cheng Kung University), Kun-Ta Chuang (National Cheng Kung University), Chao-Chun Chen (National Cheng Kung University)</author>
+			</paper>
+		</session>
+	</activity>
+	<activity>
+		<time>15:40-15:50pm</time>
+		<detail>Coffee Break</detail>
+	</activity>
+	<activity>
+		<session>
+			<name>Social Network Applications(Session Chair: Prof. Chih-Hua Tai in National Taipei University )</name>
+			<paper>
+				<time>15:50-16:10pm</time>
+				<title>Team Formation with the Communication Load Constraint in Social Networks</title>
+				<author>Yui-Chieh Teng (National Chiao Tung University), Jun-Zhe Wang (National Chiao Tung University), Jiun-Long Huang (National Chiao Tung University)</author>
+			</paper>
+			<paper>
+				<time>16:10-16:30pm</time>
+				<title>Query Prediction by Currently-Browsed Web Pages and Its Applications</title>
+				<author>Hui-Ju Hung (Academia Sinica), Pu-Jen Cheng (National Taiwan University)</author>
+			</paper>
+			<paper>
+				<time>16:30-16:50pm</time>
+				<title>An Emergency System in Mobile Devices</title>
+				<author>Chung-Hua Chu (National Taichung University Of Science And Technology) and Wen-Hsiang Chang (National Taichung University Of Science And Technology)</author>
+			</paper>
+			<paper>
+				<time>16:50-17:10pm</time>
+				<title>Study of Mobile Value-Added Services with Augmented Reality</title>
+				<author>Chung-Hua Chu (National Taichung University Of Science And Technology), Shu-Lin Wang (National Taichung University Of Science And Technology), and Bi-Chi Tseng (National Taichung University Of Science And Technology)</author>
+			</paper>
+		</session>
+	</activity>
+</workshop>
+<workshop>
+	<name>Big Data Science and Engineering on E-Commerce / Mobile Sensing, Mining and Visualization for Human Behavior Inferences</name>
+	<venue>Fu Cheng Room (B2)</venue>
+	<activity>
+		<time>8:30-9:20</time>
+		<detail>Keynote talk Dr. Nic Lane, Microsoft Research Asia (Chair: Dr. Fang-Jing Wu)</detail>
+	</activity>
+	<activity>
+		<session>
+			<name>Presentation Session (Chair: Dr. Fang-Jing Wu)</name>
+			<paper>
+				<time>9:20-9:35</time>
+				<title>A Differential Approach for Identifying Important Student Learning Behavior Patterns with Evolving Usage over Time</title>
+				<author>John Kinnebrew (Vanderbilt University), Daniel Mack (Vanderbilt University), Gautam Biswas (Vanderbilt University), and Chih-Kai Chang (National University of Tainan)</author>
+			</paper>
+		</session>
+	</activity>
+	<activity>
+		<time>9:35-9:45</time>
+		<detail>Break</detail>
+	</activity>
+	<activity>
+		<session>
+			<name>Presentation Session (Chair: Dr. Fang-Jing Wu)</name>
+			<paper>
+				<time>9:45-10:00</time>
+				<title>Mining Top-k Relevant Stay Regions from Historical Trajectories</title>
+				<author>Yung-Hsiang Lin (National Chiao Tung University), Chien-Hsiang Lai (National Chiao Tung University), and Po-Ruey Lei (ROC Naval Academy)</author>
+			</paper>
+			<paper>
+				<time>10:00-10:15</time>
+				<title>Associative Classification for Human Activity Inference on Smart Phones</title>
+				<author>Yu-Hsiang Peng (National Chiao Tung University), Gunarto Sindoro Njoo (National Chiao Tung University), Shou-Chun Li (National Chiao Tung University), and Wen-Chih Peng (National Chiao Tung University)</author>
+			</paper>
+			<paper>
+				<time>10:15:-10:30</time>
+				<title>Personalized Smartphone Wearing Behavior Analysis</title>
+				<author>Yen-Hsuan Lin (National Chiao Tung University) and Yi-Ta Chuang (National Chiao Tung University)</author>
+			</paper>
+			<paper>
+				<time>10:30-10:45</time>
+				<title>Activity Recognition Using Discriminant Sequence Patterns in Smart Environments</title>
+				<author>Been-Chian Chien (National University of Tainan) and Rong-Sing Huang (National University of Tainan)</author>
+			</paper>
+			<paper>
+				<time>10:45-11:35</time>
+				<title>Keynote - Search Query Recommendation on e-Commerce Sites</title>
+				<author>Dr. Chu-Cheng Hsieh (Chair: Dr. Chih-Chieh Hung)</author>
+			</paper>
+		</session>
+	</activity>
+	<activity>
+		<session>
+			<name>Presentation Session (Chair: Dr. Chih-Chieh Hung)</name>
+			<paper>
+				<time>11:35-11:50</time>
+				<title>Two Algorithms under Statistic Gradient Descent Framework for Recommendation Systems</title>
+				<author>Tian-Hsiang Huang (National Sun Yat-sen University, Taiwan) and Vladimir Nikulin (Vyatka State University, Kirov, Russia)</author>
+			</paper>
+			<paper>
+				<time>11:50-12:05</time>
+				<title>Scalable Textual Similarity Search on Large Document Collections through Random Indexing and K-means Clustering</title>
+				<author>Ali Cevahir (Rakuten Institute of Technology, Japan)</author>
+			</paper>
+			<paper>
+				<time>12:05-12:20</time>
+				<title>Complementary Product Selection in E-commerce</title>
+				<author>Yian Chen, Yuh-Ming Chiu (Yahoo! Inc., Taiwan) and Song Han (Yahoo! Labs, China)</author>
+			</paper>
+			<paper>
+				<time>12:20-12:35</time>
+				<title>A short-term bookmarking system for collecting user-interest data</title>
+				<author>Chu-Cheng Hsieh, Yoni Medoff and Naren Chittar (Ebay Inc.)</author>
+			</paper>
+		</session>
+	</activity>
+</workshop>
+<workshop>
+	<name>Pattern Mining and Application of Big Data / Cloud Service Discovery</name>
+	<venue>North Gate Room (B1)</venue>
+	<activity>
+		<session>
+			<name>Session I (Chair: Jiun-Long Huang)</name>
+			<paper>
+				<time>08:20-08:40</time>
+				<title>Mining Time-aware Transit Patterns for Route Recommendation in Big Check-in Data</title>
+				<author>Hsun-Ping Hsieh, Cheng-Te Li (National Taiwan University)</author>
+			</paper>
+			<paper>
+				<time>08:40-09:00</time>
+				<title>QRM:A Probabilistic Model for Search Engine Query Recommendation</title>
+				<author>JianGuo Wang (Chinese Academy of Sciences), Joshua Huang (Shenzhen University)</author>
+			</paper>
+			<paper>
+				<time>09:00-09:20</time>
+				<title>BigSAM: mining interesting patterns from probabilistic databases of uncertain Big data</title>
+				<author>Fan Jiang, Carson Leung, Richard Kyle MacKinnon (University of Manitoba)</author>
+			</paper>
+			<paper>
+				<time>09:20-09:40</time>
+				<title>Comparative expression analysis of 3D-culture system for murine neonatal heart regeneration: a systematic approach</title>
+				<author>Julia T.-Y. Weng, Pei-Chann Chang, Shin-Ping Huang (Yuan Ze University), Yu-Wei Chiu (Far-Eastern Memorial Hospital)</author>
+			</paper>
+		</session>
+	</activity>
+	<activity>
+		<time>09:40-10:00</time>
+		<detail>Coffee Break</detail>
+	</activity>
+	<activity>
+		<session>
+			<name>Session II (Chair: Yi-Cheng Chen)</name>
+			<paper>
+				<time>10:00-10:20</time>
+				<title>MBPD: Motif-Based Period Detection</title>
+				<author>Rasaq Otunba, Jessica Lin (George Mason University), Pavel Senin (University of Hawaii)</author>
+			</paper>
+			<paper>
+				<time>10:20-10:40</time>
+				<title>Toward Mining User Traversal Patterns in the Indoor Environment</title>
+				<author>Shan-Yun Teng, Tzu-Yuan Chung, Kun-Ta Chuang (National Cheng Kung University), Wei-Shinn Ku (Auburn University)</author>
+			</paper>
+			<paper>
+				<time>10:40-11:00</time>
+				<title>A Model-based Multivariate Time Series Clustering Algorithm</title>
+				<author>Pei-Yuan Zhou, Keith C.C. Chan (The Hong Kong Polytechnic University)</author>
+			</paper>
+			<paper>
+				<time>11:00-11:20</time>
+				<title>Human Action Recognition in Video under Clutter and Moving Background</title>
+				<author>Der-jyh Duh (Chien Hsin Universitry), Cheng-Chung Kan, Shu-Yuan Chen, Chia-Ming Lu (Yuan Ze University)</author>
+			</paper>
+			<paper>
+				<time>11:20-11:40</time>
+				<title>Automatic Restaurant Information and Keyword Extraction by Mining Blog Data for Chinese Restaurant Search</title>
+				<author>Chien-Li Chou, Min-Ho Tsai, Chien-Ho Chao, Hsiao-Jung Lin, Hua-Tsung Chen, Suh-Yin Lee (National Chiao Tung University)</author>
+			</paper>
+			<paper>
+				<time>11:40-12:00</time>
+				<title>Data Collection and Analysis from Social network – Profile Analyzer System (PAS)</title>
+				<author>WeiHao Chang, Bing Li, Xin Fang (SIGI Technologies Inc.)</author>
+			</paper>
+		</session>
+	</activity>
+	<activity>
+		<time>12:00-13:20</time>
+		<detail>Lunch Time</detail>
+	</activity>
+	<activity>
+		<session>
+			<name>Session III (Chair: Julia T.-Y. Weng)</name>
+			<paper>
+				<time>13:20-13:40</time>
+				<title>A Comparison of Feature-Combination for Example-Based Super Resolution</title>
+				<author>Shwu-Huey Yen, Jen-Hui Tsao, Wan-Ting Liao (Tamkang University)</author>
+			</paper>
+			<paper>
+				<time>13:40-14:00</time>
+				<title>Big Data Generation：Application of Mobile Healthcare</title>
+				<author>Huan-Chao Keh, Lin Hui  (TamKang University), Kuang-Yi Chou (National Taipei University of Nursing and Health Sciences), Yuan Cheng Cheng, Po-Yuan Yu, Nan-Ching Huang (TamKang University)</author>
+			</paper>
+			<paper>
+				<time>14:00-14:20</time>
+				<title>The Application of Association Rules in Clinical Disease:The Relationship between Recovery after Operation of Endovascular Aneurysm Repairing and Chronic</title>
+				<author>Lin Hui (TamKang University), Chun Che Shih (National Yang-Ming University), Huan-Chao Keh, Po-Yuan Yu, Yuan Cheng Cheng, Nan-Ching Huang (TamKang University)</author>
+			</paper>
+			<paper>
+				<time>14:20-14:40</time>
+				<title>Myocardial Infarction Classification by Morphological Feature Extraction from 12-Lead ECG</title>
+				<author>Julia T.-Y. Weng, Jyun-Jie Lin, Pei-Chann Chang (Yuan Ze University)</author>
+			</paper>
+		</session>
+	</activity>
+	<activity>
+		<time>14:40-15:00</time>
+		<detail>Coffee Break</detail>
+	</activity>
+	<activity>
+		<session>
+			<name>Session IV (Chair: Liang Chen)</name>
+			<paper>
+				<time>15:00-15:20</time>
+				<title>Analyzing Personality Traits based on User Behavoirs of using Microblogging</title>
+				<author>Xin Fang, Bing Li, WeiHao Chang (SIGI Technologies Inc.)</author>
+			</paper>
+			<paper>
+				<time>15:20-15:40</time>
+				<title>Automatic Self-Suspended Task for a MapReduce System on Cloud Computing</title>
+				<author>Tzu-Chi Huang (Lunghwa University of Science and Technology), Ce-Kuen Shieh, Sheng-Wei Huang, Chui-Ming Chiu (National Cheng Kung University), Tyng-Yeu Liang (National Kaohsiung University of Applied Science)</author>
+			</paper>
+			<paper>
+				<time>15:40-16:00</time>
+				<title>Tag Completion and Refinement for Web Service via Low-Rank Matrix Completion </title>
+				<author>Lei Chen, Geng Yang, Zhengyu Chen, Fu Xiao, Xuxia Li (Nanjing University of Posts and Telecommunications)</author>
+			</paper>
+		</session>
+	</activity>
+</workshop>
+<workshop>
+	<name>Scalable Data Analytics: Theory and Algorithms</name>
+	<venue>Fu Cheng Room (B2)</venue>
+	<activity>
+		<time>13:30-14:30</time>
+		<detail>Invited Talk: Distributed data classification::Prof. Chih-Jen Lin (National Taiwan University)</detail>
+	</activity>
+	<activity>
+		<time>14:30-15:00</time>
+		<detail>Coffee Break</detail>
+	</activity>
+	<activity>
+		<session>
+			<name>Presentation Session</name>
+			<paper>
+				<time>15:00-15:15</time>
+				<title>Using Knowledge Graph to Handle Label Imperfection</title>
+				<author>Yi Liu (Shanghai Jiao Tong University) and Huakang Li (Nanjing University of Posts and Telecommunications)</author>
+			</paper>
+			<paper>
+				<time>15:15-15:30</time>
+				<title>Learning to Display in Sponsored Search</title>
+				<author>Xin Xin (Beijing Institute of Technology) and Heyan Huang (Beijing Institute of Technology)</author>
+			</paper>
+			<paper>
+				<time>15:30-15:45</time>
+				<title>Models for Distributed, Large Scale Data Cleaning</title>
+				<author>Vincent Maccio (McMaster University), Fei Chiang (McMaster University) and Douglas Down (McMaster University)</author>
+			</paper>
+			<paper>
+				<time>15:45-16:00</time>
+				<title>A Study of Rumor Spreading with Epidemic Model Based on Network Topology</title>
+				<author>Dawei Meng (Graduate School at Shenzhen,Tsinghua University), Lizhi Wan (Tsinghua University) and Lei Zhang (Graduate School at Shenzhen,Tsinghua University)</author>
+			</paper>
+			<paper>
+				<time>16:00-16:15</time>
+				<title>GS4: Generating Synthetic Samples for Improving Semi-Supervised Nearest Neighbor Classification Accuracy</title>
+				<author>Panagiotis Moutafis(University of Houston) and Ioannis Kakadiaris(University of Houston)</author>
+			</paper>
+			<paper>
+				<time>16:15-16:30</time>
+				<title>A scalable data analytics algorithm for mining frequent patterns from uncertain data</title>
+				<author>Carson K. Leung (University of Manitoba)</author>
+			</paper>
+			<paper>
+				<time>16:30-16:45</time>
+				<title>Parallel Time Series Modeling - A Case Study of In-Database Big Data Analytics</title>
+				<author>Hai Qian (Pivotal Inc.), Rahul Iyer (Pivotal Inc.), Xixuan Feng (Pivotal Inc.), Caleb Welton (Pivotal Inc.) and Shengwen Yang (Pivotal Inc.)</author>
+			</paper>
+			<paper>
+				<time>16:45-17:00</time>
+				<title>A Biclustering-based Classification Framework for Microarray Analysis</title>
+				<author>Baljeet Malhotra(SAP Research &amp; Innovation), Daniel Dahlmeier(SAP Research &amp; Innovation) and Naveen Nandan(SAP Research &amp; Innovation)</author>
+			</paper>
+			<paper>
+				<time>17:00-17:15</time>
+				<title>Parallel Implementation of a Density-based Stream Clustering Algorithm over a GPU Scheduling System</title>
+				<author>Marwan Hassani (RWTH Aachen University), Ayman Tarakji (RWTH Aachen University), Lyubomir Georgiev (RWTH Aachen University) and Thomas Seidl (RWTH Aachen University)</author>
+			</paper>
+		</session>
+	</activity>
+</workshop>
+<workshop>
+	<name>Algorithms for Large-Scale Information Processing in Knowledge Discovery</name>
+	<venue>South Gate Room (B1)</venue>
+	<activity>
+		<time>08:45-08:50</time>
+		<detail>Workshop Opening Workshop Co-chairs</detail>
+	</activity>
+	<activity>
+		<session>
+			<name>Session I (Chair: TBA)</name>
+		</session>
+	</activity>
+	<activity>
+		<time>08:50-09:15</time>
+		<detail>On the Size of the Zero-Suppressed Binary Decision Diagram that Represents All the Subtrees in a TreeNorihito Yasuda, Masaaki Nishino, and Shin-ichi Minato</detail>
+	</activity>
+	<activity>
+		<time>09:15-09:40</time>
+		<detail>Compact Tree Representations for Frequent Itemset Mining::Andreas Poyias and Rajeev Raman</detail>
+	</activity>
+	<activity>
+		<time>09:40-10:10</time>
+		<detail>Coffee Break</detail>
+	</activity>
+	<activity>
+		<session>
+			<name>Session II (Chair: TBA)</name>
+			<paper>
+				<time>10:10-10:35</time>
+				<title>Broadword Implementation of Excess Search for Parenthesis Queries</title>
+				<author>Yusaku Kaneta</author>
+			</paper>
+			<paper>
+				<time>10:35-11:00</time>
+				<title>Three-way Indexing ZDDs for Large-scale Sparse Datasets</title>
+				<author>Hiroshi Aoki, Takahisa Toda, Shin-ichi Minato</author>
+			</paper>
+		</session>
+	</activity>
+	<activity>
+		<time>11:00-11:10</time>
+		<detail>Short Break</detail>
+	</activity>
+	<activity>
+		<time>11:10-12:00</time>
+		<detail>Invited Talk: (tentative) Data mining for uncertain sequences::James Bailey Chair: TBA</detail>
+	</activity>
+	<activity>
+		<time>12:00-13:15</time>
+		<detail>Lunch</detail>
+	</activity>
+	<activity>
+		<session>
+			<name>Session III (Chair: TBA)</name>
+			<paper>
+				<time>13:15-13:40</time>
+				<title>Ensemble Clustering of High Dimensional Data With FastMap Projection</title>
+				<author>Imran Khan, Joshua Z. Huang, Thanh-Tung Nguyen</author>
+			</paper>
+			<paper>
+				<time>13:40-14:05</time>
+				<title>A General Framework for Parallel Unary Operations on ZDDs</title>
+				<author>Shogo Takeuchi, Takahisa Toda, Shin-ichi Minato</author>
+			</paper>
+			<paper>
+				<time>14:05-14:30</time>
+				<title>Local Feature Selection by Formal Concept Analysis for Multi-class Classification</title>
+				<author>Madori Ikeda and Akihiro Yamamoto</author>
+			</paper>
+		</session>
+	</activity>
+	<activity>
+		<time>14:30-15:00</time>
+		<detail>Coffee Break</detail>
+	</activity>
+	<activity>
+		<session>
+			<name>Session IV (Chair: TBD)</name>
+			<paper>
+				<time>15:00-15:25</time>
+				<title>Generating Permutations under Pattern Occurrence Constraints Using PiDDs</title>
+				<author>Yuma Inoue, Takahisa Toda, and Shin-ichi Minato</author>
+			</paper>
+			<paper>
+				<time>15:25-16:25</time>
+				<title>Tutorial Talk: (tentative) Succinct data structures</title>
+				<author>Rajeev Raman</author>
+			</paper>
+		</session>
+	</activity>
+	<activity>
+		<time>16:15-16:25</time>
+		<detail>Closing Workshop Co-chairs</detail>
+	</activity>
+</workshop>
+<workshop>
+	<name>Pacific Asia Workshop on Intelligence and Security Informatics</name>
+	<venue>East Gate Room (B1)</venue>
+	<activity>
+		<session>
+			<name>Opening and Keynote Speech (Chair: Jau-Hwang Wang)</name>
+			<paper>
+				<time>13:30 - 14:30</time>
+				<title>Security Informatics Using Social Media Data</title>
+				<author>Professor Ee-Peng Lim, Singapore Management University</author>
+			</paper>
+		</session>
+	</activity>
+	<activity>
+		<time>14:30-15:00</time>
+		<detail>Coffee Break</detail>
+	</activity>
+	<activity>
+		<session>
+			<name>Session 1: Cybercrime and Malware (Chair: Michael Chau)</name>
+			<paper>
+				<time>15:00-15:20</time>
+				<title>A Rational Choice of Malware Authors in Taiwan</title>
+				<author>Dayu Kao</author>
+			</paper>
+			<paper>
+				<time>15:20-15:40</time>
+				<title>Study of Cybercrime Investigation Knowledge Management</title>
+				<author>Weiping Chang and Peifang Chung</author>
+			</paper>
+		</session>
+	</activity>
+	<activity>
+		<session>
+			<name>Session 2: Information Security Engineering (Chair: Weiping Chang)</name>
+			<paper>
+				<time>15:40-16:00</time>
+				<title>User Management in Information Security Engineering Environment ISEE</title>
+				<author>Liqing Xu, Ning Zhang, Yuichi Goto and Jingde Cheng</author>
+			</paper>
+			<paper>
+				<time>16:00-16:20</time>
+				<title>Active and Personalized Services in An Information Security Engineering Cloud Based on ISO/IEC 15408</title>
+				<author>Liqing Xu, Ning Zhang, Yuichi Goto and Jingde Cheng</author>
+			</paper>
+		</session>
+	</activity>
+	<activity>
+		<time>16:20-16:30</time>
+		<detail>Coffee Break</detail>
+	</activity>
+	<activity>
+		<session>
+			<name>Session 3: Text Mining (Chair: Joshua Huang)</name>
+			<paper>
+				<time>16:30-16:50</time>
+				<title>Identify the Online Product Comments with Suspicious Chinese Content</title>
+				<author>Ping Han Lei, Pingyu Hsu and Ming Shien Cheng</author>
+			</paper>
+			<paper>
+				<time>16:50-17:10</time>
+				<title>Automatically Explore Inter-Discipline Technology from Chinese Patent Documents</title>
+				<author>Ming Shien Cheng and Pingyu Hsu</author>
+			</paper>
+			<paper>
+				<time>17:10-17:30</time>
+				<title>A LDA Feature Grouping Method for Subspace Clustering of Text Data</title>
+				<author>Yeshou Cai, Xiaojun Chen, Patrick Peng and Joshua Huang</author>
+			</paper>
+		</session>
+	</activity>
+</workshop>
+<workshop>
+	<name>Data Mining in Social Networks</name>
+	<venue>West Gate Room (B1)</venue>
+	<activity>
+		<session>
+			<name>"Research Paper Presentation Session I Chair: Cheng-Te Li (National Taiwan University, Taiwan)"</name>
+			<paper>
+				<time>13:00-13:05</time>
+				<title>Opening remarks</title>
+				<author>Carson Leung (University of Manitoba, Canada)</author>
+			</paper>
+			<paper>
+				<time>13:05-13:25</time>
+				<title>STC: a joint sentiment-topic model for community identification</title>
+				<author>Baoguo Yang and Suresh Manandhar (University of York, UK)</author>
+			</paper>
+			<paper>
+				<time>13:25-13:45</time>
+				<title>Social network community detection using strongly connected components</title>
+				<author>W. Lee, James J. Lee, and Jinho Kim (Kangwon National University, South Korea)</author>
+			</paper>
+		</session>
+	</activity>
+	<activity>
+		<session>
+			<name>"Research Paper Presentation Session II Chair: Carson Leung (University of Manitoba, Canada)"</name>
+			<paper>
+				<time>13:45-14:05</time>
+				<title>Toward automatic censorship detection in microblogs</title>
+				<author>Donn Morrison (Norwegian University of Science and Technology, Norway)</author>
+			</paper>
+			<paper>
+				<time>14:05-14:30</time>
+				<title>Multi-group-based user perceptions for friend recommendation in social networks</title>
+				<author>Trung L.T. Nguyen and Tru H. Cao (Ho Chi Minh City University of Technology, Vietnam)</author>
+			</paper>
+		</session>
+	</activity>
+	<activity>
+		<time>14:30-15:00</time>
+		<detail>Coffee Break</detail>
+	</activity>
+	<activity>
+		<session>
+			<name>"Research Paper Presentation Session III Chair: Wookey Lee (Inha University, South Korea)"</name>
+			<paper>
+				<time>15:00-15:25</time>
+				<title>Competition component identification on twitter</title>
+				<author>Cheng-Huang Yang, Ji-De Chen and Hung-Yu Kao (National Cheng Kung University, Taiwan)</author>
+			</paper>
+			<paper>
+				<time>15:25-15:50</time>
+				<title>Considerations about multistep community detection</title>
+				<author>Antonio A. Gentile, Angelo Corallo, Cristian Bisconti and Laura Fortunato (University of Salento, Italy)</author>
+			</paper>
+		</session>
+	</activity>
+	<activity>
+		<session>
+			<name>"Research Paper Presentation Session IV Chair: Guandong Xu (University of Technology - Sydney, Australia)"</name>
+			<paper>
+				<time>15:50-16:15</time>
+				<title>A unified fusion framework for time-related rank in threaded discussion communities</title>
+				<author>Qiang You, Weiming Hu, Ou Wu and Haiqiang Zuo (Chinese Academy of Sciences, China)</author>
+			</paper>
+			<paper>
+				<time>16:15-16:40</time>
+				<title>An edge-centric approach for change point detection in dynamic networks</title>
+				<author>Yongsheng Cheng and Xiaokang Lin (Tsinghua University, China)</author>
+			</paper>
+		</session>
+	</activity>
+	<activity>
+		<time>16:40-17:30</time>
+		<detail>Panel Discussion Session Chair: Ee-Peng Lim (Singapore Management University, Singapore)</detail>
+	</activity>
+	<activity>
+		<time>17:00-17:30</time>
+		<detail>Interactive poster session</detail>
+	</activity>
+</workshop>
+<workshop>
+	<name>Data Mining in Biomedical informatics and Healthcare</name>
+	<venue>West Gate Room (B1)</venue>
+	<activity>
+		<time>8:30-9:30</time>
+		<detail>Invited Talk (TBD)</detail>
+	</activity>
+	<activity>
+		<time>9:30-10:00</time>
+		<detail>Coffee Break</detail>
+	</activity>
+	<activity>
+		<session>
+			<name>Presentation Session</name>
+			<paper>
+				<time>10:00-10:30</time>
+				<title>An Author Topic Analysis of Tobacco Regulation Investigators</title>
+				<author>Dingcheng Li, Janet Okamoto, Scott Leischow, Hongfang Liu (United States Mayo Clinic), and Feichen Shen (University of Missouri Kansas City)</author>
+			</paper>
+			<paper>
+				<time>10:30-11:00</time>
+				<title>Cancer Based Pharmacogenomics Network for Drug Repurposing: Case studies</title>
+				<author>Liwei Wang (China Jilin University), Hongfang Liu, Christopher Chute, and Qian Zhu (United States Mayo Clinic)</author>
+			</paper>
+			<paper>
+				<time>11:00-11:30</time>
+				<title>Automatic Segmentation and Quantitative Analysis of Gray Matter on MR Images of Patients with Epilepsy Based on Unsupervised Learning Methods</title>
+				<author>Rui Wang, Jie Wang (Shanghai Jiao Tong University, China), Jing Ding (Zhongshan Hospital, Fudan University, China), and Su Zhang (Shanghai Jiao Tong University, China)</author>
+			</paper>
+			<paper>
+				<time>11:30-12:00</time>
+				<title>Linked Vaccine Adverse Event Data Representation from VAERS for Biomedical Informatics Research	</title>
+				<author>Cui Tao (United States University of Texas Health Science Center at Houston), Puqiang Wu (United States University of Wisconsin-Madison), and Yuji Zhang (United States Mayo Clinic)</author>
+			</paper>
+			<paper>
+				<time>12:00-12:30</time>
+				<title>Mining Severe Drug-Drug Interaction Adverse Events Using Semantic Web Technologies: A Case Study</title>
+				<author>Guoqian Jiang, Hongfang Liu, Harold Solbrig, and Christopher Chute(United States Mayo Clinic College of Medicine)</author>
+			</paper>
+		</session>
+	</activity>
+</workshop>

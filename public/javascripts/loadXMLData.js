@@ -10,8 +10,14 @@ $(document).on("pagecreate", '#programPage', function() {
         createProgramList(data);    //bug (content occupys header space) here !  3/15 found by MaoSH
     },'xml');
 
-  
-
+    if(PaperDetailcreated === false){
+        	 $.get('/static/paper.xml',function(data){
+    	
+		        createPaperDetail(data);
+		        
+		    },'xml');
+        	 PaperDetailcreated = true;
+        }
 });
 
 function parseDay(data){
@@ -189,7 +195,7 @@ function parsePaperList(data,date,sessionID,listviewID){
 							if($(this).find('ID').text() == sessionID){
 								$(listviewID).empty();
 								$(this).find('paper').each(function(){
-									$(listviewID).append('<li><a id="" href=""><h1>'
+									$(listviewID).append('<li><a id="'+$(this).find('paperID').text()+'_id" href="#'+$(this).find('paperID').text()+'_detail"><h1>'
 																+'Title: '+$(this).find('title').text()
 																+'</h1>'
 																+'<h1>'
@@ -199,7 +205,21 @@ function parsePaperList(data,date,sessionID,listviewID){
 																+'Author: '+$(this).find('author').text()
 																+'</h1>'+
 																'</a></li>');
+									var authors = $(this).find('author').text().toLowerCase();;
+									var paperDetailID;
+									var tempId;
+									$('#'+$(this).find('paperID').text()+'_id').on('click', (function(authors) {
+										return function(){
+											tempID = $(this).attr('id');
+											paperDetailID = tempID.split('_');
+											
+											insertPaperAuthors(authors, paperDetailID[0]);
+											$('#'+paperDetailID[0]+'_paper-list-authors').listview('refresh');
+										}
+									})(authors));
+
 								});
+
 							}		
 						});
 						
@@ -237,7 +257,7 @@ function createProgramList(data){
 
 
 
-		$(document).on("pagecreate", '#'+dateID+'_program', function() {
+		          $(document).on("pagecreate", '#'+dateID+'_program', function() {
                     var page = $(this);
                     // load data
                        $('#list-browse-sessions-'+dateID).empty();

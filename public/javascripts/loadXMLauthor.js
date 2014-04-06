@@ -14,7 +14,10 @@ $(document).on("pagecreate", '#peoplePage', function() {
         parseAuthor(data);
         $('#list-author').listview('option', 'filter', true);       
         $('#list-author').listview('refresh');
-    	createAuthorInfo(data);
+        if (AuthorInfocreated === false){
+    		createAuthorInfo(data);
+    		AuthorInfocreated = true;
+    	}
     },'xml');
        
         
@@ -25,7 +28,7 @@ function parseAuthor(data){
 	var xmlData = $(data);
 	var temp = [];
 	xmlData.find('author').each(function(){
-		temp.push($(this).find('name').text());
+		temp.push($(this).find('name').text().toLowerCase());
 	});
 	temp = temp.sort();
 	for(authorkey in temp){
@@ -50,7 +53,7 @@ function createAuthorInfo(data){
 	authorlist.find('author').each(function(){
 		var author = $(this);
 		var authorpaperlist = author.find('paper');
-		var authorName = author.find('name').text();
+		var authorName = author.find('name').text().toLowerCase();;
 		var regexForOrg = /\(.*\)/;
 		var orgMatches = regexForOrg.exec(authorName);
 		var Org;
@@ -88,18 +91,14 @@ function createAuthorInfo(data){
 
 		$(document).on("pagecreate",'#'+name+'_info', function(){
 
-				var page = $(this);
-			         // load data
-                       $('#'+name+'_paperList').empty();
-                       	parseAuthroPaper(paperlist, name, paperIDandTitlelist);
-                       	$('#'+name+'_paperList').listview('refresh');
-                       	$('#'+name+'_paperList').on('click','a',function(){
-				    		// show paper details page
-				    		var paperID = $(this).attr('id');
-				    		window.location.href = '#'+paperID+'_detail';
-				    		
-						});
-			       
+				
+					var page = $(this);
+				         // load data
+	                       $('#'+name+'_paperList').empty();
+	                       	parseAuthroPaper(paperlist, name, paperIDandTitlelist);
+	                       	$('#'+name+'_paperList').listview('refresh');
+
+	                 
 			    });
 
 
@@ -116,6 +115,7 @@ function parseAuthroPaper(paperlist, authorName, paperIDandTitlelist){
 
 	var paperID;
 	var paperTitle;
+	var authors;
 	for(paper_id = 0; paper_id < paperIDandTitlelist.length; paper_id+=2){		
 		paperID = paperIDandTitlelist[paper_id];
 		paperTitle = paperIDandTitlelist[paper_id+1];
@@ -123,8 +123,21 @@ function parseAuthroPaper(paperlist, authorName, paperIDandTitlelist){
 							+'Title: '+paperTitle
 							+'</h1></a></li>');
 		$('#'+authorName+'_paperList').listview('refresh');
-		 	
-	
+
+		paperlist.find('paper').each((function(paperID){
+			return function(){
+				if($(this).find('ID').text() === paperID){
+					authors = $(this).find('authors').text();
+					$('#'+paperID).on('click', (function(authors) {
+						return function(){
+							insertPaperAuthorsForPaperList(authors, paperID);
+							$('#'+paperID+'_paper-list-authors').listview('refresh');
+						}
+					})(authors));
+				}
+			}
+		})(paperID));
+
 	}
 	
 	
