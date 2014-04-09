@@ -7,8 +7,9 @@ $(document).on("pagecreate", '#programPage', function() {
         parseDay(data);
         $("#list-browse-sessions").listview('refresh');
 
-        createProgramList(data);    //bug (content occupys header space) here !  3/15 found by MaoSH
+        createProgramList(data); 
     },'xml');
+
 
     if(PaperDetailcreated === false){
         	 $.get('/static/paper.xml',function(data){
@@ -18,10 +19,16 @@ $(document).on("pagecreate", '#programPage', function() {
 		    },'xml');
         	 PaperDetailcreated = true;
         }
+
+
 });
+
+
 
 function parseDay(data){
 	var xmlData = $(data);
+	$('#list-browse-sessions').append('<li><a id="May_13_2014" href="#May_13_program"><h1>May 13, 2014</h1></a></li>');
+	
 	xmlData.find('day').each(function(){
 		var day = $(this);
 		var date = day.find('date').text();
@@ -205,7 +212,7 @@ function parsePaperList(data,date,sessionID,listviewID){
 																+'Author: '+$(this).find('author').text()
 																+'</h1>'+
 																'</a></li>');
-									var authors = $(this).find('author').text().toLowerCase();;
+									var authors = $(this).find('author').text().toUpperCase();;
 									var paperDetailID;
 									var tempId;
 									$('#'+$(this).find('paperID').text()+'_id').on('click', (function(authors) {
@@ -229,22 +236,154 @@ function parsePaperList(data,date,sessionID,listviewID){
 			}
 
 		});
+}
 
+
+
+function createProgramList_workshop(){
+	$('body').append('<div id="May_13_program" data-role="page" data-add-back-btn="true">'
+                         +'<div data-role="header" ><h1>May 13, 2014 - WorkShop</h1><a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
+                         +'<a href="#" class="ui-btn-left" data-rel="back">Back</a>'
+                         +'</div>'
+                         +'<div data-role="content" class="ui-content" role="main" ><ul data-role="listview" id="list-browse-sessions-May_13" class="ui-listview"></ul>'
+                         +'</div>'
+                         +'</div>');
+
+
+	$(document).on("pagecreate", '#May_13_program', function() {
+			
+			// load data for workshop
+	    $.get('/static/workshop.xml',function(data){
+	    	$('#list-browse-sessions-May_13').empty();
+	    		parseWorkshopList(data);
+	    	$('#list-browse-sessions-May_13').listview('refresh');
+	    		createWorkshopPage(data);
+	    },'xml');
+
+	});
+}
+
+function parseWorkshopList(data){
+	var xmlData = $(data);
+	var workshopID;
+	var workshopID_forpage;
+	xmlData.find('workshop').each(function(){
+	workshopID = $(this).find('workshopID').text();
+	workshopID_forpage = workshopID.replace(/\&/g,'_');
+
+		$('#list-browse-sessions-May_13').append('<li>'
+												+'<a id="'+workshopID_forpage+'_workshop" href="#'+workshopID_forpage+'_workshopdetail">'
+												+'<h3>'+$(this).find('workshopName').text()+'</h3></a></li>');
+		
+	});
 
 }
 
 
 
+function createWorkshopPage(data){
+	var xmlData = $(data);
+	var workshopName;
+	var workshopID;
+	
+	
+	xmlData.find('workshop').each(function(){
+		workshopName = $(this).find('workshopName').text();
+		workshopID = $(this).find('workshopID').text();
+		var workshopID_forpage = workshopID.replace(/\&/g,'_');
+		venue = $(this).find('venue').text();
+		$('body').append('<div id="'+workshopID_forpage+'_workshopdetail" data-role="page" data-add-back-btn="true">'
+                         +'<div data-role="header" ><h1>WorkShop '+workshopID+'</h1><a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
+                         +'<a href="#" class="ui-btn-left" data-rel="back">Back</a>'
+                         +'</div>'
+                         +'<div data-role="content" class="ui-content" role="main" >'
+                         +'<span style="display:inline-block"><h1 style="color:#E03A3A"> WorkShop Name: </h1></span>'
+                         +'&nbsp'
+                         +'<span style="display:inline-block"><h1 style="color:black">'+workshopName+'</h1></span>'
+                         +'<hr>'
+                         +'<span style="display:inline-block"><h1 style="color:#E03A3A"> Venue: </h1></span>'
+                         +'&nbsp'
+                         +'<span style="display:inline-block"><h1 style="color:black">'+venue+'</h1></span>'
+                         +'<hr>'
+                         +'<ul data-role="listview" data-inset="true" id="list-browse-workshop-'+workshopID_forpage+'" class="ui-listview"></ul>'
+                         +'</div>'
+                         +'</div>');
+	
+		$(document).on("pagecreate", '#'+workshopID_forpage+'_workshopdetail', function() {
+				
+				$('#list-browse-workshop-'+workshopID_forpage).empty();	
+				$('#list-browse-workshop-'+workshopID_forpage).listview();
+		    	parseWorkshopDetail(data,workshopID_forpage);
 
+		    	$('#list-browse-workshop-'+workshopID_forpage).listview('refresh');
+			
+		});
+
+	});
+
+	
+}
+
+function parseWorkshopDetail(data,id){
+	var xmlData = $(data);
+	var workshopName;
+	var workshopID;
+	var workshopID_forpage;
+	var venue;
+	var activity;
+	var time;
+	var content;
+	var sessionName;
+	var title;
+	var author;
+	xmlData.find('workshop').each(function(){
+		workshopName = $(this).find('workshopName').text();
+		workshopID = $(this).find('workshopID').text();
+		workshopID_forpage = workshopID.replace(/\&/g,'_');
+		if(workshopID_forpage == id){
+			venue = $(this).find('venue').text();
+			activity = $(this).find('activity');
+			activity.each(function(){
+				if($(this).children().length == 2){ //not session
+					time = $(this).find('time').text();
+					content = $(this).find('detail').text();
+					$('#list-browse-workshop-'+workshopID_forpage).append('<li data-role="list-divider"><h3>'+time+'</h3></li>');
+					$('#list-browse-workshop-'+workshopID_forpage).append('<li><h1>'+content+'</h1></li>');
+				}
+				else{ // session
+					sessionName = $(this).find('name').text();
+					content = $(this).find('detail').text();
+					$('list-browse-workshop-'+workshopID_forpage).append('<li data-role="list-divider"><h1>'+sessionName+'</h1></li>');
+					$(this).find('paper').each(function(){
+						time = $(this).find('time').text();
+						title = $(this).find('title').text();
+						author = $(this).find('author').text();
+						$('#list-browse-workshop-'+workshopID_forpage).append('<li data-role="list-divider"><h3>'+time+'</h3></li>');
+						$('#list-browse-workshop-'+workshopID_forpage).append('<li><h1>'+title+'</h1><br><h3>'+author+'</h3></li>');
+					});
+
+				}
+
+			});
+		}
+		
+
+
+	});
+
+
+
+}
 
 function createProgramList(data){
 	var xmlData = $(data);
+
+		createProgramList_workshop();
 	xmlData.find('day').each(function(){
 		var day = $(this);
 		var date = day.find('date').text();
 		var dateID = date.split(',');
 		dateID = dateID[0].replace(/\s/g,'_');
-		
 		
 		$('body').append('<div id="'+dateID+'_program" data-role="page" data-add-back-btn="true">'
                          +'<div data-role="header" ><h1>'+date+'</h1><a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
@@ -272,6 +411,7 @@ function createProgramList(data){
                    });
 
 		});
+	
 
 }
 

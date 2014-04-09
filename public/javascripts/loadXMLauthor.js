@@ -28,7 +28,7 @@ function parseAuthor(data){
 	var xmlData = $(data);
 	var temp = [];
 	xmlData.find('author').each(function(){
-		temp.push($(this).find('name').text().toLowerCase());
+		temp.push($(this).find('name').text().toUpperCase());
 	});
 	temp = temp.sort();
 	for(authorkey in temp){
@@ -53,7 +53,7 @@ function createAuthorInfo(data){
 	authorlist.find('author').each(function(){
 		var author = $(this);
 		var authorpaperlist = author.find('paper');
-		var authorName = author.find('name').text().toLowerCase();;
+		var authorName = author.find('name').text().toUpperCase();;
 		var regexForOrg = /\(.*\)/;
 		var orgMatches = regexForOrg.exec(authorName);
 		var Org;
