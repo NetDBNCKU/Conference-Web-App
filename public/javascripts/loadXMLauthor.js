@@ -73,7 +73,7 @@ function createAuthorInfo(data){
 		var tempname = authorName.replace(/\s/g,'_').split('(')[0];
 		var name = tempname.substring(0,tempname.length-1);
 		$('body').append('<div id="'+name+'_info" data-role="page" data-add-back-btn="true">'
-                         +'<div data-role="header" ><h1>People details</h1><a href="/" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
+                         +'<div data-role="header" ><h1>People details</h1><a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
                          +'<a href="#" class="ui-btn-left" data-rel="back">Back</a>'
                          +'</div>'
                          +'<div data-role="content" class="ui-content" role="main" >'
