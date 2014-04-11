@@ -95,9 +95,9 @@ function parseSession(data,date){
 														+'</a></li>');
 							$('body').append('<div id="'+panelID+'_info" data-role="page" >'
 	                                 +'<div data-role="header"  ><h1>Panel</h1><a href="#" class="ui-btn-left" data-rel="back">Back</a>'
-	                                 +'<a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
+	                                 +'<a href="/" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
 	                                 +'</div>'
-	                                 +'<div data-role="content" class="ui-content">'
+	                                 +'<div data-role="content" class="ui-content title">'
 	                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Panel: </h2></span>'
 	                                 +'&nbsp'
 	                                 +'<span style="display:inline-block"><h2 style="color:black">'+name+'</h2></span>'
@@ -130,9 +130,9 @@ function parseSession(data,date){
 														'</a></li>');
 						$('body').append('<div id="'+keynoteID+'_info" data-role="page" >'
                                  +'<div data-role="header"  ><h1>'+name+'</h1><a href="#" class="ui-btn-left" data-rel="back">Back</a>'
-                                 +'<a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
+                                 +'<a href="/" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
                                  +'</div>'
-                                 +'<div data-role="content" class="ui-content">'
+                                 +'<div data-role="content" class="ui-content title">'
                                  +'<h1>'+title+'</h1>'
                                  +'<hr>'
                                	 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Speaker: </h2></span>'
@@ -169,9 +169,9 @@ function parseSession(data,date){
 
 								$('body').append('<div id="'+contestID+'_info" data-role="page" >'
 	                                 +'<div data-role="header"  ><h1>Session '+ID+'</h1><a href="#" class="ui-btn-left" data-rel="back">Back</a>'
-	                                 +'<a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
+	                                 +'<a href="/" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
 	                                 +'</div>'
-	                                 +'<div data-role="content" class="ui-content">'
+	                                 +'<div data-role="content" class="ui-content title">'
 	                                 +'<div id="sessionInfo">'
 	                                 +'<span style="display:inline-block"><h1 style="color:#E03A3A"> Session: </h1></span>'
 	                                 +'&nbsp'
@@ -198,9 +198,9 @@ function parseSession(data,date){
 																+'</a></li>');
 								$('body').append('<div id="'+tutorialID+'_info" data-role="page" >'
 		                                 +'<div data-role="header"  ><h1>Panel</h1><a href="#" class="ui-btn-left" data-rel="back">Back</a>'
-		                                 +'<a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
+		                                 +'<a href="/" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
 		                                 +'</div>'
-		                                 +'<div data-role="content" class="ui-content">'
+		                                 +'<div data-role="content" class="ui-content title">'
 		                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A">'+name+'</h2></span>'
 		                                 +'&nbsp'
 		                                 +'<span style="display:inline-block"><h2 style="color:black">'+title+'</h2></span>'
@@ -229,9 +229,9 @@ function parseSession(data,date){
 																+'</a></li>');
 								$('body').append('<div id="'+ID+'_list" data-role="page" >'
 	                                 +'<div data-role="header"  ><h1>Session '+ID+'</h1><a href="#" class="ui-btn-left" data-rel="back">Back</a>'
-	                                 +'<a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
+	                                 +'<a href="/" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
 	                                 +'</div>'
-	                                 +'<div data-role="content" class="ui-content">'
+	                                 +'<div data-role="content" class="ui-content title">'
 	                                 +'<div id="sessionInfo">'
 	                                 +'<span style="display:inline-block"><h1 style="color:#E03A3A"> Session: </h1></span>'
 	                                 +'&nbsp'
@@ -314,7 +314,7 @@ function parsePaperList(data,date,sessionID,listviewID){
 
 function createProgramList_workshop(){
 	$('body').append('<div id="May_13_program" data-role="page" data-add-back-btn="true">'
-                         +'<div data-role="header" ><h1>May 13, 2014 - WorkShop</h1><a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
+                         +'<div data-role="header" ><h1>May 13, 2014 - WorkShop</h1><a href="/" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
                          +'<a href="#" class="ui-btn-left" data-rel="back">Back</a>'
                          +'</div>'
                          +'<div data-role="content" class="ui-content" role="main" ><ul data-role="listview" id="list-browse-sessions-May_13" class="ui-listview"></ul>'
@@ -339,13 +339,19 @@ function parseWorkshopList(data){
 	var xmlData = $(data);
 	var workshopID;
 	var workshopID_forpage;
+	var workshopName;
 	xmlData.find('workshop').each(function(){
 	workshopID = $(this).find('workshopID').text();
 	workshopID_forpage = workshopID.replace(/\&/g,'_');
-
+	workshopName = $(this).find('workshopName').text();
+	var workshopNameList;
+	if(workshopName.split('/').length > 1){
+		workshopNameList = workshopName.split('/');
+		workshopName = workshopNameList[0]+'<br>'+workshopNameList[1];
+	}
 		$('#list-browse-sessions-May_13').append('<li>'
 												+'<a id="'+workshopID_forpage+'_workshop" href="#'+workshopID_forpage+'_workshopdetail">'
-												+'<h3>'+$(this).find('workshopName').text()+'</h3></a></li>');
+												+'<h3>'+workshopName+'</h3></a></li>');
 		
 	});
 
@@ -361,14 +367,19 @@ function createWorkshopPage(data){
 	
 	xmlData.find('workshop').each(function(){
 		workshopName = $(this).find('workshopName').text();
+		var workshopNameList;
+		if(workshopName.split('/').length > 1){
+			workshopNameList = workshopName.split('/');
+			workshopName = workshopNameList[0]+'<br>'+workshopNameList[1];
+		}
 		workshopID = $(this).find('workshopID').text();
 		var workshopID_forpage = workshopID.replace(/\&/g,'_');
 		venue = $(this).find('venue').text();
 		$('body').append('<div id="'+workshopID_forpage+'_workshopdetail" data-role="page" data-add-back-btn="true">'
-                         +'<div data-role="header" ><h1>WorkShop '+workshopID+'</h1><a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
+                         +'<div data-role="header" ><h1>WorkShop '+workshopID+'</h1><a href="/" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
                          +'<a href="#" class="ui-btn-left" data-rel="back">Back</a>'
                          +'</div>'
-                         +'<div data-role="content" class="ui-content" role="main" >'
+                         +'<div data-role="content" class="ui-content title" role="main" >'
                          +'<span style="display:inline-block"><h1 style="color:#E03A3A"> WorkShop Name: </h1></span>'
                          +'&nbsp'
                          +'<span style="display:inline-block"><h1 style="color:black">'+workshopName+'</h1></span>'
@@ -458,7 +469,7 @@ function createProgramList(data){
 		dateID = dateID[0].replace(/\s/g,'_');
 		
 		$('body').append('<div id="'+dateID+'_program" data-role="page" data-add-back-btn="true">'
-                         +'<div data-role="header" ><h1>'+date+'</h1><a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
+                         +'<div data-role="header" ><h1>'+date+'</h1><a href="/" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
                          +'<a href="#" class="ui-btn-left" data-rel="back">Back</a>'
                          +'</div>'
                          +'<div data-role="content" class="ui-content" role="main" ><ul data-role="listview" id="list-browse-sessions-'+dateID+'" class="ui-listview"></ul>'

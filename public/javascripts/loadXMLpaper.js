@@ -85,7 +85,7 @@ function createPaperDetail(data){
 		authors = authors.toUpperCase();
 		authorArray = authors.split(';');
 		$('body').append('<div id="'+paperID+'_detail" data-role="page" data-add-back-btn="true">'
-	                 +'<div data-role="header" ><h1>Paper details</h1><a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
+	                 +'<div data-role="header" ><h1>Paper details</h1><a href="/" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
 	                 +'<a href="#" class="ui-btn-left" data-rel="back">Back</a>'
 	                 +'</div>'
 	                 +'<div data-role="content" class="ui-content" role="main" >'
