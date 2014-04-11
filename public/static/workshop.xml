@@ -1,6 +1,6 @@
 <workshopList>
 	<workshop>
-		<workshopName>DANTH - Data Analytics for Targeted Healthcare/DMDA-Health - Data Mining and Decision Analytics for Public Health and Wellness</workshopName>
+		<workshopName>Data Analytics for Targeted Healthcare / Data Mining and Decision Analytics for Public Health and Wellness</workshopName>
 		<workshopID>1&amp;8</workshopID>
 		<venue>An Ping Room (B2)</venue>
 		<activity>
@@ -61,7 +61,7 @@
 		</activity>
 	</workshop>
 	<workshop>
-		<workshopName>BDM - Biologically Inspired Data MiningTechniques</workshopName>
+		<workshopName>Biologically Inspired Data Mining Techniques</workshopName>
 		<workshopID>2</workshopID>
 		<venue>East Gate Room (B1)</venue>
 		<activity>
@@ -119,7 +119,7 @@
 		</activity>
 	</workshop>
 	<workshop>
-		<workshopName>MobiSocial - Mobile Data Management, Mining, and Computing on Social Networks</workshopName>
+		<workshopName>Mobile Data Management, Mining, and Computing on Social Networks</workshopName>
 		<workshopID>3</workshopID>
 		<venue>An Ping Room (B2)</venue>
 		<activity>
@@ -197,7 +197,7 @@
 		</activity>
 	</workshop>
 	<workshop>
-		<workshopName>BigEC - Big Data Science and Engineering on E-Commerce/MSMV-MBI - Mobile Sensing, Mining and Visualization for Human Behavior Inferences</workshopName>
+		<workshopName>Big Data Science and Engineering on E-Commerce / Mobile Sensing, Mining and Visualization for Human Behavior Inferences</workshopName>
 		<workshopID>4&amp;6</workshopID>
 		<venue>Fu Cheng Room (B2)</venue>
 		<activity>
@@ -275,7 +275,7 @@
 		</activity>
 	</workshop>
 	<workshop>
-		<workshopName>CloudSD - Cloud Service Discovery/BigPMA - Pattern Mining and Application of Big Data</workshopName>
+		<workshopName>Pattern Mining and Application of Big Data / Cloud Service Discovery</workshopName>
 		<workshopID>5&amp;13</workshopID>
 		<venue>North Gate Room (B1)</venue>
 		<activity>
@@ -397,7 +397,7 @@
 		</activity>
 	</workshop>
 	<workshop>
-		<workshopName>SDA - Scalable Data Analytics: Theory and Algorithms</workshopName>
+		<workshopName>Scalable Data Analytics: Theory and Algorithms</workshopName>
 		<workshopID>7</workshopID>
 		<venue>Fu Cheng Room (B2)</venue>
 		<activity>
@@ -460,7 +460,7 @@
 		</activity>
 	</workshop>
 	<workshop>
-		<workshopName>ALSIP - Algorithms for Large-Scale Information Processing in Knowledge Discovery</workshopName>
+		<workshopName>Algorithms for Large-Scale Information Processing in Knowledge Discovery</workshopName>
 		<workshopID>9</workshopID>
 		<venue>South Gate Room (B1)</venue>
 		<activity>
@@ -558,7 +558,7 @@
 		</activity>
 	</workshop>
 	<workshop>
-		<workshopName>ISI - Pacific Asia Workshop on Intelligence and Security Informatics</workshopName>
+		<workshopName>Pacific Asia Workshop on Intelligence and Security Informatics</workshopName>
 		<workshopID>10</workshopID>
 		<venue>East Gate Room (B1)</venue>
 		<activity>
@@ -631,7 +631,7 @@
 		</activity>
 	</workshop>
 	<workshop>
-		<workshopName>SocNet - Data Mining in Social Networks</workshopName>
+		<workshopName>Data Mining in Social Networks</workshopName>
 		<workshopID>11</workshopID>
 		<venue>West Gate Room (B1)</venue>
 		<activity>
@@ -710,7 +710,7 @@
 		</activity>
 	</workshop>
 	<workshop>
-		<workshopName>DMBIH - Data Mining in Biomedical informatics and Healthcare</workshopName>
+		<workshopName>Data Mining in Biomedical informatics and Healthcare</workshopName>
 		<workshopID>12</workshopID>
 		<venue>West Gate Room (B1)</venue>
 		<activity>
