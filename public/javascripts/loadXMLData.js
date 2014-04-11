@@ -82,28 +82,36 @@ function parseSession(data,date){
 					}
 					else if(session.children().length == 3){
 						// panel
-						var name = session.find('name').text();
-						var venue = session.find('venue').text();
-						var panelID = name.replace(/\s/g,'_');
-						var chair = session.find('chair').text();
-
-						$('#list-browse-sessions-'+dateID).append('<li><a id="'+panelID+'" href="#'+panelID+'_info"><h1>'
+						
+						var ID = session.find('ID');
+						if(!ID.length){
+							var name = session.find('name').text();
+							var venue = session.find('venue').text();
+							var panelID = name.replace(/\s/g,'_');
+							var chair = session.find('chair').text();
+							$('#list-browse-sessions-'+dateID).append('<li><a id="'+panelID+'" href="#'+panelID+'_info"><h1>'
 														+name
 														+'</h1>'
 														+'</a></li>');
-						$('body').append('<div id="'+panelID+'_info" data-role="page" >'
-                                 +'<div data-role="header"  ><h1>Panel</h1><a href="#" class="ui-btn-left" data-rel="back">Back</a>'
-                                 +'<a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
-                                 +'</div>'
-                                 +'<div data-role="content" class="ui-content">'
-                                 +'<h1>'+name+'</h1>'
-                                 +'<hr>'
-                                 +'<h2> Chair: '+chair+'</h1>'
-                                 +'<hr>'
-                                 +'<h2> Venue: '+venue+'</h1>'
-                                 +'</div>'
-                                 +'</div>');
-
+							$('body').append('<div id="'+panelID+'_info" data-role="page" >'
+	                                 +'<div data-role="header"  ><h1>Panel</h1><a href="#" class="ui-btn-left" data-rel="back">Back</a>'
+	                                 +'<a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
+	                                 +'</div>'
+	                                 +'<div data-role="content" class="ui-content">'
+	                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Panel: </h2></span>'
+	                                 +'&nbsp'
+	                                 +'<span style="display:inline-block"><h2 style="color:black">'+name+'</h2></span>'
+	                                 +'<hr>'
+	                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Chair: </h2></span>'
+	                                 +'&nbsp'
+	                                 +'<span style="display:inline-block"><h2 style="color:black">'+chair+'</h2></span>'
+	                                 +'<hr>'
+	                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Venue: </h2></span>'
+	                                 +'&nbsp'
+	                                 +'<span style="display:inline-block"><h2 style="color:black">'+venue+'</h2></span>'
+	                                 +'</div>'
+	                                 +'</div>');
+						}
 					}
 					else if(session.children().length == 5){
 						//keynote
@@ -146,38 +154,102 @@ function parseSession(data,date){
 						//session
 						var ID,name,chair,venue;						
 						session.each(function(){
-							name = $(this).find('name').text();
-							chair = $(this).find('chair').text();
-							venue = $(this).find('venue').text();
-							ID = $(this).find('ID').text();
-							$('#list-browse-sessions-'+dateID).append('<li><a id="'+ID+'" href="#'+ID+'_list"><div><span style="display:inline-block"><h1 style="color:#E03A3A">'
-															+'Session: </h1></span>&nbsp<span  style="display:inline-block"> <h1 style="color:black">'+ID+'</h1>'
-															+'</span></div>'
-															+'<div><span style="display:inline-block"><h1 style="color:#E03A3A">'
-															+'Session Topic:</h1></span>&nbsp<span style="display:inline-block"> <h1 style="color:black">'+name+'</h1>'
-															+'</span></div>'
-															+'</a></li>');
-							$('body').append('<div id="'+ID+'_list" data-role="page" >'
-                                 +'<div data-role="header"  ><h1>Session '+ID+'</h1><a href="#" class="ui-btn-left" data-rel="back">Back</a>'
-                                 +'<a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
-                                 +'</div>'
-                                 +'<div data-role="content" class="ui-content">'
-                                 +'<div id="sessionInfo">'
-                                 +'<span style="display:inline-block"><h1 style="color:#E03A3A"> Session: </h1></span>'
-                                 +'&nbsp'
-                                 +'<span style="display:inline-block"><h1 style="color:black">'+name+'</h1></span>'
-                                 +'<hr>'
-                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Chair: </h2></span>'
-                                 +'&nbsp'
-                                 +'<span style="display:inline-block"><h2 style="color:black">'+chair+'</h2></span>'
-                                 +'<hr>'
-                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Venue: </h2></span>'
-                                 +'&nbsp'
-                                 +'<span style="display:inline-block"><h2 style="color:black">'+venue+'</h2></span>'
-                                 +'</div>'
-                                 +'<ul data-role="listview" data-inset="true" class="ui-listview" id="'+dateID+'_session_'+ID+'" ></ul>'
-                                 +'</div>'
-                                 +'</div>');
+							if($(this).children().length == 3){
+								var ID = $(this).find('ID').text();
+								var name = $(this).find('name').text();
+								var contestID = name.replace(/\s/g,'_');
+								var venue = $(this).find('venue').text();
+								$('#list-browse-sessions-'+dateID).append('<li><a id="'+contestID+'" href="#'+contestID+'_info"><div><span style="display:inline-block"><h1 style="color:#E03A3A">'
+																+'Session: </h1></span>&nbsp<span  style="display:inline-block"> <h1 style="color:black">'+ID+'</h1>'
+																+'</span></div>'
+																+'<div><span style="display:inline-block"><h1 style="color:#E03A3A">'
+																+'Session Topic:</h1></span>&nbsp<span style="display:inline-block"> <h1 style="color:black">'+name+'</h1>'
+																+'</span></div>'
+																+'</a></li>');
+
+								$('body').append('<div id="'+contestID+'_info" data-role="page" >'
+	                                 +'<div data-role="header"  ><h1>Session '+ID+'</h1><a href="#" class="ui-btn-left" data-rel="back">Back</a>'
+	                                 +'<a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
+	                                 +'</div>'
+	                                 +'<div data-role="content" class="ui-content">'
+	                                 +'<div id="sessionInfo">'
+	                                 +'<span style="display:inline-block"><h1 style="color:#E03A3A"> Session: </h1></span>'
+	                                 +'&nbsp'
+	                                 +'<span style="display:inline-block"><h1 style="color:black">'+name+'</h1></span>'
+	                                 +'<hr>'
+	                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Venue: </h2></span>'
+	                                 +'&nbsp'
+	                                 +'<span style="display:inline-block"><h2 style="color:black">'+venue+'</h2></span>'
+	                                 +'</div>'
+	                                 +'</div>'
+	                                 +'</div>');
+							}
+							else if($(this).children().length == 4){
+								// tutorial
+								var name = $(this).find('name').text();
+								var tutorialID = name.replace(/\s/g,'_');
+								var venue = $(this).find('venue').text();
+								var lecturer = $(this).find('lecturer').text();
+								var title = $(this).find('title').text();
+
+								$('#list-browse-sessions-'+dateID).append('<li><a id="'+tutorialID+'" href="#'+tutorialID+'_info"><div><span style="display:inline-block"><h1 style="color:#E03A3A">'
+																+name+': </h1></span>&nbsp<span  style="display:inline-block"> <h1 style="color:black">'+title+'</h1>'
+																+'</span></div>'
+																+'</a></li>');
+								$('body').append('<div id="'+tutorialID+'_info" data-role="page" >'
+		                                 +'<div data-role="header"  ><h1>Panel</h1><a href="#" class="ui-btn-left" data-rel="back">Back</a>'
+		                                 +'<a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
+		                                 +'</div>'
+		                                 +'<div data-role="content" class="ui-content">'
+		                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A">'+name+'</h2></span>'
+		                                 +'&nbsp'
+		                                 +'<span style="display:inline-block"><h2 style="color:black">'+title+'</h2></span>'
+		                                 +'<hr>'
+		                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Lecturer: </h2></span>'
+		                                 +'&nbsp'
+		                                 +'<span style="display:inline-block"><h2 style="color:black">'+lecturer+'</h2></span>'
+		                                 +'<hr>'
+		                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Venue: </h2></span>'
+		                                 +'&nbsp'
+		                                 +'<span style="display:inline-block"><h2 style="color:black">'+venue+'</h2></span>'
+		                                 +'</div>'
+		                                 +'</div>');
+							}
+							else{
+								name = $(this).find('name').text();
+								chair = $(this).find('chair').text();
+								venue = $(this).find('venue').text();
+								ID = $(this).find('ID').text();
+								$('#list-browse-sessions-'+dateID).append('<li><a id="'+ID+'" href="#'+ID+'_list"><div><span style="display:inline-block"><h1 style="color:#E03A3A">'
+																+'Session: </h1></span>&nbsp<span  style="display:inline-block"> <h1 style="color:black">'+ID+'</h1>'
+																+'</span></div>'
+																+'<div><span style="display:inline-block"><h1 style="color:#E03A3A">'
+																+'Session Topic:</h1></span>&nbsp<span style="display:inline-block"> <h1 style="color:black">'+name+'</h1>'
+																+'</span></div>'
+																+'</a></li>');
+								$('body').append('<div id="'+ID+'_list" data-role="page" >'
+	                                 +'<div data-role="header"  ><h1>Session '+ID+'</h1><a href="#" class="ui-btn-left" data-rel="back">Back</a>'
+	                                 +'<a href="/" rel="external" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
+	                                 +'</div>'
+	                                 +'<div data-role="content" class="ui-content">'
+	                                 +'<div id="sessionInfo">'
+	                                 +'<span style="display:inline-block"><h1 style="color:#E03A3A"> Session: </h1></span>'
+	                                 +'&nbsp'
+	                                 +'<span style="display:inline-block"><h1 style="color:black">'+name+'</h1></span>'
+	                                 +'<hr>'
+	                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Chair: </h2></span>'
+	                                 +'&nbsp'
+	                                 +'<span style="display:inline-block"><h2 style="color:black">'+chair+'</h2></span>'
+	                                 +'<hr>'
+	                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Venue: </h2></span>'
+	                                 +'&nbsp'
+	                                 +'<span style="display:inline-block"><h2 style="color:black">'+venue+'</h2></span>'
+	                                 +'</div>'
+	                                 +'<ul data-role="listview" data-inset="true" class="ui-listview" id="'+dateID+'_session_'+ID+'" ></ul>'
+	                                 +'</div>'
+	                                 +'</div>');
+							}
+							
 						});
 						
 						

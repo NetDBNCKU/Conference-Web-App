@@ -25,8 +25,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
         <link rel="stylesheet" href="/stylesheets/style.css" />
+        <link rel="stylesheet" href="/touchTouch/touchTouch.css" />
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+
+        <script src="/touchTouch/touchTouch.jquery.js"></script>
+        <script src="/javascripts/phototouch.js"></script>
         <script src="/javascripts/loadXMLpaper.js"></script>
         <script src="/javascripts/loadXMLauthor.js"></script>
         <script src="/javascripts/loadXMLData.js"></script>
@@ -39,7 +43,20 @@
 		<script src="/javascripts/setCSStrick.js"></script>
 		<div data-role="header" data-position="fixed" role="banner">
 			<h1 class="ui-title" role="heading" aria-level="1">PAKDD</h1>
-	  		<a href="/" data-icon="home" class="ui-btn-right">Home</a>
+        
+        
+          <a href="#popupInfo" data-role="button" data-rel="popup" class="ui-btn-left ui-shadow ui-corner-all ui-btn-icon-left ui-icon-info" data-transition="slideup">info</a>
+          <a href="/" data-icon="home" class="ui-btn-right" >Home</a>
+       
+        <div data-role="popup" id="popupInfo" data-theme="a">
+            <ul data-role="listview" data-inset="true" style="min-width:210px;">
+                <li data-role="list-divider">Choose an action</li>
+                <li><a href="http://www.vztaiwan.com/" >Smart Tourism Taiwan</a></li>
+                <li><a href="https://itunes.apple.com/us/app/smart-tourism-pro/id649680814?ls=1&mt=8">APP for iOS</a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=tw.org.iii.ari.smarttourism">APP for Android</a></li>
+                <li><a href="http://www.ari.iii.org.tw/">ARI</a></li>
+            </ul>
+        </div>
 		</div><!-- /header -->
 		<div data-role="content" class="ui-content" role="main" >
 			<div class="ui-grid-a mainpage_grid">
@@ -52,7 +69,7 @@
 					</a>
 				</div>
 				<div class="ui-block-b">
-					<a href="map" data-transition="fade">
+					<a href="#MapPage" data-transition="fade">
 						<div class="home_btn">
 						<img src="/images/map.png"></img>
 						<div>Map</div>
@@ -68,10 +85,10 @@
 					</a>
 				</div>
 				<div class="ui-block-b">
-					<a href="info" data-transition="fade">
+					<a href="#" data-transition="fade">
 						<div class="home_btn">
-						<img src="/images/information.png"></img>
-						<div>Info</div>
+						<img src="/images/mylist.png"></img>
+						<div>My Program</div>
 						</div>
 					</a>
 				</div>	
@@ -138,6 +155,24 @@
 
                   </ul>
                </div>
+        </div>
+    
+        <div id="MapPage" data-role="page" data-add-back-btn="true">
+              <div data-role="header" data-position="fixed" >
+                 <h1>PAKDD 2014 Map</h1>
+                  <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
+                <a href="/" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+              </div>
+               <div data-role="content" class="ui-content" role="main">
+                        <div class="map_content">
+                            <div class="thumbs">
+                              <a href="/images/F1.png" style="background-image:url(/images/F1.png)" title="F1"></a>
+                              <a href="/images/B1.png" style="background-image:url(/images/B1.png)" title="B1"></a>
+                              <a href="/images/B2.png" style="background-image:url(/images/B2.png)" title="B2"></a>
+                              <a href="/images/9F.png" style="background-image:url(/images/9F.png)" title="9F"></a>
+                            </div>
+                        </div>
+              </div>
         </div>
 
         

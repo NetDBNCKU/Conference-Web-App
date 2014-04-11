@@ -113,32 +113,34 @@ function createAuthorInfo(data){
 function parseAuthroPaper(paperlist, authorName, paperIDandTitlelist){
 	
 
-	var paperID;
-	var paperTitle;
-	var authors;
-	for(paper_id = 0; paper_id < paperIDandTitlelist.length; paper_id+=2){		
-		paperID = paperIDandTitlelist[paper_id];
-		paperTitle = paperIDandTitlelist[paper_id+1];
-		$('#'+authorName+'_paperList').append('<li><a id="'+paperID+'" href="#'+paperID+'_detail"><h1>'
-							+'Title: '+paperTitle
-							+'</h1></a></li>');
-		$('#'+authorName+'_paperList').listview('refresh');
-
-		paperlist.find('paper').each((function(paperID){
-			return function(){
-				if($(this).find('ID').text() === paperID){
-					authors = $(this).find('authors').text();
-					$('#'+paperID).on('click', (function(authors) {
-						return function(){
-							insertPaperAuthorsForPaperList(authors, paperID);
-							$('#'+paperID+'_paper-list-authors').listview('refresh');
-						}
-					})(authors));
-				}
-			}
-		})(paperID));
-
+	
+	for(paper_id = 0; paper_id < paperIDandTitlelist.length; paper_id+=2){	
+		var paperID;
+		var paperTitle;
+		var authors;	
+			paperID = paperIDandTitlelist[paper_id];
+			paperTitle = paperIDandTitlelist[paper_id+1];
+			$('#'+authorName+'_paperList').append('<li><a id="'+paperID+'" href="#'+paperID+'_detail"><h1>'
+								+'Title: '+paperTitle
+								+'</h1></a></li>');
+			
+						$('#'+authorName+'_paperList').on('click','a', function() {
+								var authors;
+								var paperID = $(this).attr('id');
+								paperlist.find('paper').each(function(){
+									if($(this).find('ID').text() === paperID){
+										authors = $(this).find('authors').text();
+									}
+								});
+								insertPaperAuthorsForPaperList(authors, paperID);
+								$('#'+paperID+'_paper-list-authors').listview('refresh');
+							
+						});
+					
+				
 	}
+		$('#'+authorName+'_paperList').listview('refresh');
+			
 	
 	
 }
