@@ -85,12 +85,16 @@ function parseSession(data,date){
 						
 						var ID = session.find('ID');
 						if(!ID.length){
-							var name = session.find('name').text();
+							var names = session.find('name').text();
+							var name = names.split(': ');
 							var venue = session.find('venue').text();
-							var panelID = name.replace(/\s/g,'_');
+							var panelID = names.replace(/\s/g,'_');
+							var panelID_myprogram = panelID.split(':');
 							var chair = session.find('chair').text();
-							$('#list-browse-sessions-'+dateID).append('<li><a id="'+panelID+'" href="#'+panelID+'_info"><h1>'
-														+name
+							$('#list-browse-sessions-'+dateID).append('<li><a id="'+panelID+'" href="#'+panelID+'_info">'
+														+'<h1 style="color:#E03A3A">Panel: </h1>'
+														+'<h1>'
+														+name[1]
 														+'</h1>'
 														+'</a></li>');
 							$('body').append('<div id="'+panelID+'_info" data-role="page" >'
@@ -109,8 +113,19 @@ function parseSession(data,date){
 	                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Venue: </h2></span>'
 	                                 +'&nbsp'
 	                                 +'<span style="display:inline-block"><h2 style="color:black">'+venue+'</h2></span>'
+	                                 +'<hr>'
+                                 	 +'<a href="#" id="addProgram_panel_'+panelID_myprogram[0]+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
 	                                 +'</div>'
 	                                 +'</div>');
+								/// here to add session to myProgramList
+								$('#addProgram_panel_'+panelID_myprogram[0]).off('click').on('click',function(){
+										if($(this).find('img').attr('src') == '/images/addProgram.png'){
+											$(this).find('img').attr('src','/images/removeProgram.png');
+										}
+										else{
+											$(this).find('img').attr('src','/images/addProgram.png');
+										}
+								});
 						}
 					}
 					else if(session.children().length == 5){
@@ -147,8 +162,19 @@ function parseSession(data,date){
                                  +'&nbsp'
                                  +'<span style="display:inline-block"><h2 style="color:black">'+venue+'</h2></span>'
                                  +'</div>'
+                                 +'<hr>'
+                                 +'<a href="#" id="addProgram_keynote_'+keynoteID+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
                                  +'</div>'
                                  +'</div>');
+						/// here to add session to myProgramList
+						$('#addProgram_keynote_'+keynoteID).off('click').on('click',function(){
+								if($(this).find('img').attr('src') == '/images/addProgram.png'){
+									$(this).find('img').attr('src','/images/removeProgram.png');
+								}
+								else{
+									$(this).find('img').attr('src','/images/addProgram.png');
+								}
+						});
 					}
 					else{
 						//session
@@ -180,9 +206,19 @@ function parseSession(data,date){
 	                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Venue: </h2></span>'
 	                                 +'&nbsp'
 	                                 +'<span style="display:inline-block"><h2 style="color:black">'+venue+'</h2></span>'
+	                                 +'<hr>'
+                                	 +'<a href="#" id="addProgram_session'+contestID+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
 	                                 +'</div>'
 	                                 +'</div>'
 	                                 +'</div>');
+								$('#addProgram_session_'+contestID).off('click').on('click',function(){
+										if($(this).find('img').attr('src') == '/images/addProgram.png'){
+											$(this).find('img').attr('src','/images/removeProgram.png');
+										}
+										else{
+											$(this).find('img').attr('src','/images/addProgram.png');
+										}
+								});
 							}
 							else if($(this).children().length == 4){
 								// tutorial
@@ -212,8 +248,19 @@ function parseSession(data,date){
 		                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Venue: </h2></span>'
 		                                 +'&nbsp'
 		                                 +'<span style="display:inline-block"><h2 style="color:black">'+venue+'</h2></span>'
+		                                 +'<hr>'
+                            		     +'<a href="#" id="addProgram_tutorial_'+tutorialID+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
 		                                 +'</div>'
 		                                 +'</div>');
+								/// here to add session to myProgramList
+								$('#addProgram_tutorial_'+tutorialID).off('click').on('click',function(){
+										if($(this).find('img').attr('src') == '/images/addProgram.png'){
+											$(this).find('img').attr('src','/images/removeProgram.png');
+										}
+										else{
+											$(this).find('img').attr('src','/images/addProgram.png');
+										}
+								});
 							}
 							else{
 								name = $(this).find('name').text();
@@ -244,10 +291,21 @@ function parseSession(data,date){
 	                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Venue: </h2></span>'
 	                                 +'&nbsp'
 	                                 +'<span style="display:inline-block"><h2 style="color:black">'+venue+'</h2></span>'
+	                                 +'<hr>'
+                           		     +'<a href="#" id="addProgram_'+ID+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
 	                                 +'</div>'
 	                                 +'<ul data-role="listview" data-inset="true" class="ui-listview" id="'+dateID+'_session_'+ID+'" ></ul>'
 	                                 +'</div>'
 	                                 +'</div>');
+								/// here to add session to myProgramList
+								$('#addProgram_'+ID).off('click').on('click',function(){
+										if($(this).find('img').attr('src') == '/images/addProgram.png'){
+											$(this).find('img').attr('src','/images/removeProgram.png');
+										}
+										else{
+											$(this).find('img').attr('src','/images/addProgram.png');
+										}
+								});
 							}
 							
 						});
@@ -388,9 +446,19 @@ function createWorkshopPage(data){
                          +'&nbsp'
                          +'<span style="display:inline-block"><h1 style="color:black">'+venue+'</h1></span>'
                          +'<hr>'
+                         +'<a href="#" id="addProgram_workshop_'+workshopID_forpage+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
                          +'<ul data-role="listview" data-inset="true" id="list-browse-workshop-'+workshopID_forpage+'" class="ui-listview"></ul>'
                          +'</div>'
                          +'</div>');
+					/// here to add session to myProgramList
+					$('#addProgram_workshop_'+workshopID_forpage).off('click').on('click',function(){
+							if($(this).find('img').attr('src') == '/images/addProgram.png'){
+								$(this).find('img').attr('src','/images/removeProgram.png');
+							}
+							else{
+								$(this).find('img').attr('src','/images/addProgram.png');
+							}
+					});
 	
 		$(document).on("pagecreate", '#'+workshopID_forpage+'_workshopdetail', function() {
 				

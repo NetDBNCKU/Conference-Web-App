@@ -11,7 +11,11 @@ a {
     margin-right: 5px!important;
 }
 
-
+img .myProgramIcon {
+ 	width: 40px;
+ 	height:40px;
+ 	padding: 5px;
+ }
 
 .mainpage_grid {
   height:99%;
