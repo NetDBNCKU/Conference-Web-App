@@ -104,5 +104,4 @@ function append2List_May14(time, id, title, speaker, chair, venue){
                             + venue
                             +'</h1>'
                             +'</a></li>');
-    $('#myProgramList').listview().listview('refresh');
 }
