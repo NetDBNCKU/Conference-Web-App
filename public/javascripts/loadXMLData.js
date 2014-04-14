@@ -181,7 +181,7 @@ function parseSession(data,date){
                                  +'</div>');
 						/// here to add session to myProgramList
 						$('#addProgram_keynote_'+keynoteID).off('click').on('click',function(){   	
-alert("here");
+
 								if($(this).find('img').attr('src') == '/images/addProgram.png'){
 									$(this).find('img').attr('src','/images/removeProgram.png');
 								}
