@@ -23,6 +23,8 @@ $(document).on("pagecreate", '#programPage', function() {
     }
 
 
+
+
 });
 
 
@@ -99,8 +101,8 @@ function parseSession(data,date){
 							var names = session.find('name').text();
 							var name = names.split(': ');
 							var venue = session.find('venue').text();
-							var panelID = names.replace(/\s/g,'_');
-							var panelID_myprogram = panelID.split(':');
+							var panelID = names.replace(/\s/g,'_');   
+							var panelID_myprogram = panelID.split(':');   panelID = panelID_myprogram[1];
 							var chair = session.find('chair').text();
 							$('#list-browse-sessions-'+dateID).append('<li><a id="'+panelID+'" href="#'+panelID+'_info">'
 														+'<h1 style="color:#E03A3A">Panel: </h1>'
@@ -108,6 +110,7 @@ function parseSession(data,date){
 														+name[1]
 														+'</h1>'
 														+'</a></li>');
+
 							$('body').append('<div id="'+panelID+'_info" data-role="page" >'
 	                                 +'<div data-role="header"  ><h1>Panel</h1><a href="#" class="ui-btn-left" data-rel="back">Back</a>'
 	                                 +'<a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
@@ -115,21 +118,21 @@ function parseSession(data,date){
 	                                 +'<div data-role="content" class="ui-content title">'
 	                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Panel: </h2></span>'
 	                                 +'&nbsp'
-	                                 +'<span style="display:inline-block"><h2 style="color:black">'+name+'</h2></span>'
+	                                 +'<span style="display:inline-block"><h2 style="color:black" id="pcName">'+name+'</h2></span>'
 	                                 +'<hr>'
 	                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Chair: </h2></span>'
 	                                 +'&nbsp'
-	                                 +'<span style="display:inline-block"><h2 style="color:black">'+chair+'</h2></span>'
+	                                 +'<span style="display:inline-block"><h2 style="color:black" id="pcChair">'+chair+'</h2></span>'
 	                                 +'<hr>'
 	                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Venue: </h2></span>'
 	                                 +'&nbsp'
-	                                 +'<span style="display:inline-block"><h2 style="color:black">'+venue+'</h2></span>'
+	                                 +'<span style="display:inline-block"><h2 style="color:black" id="pcVenue">'+venue+'</h2></span>'
 	                                 +'<hr>'
                                  	 +'<a href="#" id="addProgram_panel_'+panelID_myprogram[0]+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
 	                                 +'</div>'
 	                                 +'</div>');
 								/// here to add session to myProgramList
-								$('#addProgram_panel_'+panelID_myprogram[0]).off('click').on('click',function(){
+								$('#addProgram_panel_'+panelID_myprogram[0]).off('click').on('click',function(){  
 										if($(this).find('img').attr('src') == '/images/addProgram.png'){
 											$(this).find('img').attr('src','/images/removeProgram.png');
 										}
@@ -137,7 +140,16 @@ function parseSession(data,date){
 											$(this).find('img').attr('src','/images/addProgram.png');
 										}
 
+										//Store info of workshop to localStorage, used in myProgram
+										var storageTime = time_gTmp;
+										var storageId = panelID+"_info";
+										var storagePanel = $("#pcName").html();   // Strange!! here cannot not use... $(panelID+"_info" + " #pcName").html(); 
+										var storageChair = $("#pcChair").html();
+										var storageVenue = $("#pcVenue").html();
+										
+										storageType1(storageTime, storageId, storagePanel, storageChair, storageVenue); 
 								});
+
 						}
 					}
 					else if(session.children().length == 5){
@@ -147,7 +159,7 @@ function parseSession(data,date){
 						var speaker = session.find('speaker').text();
 						var chair = session.find('chair').text();
 						var venue = session.find('venue').text();
-						var keynoteID = name.replace(/\s/g,'_');
+						var keynoteID = name.replace(/\s/g,'_');  
 						$('#list-browse-sessions-'+dateID).append('<li><a id="'+keynoteID+'" href="#'+keynoteID+'_info"><h1 style="color:#E03A3A">'
 														+name
 														+'</h1>'
@@ -197,8 +209,7 @@ function parseSession(data,date){
 								var storageVenue = $("#"+storageId + " #keynoteVenue").html();
 								var storageTitle = $("#"+storageId + " #keynoteTitle").html();
 								
-								
-								createStorage_May14(storageTime, storageId, storageTitle, storageSpeaker, storageChair, storageVenue); 
+								storageType2(storageTime, storageId, storageTitle, storageSpeaker, storageChair, storageVenue); 
 						
 								
 						});
@@ -228,13 +239,13 @@ function parseSession(data,date){
 	                                 +'<div id="sessionInfo">'
 	                                 +'<span style="display:inline-block"><h1 style="color:#E03A3A"> Session: </h1></span>'
 	                                 +'&nbsp'
-	                                 +'<span style="display:inline-block"><h1 style="color:black">'+name+'</h1></span>'
+	                                 +'<span style="display:inline-block"><h1 style="color:black" id="svName">'+name+'</h1></span>'
 	                                 +'<hr>'
 	                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Venue: </h2></span>'
 	                                 +'&nbsp'
-	                                 +'<span style="display:inline-block"><h2 style="color:black">'+venue+'</h2></span>'
+	                                 +'<span style="display:inline-block"><h2 style="color:black" id="svVenue">'+venue+'</h2></span>'
 	                                 +'<hr>'
-                                	 +'<a href="#" id="addProgram_session'+contestID+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
+                                	 +'<a href="#" id="addProgram_session_'+contestID+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
 	                                 +'</div>'
 	                                 +'</div>'
 	                                 +'</div>');
@@ -246,7 +257,13 @@ function parseSession(data,date){
 											$(this).find('img').attr('src','/images/addProgram.png');
 										}
 
-
+										//Store info of workshop to localStorage, used in myProgram
+										var storageTime = time_gTmp;
+										var storageId = contestID+'_info';
+										var storageName = $("#"+storageId + " #svName").html();
+										var storageVenue = $("#"+storageId + " #svVenue").html();
+										
+										storageType3(storageTime, storageId, storageName, storageVenue); 
 								});
 							}
 							else if($(this).children().length == 4){
@@ -266,17 +283,17 @@ function parseSession(data,date){
 		                                 +'<a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
 		                                 +'</div>'
 		                                 +'<div data-role="content" class="ui-content title">'
-		                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A">'+name+'</h2></span>'
+		                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A" id="lecName">'+name+'</h2></span>'
 		                                 +'&nbsp'
-		                                 +'<span style="display:inline-block"><h2 style="color:black">'+title+'</h2></span>'
+		                                 +'<span style="display:inline-block"><h2 style="color:black" id="lecTitle">'+title+'</h2></span>'
 		                                 +'<hr>'
 		                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Lecturer: </h2></span>'
 		                                 +'&nbsp'
-		                                 +'<span style="display:inline-block"><h2 style="color:black">'+lecturer+'</h2></span>'
+		                                 +'<span style="display:inline-block"><h2 style="color:black" id="lecLecturer">'+lecturer+'</h2></span>'
 		                                 +'<hr>'
 		                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Venue: </h2></span>'
 		                                 +'&nbsp'
-		                                 +'<span style="display:inline-block"><h2 style="color:black">'+venue+'</h2></span>'
+		                                 +'<span style="display:inline-block"><h2 style="color:black" id="lecVenue">'+venue+'</h2></span>'
 		                                 +'<hr>'
                             		     +'<a href="#" id="addProgram_tutorial_'+tutorialID+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
 		                                 +'</div>'
@@ -290,6 +307,15 @@ function parseSession(data,date){
 											$(this).find('img').attr('src','/images/addProgram.png');
 										}
 
+										//Store info of workshop to localStorage, used in myProgram
+										var storageTime = time_gTmp;
+										var storageId = tutorialID+'_info';
+										var storageName = $("#"+storageId + " #lecName").html();
+										var storageTitle = $("#"+storageId + " #lecTitle").html();
+										var storageLecturer = $("#"+storageId + " #lecLecturer").html();
+										var storageVenue = $("#"+storageId + " #lecVenue").html();
+								
+										storageType4(storageTime, storageId, storageName, storageTitle, storageLecturer, storageVenue); 
 								});
 							}
 							else{
@@ -312,15 +338,15 @@ function parseSession(data,date){
 	                                 +'<div id="sessionInfo">'
 	                                 +'<span style="display:inline-block"><h1 style="color:#E03A3A"> Session: </h1></span>'
 	                                 +'&nbsp'
-	                                 +'<span style="display:inline-block"><h1 style="color:black">'+name+'</h1></span>'
+	                                 +'<span style="display:inline-block"><h1 style="color:black" id="scName">'+name+'</h1></span>'
 	                                 +'<hr>'
 	                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Chair: </h2></span>'
 	                                 +'&nbsp'
-	                                 +'<span style="display:inline-block"><h2 style="color:black">'+chair+'</h2></span>'
+	                                 +'<span style="display:inline-block"><h2 style="color:black" id="scChair">'+chair+'</h2></span>'
 	                                 +'<hr>'
 	                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Venue: </h2></span>'
 	                                 +'&nbsp'
-	                                 +'<span style="display:inline-block"><h2 style="color:black">'+venue+'</h2></span>'
+	                                 +'<span style="display:inline-block"><h2 style="color:black" id="scVenue">'+venue+'</h2></span>'
 	                                 +'<hr>'
                            		     +'<a href="#" id="addProgram_'+ID+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
 	                                 +'</div>'
@@ -336,9 +362,14 @@ function parseSession(data,date){
 											$(this).find('img').attr('src','/images/addProgram.png');
 										}
 
-
-
-
+										//Store info of workshop to localStorage, used in myProgram
+										var storageTime = time_gTmp;
+										var storageId = ID+"_list";
+										var storageName = $("#"+storageId + " #scName").html();
+										var storageChair = $("#"+storageId + " #scChair").html();
+										var storageVenue = $("#"+storageId + " #scVenue").html();
+										
+										storageType5(storageTime, storageId, storageName, storageChair, storageVenue); 
 								});
 							}
 							
@@ -500,7 +531,7 @@ function createWorkshopPage(data){
 							var workshopName = $("#"+workshopId + " #workshopName").html();
 							var workshopVenue = $("#"+workshopId + " #venue").html();
 							
-							createStorage_May13(workshopTime, workshopName, workshopVenue, workshopId);  
+							storageType6(workshopTime, workshopId, workshopName, workshopVenue);  
 
 							
 					});
