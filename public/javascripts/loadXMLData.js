@@ -14,13 +14,13 @@ $(document).on("pagecreate", '#programPage', function() {
 
 
     if(PaperDetailcreated === false){
-        	 $.get('/static/paper.xml',function(data){
+        	$.get('/static/paper.xml',function(data){
     	
 		        createPaperDetail(data);
 		        
 		    },'xml');
-        	 PaperDetailcreated = true;
-        }
+        	PaperDetailcreated = true;
+    }
 
 
 });
@@ -155,6 +155,7 @@ function parseSession(data,date){
 														+title
 														+'</h2>'+
 														'</a></li>');
+
 						$('body').append('<div id="'+keynoteID+'_info" data-role="page" >'
                                  +'<div data-role="header"  ><h1>'+name+'</h1><a href="#" class="ui-btn-left" data-rel="back">Back</a>'
                                  +'<a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
@@ -179,7 +180,8 @@ function parseSession(data,date){
                                  +'</div>'
                                  +'</div>');
 						/// here to add session to myProgramList
-						$('#addProgram_keynote_'+keynoteID).off('click').on('click',function(){
+						$('#addProgram_keynote_'+keynoteID).off('click').on('click',function(){   	
+alert("here");
 								if($(this).find('img').attr('src') == '/images/addProgram.png'){
 									$(this).find('img').attr('src','/images/removeProgram.png');
 								}
@@ -198,7 +200,7 @@ function parseSession(data,date){
 								
 								createStorage_May14(storageTime, storageId, storageTitle, storageSpeaker, storageChair, storageVenue); 
 						
-								alert("here");
+								
 						});
 					}
 					else{

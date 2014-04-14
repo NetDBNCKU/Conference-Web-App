@@ -77,10 +77,12 @@ function createStorage_May14(time, id, title, speaker, chair, venue){
     var data = localStorage.getItem(id).split("***");
 
     //debug
-    // console.log("info of added program in line 321. time=" + time 
-    //   + '  workshopName='+ data[0]
-    //   + '  venue='+ data[1]
-    //   + '  workshopID_id='+ id);    
+    console.log("info of added program in line 321. time=" + time 
+      + '  title='+ data[0]
+      + '  speaker='+ data[1]
+      + '  chair='+ data[2]
+      + '  venue='+ data[3]
+      + '  workshopID_id='+ id);    
 
     append2List_May14(time, id, title, speaker, chair, venue);    
 }
