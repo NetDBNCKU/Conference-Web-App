@@ -1,3 +1,5 @@
+var time_gTmp;
+
 $(document).on("pagecreate", '#programPage', function() {
   var page = $(this);
 
@@ -28,18 +30,27 @@ $(document).on("pagecreate", '#programPage', function() {
 function parseDay(data){
 	var xmlData = $(data);
 	$('#list-browse-sessions').append('<li><a id="May_13_2014" href="#May_13_program"><h1>May 13, 2014</h1></a></li>');
-	
+	$('#May_13_2014').on('click', function(){ time_gTmp = 'May 13, 2014'; });  //Save to global var. myProgram need it while constructed
+
 	xmlData.find('day').each(function(){
 		var day = $(this);
 		var date = day.find('date').text();
 		var dateID = date.split(',');
 		dateID = dateID[0].replace(/\s/g,'_');
-				$('#list-browse-sessions').append('<li><a id="'+date+'" href="#'+dateID+'_program">'
+				$('#list-browse-sessions').append('<li><a id="'+dateID+'" href="#'+dateID+'_program">'
 													+'<h1>'
 													+date
 													+'</h1>'+
 													'</a></li>');
+		
+		$('#'+dateID).on('click', function(){ time_gTmp = date; });  //Record the date u r in and save to global var. myProgram needs it while constructed
+
+		
+	
 	});
+
+
+
 	
 }
 
@@ -125,6 +136,7 @@ function parseSession(data,date){
 										else{
 											$(this).find('img').attr('src','/images/addProgram.png');
 										}
+
 								});
 						}
 					}
@@ -148,19 +160,19 @@ function parseSession(data,date){
                                  +'<a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
                                  +'</div>'
                                  +'<div data-role="content" class="ui-content title">'
-                                 +'<h1>'+title+'</h1>'
+                                 +'<h1 id="keynoteTitle">'+title+'</h1>'
                                  +'<hr>'
                                	 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Speaker: </h2></span>'
                                  +'&nbsp'
-                                 +'<span style="display:inline-block"><h2 style="color:black">'+speaker+'</h2></span>'
+                                 +'<span style="display:inline-block"><h2 style="color:black" id="keynoteSpeaker">'+speaker+'</h2></span>'
                                  +'<hr>'
                                  +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Chair: </h2></span>'
                                  +'&nbsp'
-                                 +'<span style="display:inline-block"><h2 style="color:black">'+chair+'</h2></span>'
+                                 +'<span style="display:inline-block"><h2 style="color:black" id="keynoteChair">'+chair+'</h2></span>'
                                  +'<hr>'
                                  +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Venue: </h2></span>'
                                  +'&nbsp'
-                                 +'<span style="display:inline-block"><h2 style="color:black">'+venue+'</h2></span>'
+                                 +'<span style="display:inline-block"><h2 style="color:black" id="keynoteVenue">'+venue+'</h2></span>'
                                  +'</div>'
                                  +'<hr>'
                                  +'<a href="#" id="addProgram_keynote_'+keynoteID+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
@@ -174,6 +186,19 @@ function parseSession(data,date){
 								else{
 									$(this).find('img').attr('src','/images/addProgram.png');
 								}
+
+								//Store info of workshop to localStorage, used in myProgram
+								var storageTime = time_gTmp;
+								var storageId = keynoteID+'_info';
+								var storageSpeaker = $("#"+storageId + " #keynoteSpeaker").html();
+								var storageChair = $("#"+storageId + " #keynoteChair").html();
+								var storageVenue = $("#"+storageId + " #keynoteVenue").html();
+								var storageTitle = $("#"+storageId + " #keynoteTitle").html();
+								
+								
+								createStorage_May14(storageTime, storageId, storageTitle, storageSpeaker, storageChair, storageVenue); 
+						
+								alert("here");
 						});
 					}
 					else{
@@ -218,6 +243,8 @@ function parseSession(data,date){
 										else{
 											$(this).find('img').attr('src','/images/addProgram.png');
 										}
+
+
 								});
 							}
 							else if($(this).children().length == 4){
@@ -260,6 +287,7 @@ function parseSession(data,date){
 										else{
 											$(this).find('img').attr('src','/images/addProgram.png');
 										}
+
 								});
 							}
 							else{
@@ -305,6 +333,10 @@ function parseSession(data,date){
 										else{
 											$(this).find('img').attr('src','/images/addProgram.png');
 										}
+
+
+
+
 								});
 							}
 							
@@ -423,6 +455,7 @@ function createWorkshopPage(data){
 	var workshopID;
 	
 	
+	
 	xmlData.find('workshop').each(function(){
 		workshopName = $(this).find('workshopName').text();
 		var workshopNameList;
@@ -440,13 +473,13 @@ function createWorkshopPage(data){
                          +'<div data-role="content" class="ui-content title" role="main" >'
                          +'<span style="display:inline-block"><h1 style="color:#E03A3A"> WorkShop Name: </h1></span>'
                          +'&nbsp'
-                         +'<span style="display:inline-block"><h1 style="color:black">'+workshopName+'</h1></span>'
+                         +'<span style="display:inline-block"><h1 id="workshopName" style="color:black">'+workshopName+'</h1></span>'
                          +'<hr>'
                          +'<span style="display:inline-block"><h1 style="color:#E03A3A"> Venue: </h1></span>'
                          +'&nbsp'
-                         +'<span style="display:inline-block"><h1 style="color:black">'+venue+'</h1></span>'
+                         +'<span style="display:inline-block"><h1 id="venue" style="color:black">'+venue+'</h1></span>'
                          +'<hr>'
-                         +'<a href="#" id="addProgram_workshop_'+workshopID_forpage+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
+                         +'<a href="#" id="addProgram_workshop_'+workshopID_forpage+'" workshopName="'+workshopName+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
                          +'<ul data-role="listview" data-inset="true" id="list-browse-workshop-'+workshopID_forpage+'" class="ui-listview"></ul>'
                          +'</div>'
                          +'</div>');
@@ -457,7 +490,17 @@ function createWorkshopPage(data){
 							}
 							else{
 								$(this).find('img').attr('src','/images/addProgram.png');
-							}
+							} 
+
+							//Store info of workshop to localStorage, used in myProgram
+							var workshopTime = time_gTmp;
+							var workshopId = workshopID_forpage+'_workshopdetail';
+							var workshopName = $("#"+workshopId + " #workshopName").html();
+							var workshopVenue = $("#"+workshopId + " #venue").html();
+							
+							createStorage_May13(workshopTime, workshopName, workshopVenue, workshopId);  
+
+							
 					});
 	
 		$(document).on("pagecreate", '#'+workshopID_forpage+'_workshopdetail', function() {
