@@ -1,7 +1,9 @@
+var gTime = 1;
+
 $(document).on("pagecreate", '#myProgramPage', function() {
    $('#deleteAll_myProgram').on("click", clearAllProgram);
    
-  loadList();
+   loadList();
 });
 
 //Example of localStorage
@@ -41,20 +43,20 @@ function add2List(id){
     var list = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
 
     if(list == null)    list = id;
-    else                list = list + "," + id;
+    else                list = list + ",,," + id;
     localStorage.setItem("MYPROGRAM_LIST_RECORDED", list);
 }
 
 function loadList(){
     var listData = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
     if(listData != null){
-       
-        
-        listData = listData.split(",");
+        listData = listData.split(",,,");
         for(i=0; i<listData.length; i++){
             var datas = listData[i].split("***");
             var id = datas[0];
             var type = datas[1];
+            var date = datas[2];
+            var dateID;
 
             //alert("id:"+id+" type:"+type);
 
@@ -76,14 +78,18 @@ function loadList(){
             }
             else if(type == 5){
                 append2MyProgram5(id);
-                
+                $('#programPage').trigger('pagecreate');
+                date = date.split(",");
+                dateID = date[0].replace(" ","_");
+                $('#list-browse-sessions-'+dateID).trigger('click');
             }
             else if(type == 6){
                 append2MyProgram6(id);
                 
             }
             else{
-               console.log("[Error]in storageMyProgram.js loadList(): the 'type' var should not out of 1~6");
+               console.log("[Error]in storageMyProgram.js loadList(): the var 'type' should not be out of 1~6");
+               console.log("your type value is " + type);
             }
         }
     }
@@ -257,7 +263,7 @@ function append2MyProgram4(id){
 /*-------------------------------TYPE 5---------------------------------------*/
 function storageType5(time, id, session, chair, venue){
     localStorage.setItem(id, time + "***" + session + "***" + chair + "***" + venue);
-    add2List(id+"***5");
+    add2List(id+"***5***"+time);
     append2MyProgram5(id);    
 }
 

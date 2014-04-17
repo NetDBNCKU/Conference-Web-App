@@ -7,16 +7,15 @@ $(document).on("pagecreate", '#programPage', function() {
     $.get('/static/ProgramFinal.xml',function(data){
     	$('#list-browse-sessions').empty();
         parseDay(data);
-        $("#list-browse-sessions").listview('refresh');
-            createProgramList(data); 
+        $("#list-browse-sessions").listview().listview('refresh');
+        
+        createProgramList(data); 
     },'xml');
 
 
     if(PaperDetailcreated === false){
         	$.get('/static/paper.xml',function(data){
-    	
 		        createPaperDetail(data);
-		        
 		    },'xml');
         	PaperDetailcreated = true;
     } 
@@ -53,7 +52,7 @@ function parseDay(data){
 	
 }
 
-function parseSession(data,date){
+function parseSession(data,date){		
 	var xmlData = $(data);
 	xmlData.find('day').each(function(){
 		var day = $(this);
@@ -594,10 +593,10 @@ function parseWorkshopDetail(data,id){
 
 }
 
-function createProgramList(data){
+function createProgramList(data){  
 	var xmlData = $(data);
 
-		createProgramList_workshop();
+	createProgramList_workshop();
 	xmlData.find('day').each(function(){
 		var day = $(this);
 		var date = day.find('date').text();
@@ -613,24 +612,29 @@ function createProgramList(data){
                          +'</div>');
 
 
-
-
-		          $(document).on("pagecreate", '#'+dateID+'_program', function() {
-                   
-                    // load data
-                       $('#list-browse-sessions-'+dateID).empty();
-                       	parseSession(data, date);
-                       	$('#list-browse-sessions-'+dateID).listview('refresh');
-                       	$('#list-browse-sessions-'+dateID).on('click','a',function(){
-				    		var id = $(this).attr('id');	
-					    	parsePaperList(data,date,id,'#'+dateID+'_session_'+id);
-					    	$('#'+dateID+'_session_'+id).listview('refresh');
-						});
-
-                   });
-
+		$('#list-browse-sessions-'+dateID).empty();
+       	parseSession(data, date);
+       	$('#list-browse-sessions-'+dateID).listview().listview('refresh');
+       	$('#list-browse-sessions-'+dateID).on('click','a',function(){
+       		alert("click");
+    		var id = $(this).attr('id');	
+	    	parsePaperList(data,date,id,'#'+dateID+'_session_'+id);
+	    	$('#'+dateID+'_session_'+id).listview('refresh');
 		});
-	
 
+		    //       $(document).on("pagecreate", '#'+dateID+'_program', function() {
+                   
+      //               // load data
+      //                  $('#list-browse-sessions-'+dateID).empty();
+      //                  	parseSession(data, date);
+      //                  	$('#list-browse-sessions-'+dateID).listview('refresh');
+      //                  	$('#list-browse-sessions-'+dateID).on('click','a',function(){
+				  //   		var id = $(this).attr('id');	
+					 //    	parsePaperList(data,date,id,'#'+dateID+'_session_'+id);
+					 //    	$('#'+dateID+'_session_'+id).listview('refresh');
+						// });
+
+      //              });
+	});
 }
 
