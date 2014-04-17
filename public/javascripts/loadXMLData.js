@@ -8,8 +8,7 @@ $(document).on("pagecreate", '#programPage', function() {
     	$('#list-browse-sessions').empty();
         parseDay(data);
         $("#list-browse-sessions").listview('refresh');
-
-        createProgramList(data); 
+            createProgramList(data); 
     },'xml');
 
 
@@ -20,9 +19,7 @@ $(document).on("pagecreate", '#programPage', function() {
 		        
 		    },'xml');
         	PaperDetailcreated = true;
-    }
-
-
+    } 
 
 
 });
@@ -619,10 +616,10 @@ function createProgramList(data){
 
 
 		          $(document).on("pagecreate", '#'+dateID+'_program', function() {
-                    var page = $(this);
+                   
                     // load data
                        $('#list-browse-sessions-'+dateID).empty();
-                       	parseSession(data,date);
+                       	parseSession(data, date);
                        	$('#list-browse-sessions-'+dateID).listview('refresh');
                        	$('#list-browse-sessions-'+dateID).on('click','a',function(){
 				    		var id = $(this).attr('id');	

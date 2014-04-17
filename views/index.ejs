@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+        <link rel="stylesheet" href="/touchTouch/touchTouch.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+
+        <script src="/touchTouch/touchTouch.jquery.js"></script>
+        <script src="/javascripts/phototouch.js"></script>
+        <script src="/javascripts/loadXMLpaper.js"></script>
+        <script src="/javascripts/loadXMLauthor.js"></script>
+        <script src="/javascripts/loadXMLData.js"></script>
+        <script src="/javascripts/storageMyProgram.js"></script>
+
+        <title>PAKDD</title>
+    </head>
+<body class="ui-mobile-viewport ui-overlay-c" screen_capture_injected="true">
+	<div data-role="page" id="page-home" >
+	
+		<script src="/javascripts/setCSStrick.js"></script>
+		<div data-role="header" data-position="fixed" role="banner">
+			<h1 class="ui-title" role="heading" aria-level="1">18th PAKDD 2014</h1>
+        
+        
+          <a href="#popupInfo" data-role="button" data-rel="popup" class="ui-btn-left ui-shadow ui-corner-all ui-btn-icon-left ui-icon-info" data-transition="slideup" >info</a>
+          <a href="#page-home" data-icon="home" class="ui-btn-right" >Home</a>
+       
+        
+        <div data-role="popup" id="popupInfo" data-theme="a">
+    <div data-role="collapsibleset" data-theme="a" data-content-theme="a" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" style="margin:0; width:300px;">
+        <div data-role="collapsible" data-inset="false">
+        <h2>Travel Info</h2>
+            <ul data-role="listview">
+                <li><a href="http://www.vztaiwan.com/" >Visist Smart Tourism Taiwan</a></li>
+                <li><a href="https://itunes.apple.com/us/app/smart-tourism-pro/id649680814?ls=1&mt=8">Download APP for iOS</a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=tw.org.iii.ari.smarttourism">Download APP for Android</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+        <h2>Developer Info</h2>
+            <ul data-role="listview">
+                 <li><a href="#" >Arvin Huang</a></li>
+                <li><a href="#" >Boheng Chen</a></li>
+                <li><a href="#" >Charlie Hsu</a></li>
+                <li><a href="#" >Peihsuan Hsieh</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+    </div><!-- /collapsible set -->
+</div><!-- /popup -->
+		</div><!-- /header -->
+		<div data-role="content" class="ui-content" role="main" >
+			<div class="ui-grid-a mainpage_grid">
+				<div class="ui-block-a">
+					<a href="#programPage"  data-transition="fade">
+						<div class="home_btn">
+						<img src="/images/schedule.png"></img>
+						<div>Technical Program</div>
+						</div>
+					</a>
+				</div>
+				<div class="ui-block-b">
+					<a href="#MapPage" data-transition="fade">
+						<div class="home_btn">
+						<img src="/images/map.png"></img>
+						<div>Traffic Information</div>
+						</div>
+					</a>
+				</div>	
+				<div class="ui-block-a">
+					<a href="#paperListPage" data-transition="fade">
+						<div class="home_btn">
+						<img src="/images/paper.png"></img>
+						<div>Paper List</div>
+						</div>
+					</a>
+				</div>
+				<div class="ui-block-b">
+					<a href="#myProgramPage" data-transition="fade">
+						<div class="home_btn">
+						<img src="/images/mylist.png"></img>
+						<div>My Program List</div>
+						</div>
+					</a>
+				</div>	
+				
+			</div><!-- /grid-a -->
+		</div> 
+		<div data-role="footer" data-position="fixed"> 
+                 
+        </div> 
+    </div>
+
+         <div id="paperListPage" data-role="page" data-add-back-btn="true">
+              <div data-role="header" >
+                
+                 <h1>Paper List</h1>
+                  <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
+                <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+              </div>
+               <div data-role="content" class="ui-content" role="main">
+                        <ul data-role="listview" id="list-paperList" class="ui-listview" data-autodividers="true" data-filter="true">
+                           
+                        </ul>
+               </div>
+               <div id="paperListfooter" data-role="footer" data-position="fixed"> 
+                 <div data-role="navbar">
+                     <ul >
+                        <li ><a href="#" class="ui-btn-active ui-state-persist">PaperList</a></li>
+                        <li ><a href="#peoplePage">People</a></li>
+                     </ul>
+                 </div><!-- /navbar -->
+              </div> 
+        </div>
+
+         <div id="peoplePage" data-role="page" data-add-back-btn="true">
+                <div data-role="header" >
+                   <h1>People</h1>
+                    <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
+    		            <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+                </div>
+        	      <div id="content" data-role="content"  class="ui-content" role="main">
+              		<ul data-role="listview" id="list-author" data-autodividers="true" data-filter="true">
+              		</ul>
+        	      </div>
+                <div id="peoplePagefooter" data-role="footer" data-position="fixed"> 
+                   <div data-role="navbar">
+                       <ul >
+                          <li ><a href="#paperListPage">PaperList</a></li>
+                          <li ><a href="#" class="ui-btn-active ui-state-persist">People</a></li>
+                       </ul>
+                   </div><!-- /navbar -->
+                </div> 
+        </div>
+
+        <div id="programPage" data-role="page" data-add-back-btn="true">
+       
+              <div data-role="header"  >
+                 <h1>Program</h1>
+                  <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
+  		          <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+              </div>
+	             <div data-role="content" class="ui-content" role="main" >
+                  <ul data-role="listview" id="list-browse-sessions" class="ui-listview">
+                    
+
+                  </ul>
+               </div>
+        </div>
+    
+        <div id="MapPage" data-role="page" data-add-back-btn="true">
+              <div data-role="header" data-position="fixed" >
+                 <h1>PAKDD 2014 Map</h1>
+                  <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
+                <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+              </div>
+               <div data-role="content" class="ui-content" role="main">
+                        <div class="map_content">
+                            <div class="thumbs">
+                              <a href="/images/F1.png" style="background-image:url(/images/F1.png)" title="F1"></a>
+                              <a href="/images/B1.png" style="background-image:url(/images/B1.png)" title="B1"></a>
+                              <a href="/images/B2.png" style="background-image:url(/images/B2.png)" title="B2"></a>
+                              <a href="/images/9F.png" style="background-image:url(/images/9F.png)" title="9F"></a>
+                            </div>
+                        </div>
+              </div>
+        </div>
+
+
+        <div id="myProgramPage" data-role="page" data-add-back-btn="true">
+              <div data-role="header" >
+                
+                 <h1>My Program</h1>
+                  <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
+                <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+                <a href="#" data-transition="fade" data-icon="delete" class="ui-btn-left" id="deleteAll_myProgram">Delete All</a>
+              </div>
+               <div data-role="content" class="ui-content" role="main">
+                        <ul data-role="listview" id="myProgramList" class="ui-listview" >
+
+                           
+                        </ul>
+               </div>
+        </div>
+
+        
+        <!--<script type="text/javascript" src="phonegap.js"></script>-->
+    </body>
+</html>
+

@@ -1,7 +1,7 @@
 $(document).on("pagecreate", '#myProgramPage', function() {
    $('#deleteAll_myProgram').on("click", clearAllProgram);
-
-   loadList();
+   
+  loadList();
 });
 
 //Example of localStorage
@@ -48,6 +48,8 @@ function add2List(id){
 function loadList(){
     var listData = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
     if(listData != null){
+       
+        
         listData = listData.split(",");
         for(i=0; i<listData.length; i++){
             var datas = listData[i].split("***");
@@ -58,21 +60,27 @@ function loadList(){
 
             if(type == 1){
                 append2MyProgram1(id);
+                
             }
             else if(type == 2){
                 append2MyProgram2(id);
+                
             }
             else if(type == 3){
                 append2MyProgram3(id);
+                
             }
             else if(type == 4){
                 append2MyProgram4(id);
+                
             }
             else if(type == 5){
                 append2MyProgram5(id);
+                
             }
             else if(type == 6){
                 append2MyProgram6(id);
+                
             }
             else{
                console.log("[Error]in storageMyProgram.js loadList(): the 'type' var should not out of 1~6");
