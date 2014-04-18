@@ -100,9 +100,6 @@ function parseSession(data,date){
 							var panelID = names.replace(/\s|,/g,'_');   
 							var panelID_myprogram = panelID.split(':');   panelID = panelID_myprogram[1];
 							var chair = session.find('chair').text();
-							var imgID = 'addProgram_panel_'+panelID_myprogram[0];
-
-
 							$('#list-browse-sessions-'+dateID).append('<li><a id="'+panelID+'" href="#'+panelID+'_info">'
 														+'<h1 style="color:#E03A3A">Panel: </h1>'
 														+'<h1>'
@@ -127,29 +124,11 @@ function parseSession(data,date){
 	                                 +'&nbsp'
 	                                 +'<span style="display:inline-block"><h2 style="color:black" id="pcVenue">'+venue+'</h2></span>'
 	                                 +'<hr>'
-                                 	 +'<a href="#" id="'+imgID+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
+                                 	 +'<a href="#" id="addProgram_panel_'+panelID_myprogram[0]+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
 	                                 +'</div>'
 	                                 +'</div>');
-
-							
-					
-
-								// here to change img if the program was added to myProgram
-								$(document).on("pagecreate", '#'+panelID+'_info', function(){
-
-									var idList = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
-									if(idList != null && idList.search(panelID+"_info"+"_splitPattern_") != "-1"){
-										$(this).find('#'+imgID).find('img').attr('src', "/images/removeProgram.png");
-									}
-									else{
-										$(this).find('#'+imgID).find('img').attr('src', "/images/addProgram.png");
-									}
-								});
-
-
 								/// here to add session to myProgramList
 								$('#addProgram_panel_'+panelID_myprogram[0]).off('click').on('click',function(){  
-
 										//Store info of workshop to localStorage, used in myProgram
 										var storageTime = time_gTmp;
 										var storageId = panelID+"_info";
@@ -165,8 +144,6 @@ function parseSession(data,date){
 											removeProgram(storageId);
 											$(this).find('img').attr('src','/images/addProgram.png');
 										}
-
-
 								});
 
 						}
@@ -179,7 +156,6 @@ function parseSession(data,date){
 						var chair = session.find('chair').text();
 						var venue = session.find('venue').text();
 						var keynoteID = name.replace(/\s/g,'_');  
-						var imgID = 'addProgram_keynote_'+keynoteID;
 						$('#list-browse-sessions-'+dateID).append('<li><a id="'+keynoteID+'" href="#'+keynoteID+'_info"><h1 style="color:#E03A3A">'
 														+name
 														+'</h1>'
@@ -208,23 +184,9 @@ function parseSession(data,date){
                                  +'<span style="display:inline-block"><h2 style="color:black" id="keynoteVenue">'+venue+'</h2></span>'
                                  +'</div>'
                                  +'<hr>'
-                                 +'<a href="#" id="'+imgID+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
+                                 +'<a href="#" id="addProgram_keynote_'+keynoteID+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
                                  +'</div>'
                                  +'</div>');
-
-						// here to change img if the program was added to myProgram
-						$(document).on("pagecreate", '#'+keynoteID+'_info', function(){
-							var idList = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
-							if(idList != null && idList.search(keynoteID+'_info'+"_splitPattern_") != "-1"){
-								$(this).find('#'+imgID).find('img').attr('src', "/images/removeProgram.png");
-							}
-							else{
-								$(this).find('#'+imgID).find('img').attr('src', "/images/addProgram.png");
-							}
-						});
-						
-						
-
 						/// here to add session to myProgramList
 						$('#addProgram_keynote_'+keynoteID).off('click').on('click',function(){   	
 								//Store/Remove info of workshop to localStorage, used in myProgram
@@ -244,8 +206,6 @@ function parseSession(data,date){
 									$(this).find('img').attr('src','/images/addProgram.png');
 								}
 						});
-
-						
 					}
 					else{
 						//session
@@ -256,7 +216,6 @@ function parseSession(data,date){
 								var name = $(this).find('name').text();
 								var contestID = name.replace(/\s/g,'_');
 								var venue = $(this).find('venue').text();
-								var imgID = 'addProgram_session_'+contestID;
 								$('#list-browse-sessions-'+dateID).append('<li><a id="'+contestID+'" href="#'+contestID+'_info"><div><span style="display:inline-block"><h1 style="color:#E03A3A">'
 																+'Session: </h1></span>&nbsp<span  style="display:inline-block"> <h1 style="color:black">'+ID+'</h1>'
 																+'</span></div>'
@@ -279,23 +238,10 @@ function parseSession(data,date){
 	                                 +'&nbsp'
 	                                 +'<span style="display:inline-block"><h2 style="color:black" id="svVenue">'+venue+'</h2></span>'
 	                                 +'<hr>'
-                                	 +'<a href="#" id="'+imgID+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
+                                	 +'<a href="#" id="addProgram_session_'+contestID+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
 	                                 +'</div>'
 	                                 +'</div>'
 	                                 +'</div>');
-
-								// here to change img if the program was added to myProgram
-								$(document).on("pagecreate", '#'+contestID+'_info', function(){
-									var idList = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
-									if(idList != null && idList.search(contestID+'_info'+"_splitPattern_") != "-1"){
-										$(this).find('#'+imgID).find('img').attr('src', "/images/removeProgram.png");
-									}
-									else{
-										$(this).find('#'+imgID).find('img').attr('src', "/images/addProgram.png");
-									}
-								});
-				
-
 								$('#addProgram_session_'+contestID).off('click').on('click',function(){
 										//Store info of workshop to localStorage, used in myProgram
 										var storageTime = time_gTmp;
@@ -320,7 +266,6 @@ function parseSession(data,date){
 								var venue = $(this).find('venue').text();
 								var lecturer = $(this).find('lecturer').text();
 								var title = $(this).find('title').text();
-								var imgID = 'addProgram_tutorial_'+tutorialID;
 
 								$('#list-browse-sessions-'+dateID).append('<li><a id="'+tutorialID+'" href="#'+tutorialID+'_info"><div><span style="display:inline-block"><h1 style="color:#E03A3A">'
 																+name+': </h1></span>&nbsp<span  style="display:inline-block"> <h1 style="color:black">'+title+'</h1>'
@@ -343,22 +288,9 @@ function parseSession(data,date){
 		                                 +'&nbsp'
 		                                 +'<span style="display:inline-block"><h2 style="color:black" id="lecVenue">'+venue+'</h2></span>'
 		                                 +'<hr>'
-                            		     +'<a href="#" id="'+imgID+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
+                            		     +'<a href="#" id="addProgram_tutorial_'+tutorialID+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
 		                                 +'</div>'
 		                                 +'</div>');
-
-								// here to change img if the program was added to myProgram
-								$(document).on("pagecreate", '#'+tutorialID+'_info', function(){
-									var idList = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
-									if(idList != null && idList.search(tutorialID+'_info'+"_splitPattern_") != "-1"){
-										$(this).find('#'+imgID).find('img').attr('src', "/images/removeProgram.png");
-									}
-									else{
-										$(this).find('#'+imgID).find('img').attr('src', "/images/addProgram.png");
-									}
-								});
-
-
 								/// here to add session to myProgramList
 								$('#addProgram_tutorial_'+tutorialID).off('click').on('click',function(){
 										//Store info of workshop to localStorage, used in myProgram
@@ -380,11 +312,10 @@ function parseSession(data,date){
 								});
 							}
 							else{
-								var name = $(this).find('name').text();
-								var chair = $(this).find('chair').text();
-								var venue = $(this).find('venue').text();
-								var ID = $(this).find('ID').text();
-								var imgID = 'addProgram_'+ID;
+								name = $(this).find('name').text();
+								chair = $(this).find('chair').text();
+								venue = $(this).find('venue').text();
+								ID = $(this).find('ID').text();
 								$('#list-browse-sessions-'+dateID).append('<li><a id="'+ID+'" href="#'+ID+'_list"><div><span style="display:inline-block"><h1 style="color:#E03A3A">'
 																+'Session: </h1></span>&nbsp<span  style="display:inline-block"> <h1 style="color:black">'+ID+'</h1>'
 																+'</span></div>'
@@ -410,30 +341,13 @@ function parseSession(data,date){
 	                                 +'&nbsp'
 	                                 +'<span style="display:inline-block"><h2 style="color:black" id="scVenue">'+venue+'</h2></span>'
 	                                 +'<hr>'
-                           		     +'<a href="#" id="'+imgID+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
+                           		     +'<a href="#" id="addProgram_'+ID+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
 	                                 +'</div>'
 	                                 +'<ul data-role="listview" data-inset="true" class="ui-listview" id="'+dateID+'_session_'+ID+'" ></ul>'
 	                                 +'</div>'
 	                                 +'</div>');
-
-
-
-								// here to change img if the program was added to myProgram
-								$(document).on("pagecreate", '#'+ID+"_list", function(){
-									var idList = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
-									if(idList != null && idList.search(ID+"_list"+"_splitPattern_") != "-1"){
-	//									console.log("add of type5");
-										$(this).find('#'+imgID).find('img').attr('src', "/images/removeProgram.png");
-									}
-									else{
-										$(this).find('#'+imgID).find('img').attr('src', "/images/addProgram.png");
-									}
-								});
-
-
 								/// here to add session to myProgramList
-								$('#addProgram_'+ID).off('click').on('click',function(){  
-
+								$('#addProgram_'+ID).off('click').on('click',function(){
 										//Store info of workshop to localStorage, used in myProgram
 										var storageTime = time_gTmp;
 										var storageId = ID+"_list";
@@ -577,7 +491,6 @@ function createWorkshopPage(data){
 		}
 		workshopID = $(this).find('workshopID').text();
 		var workshopID_forpage = workshopID.replace(/\&/g,'_');
-		var imgID = 'addProgram_workshop_'+workshopID_forpage;
 		venue = $(this).find('venue').text();
 		$('body').append('<div id="'+workshopID_forpage+'_workshopdetail" data-role="page" data-add-back-btn="true">'
                          +'<div data-role="header" ><h1>WorkShop '+workshopID+'</h1><a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
@@ -592,41 +505,27 @@ function createWorkshopPage(data){
                          +'&nbsp'
                          +'<span style="display:inline-block"><h1 id="venue" style="color:black">'+venue+'</h1></span>'
                          +'<hr>'
-                         +'<a href="#" id="'+imgID+'" workshopName="'+workshopName+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
+                         +'<a href="#" id="addProgram_workshop_'+workshopID_forpage+'" workshopName="'+workshopName+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
                          +'<ul data-role="listview" data-inset="true" id="list-browse-workshop-'+workshopID_forpage+'" class="ui-listview"></ul>'
                          +'</div>'
                          +'</div>');
+					/// here to add session to myProgramList
+					$('#addProgram_workshop_'+workshopID_forpage).off('click').on('click',function(){
+							//Store info of workshop to localStorage, used in myProgram
+							var storageTime = time_gTmp;
+							var storageId = workshopID_forpage+'_workshopdetail';
+							var storageName = $("#"+storageId + " #workshopName").html();
+							var storageVenue = $("#"+storageId + " #venue").html();
 
-		// here to change img if the program was added to myProgram
-		$(document).on("pagecreate", '#'+workshopID_forpage+'_workshopdetail', function(){
-			var idList = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
-			if(idList != null && idList.search(workshopID_forpage+'_workshopdetail'+"_splitPattern_") != "-1"){
-				$(this).find('#'+imgID).find('img').attr('src', "/images/removeProgram.png");
-			}
-			else{
-				$(this).find('#'+imgID).find('img').attr('src', "/images/addProgram.png");
-			}
-		});
-
-
-
-		/// here to add session to myProgramList
-		$('#addProgram_workshop_'+workshopID_forpage).off('click').on('click',function(){
-				//Store info of workshop to localStorage, used in myProgram
-				var storageTime = time_gTmp;
-				var storageId = workshopID_forpage+'_workshopdetail';
-				var storageName = $("#"+storageId + " #workshopName").html();
-				var storageVenue = $("#"+storageId + " #venue").html();
-
-				if($(this).find('img').attr('src') == '/images/addProgram.png'){
-					storageType6(storageTime, storageId, storageName, storageVenue);  
-					$(this).find('img').attr('src','/images/removeProgram.png');
-				}
-				else{
-					removeProgram(storageId);
-					$(this).find('img').attr('src','/images/addProgram.png');
-				} 
-		});
+							if($(this).find('img').attr('src') == '/images/addProgram.png'){
+								storageType6(storageTime, storageId, storageName, storageVenue);  
+								$(this).find('img').attr('src','/images/removeProgram.png');
+							}
+							else{
+								removeProgram(storageId);
+								$(this).find('img').attr('src','/images/addProgram.png');
+							} 
+					});
 	
 		$(document).on("pagecreate", '#'+workshopID_forpage+'_workshopdetail', function() {
 				
@@ -713,31 +612,28 @@ function createProgramList(data){
                          +'</div>');
 
 
-				$('#list-browse-sessions-'+dateID).empty();
-	               	parseSession(data, date);
-	               	$('#list-browse-sessions-'+dateID).listview('refresh');
-	               	$('#list-browse-sessions-'+dateID).on('click','a',function(){
-			    		var id = $(this).attr('id');	
-				    	parsePaperList(data,date,id,'#'+dateID+'_session_'+id);
-				    	$('#'+dateID+'_session_'+id).listview('refresh');
-				});
-		
-					/*
-		          $(document).on("pagecreate", '#'+dateID+'_program', function() {
-                   
-                    // load data
-                       $('#list-browse-sessions-'+dateID).empty();
-                       	parseSession(data, date);
-                       	$('#list-browse-sessions-'+dateID).listview('refresh');
-                       	$('#list-browse-sessions-'+dateID).on('click','a',function(){
-				    		var id = $(this).attr('id');	
-					    	parsePaperList(data,date,id,'#'+dateID+'_session_'+id);
-					    	$('#'+dateID+'_session_'+id).listview('refresh');
-						});
+		$('#list-browse-sessions-'+dateID).empty();
+       	parseSession(data, date);
+       	$('#list-browse-sessions-'+dateID).listview().listview('refresh');
+       	$('#list-browse-sessions-'+dateID).on('click','a',function(){
+    		var id = $(this).attr('id');	
+	    	parsePaperList(data,date,id,'#'+dateID+'_session_'+id);
+	    	$('#'+dateID+'_session_'+id).listview('refresh');
+		});
 
-                   });*/
+		    //       $(document).on("pagecreate", '#'+dateID+'_program', function() {
+                   
+      //               // load data
+      //                  $('#list-browse-sessions-'+dateID).empty();
+      //                  	parseSession(data, date);
+      //                  	$('#list-browse-sessions-'+dateID).listview('refresh');
+      //                  	$('#list-browse-sessions-'+dateID).on('click','a',function(){
+				  //   		var id = $(this).attr('id');	
+					 //    	parsePaperList(data,date,id,'#'+dateID+'_session_'+id);
+					 //    	$('#'+dateID+'_session_'+id).listview('refresh');
+						// });
+
+      //              });
 	});
 }
-
-
 
