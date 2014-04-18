@@ -1,4 +1,5 @@
 var gTime = 1;
+window.pageMap = {}
 
 $(document).on("pagecreate", '#myProgramPage', function() {
    $('#deleteAll_myProgram').on("click", clearAllProgram);
@@ -73,11 +74,6 @@ function loadList(){
             }
             else if(type == 5){
                 append2MyProgram5(id);
-                $('#programPage').trigger('pagecreate');
-                date = date.split(",");
-                dateID = date[0].replace(" ","_");
-                //$('body #list-browse-sessions-'+dateID).trigger('click');
-
             }
             else if(type == 6){
                 append2MyProgram6(id);
@@ -85,7 +81,17 @@ function loadList(){
             else{
                console.log("[Error]in storageMyProgram.js loadList(): the var 'type' should not be out of 1~6");
                console.log("your type value is " + type);
+               break;
             }
+
+            //create the programPage in order to click in MyProgram
+            $('#programPage').trigger('pagecreate');
+            //record the id page has been created, avoid bug by createing again
+            // date = date.split(",");
+            // dateID = date[0].replace(" ","_");
+            //$('body #list-browse-sessions-'+dateID).trigger('click');
+
+            
         }
     }
     
@@ -110,7 +116,7 @@ the types of each day
 /*-------------------------------TYPE 1---------------------------------------*/
 function storageType1(time, id, panel, chair, venue){ 
     localStorage.setItem(id, time + "_splitPattern_" + panel + "_splitPattern_" + chair + "_splitPattern_" + venue);
-    add2List(id+"_splitPattern_1");
+    add2List(id+"_splitPattern_1_splitPattern_"+time);
     append2MyProgram1(id);    
 }
 
@@ -147,7 +153,7 @@ function append2MyProgram1(id){
 /*-------------------------------TYPE 2---------------------------------------*/
 function storageType2(time, id, title, speaker, chair, venue){
     localStorage.setItem(id, time + "_splitPattern_" + title + "_splitPattern_" + speaker + "_splitPattern_" + chair + "_splitPattern_" + venue);
-    add2List(id+"_splitPattern_2");
+    add2List(id+"_splitPattern_2_splitPattern_"+time);
     append2MyProgram2(id);    
 }
 
@@ -187,7 +193,7 @@ function append2MyProgram2(id){
 /*-------------------------------TYPE 3---------------------------------------*/
 function storageType3(time, id, session, venue){
     localStorage.setItem(id, time + "_splitPattern_" + session + "_splitPattern_" + venue);
-    add2List(id+"_splitPattern_3");
+    add2List(id+"_splitPattern_3_splitPattern_"+time);
     append2MyProgram3(id);    
 }
 
@@ -220,7 +226,7 @@ function append2MyProgram3(id){
 /*-------------------------------TYPE 4---------------------------------------*/
 function storageType4(time, id, name, title, lecturer, venue){
     localStorage.setItem(id, time + "_splitPattern_" + name + "_splitPattern_" + title + "_splitPattern_" + lecturer + "_splitPattern_" + venue);
-    add2List(id+"_splitPattern_4");
+    add2List(id+"_splitPattern_4_splitPattern_"+time);
     append2MyProgram4(id);    
 }
 
@@ -296,7 +302,7 @@ function append2MyProgram5(id){
 /*-------------------------------TYPE 6---------------------------------------*/
 function storageType6(time, id, workshopName, venue){
     localStorage.setItem(id, time + "_splitPattern_" + workshopName + "_splitPattern_" + venue);
-    add2List(id+"_splitPattern_6");
+    add2List(id+"_splitPattern_6_splitPattern_"+time);
     append2MyProgram6(id);    
 }
 

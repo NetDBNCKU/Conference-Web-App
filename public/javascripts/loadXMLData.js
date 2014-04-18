@@ -102,6 +102,10 @@ function parseSession(data,date){
 							var chair = session.find('chair').text();
 							var imgID = 'addProgram_panel_'+panelID_myprogram[0];
 
+							if(pageMap[panelID+'_info'] == 1) 	
+									return;
+							else	     
+									pageMap[panelID+"_info"] = 1;
 
 							$('#list-browse-sessions-'+dateID).append('<li><a id="'+panelID+'" href="#'+panelID+'_info">'
 														+'<h1 style="color:#E03A3A">Panel: </h1>'
@@ -180,6 +184,12 @@ function parseSession(data,date){
 						var venue = session.find('venue').text();
 						var keynoteID = name.replace(/\s/g,'_');  
 						var imgID = 'addProgram_keynote_'+keynoteID;
+
+						if(pageMap[keynoteID+'_info'] == 1) 	
+							return;
+						else	     
+							pageMap[keynoteID+"_info"] = 1;
+
 						$('#list-browse-sessions-'+dateID).append('<li><a id="'+keynoteID+'" href="#'+keynoteID+'_info"><h1 style="color:#E03A3A">'
 														+name
 														+'</h1>'
@@ -257,6 +267,12 @@ function parseSession(data,date){
 								var contestID = name.replace(/\s/g,'_');
 								var venue = $(this).find('venue').text();
 								var imgID = 'addProgram_session_'+contestID;
+
+								if(pageMap[contestID+'_info'] == 1) 	
+									return;
+								else	     
+									pageMap[contestID+"_info"] = 1;
+
 								$('#list-browse-sessions-'+dateID).append('<li><a id="'+contestID+'" href="#'+contestID+'_info"><div><span style="display:inline-block"><h1 style="color:#E03A3A">'
 																+'Session: </h1></span>&nbsp<span  style="display:inline-block"> <h1 style="color:black">'+ID+'</h1>'
 																+'</span></div>'
@@ -322,6 +338,11 @@ function parseSession(data,date){
 								var title = $(this).find('title').text();
 								var imgID = 'addProgram_tutorial_'+tutorialID;
 
+								if(pageMap[tutorialID+'_info'] == 1) 	
+									return;
+								else	     
+									pageMap[tutorialID+"_info"] = 1;
+
 								$('#list-browse-sessions-'+dateID).append('<li><a id="'+tutorialID+'" href="#'+tutorialID+'_info"><div><span style="display:inline-block"><h1 style="color:#E03A3A">'
 																+name+': </h1></span>&nbsp<span  style="display:inline-block"> <h1 style="color:black">'+title+'</h1>'
 																+'</span></div>'
@@ -380,11 +401,19 @@ function parseSession(data,date){
 								});
 							}
 							else{
+								///Type 5
 								var name = $(this).find('name').text();
 								var chair = $(this).find('chair').text();
 								var venue = $(this).find('venue').text();
 								var ID = $(this).find('ID').text();
 								var imgID = 'addProgram_'+ID;
+
+								if(pageMap[ID+"_list"] == 1) 	
+									return;
+								else	     
+									pageMap[ID+"_list"] = 1;
+
+
 								$('#list-browse-sessions-'+dateID).append('<li><a id="'+ID+'" href="#'+ID+'_list"><div><span style="display:inline-block"><h1 style="color:#E03A3A">'
 																+'Session: </h1></span>&nbsp<span  style="display:inline-block"> <h1 style="color:black">'+ID+'</h1>'
 																+'</span></div>'
@@ -392,6 +421,8 @@ function parseSession(data,date){
 																+'Session Topic:</h1></span>&nbsp<span style="display:inline-block"> <h1 style="color:black">'+name+'</h1>'
 																+'</span></div>'
 																+'</a></li>');
+
+
 								$('body').append('<div id="'+ID+'_list" data-role="page" >'
 	                                 +'<div data-role="header"  ><h1>Session '+ID+'</h1><a href="#" class="ui-btn-left" data-rel="back">Back</a>'
 	                                 +'<a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
@@ -429,7 +460,6 @@ function parseSession(data,date){
 										$(this).find('#'+imgID).find('img').attr('src', "/images/addProgram.png");
 									}
 								});
-
 
 								/// here to add session to myProgramList
 								$('#addProgram_'+ID).off('click').on('click',function(){  
@@ -495,7 +525,7 @@ function parsePaperList(data,date,sessionID,listviewID){
 											paperDetailID = tempID.split('_');
 											
 											insertPaperAuthors(authors, paperDetailID[0]);
-											$('#'+paperDetailID[0]+'_paper-list-authors').listview('refresh');
+											$('#'+paperDetailID[0]+'_paper-list-authors').listview().listview('refresh');
 										}
 									})(authors));
 
@@ -530,7 +560,7 @@ function createProgramList_workshop(){
 	    $.get('/static/workshop.xml',function(data){
 	    	$('#list-browse-sessions-May_13').empty();
 	    		parseWorkshopList(data);
-	    	$('#list-browse-sessions-May_13').listview('refresh');
+	    	$('#list-browse-sessions-May_13').listview().listview('refresh');
 	    		createWorkshopPage(data);
 	    },'xml');
 
@@ -579,6 +609,13 @@ function createWorkshopPage(data){
 		var workshopID_forpage = workshopID.replace(/\&/g,'_');
 		var imgID = 'addProgram_workshop_'+workshopID_forpage;
 		venue = $(this).find('venue').text();
+
+		if(pageMap[workshopID_forpage+'_workshopdetail'] == 1) 	
+			return;
+		else	     
+			pageMap[workshopID_forpage+'_workshopdetail'] = 1;
+
+
 		$('body').append('<div id="'+workshopID_forpage+'_workshopdetail" data-role="page" data-add-back-btn="true">'
                          +'<div data-role="header" ><h1>WorkShop '+workshopID+'</h1><a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
                          +'<a href="#" class="ui-btn-left" data-rel="back">Back</a>'
@@ -634,7 +671,7 @@ function createWorkshopPage(data){
 				$('#list-browse-workshop-'+workshopID_forpage).listview();
 		    	parseWorkshopDetail(data,workshopID_forpage);
 
-		    	$('#list-browse-workshop-'+workshopID_forpage).listview('refresh');
+		    	$('#list-browse-workshop-'+workshopID_forpage).listview().listview('refresh');
 			
 		});
 
@@ -713,14 +750,14 @@ function createProgramList(data){
                          +'</div>');
 
 
-				$('#list-browse-sessions-'+dateID).empty();
+					$('#list-browse-sessions-'+dateID).empty();
 	               	parseSession(data, date);
-	               	$('#list-browse-sessions-'+dateID).listview('refresh');
+	               	$('#list-browse-sessions-'+dateID).listview().listview('refresh');
 	               	$('#list-browse-sessions-'+dateID).on('click','a',function(){
 			    		var id = $(this).attr('id');	
 				    	parsePaperList(data,date,id,'#'+dateID+'_session_'+id);
-				    	$('#'+dateID+'_session_'+id).listview('refresh');
-				});
+				    	$('#'+dateID+'_session_'+id).listview().listview('refresh');
+					});
 		
 					/*
 		          $(document).on("pagecreate", '#'+dateID+'_program', function() {
