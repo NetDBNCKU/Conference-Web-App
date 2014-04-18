@@ -52,40 +52,30 @@ function loadList(){
     if(listData != null){
         listData = listData.split(",,,");
         for(i=0; i<listData.length; i++){
-            var datas = listData[i].split("***");
+            var datas = listData[i].split("_splitPattern_");
             var id = datas[0];
             var type = datas[1];
             var date = datas[2];
             var dateID;
 
-            //alert("id:"+id+" type:"+type);
 
             if(type == 1){
                 append2MyProgram1(id);
-                
             }
             else if(type == 2){
                 append2MyProgram2(id);
-                
             }
             else if(type == 3){
                 append2MyProgram3(id);
-                
             }
             else if(type == 4){
                 append2MyProgram4(id);
-                
             }
             else if(type == 5){
                 append2MyProgram5(id);
-                $('#programPage').trigger('pagecreate');
-                date = date.split(",");
-                dateID = date[0].replace(" ","_");
-                $('#list-browse-sessions-'+dateID).trigger('click');
             }
             else if(type == 6){
                 append2MyProgram6(id);
-                
             }
             else{
                console.log("[Error]in storageMyProgram.js loadList(): the var 'type' should not be out of 1~6");
@@ -114,8 +104,8 @@ the types of each day
 *//*-*****************************************************************************************************************/
 /*-------------------------------TYPE 1---------------------------------------*/
 function storageType1(time, id, panel, chair, venue){ 
-    localStorage.setItem(id, time + "***" + panel + "***" + chair + "***" + venue);
-    add2List(id+"***1");
+    localStorage.setItem(id, time + "_splitPattern_" + panel + "_splitPattern_" + chair + "_splitPattern_" + venue);
+    add2List(id+"_splitPattern_1");
     append2MyProgram1(id);    
 }
 
@@ -127,7 +117,7 @@ function append2MyProgram1(id){
 
     if(data == null) return;
 
-    data = data.split("***");
+    data = data.split("_splitPattern_");
     time = data[0];
     panel = data[1];
     chair = data[2];
@@ -151,8 +141,8 @@ function append2MyProgram1(id){
 }
 /*-------------------------------TYPE 2---------------------------------------*/
 function storageType2(time, id, title, speaker, chair, venue){
-    localStorage.setItem(id, time + "***" + title + "***" + speaker + "***" + chair + "***" + venue);
-    add2List(id+"***2");
+    localStorage.setItem(id, time + "_splitPattern_" + title + "_splitPattern_" + speaker + "_splitPattern_" + chair + "_splitPattern_" + venue);
+    add2List(id+"_splitPattern_2");
     append2MyProgram2(id);    
 }
 
@@ -164,7 +154,7 @@ function append2MyProgram2(id){
 
     if(data == null) return;
 
-    data = data.split("***");
+    data = data.split("_splitPattern_");
     time = data[0];
     title = data[1];
     speaker = data[2];
@@ -191,8 +181,8 @@ function append2MyProgram2(id){
 }
 /*-------------------------------TYPE 3---------------------------------------*/
 function storageType3(time, id, session, venue){
-    localStorage.setItem(id, time + "***" + session + "***" + venue);
-    add2List(id+"***3");
+    localStorage.setItem(id, time + "_splitPattern_" + session + "_splitPattern_" + venue);
+    add2List(id+"_splitPattern_3");
     append2MyProgram3(id);    
 }
 
@@ -204,7 +194,7 @@ function append2MyProgram3(id){
 
     if(data == null) return;
 
-    data = data.split("***");
+    data = data.split("_splitPattern_");
     session = data[0];
     venue = data[1]; 
 
@@ -224,8 +214,8 @@ function append2MyProgram3(id){
 
 /*-------------------------------TYPE 4---------------------------------------*/
 function storageType4(time, id, name, title, lecturer, venue){
-    localStorage.setItem(id, time + "***" + name + "***" + title + "***" + lecturer + "***" + venue);
-    add2List(id+"***4");
+    localStorage.setItem(id, time + "_splitPattern_" + name + "_splitPattern_" + title + "_splitPattern_" + lecturer + "_splitPattern_" + venue);
+    add2List(id+"_splitPattern_4");
     append2MyProgram4(id);    
 }
 
@@ -237,7 +227,7 @@ function append2MyProgram4(id){
 
     if(data == null) return;
 
-    data = data.split("***");
+    data = data.split("_splitPattern_");
     time = data[0];
     name = data[1];
     title = data[2];
@@ -262,8 +252,8 @@ function append2MyProgram4(id){
 }
 /*-------------------------------TYPE 5---------------------------------------*/
 function storageType5(time, id, session, chair, venue){
-    localStorage.setItem(id, time + "***" + session + "***" + chair + "***" + venue);
-    add2List(id+"***5***"+time);
+    localStorage.setItem(id, time + "_splitPattern_" + session + "_splitPattern_" + chair + "_splitPattern_" + venue);
+    add2List(id+"_splitPattern_5");
     append2MyProgram5(id);    
 }
 
@@ -275,7 +265,7 @@ function append2MyProgram5(id){
 
     if(data == null) return;
 
-    data = data.split("***");
+    data = data.split("_splitPattern_");
     time = data[0];
     session = data[1];
     chair = data[2];
@@ -300,8 +290,8 @@ function append2MyProgram5(id){
 
 /*-------------------------------TYPE 6---------------------------------------*/
 function storageType6(time, id, workshopName, venue){
-    localStorage.setItem(id, time + "***" + workshopName + "***" + venue);
-    add2List(id+"***6");
+    localStorage.setItem(id, time + "_splitPattern_" + workshopName + "_splitPattern_" + venue);
+    add2List(id+"_splitPattern_6");
     append2MyProgram6(id);    
 }
 
@@ -313,7 +303,7 @@ function append2MyProgram6(id){
 
     if(data == null) return;
 
-    data = data.split("***");
+    data = data.split("_splitPattern_");
     time = data[0];
     workshopName = data[1];
     venue = data[2]; 
