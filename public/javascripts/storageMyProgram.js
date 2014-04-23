@@ -1,9 +1,8 @@
 var gTime = 1;
-window.pageMap = {}
+window.pageMap = {};
 
 $(document).on("pagecreate", '#myProgramPage', function() {
    $('#deleteAll_myProgram').on("click", clearAllProgram);
-   
    loadList();
 });
 
@@ -86,12 +85,11 @@ function loadList(){
 
             //create the programPage in order to click in MyProgram
             $('#programPage').trigger('pagecreate');
-            //record the id page has been created, avoid bug by createing again
-            // date = date.split(",");
-            // dateID = date[0].replace(" ","_");
-            //$('body #list-browse-sessions-'+dateID).trigger('click');
 
-            
+            //record the id page has been created, avoid bug by createing again
+            date = date.split(",");
+            dateID = date[0].replace(" ","_");            
+            $(id).trigger("pagecreate");
         }
     }
     

@@ -1,29 +1,29 @@
 var time_gTmp;
+window.flag = 0; 	//for avoiding createProgramList  two times
 
 $(document).on("pagecreate", '#programPage', function() {
-  var page = $(this);
+	var page = $(this);
 
-  // load data
-    $.get('/static/ProgramFinal.xml',function(data){
-    	$('#list-browse-sessions').empty();
-        parseDay(data);
-        $("#list-browse-sessions").listview().listview('refresh');
-        
-        createProgramList(data); 
-    },'xml');
+	// load data
+	if(window.flag == 0){
+		window.flag = 1;
+	    $.get('/static/ProgramFinal.xml',function(data){
+	    	$('#list-browse-sessions').empty();
+	        parseDay(data);
+	        $("#list-browse-sessions").listview().listview('refresh');
+
+	        createProgramList(data); 
+	    },'xml');
+	}
 
 
-    if(PaperDetailcreated === false){
-        	$.get('/static/paper.xml',function(data){
+	if(PaperDetailcreated === false){
+	    $.get('/static/paper.xml',function(data){
 		        createPaperDetail(data);
-		    },'xml');
-        	PaperDetailcreated = true;
-    } 
-
-
+	    },'xml');
+    	PaperDetailcreated = true;
+	} 
 });
-
-
 
 function parseDay(data){
 	var xmlData = $(data);
@@ -42,14 +42,7 @@ function parseDay(data){
 													'</a></li>');
 		
 		$('#'+dateID).on('click', function(){ time_gTmp = date; });  //Record the date u r in and save to global var. myProgram needs it while constructed
-
-		
-	
 	});
-
-
-
-	
 }
 
 function parseSession(data,date){		
@@ -447,7 +440,7 @@ function parseSession(data,date){
 	                                 +'</div>'
 	                                 +'</div>');
 
-
+	
 
 								// here to change img if the program was added to myProgram
 								$(document).on("pagecreate", '#'+ID+"_list", function(){
@@ -495,6 +488,7 @@ function parseSession(data,date){
 }
 
 function parsePaperList(data,date,sessionID,listviewID){
+
 	var xmlData = $(data);
 		xmlData.find('day').each(function(){
 			day = $(this);
@@ -596,8 +590,6 @@ function createWorkshopPage(data){
 	var workshopName;
 	var workshopID;
 	
-	
-	
 	xmlData.find('workshop').each(function(){
 		workshopName = $(this).find('workshopName').text();
 		var workshopNameList;
@@ -645,8 +637,6 @@ function createWorkshopPage(data){
 			}
 		});
 
-
-
 		/// here to add session to myProgramList
 		$('#addProgram_workshop_'+workshopID_forpage).off('click').on('click',function(){
 				//Store info of workshop to localStorage, used in myProgram
@@ -674,10 +664,7 @@ function createWorkshopPage(data){
 		    	$('#list-browse-workshop-'+workshopID_forpage).listview().listview('refresh');
 			
 		});
-
 	});
-
-	
 }
 
 function parseWorkshopDetail(data,id){
@@ -717,18 +704,10 @@ function parseWorkshopDetail(data,id){
 						$('#list-browse-workshop-'+workshopID_forpage).append('<li data-role="list-divider"><h3>'+time+'</h3></li>');
 						$('#list-browse-workshop-'+workshopID_forpage).append('<li><h1>'+title+'</h1><br><h3>'+author+'</h3></li>');
 					});
-
 				}
-
 			});
 		}
-		
-
-
 	});
-
-
-
 }
 
 function createProgramList(data){  
@@ -753,26 +732,18 @@ function createProgramList(data){
 					$('#list-browse-sessions-'+dateID).empty();
 	               	parseSession(data, date);
 	               	$('#list-browse-sessions-'+dateID).listview().listview('refresh');
-	               	$('#list-browse-sessions-'+dateID).on('click','a',function(){
-			    		var id = $(this).attr('id');	
-				    	parsePaperList(data,date,id,'#'+dateID+'_session_'+id);
-				    	$('#'+dateID+'_session_'+id).listview().listview('refresh');
-					});
-		
-					/*
-		          $(document).on("pagecreate", '#'+dateID+'_program', function() {
-                   
-                    // load data
-                       $('#list-browse-sessions-'+dateID).empty();
-                       	parseSession(data, date);
-                       	$('#list-browse-sessions-'+dateID).listview('refresh');
-                       	$('#list-browse-sessions-'+dateID).on('click','a',function(){
-				    		var id = $(this).attr('id');	
-					    	parsePaperList(data,date,id,'#'+dateID+'_session_'+id);
-					    	$('#'+dateID+'_session_'+id).listview('refresh');
-						});
 
-                   });*/
+	               	var currentPageID;
+	               	$('#list-browse-sessions-'+dateID+' a').each(function(){
+	               		currentPageID = $(this).attr("href");
+	               		$(currentPageID).on('pagecreate',function(){
+			    		var id = $(this).attr('id');	
+			    		var sessionID = id.split('_');
+				    	parsePaperList(data,date,sessionID[0],'#'+dateID+'_session_'+sessionID[0]);
+				    	$('#'+dateID+'_session_'+sessionID[0]).listview().listview('refresh');
+					});
+	               	});
+	               	
 	});
 }
 
