@@ -84,11 +84,7 @@ function loadList(){
             }
 
             //create the programPage in order to click in MyProgram
-            $('#programPage').trigger('pagecreate');
-
-            //record the id page has been created, avoid bug by createing again
-            date = date.split(",");
-            dateID = date[0].replace(" ","_");            
+            $('#programPage').trigger('pagecreate');          
             $(id).trigger("pagecreate");
         }
     }
