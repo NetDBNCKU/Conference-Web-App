@@ -86,6 +86,15 @@ function loadList(){
             //create the programPage in order to click in MyProgram
             $('#programPage').trigger('pagecreate');          
             $(id).trigger("pagecreate");
+
+
+            $("#myProgramList").listview({
+                autodividers:true,
+                autodividersSelector: function ( li ) {
+                    return li.attr("date");
+                }
+            }).listview().listview("refresh");
+
         }
     }
     
@@ -129,7 +138,7 @@ function append2MyProgram1(id){
     venue = data[3]; 
 
     if($('#myProgram_'+id).length <= 0){
-        $('#myProgramList').append('<li id="myProgram_'+id+'"><a href="#'+id+'">'
+        $('#myProgramList').append('<li id="myProgram_'+id+'" date="'+time+'"><a href="#'+id+'">'
                                    +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Panel: </h2></span>'
                                    +'&nbsp'
                                    +'<span style="display:inline-block"><h2 style="color:black">'+panel+'</h2></span>'
@@ -167,7 +176,7 @@ function append2MyProgram2(id){
     venue = data[4]; 
 
     if($('#myProgram_'+id).length <= 0){
-        $('#myProgramList').append('<li id="myProgram_'+id+'"><a href="#'+id+'">'
+        $('#myProgramList').append('<li id="myProgram_'+id+'" date="'+time+'"><a href="#'+id+'">'
                                  +'<h1 id="keynoteTitle">'+title+'</h1>'
                                  +'<br>'
                                  +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Speaker: </h2></span>'
@@ -205,7 +214,7 @@ function append2MyProgram3(id){
 
 
     if($('#myProgram_'+id).length <= 0){
-        $('#myProgramList').append('<li id="myProgram_'+id+'"><a href="#'+id+'">'
+        $('#myProgramList').append('<li id="myProgram_'+id+'" date="'+time+'"><a href="#'+id+'">'
                                    +'<span style="display:inline-block"><h1 style="color:#E03A3A"> Session: </h1></span>'
                                    +'&nbsp'
                                    +'<span style="display:inline-block"><h1 style="color:black">'+session+'</h1></span>'
@@ -240,7 +249,7 @@ function append2MyProgram4(id){
     venue = data[4]; 
 
     if($('#myProgram_'+id).length <= 0){
-      $('#myProgramList').append('<li id="myProgram_'+id+'"><a href="#'+id+'">'
+      $('#myProgramList').append('<li id="myProgram_'+id+'" date="'+time+'"><a href="#'+id+'">'
                                      +'<span style="display:inline-block"><h2 style="color:#E03A3A">'+name+'</h2></span>'
                                      +'&nbsp'
                                      +'<span style="display:inline-block"><h2 style="color:black">'+title+'</h2></span>'
@@ -277,7 +286,7 @@ function append2MyProgram5(id){
     venue = data[3]; 
 
     if($('#myProgram_'+id).length <= 0){
-      $('#myProgramList').append('<li id="myProgram_'+id+'"><a href="#'+id+'">'
+      $('#myProgramList').append('<li id="myProgram_'+id+'" date="'+time+'"><a href="#'+id+'">'
                                    +'<span style="display:inline-block"><h1 style="color:#E03A3A"> Session: </h1></span>'
                                    +'&nbsp'
                                    +'<span style="display:inline-block"><h1 style="color:black" id="scName">'+session+'</h1></span>'
@@ -314,7 +323,7 @@ function append2MyProgram6(id){
     venue = data[2]; 
 
     if($('#myProgram_'+id).length <= 0){
-      $('#myProgramList').append('<li id="myProgram_'+id+'"><a href="#'+id+'">'
+      $('#myProgramList').append('<li id="myProgram_'+id+'" date="'+time+'"><a href="#'+id+'">'
                          +'<span style="display:inline-block"><h1 style="color:#E03A3A"> WorkShop Name: </h1></span>'
                          +'&nbsp'
                          +'<span><h1 id="workshopName" style="color:black">'+workshopName+'</h1></span>'
