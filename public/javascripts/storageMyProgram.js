@@ -51,12 +51,40 @@ function loadList(){
     var listData = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
     if(listData != null){
         listData = listData.split(",,,");
+        var mySessionAry = new Array();
+        
+        //Get localStorage data
         for(i=0; i<listData.length; i++){
             var datas = listData[i].split("_splitPattern_");
-            var id = datas[0];
-            var type = datas[1];
-            var date = datas[2];
-            var dateID;
+            var mySession = {};
+            mySession.myId = datas[0];
+            mySession.myType = datas[1];
+            mySession.myDate = datas[2];
+            mySessionAry.push(mySession);
+        }
+
+
+        //Sort in data  (BUBBLE SORT)
+        var swap = true;
+        while(swap == true){
+            swap = false;
+            for(i=1; i<mySessionAry.length; i++){
+                if(mySessionAry[i-1].myDate > mySessionAry[i].myDate){
+                    //SWAP
+                    var tmp = mySessionAry[i-1];
+                    mySessionAry[i-1] = mySessionAry[i];
+                    mySessionAry[i] = tmp;
+                    swap = true;
+                }
+            }
+        }
+        
+
+        //Append to MyProgramList
+        for(i=0; i<mySessionAry.length; i++){
+            var session = mySessionAry[i];
+            var type = session.myType;
+            var id = session.myId;
 
 
             if(type == 1){
@@ -83,19 +111,21 @@ function loadList(){
                break;
             }
 
-            //create the programPage in order to click in MyProgram
-            $('#programPage').trigger('pagecreate');          
-            $(id).trigger("pagecreate");
+        }
 
-
-            $("#myProgramList").listview({
+        //Setting divider
+        $("#myProgramList").listview({
                 autodividers:true,
                 autodividersSelector: function ( li ) {
                     return li.attr("date");
                 }
-            }).listview().listview("refresh");
+        }).listview().listview("refresh");
 
-        }
+
+        //create the programPage in order to click in MyProgram
+        $('#programPage').trigger('pagecreate');          
+        $(id).trigger("pagecreate");
+            
     }
     
 }
