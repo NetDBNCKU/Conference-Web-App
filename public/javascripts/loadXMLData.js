@@ -547,18 +547,14 @@ function createProgramList_workshop(){
                          +'</div>'
                          +'</div>');
 
-
-	$(document).on("pagecreate", '#May_13_program', function() {
-			
-			// load data for workshop
-	    $.get('/static/workshop.xml',function(data){
-	    	$('#list-browse-sessions-May_13').empty();
-	    		parseWorkshopList(data);
-	    	$('#list-browse-sessions-May_13').listview().listview('refresh');
-	    		createWorkshopPage(data);
-	    },'xml');
-
-	});
+		
+	// load data for workshop
+    $.get('/static/workshop.xml',function(data){
+    	$('#list-browse-sessions-May_13').empty();
+    		parseWorkshopList(data);
+    	$('#list-browse-sessions-May_13').listview().listview('refresh');
+    		createWorkshopPage(data);
+    },'xml');
 }
 
 function parseWorkshopList(data){
