@@ -1,9 +1,12 @@
 var gTime = 1;
+window.pageMap = {};
+
+$(document).ready(function(){
+    $("#btn_myProgram").on("click", loadList);
+});
 
 $(document).on("pagecreate", '#myProgramPage', function() {
    $('#deleteAll_myProgram').on("click", clearAllProgram);
-   
-   loadList();
 });
 
 //Example of localStorage
@@ -51,12 +54,40 @@ function loadList(){
     var listData = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
     if(listData != null){
         listData = listData.split(",,,");
+        var mySessionAry = new Array();
+        
+        //Get localStorage data
         for(i=0; i<listData.length; i++){
             var datas = listData[i].split("_splitPattern_");
-            var id = datas[0];
-            var type = datas[1];
-            var date = datas[2];
-            var dateID;
+           var mySession = {};
+            mySession.myId = datas[0];
+            mySession.myType = datas[1];
+            mySession.myDate = datas[2];
+            mySessionAry.push(mySession);
+        }
+
+
+        //Sort in data  (BUBBLE SORT)  order: small to big 
+        var swap = true;
+        while(swap == true){
+            swap = false;
+            for(i=1; i<mySessionAry.length; i++){
+                if(mySessionAry[i-1].myDate > mySessionAry[i].myDate){
+                    //SWAP
+                    var tmp = mySessionAry[i-1];
+                    mySessionAry[i-1] = mySessionAry[i];
+                    mySessionAry[i] = tmp;
+                    swap = true;
+                }
+            }
+        }
+        
+
+        //Append to MyProgramList
+        for(i=0; i<mySessionAry.length; i++){
+            var session = mySessionAry[i];
+            var type = session.myType;
+            var id = session.myId;
 
 
             if(type == 1){
@@ -80,8 +111,26 @@ function loadList(){
             else{
                console.log("[Error]in storageMyProgram.js loadList(): the var 'type' should not be out of 1~6");
                console.log("your type value is " + type);
+               break;
             }
+
         }
+
+        //Setting divider
+        $("#myProgramList").listview({
+                autodividers:true,
+                autodividersSelector: function ( li ) {
+                    return li.attr("date");
+                }
+        }).listview().listview("refresh");
+
+
+        //create the programPage in order to click in MyProgram
+        $('#programPage').trigger('pagecreate');          
+        $(id).trigger("pagecreate");
+            
+
+
     }
     
 }
@@ -105,8 +154,7 @@ the types of each day
 /*-------------------------------TYPE 1---------------------------------------*/
 function storageType1(time, id, panel, chair, venue){ 
     localStorage.setItem(id, time + "_splitPattern_" + panel + "_splitPattern_" + chair + "_splitPattern_" + venue);
-    add2List(id+"_splitPattern_1");
-    append2MyProgram1(id);    
+   add2List(id+"_splitPattern_1_splitPattern_"+time); 
 }
 
 function append2MyProgram1(id){
@@ -124,7 +172,7 @@ function append2MyProgram1(id){
     venue = data[3]; 
 
     if($('#myProgram_'+id).length <= 0){
-        $('#myProgramList').append('<li id="myProgram_'+id+'"><a href="#'+id+'">'
+        $('#myProgramList').append('<li id="myProgram_'+id+'" date="'+time+'"><a href="#'+id+'">'
                                    +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Panel: </h2></span>'
                                    +'&nbsp'
                                    +'<span style="display:inline-block"><h2 style="color:black">'+panel+'</h2></span>'
@@ -142,8 +190,7 @@ function append2MyProgram1(id){
 /*-------------------------------TYPE 2---------------------------------------*/
 function storageType2(time, id, title, speaker, chair, venue){
     localStorage.setItem(id, time + "_splitPattern_" + title + "_splitPattern_" + speaker + "_splitPattern_" + chair + "_splitPattern_" + venue);
-    add2List(id+"_splitPattern_2");
-    append2MyProgram2(id);    
+   add2List(id+"_splitPattern_2_splitPattern_"+time);  
 }
 
 function append2MyProgram2(id){
@@ -162,7 +209,7 @@ function append2MyProgram2(id){
     venue = data[4]; 
 
     if($('#myProgram_'+id).length <= 0){
-        $('#myProgramList').append('<li id="myProgram_'+id+'"><a href="#'+id+'">'
+        $('#myProgramList').append('<li id="myProgram_'+id+'" date="'+time+'"><a href="#'+id+'">'
                                  +'<h1 id="keynoteTitle">'+title+'</h1>'
                                  +'<br>'
                                  +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Speaker: </h2></span>'
@@ -182,8 +229,7 @@ function append2MyProgram2(id){
 /*-------------------------------TYPE 3---------------------------------------*/
 function storageType3(time, id, session, venue){
     localStorage.setItem(id, time + "_splitPattern_" + session + "_splitPattern_" + venue);
-    add2List(id+"_splitPattern_3");
-    append2MyProgram3(id);    
+   add2List(id+"_splitPattern_3_splitPattern_"+time);  
 }
 
 function append2MyProgram3(id){
@@ -200,7 +246,7 @@ function append2MyProgram3(id){
 
 
     if($('#myProgram_'+id).length <= 0){
-        $('#myProgramList').append('<li id="myProgram_'+id+'"><a href="#'+id+'">'
+        $('#myProgramList').append('<li id="myProgram_'+id+'" date="'+time+'"><a href="#'+id+'">'
                                    +'<span style="display:inline-block"><h1 style="color:#E03A3A"> Session: </h1></span>'
                                    +'&nbsp'
                                    +'<span style="display:inline-block"><h1 style="color:black">'+session+'</h1></span>'
@@ -215,8 +261,7 @@ function append2MyProgram3(id){
 /*-------------------------------TYPE 4---------------------------------------*/
 function storageType4(time, id, name, title, lecturer, venue){
     localStorage.setItem(id, time + "_splitPattern_" + name + "_splitPattern_" + title + "_splitPattern_" + lecturer + "_splitPattern_" + venue);
-    add2List(id+"_splitPattern_4");
-    append2MyProgram4(id);    
+   add2List(id+"_splitPattern_4_splitPattern_"+time);  
 }
 
 function append2MyProgram4(id){
@@ -235,7 +280,7 @@ function append2MyProgram4(id){
     venue = data[4]; 
 
     if($('#myProgram_'+id).length <= 0){
-      $('#myProgramList').append('<li id="myProgram_'+id+'"><a href="#'+id+'">'
+      $('#myProgramList').append('<li id="myProgram_'+id+'" date="'+time+'"><a href="#'+id+'">'
                                      +'<span style="display:inline-block"><h2 style="color:#E03A3A">'+name+'</h2></span>'
                                      +'&nbsp'
                                      +'<span style="display:inline-block"><h2 style="color:black">'+title+'</h2></span>'
@@ -253,8 +298,7 @@ function append2MyProgram4(id){
 /*-------------------------------TYPE 5---------------------------------------*/
 function storageType5(time, id, session, chair, venue){
     localStorage.setItem(id, time + "_splitPattern_" + session + "_splitPattern_" + chair + "_splitPattern_" + venue);
-    add2List(id+"_splitPattern_5");
-    append2MyProgram5(id);    
+   add2List(id+"_splitPattern_5_splitPattern_"+time);   
 }
 
 function append2MyProgram5(id){
@@ -272,7 +316,7 @@ function append2MyProgram5(id){
     venue = data[3]; 
 
     if($('#myProgram_'+id).length <= 0){
-      $('#myProgramList').append('<li id="myProgram_'+id+'"><a href="#'+id+'">'
+      $('#myProgramList').append('<li id="myProgram_'+id+'" date="'+time+'"><a href="#'+id+'">'
                                    +'<span style="display:inline-block"><h1 style="color:#E03A3A"> Session: </h1></span>'
                                    +'&nbsp'
                                    +'<span style="display:inline-block"><h1 style="color:black" id="scName">'+session+'</h1></span>'
@@ -291,8 +335,8 @@ function append2MyProgram5(id){
 /*-------------------------------TYPE 6---------------------------------------*/
 function storageType6(time, id, workshopName, venue){
     localStorage.setItem(id, time + "_splitPattern_" + workshopName + "_splitPattern_" + venue);
-    add2List(id+"_splitPattern_6");
-    append2MyProgram6(id);    
+
+    add2List(id+"_splitPattern_6_splitPattern_"+time);   
 }
 
 function append2MyProgram6(id){
@@ -309,7 +353,7 @@ function append2MyProgram6(id){
     venue = data[2]; 
 
     if($('#myProgram_'+id).length <= 0){
-      $('#myProgramList').append('<li id="myProgram_'+id+'"><a href="#'+id+'">'
+      $('#myProgramList').append('<li id="myProgram_'+id+'" date="'+time+'"><a href="#'+id+'">'
                          +'<span style="display:inline-block"><h1 style="color:#E03A3A"> WorkShop Name: </h1></span>'
                          +'&nbsp'
                          +'<span><h1 id="workshopName" style="color:black">'+workshopName+'</h1></span>'

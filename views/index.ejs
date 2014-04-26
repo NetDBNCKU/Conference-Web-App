@@ -78,7 +78,7 @@
 					<a href="#programPage"  data-transition="fade">
 						<div class="home_btn">
 						<img src="/images/schedule.png"></img>
-						<div>Technical Program</div>
+						<div>PAKDD 2014 Technical Program</div>
 						</div>
 					</a>
 				</div>
@@ -94,15 +94,15 @@
 					<a href="#paperListPage" data-transition="fade">
 						<div class="home_btn">
 						<img src="/images/paper.png"></img>
-						<div>Paper List</div>
+						<div>List of All Papers</div>
 						</div>
 					</a>
 				</div>
 				<div class="ui-block-b">
-					<a href="#myProgramPage" data-transition="fade">
+					<a href="#myProgramPage" data-transition="fade" id="btn_myProgram">
 						<div class="home_btn">
 						<img src="/images/mylist.png"></img>
-						<div>My Program List</div>
+						<div>My Schedule</div> 
 						</div>
 					</a>
 				</div>	
@@ -165,7 +165,6 @@
               </div>
 	             <div data-role="content" class="ui-content" role="main" >
                   <ul data-role="listview" id="list-browse-sessions" class="ui-listview">
-                    
 
                   </ul>
                </div>
@@ -199,7 +198,7 @@
                 <a href="#" data-transition="fade" data-icon="delete" class="ui-btn-left" id="deleteAll_myProgram">Delete All</a>
               </div>
                <div data-role="content" class="ui-content" role="main">
-                        <ul data-role="listview" id="myProgramList" class="ui-listview" >
+                        <ul data-role="listview" id="myProgramList" class="ui-listview" data-autodividers="true" data-inset="true">
 
                            
                         </ul>
