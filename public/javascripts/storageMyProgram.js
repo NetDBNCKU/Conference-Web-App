@@ -3,7 +3,6 @@ window.pageMap = {};
 
 $(document).ready(function(){
     $("#btn_myProgram").on("click", loadList);
-    alert("hello");
 });
 
 $(document).on("pagecreate", '#myProgramPage', function() {
