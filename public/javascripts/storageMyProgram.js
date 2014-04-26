@@ -1,9 +1,12 @@
 var gTime = 1;
 window.pageMap = {};
 
+$(document).ready(function(){
+    $("#btn_myProgram").on("click", loadList);
+});
+
 $(document).on("pagecreate", '#myProgramPage', function() {
    $('#deleteAll_myProgram').on("click", clearAllProgram);
-   $("#btn_myProgram").on("click", loadList);
 });
 
 //Example of localStorage
