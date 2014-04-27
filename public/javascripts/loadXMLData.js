@@ -624,14 +624,29 @@ function createWorkshopPage(data){
 
 		// here to change img if the program was added to myProgram
 		$(document).on("pagecreate", '#'+workshopID_forpage+'_workshopdetail', function(){
-			var idList = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
-			if(idList != null && idList.search(workshopID_forpage+'_workshopdetail'+"_splitPattern_") != "-1"){
-				$(this).find('#'+imgID).find('img').attr('src', "/images/removeProgram.png");
-			}
-			else{
-				$(this).find('#'+imgID).find('img').attr('src', "/images/addProgram.png");
-			}
+				console.log("workshop pagecreate");
+				var idList = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
+				if(idList != null && idList.search(workshopID_forpage+'_workshopdetail'+"_splitPattern_") != "-1"){
+					$(this).find('#'+imgID).find('img').attr('src', "/images/removeProgram.png");
+					console.log("remove");
+				}
+				else{
+					$(this).find('#'+imgID).find('img').attr('src', "/images/addProgram.png");
+					console.log("add");
+				}
 		});
+
+		// var idList = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
+		// if(idList != null){
+		// 	if(idList.search(workshopID_forpage+'_workshopdetail'+"_splitPattern_") != "-1"){
+		// 		$(this).find('#'+imgID).find('img').attr('src', "/images/removeProgram.png");
+		// 		console.log("remove");
+		// 	}
+		// 	else{
+		// 		$(this).find('#'+imgID).find('img').attr('src', "/images/addProgram.png");
+		// 		console.log("add");
+		// 	}
+		// }
 
 		/// here to add session to myProgramList
 		$('#addProgram_workshop_'+workshopID_forpage).off('click').on('click',function(){

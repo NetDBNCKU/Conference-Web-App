@@ -1,12 +1,12 @@
 var gTime = 1;
 window.pageMap = {};
 
-$(document).ready(function(){
-    $("#btn_myProgram").on("click", loadList);
-});
-
 $(document).on("pagecreate", '#myProgramPage', function() {
    $('#deleteAll_myProgram').on("click", clearAllProgram);
+
+   $("#myProgramPage").on("pagebeforeshow", function(){
+        loadList();
+   });
 });
 
 //Example of localStorage
@@ -33,13 +33,45 @@ $(document).on("pagecreate", '#myProgramPage', function() {
 
 
 function clearAllProgram(){ 
+    var listData = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
+
     localStorage.clear();
     $('#myProgramList').empty().listview('refresh');
+
+    //Change remove icon to add icon of each id of session in localStorage
+    if(listData != null){
+        listData = listData.split(",,,");
+        
+        for(i=0; i<listData.length; i++){
+            var datas = listData[i].split("_splitPattern_");
+            $('#'+datas[0]).trigger('pagecreate');  //id = datas[0]
+        }
+    }
 }
 
 function removeProgram(id){
     localStorage.removeItem(id);
     $("#myProgram_"+id).remove().listview().listview('refresh');
+    reBuild_MLR();
+    //loadList();
+}
+
+function reBuild_MLR(){
+    var listData = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
+
+    localStorage.removeItem("MYPROGRAM_LIST_RECORDED");
+    if(listData != null){
+        listData = listData.split(",,,");
+        
+        for(i=0; i<listData.length; i++){
+            var datas = listData[i].split("_splitPattern_");
+            var id = datas[0];
+
+            if( localStorage.getItem(id) != null ){
+                add2List(listData[i]);
+            }
+        }
+    }
 }
 
 function add2List(id){
@@ -50,7 +82,7 @@ function add2List(id){
     localStorage.setItem("MYPROGRAM_LIST_RECORDED", list);
 }
 
-function loadList(){
+function loadList(){ 
     var listData = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
     if(listData != null){
         listData = listData.split(",,,");
@@ -127,8 +159,8 @@ function loadList(){
 
         //create the programPage in order to click in MyProgram
         $('#programPage').trigger('pagecreate');          
-        $(id).trigger("pagecreate");
-            
+
+
 
 
     }
