@@ -1,9 +1,13 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+.ui_content{
+	height: 430px;
+}
 
 a {
   
+  text-decoration: none;
   outline: 0;
 }
 .headerButton {
@@ -62,10 +66,71 @@ img .myProgramIcon {
 .home_btn img {
 	height: 50%;
 }
+.map_btn{
+	height: 50%;
+}
+.map_btn:hover {
+	background: rgb(225, 225, 225); /* Fall-back */
+	background: rgba(225, 225, 225, .6);
+}
+.map_btn:active {
+	position:relative;
+	background: rgb(215, 215, 215); /* Fall-back */
+	background: rgba(215, 215, 215, .6);
+	top:1px;
+}
 .mainpage_grid .ui-block-a ,
 .mainpage_grid .ui-block-b 
 {
   height: 50%;
+/*
+  background-color: #6b6665;
+  border: 5px;
+  border-color: rgba(60, 60, 60, 0.43);
+  border-style:solid;
+*/
+}
+.map_btn {
+	margin: auto;
+	height: 95%;
+	width: 50%;
+	margin: 1%;
+	-moz-box-shadow:inset 0px 1px 0px 1px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 1px #ffffff;
+	box-shadow:inset 0px 1px 0px 1px #ffffff;
+	background: rgb(237, 237, 237); /* Fall-back */
+	background: rgba(237, 237, 237, .6);
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	text-align:center;
+	font-size:17px;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+	overflow:hidden;
+}
+.map_font{
+	color:darkblue;
+	padding-top: 3%;
+	font-size: 30px;
+}
+.option{
+	color:darkblue;
+	font-size: 25px;
+
+}
+.ui-block-c 
+{
+  margin-left: 10%;
+  margin-bottom: 4%;
+  padding-left: 10%;
+  width: 70%;
+  height: 60%;
 /*
   background-color: #6b6665;
   border: 5px;
@@ -78,12 +143,36 @@ img .myProgramIcon {
 a {
    outline: 0;
 }
+.map_title{
+	margin-top: 1%;
+	margin-bottom: 1%;
+	text-align: center;
+	color: #E03A3A;
+	font-size: 30px;
+}
 
+.map_simple_guide{
+	width:500px;
+	color: brown;
+	margin-left: 24%;
+	margin-right:24%;
+}
+.map_text_guide{
+	margin-left: 24%;
+	margin-right:24%;
+	text-align: left;
+	font-size: 25px;
+}
 .map_content {
    text-align: center;
    margin: 0px auto;
 }
 
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 /*----------------------------
 	Thumbnails
 -----------------------------*/
@@ -151,5 +240,17 @@ a {
 	}
 	.title h2{
 		font-size:15px;
+	}
+	.map_text_guide{
+		font-size:20px;
+	}
+	.map_font{
+		font-size: 20px;
+	}
+	.option{
+		font-size: 10px;
+	}
+	.map_title{
+		font-size: 20px;
 	}
 }

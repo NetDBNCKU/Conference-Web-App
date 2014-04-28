@@ -29,6 +29,12 @@
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
 
+        <link href="themes/8/js-image-slider.css" rel="stylesheet" type="text/css" />
+        <script src="themes/8/js-image-slider.js" type="text/javascript"></script>
+        <link href="themes/8/tooltip.css" rel="stylesheet" type="text/css" />
+        <script src="themes/8/tooltip.js" type="text/javascript"></script>
+    
+
         <script src="/touchTouch/touchTouch.jquery.js"></script>
         <script src="/javascripts/phototouch.js"></script>
         <script src="/javascripts/loadXMLpaper.js"></script>
@@ -83,7 +89,7 @@
 					</a>
 				</div>
 				<div class="ui-block-b">
-					<a href="#MapPage" data-transition="fade">
+					<a href="#InmapPage" data-transition="fade">
 						<div class="home_btn">
 						<img src="/images/map.png"></img>
 						<div>Traffic Information</div>
@@ -189,6 +195,219 @@
               </div>
         </div>
 
+<!-- new add-->
+        <script type="text/javascript">
+        //The following script is for the group 2 navigation buttons.
+        function switchAutoAdvance() {
+            imageSlider.switchAuto();
+            switchPlayPauseClass();
+        }
+        function switchPlayPauseClass() {
+            var auto = document.getElementById('auto');
+            var isAutoPlay = imageSlider.getAuto();
+         //   auto.className = isAutoPlay ? "group2-Pause" : "group2-Play";
+       //     auto.title = isAutoPlay ? "Pause" : "Play";
+        }
+        switchPlayPauseClass();
+        </script>
+        <!--Taoyaun to Tainan -->
+        <div id="MapPage_a" data-role="page" data-add-back-btn="true">
+              <div data-role="header" data-position="fixed" >
+                 <h1>PAKDD 2014 Map</h1>
+                  <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
+                <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+              </div>
+               <div data-role="content" class="ui-content" role="main">
+                        <div class="map_content">
+                         <div class="map_title"> Taoyuan To Tainan </br></br></div>
+                         <div class="ui-block-c">
+                          <div class="map_btn">
+                          <a href="#a_OptionA"  data-transition="fade" >
+                         <!--   <img src="/images/mylist.png"></img>  -->
+                            <div class="option" >Option A:By Taiwan High Speed Rail (THSR)</div>
+                            <img src="/images/THSR.png">
+                          </a> 
+                          </div> 
+                          </div> 
+                          <div class="ui-block-c">
+                          <div class="map_btn">
+                          <a href="#a_OptionB"  data-transition="fade" >
+                         <!--   <img src="/images/mylist.png"></img>  -->
+                            <div class="option">Option B:By Taiwan Railway Train</div>
+                            <img src="/images/Railway.png">
+                          </a> 
+                          </div> 
+                          </div>
+                        </div>
+              </div>
+        </div>
+        <div id="a_OptionA" data-role="page" data-add-back-btn="true">
+              <div data-role="header" data-position="fixed" >
+                 <h1>PAKDD 2014 Map</h1>
+                  <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
+                <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+              </div>
+               <div data-role="content" class="ui_content" role="main">
+                <div class="map_title">Taoyuan To Tainan By Taiwan High Speed Rail (THSR) </div>
+                <div id="sliderFrame">
+                  <div id="slider">
+                    <a href="http://www.taoyuan-airport.com/" target="_blank">
+                    <img src="images/Tao_air.jpg" alt="Taoyuan Airport" />
+                    </a>
+                  <img src="images/THSR_tation_taoyuan.jpeg" alt="THSR-Taoyuan Station" />
+                  <img src="images/THSR_tainan.jpg" alt="THSR-Tainan Statoin" />
+                  <img src="images/shalun.jpg" alt="Taiwan Railways-Shalun Station" />
+                  <img src="images/Tainan_Railways.jpg" alt="Taiwan Railways-Tainan Station" />
+                  </div>
+                </div>
+              </div>
+                <div class="map_text_guide">
+                  <div class="map_simple_guide">
+                  1.Taoyuan International Airport </br> </a>
+                  2.THSR Taoyuan Station </br>
+                  3.THSR Tainan Station </br>
+                  4.Tainan Railway Station </br>
+                  5. Shangri-La Hotel </br></br>
+                  </div>
+
+                  1.Taoyuan International Airport --> THSR Taoyuan Station </br></br>
+                  In the airport, locate United Highway Bus counter and purchase a bus ticket of U-BUS Line [705] to THSR Taoyuan Station. The fare is $30 NTD and take about 20 minute.</br></br>
+                  You can also take taxi to THSR Taoyuan Station. The fare is about $350 NTD.</br></br>
+                  2.THSR Taoyuan Station --> THSR Tainan Station </br></br>
+                  <img src="/images/map_THSR.png"></br></br>
+                  The journey will take about 83 minutes. Please check here for the schedule and fare.</br></br>
+                  3.THSR Tainan Station --> Tainan Railway Station</br></br>
+                  In the THSR Tainan Station, follow the direction to take Taiwan Railway Shuttle Train (ShaLun Line) to Tainan Railway Station. The fare is $25 NTD and it takes about 20 minutes.</br></br>
+                  <img src="/images/map_SL.png"></br></br>
+                  4.Tainan Railway Station --> Shangri-La Hotel</br></br>
+                  At Tainan Railway Station, exit the station via the Rear Exit and the Shangri-La Hotel is right across the street.</br></br>
+                </div>
+        </div>
+        <div id="a_OptionB" data-role="page" data-add-back-btn="true">
+              <div data-role="header" data-position="fixed" >
+                 <h1>PAKDD 2014 Map</h1>
+                  <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
+                <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+              </div>
+               <div data-role="content" class="ui-content" role="main">
+               
+                <div class="map_text_guide">
+                1.Taoyuan International Airport >>> Taipei Railway Station
+                In the airport, locate Kuo-kuang Motor Transport counter and purchase a bus ticket of Kuo-kuang Line [1840] to Taipei Railway Station. The fare is about $125 NTD and take about 55 minutes.</br></br>
+
+                Taipei Railway Station --> Tainan Railway Station</br></br>
+
+                The journey will take 4~6 hours, and the fare is $480~741 NTD, depending on the types of the train. Please check here for the information of the train schedule.</br></br>
+
+                Tainan Railway Station --> Shangri-La Hotel</br></br>
+
+                At Tainan Railway Station, exit the station via the Rear Exit and the Shangri-La Hotel is right across the street.  </br></br>
+                </div>      
+              </div>
+        </div>
+
+        <!--Kaosiung to Tainan -->
+         <div id="MapPage_b" data-role="page" data-add-back-btn="true">
+              <div data-role="header" data-position="fixed" >
+                 <h1>PAKDD 2014 Map</h1>
+                  <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
+                <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+              </div>
+               <div data-role="content" class="ui-content" role="main">
+                        <div class="map_content">
+
+                          <div class="ui-block-c">
+                          <div class="map_btn">
+                          <a href="#b_OptionA"  data-transition="fade" >
+                         <!--   <img src="/images/mylist.png"></img>  -->
+                            <div class="option">Option A:By Taiwan Railway Train</div>
+                            <img src="/images/Railway.png">
+                          </a> 
+                          </div> 
+                          </div>
+                          <div class="ui-block-c">
+                          <div class="map_btn">
+                          <a href="#b_OptionB"  data-transition="fade" >
+                         <!--   <img src="/images/mylist.png"></img>  -->
+                            <div class="option">Option B:By Taxi</div>
+                             <img src="/images/Taxi.png">
+                          </a> 
+                          </div> 
+                          </div>
+                        </div>
+              </div>
+        </div>
+        <div id="b_OptionA" data-role="page" data-add-back-btn="true">
+              <div data-role="header" data-position="fixed" >
+                 <h1>PAKDD 2014 Map</h1>
+                  <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
+                <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+              </div>
+               <div data-role="content" class="ui-content" role="main">
+                <div class="map_text_guide">
+                1.Kaohsiung International Airport >>> Kaohsiung Railway Station [MAP]</br></br>
+                Take Kaohsiung Rapid Transit (KRT) to Kaohsiung Railway Station. The fare is about $35 NTD.</br></br>
+                Kaohsiung Railway Station --> Tainan Railway Station</br></br>
+                Take the train to Tainan. The journey will take 30~50 minutes, and the fare is about $69-107 NTD, depending on the types of the train. Please check here for the information of the train schedule.</br></br>
+                Tainan Railway Station --> Shangri-La Hotel</br></br>
+                At Tainan Railway Station, exit the station via the Rear Exit and the Shangri-La Hotel is right across the street.</br></br>
+              </div>
+              </div>
+        </div>
+        <div id="b_OptionB" data-role="page" data-add-back-btn="true">
+              <div data-role="header" data-position="fixed" >
+                 <h1>PAKDD 2014 Map</h1>
+                  <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
+                <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+              </div>
+               <div data-role="content" class="ui-content" role="main">
+                <div class="map_text_guide">
+                 You can also take taxi from Kaohsiung International Airport to Shangri-La Hotel in Tainan city.</br></br> 
+                 It takes about 1 hour and 20 minutes and the fare is about $1700 NTD.   </br></br>
+                 </div>    
+              </div>
+        </div>
+<!--Main Page of the MapPage -->
+        <div id="InmapPage" data-role="page" data-add-back-btn="true">
+          <div data-role="header" data-position="fixed" >
+                <h1>PAKDD 2014 Map</h1>
+                <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+          </div>      
+          <div data-role="content" class="ui-content" role="main">
+                        <div class="map_content ">
+                          <div class="ui-block-c">
+                          <div class="map_btn">
+                          <a href="#MapPage_a"  data-transition="fade" >
+                         <!--   <img src="/images/mylist.png"></img>  -->
+                            <div class="map_font">Taoyuan to Tainan</div>
+                          </a> 
+                          </div> 
+                          </div>
+                          <div class="ui-block-c">
+                          <div class="map_btn">
+                          <a href="#MapPage_b"  data-transition="fade" >
+                         <!--   <img src="/images/mylist.png"></img>  -->
+                            <div class="map_font">Kaohsiung to Tainan</div>
+                          </a> 
+                          </div> 
+                          </div>
+                          <div class="ui-block-c">
+                          <div class="map_btn">
+                            <a href="#MapPage">
+                         <!--    <img src="/images/mylist.png"></img> -->
+                            <div class="map_font">Conference venue</div>
+                          </a>
+                          </div>
+                        </div>
+                        </div>
+        </div>
+
+<!--Conference venue -->       
+        <div id="Map_In_Venue">
+        
+        </div>
+<!-- new add-->
+        
 
         <div id="myProgramPage" data-role="page" data-add-back-btn="true">
               <div data-role="header" >
@@ -205,8 +424,6 @@
                         </ul>
                </div>
         </div>
-
-        
         <!--<script type="text/javascript" src="phonegap.js"></script>-->
     </body>
 </html>

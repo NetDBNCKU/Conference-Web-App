@@ -1,6 +1,6 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
+  "name": "pakdd_test",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node app.js"
@@ -8,5 +8,21 @@
   "dependencies": {
     "express": "3.4.7",
     "ejs": "*"
-  }
+  },
+  "description": "Conference-Web-App ==================",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peihsuan/pakdd-test.git"
+  },
+  "keywords": [
+    "pakdd_test"
+  ],
+  "author": "pei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peihsuan/pakdd-test/issues"
+  },
+  "homepage": "https://github.com/peihsuan/pakdd-test"
 }
