@@ -29,6 +29,7 @@ function parseDay(data){
 	var xmlData = $(data);
 	$('#list-browse-sessions').append('<li><a id="May_13_2014" href="#May_13_program"><h1>May 13, 2014</h1></a></li>');
 	$('#May_13_2014').on('click', function(){ time_gTmp = 'May 13, 2014'; });  //Save to global var. myProgram need it while constructed
+	// $('#May_13_program').on('pagebeforeshow', function(){ time_gTmp = 'May 13, 2014'; });
 
 	xmlData.find('day').each(function(){
 		var day = $(this);
@@ -42,6 +43,7 @@ function parseDay(data){
 													'</a></li>');
 		
 		$('#'+dateID).on('click', function(){ time_gTmp = date; });  //Record the date u r in and save to global var. myProgram needs it while constructed
+		// $('#'+dateID+'_program').on('pagebeforeshow', function(){ time_gTmp = date; }); 
 	});
 }
 
@@ -657,6 +659,8 @@ function createWorkshopPage(data){
 				var storageVenue = $("#"+storageId + " #venue").html();
 
 				if($(this).find('img').attr('src') == '/images/addProgram.png'){
+					console.log("workshop add. date="+ storageTime);
+
 					storageType6(storageTime, storageId, storageName, storageVenue);  
 					$(this).find('img').attr('src','/images/removeProgram.png');
 				}

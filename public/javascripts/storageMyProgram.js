@@ -1,11 +1,17 @@
-var gTime = 1;
 window.pageMap = {};
 
 $(document).on("pagecreate", '#myProgramPage', function() {
    $('#deleteAll_myProgram').on("click", clearAllProgram);
 
    $("#myProgramPage").on("pagebeforeshow", function(){
+        $('#myProgramList').empty().listview().listview("refresh");
         loadList();
+   });
+
+   $('#myProgramList').on("click", "li", function(){
+        var date = $(this).attr("date");
+        console.log("date="+date);
+        time_gTmp = date;
    });
 });
 
