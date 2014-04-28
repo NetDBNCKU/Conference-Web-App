@@ -152,7 +152,7 @@ a {
 }
 
 .map_simple_guide{
-	width:500px;
+	font-size: 25px;
 	color: brown;
 	margin-left: 24%;
 	margin-right:24%;
@@ -166,6 +166,9 @@ a {
 .map_content {
    text-align: center;
    margin: 0px auto;
+}
+.instructions{
+	color: darkblue;
 }
 
 img{
@@ -231,6 +234,10 @@ img{
 	footer{
 		display:none;
 	}
+	.map_simple_guide{
+		margin-left: 0%;
+		font-size:20px;
+	}
 	
 	#bsaHolder{
 		display:none;
@@ -252,5 +259,9 @@ img{
 	}
 	.map_title{
 		font-size: 20px;
+	}
+	img{
+		height: 450px;
+		width: 450px;
 	}
 }

@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/touchTouch/touchTouch.css" />
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+        <script src="/javascripts/jquery-scrollto.js"></script>
 
         <link href="themes/8/js-image-slider.css" rel="stylesheet" type="text/css" />
         <script src="themes/8/js-image-slider.js" type="text/javascript"></script>
@@ -41,6 +42,7 @@
         <script src="/javascripts/loadXMLauthor.js"></script>
         <script src="/javascripts/loadXMLData.js"></script>
         <script src="/javascripts/storageMyProgram.js"></script>
+        <script src="/javascripts/map.js"></script>
 
         <title>PAKDD</title>
     </head>
@@ -263,23 +265,23 @@
               </div>
                 <div class="map_text_guide">
                   <div class="map_simple_guide">
-                  1.Taoyuan International Airport </br> </a>
+                  <div id="aa">1.Taoyuan International Airport </br> </div>
                   2.THSR Taoyuan Station </br>
                   3.THSR Tainan Station </br>
                   4.Tainan Railway Station </br>
                   5. Shangri-La Hotel </br></br>
                   </div>
 
-                  1.Taoyuan International Airport --> THSR Taoyuan Station </br></br>
+                  <div class="instructions">1.Taoyuan International Airport --> THSR Taoyuan Station </br></br></div>
                   In the airport, locate United Highway Bus counter and purchase a bus ticket of U-BUS Line [705] to THSR Taoyuan Station. The fare is $30 NTD and take about 20 minute.</br></br>
                   You can also take taxi to THSR Taoyuan Station. The fare is about $350 NTD.</br></br>
-                  2.THSR Taoyuan Station --> THSR Tainan Station </br></br>
+                  <div class="instructions">2.THSR Taoyuan Station --> THSR Tainan Station </br></br> </div>
                   <img src="/images/map_THSR.png"></br></br>
                   The journey will take about 83 minutes. Please check here for the schedule and fare.</br></br>
-                  3.THSR Tainan Station --> Tainan Railway Station</br></br>
+                  <div id="xx" class="instructions">3.THSR Tainan Station --> Tainan Railway Station</br></br> </div>
                   In the THSR Tainan Station, follow the direction to take Taiwan Railway Shuttle Train (ShaLun Line) to Tainan Railway Station. The fare is $25 NTD and it takes about 20 minutes.</br></br>
                   <img src="/images/map_SL.png"></br></br>
-                  4.Tainan Railway Station --> Shangri-La Hotel</br></br>
+                  <div class="instructions">4.Tainan Railway Station --> Shangri-La Hotel</br></br> </div>
                   At Tainan Railway Station, exit the station via the Rear Exit and the Shangri-La Hotel is right across the street.</br></br>
                 </div>
         </div>
@@ -290,16 +292,22 @@
                 <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
               </div>
                <div data-role="content" class="ui-content" role="main">
-               
+              <div class="map_title">Taoyuan To Tainan By Taiwan Railway Train </div>
+               <div class="map_simple_guide">
+                  1.Taoyuan International Airport </br> </a>
+                  2.Taipei Railway Station </br>
+                  4.Tainan Railway Station </br>
+                  5. Shangri-La Hotel </br></br>
+                  </div>
                 <div class="map_text_guide">
-                1.Taoyuan International Airport >>> Taipei Railway Station
+                <div class="instructions">1.Taoyuan International Airport >>> Taipei Railway Station </div>
                 In the airport, locate Kuo-kuang Motor Transport counter and purchase a bus ticket of Kuo-kuang Line [1840] to Taipei Railway Station. The fare is about $125 NTD and take about 55 minutes.</br></br>
 
-                Taipei Railway Station --> Tainan Railway Station</br></br>
+                <div class="instructions">2.Taipei Railway Station --> Tainan Railway Station</br></br> </div>
 
                 The journey will take 4~6 hours, and the fare is $480~741 NTD, depending on the types of the train. Please check here for the information of the train schedule.</br></br>
 
-                Tainan Railway Station --> Shangri-La Hotel</br></br>
+                <div class="instructions">3.Tainan Railway Station --> Shangri-La Hotel</br></br> </div>
 
                 At Tainan Railway Station, exit the station via the Rear Exit and the Shangri-La Hotel is right across the street.  </br></br>
                 </div>      
@@ -315,7 +323,6 @@
               </div>
                <div data-role="content" class="ui-content" role="main">
                         <div class="map_content">
-
                           <div class="ui-block-c">
                           <div class="map_btn">
                           <a href="#b_OptionA"  data-transition="fade" >
@@ -344,12 +351,19 @@
                 <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
               </div>
                <div data-role="content" class="ui-content" role="main">
+                <div class="map_title">Kaosiung To Tainan By Taiwan Railway Train </div>
                 <div class="map_text_guide">
-                1.Kaohsiung International Airport >>> Kaohsiung Railway Station [MAP]</br></br>
+                <div class="map_simple_guide">
+                  1.Kaosiung International Airport </br> </a>
+                  2.Kaosiung Railway Station </br>
+                  4.Tainan Railway Station </br>
+                  5. Shangri-La Hotel </br></br>
+                </div>
+                <div class="instructions">1.Kaohsiung International Airport >>> Kaohsiung Railway Station [MAP]</br></br> </div>
                 Take Kaohsiung Rapid Transit (KRT) to Kaohsiung Railway Station. The fare is about $35 NTD.</br></br>
-                Kaohsiung Railway Station --> Tainan Railway Station</br></br>
+                <div class="instructions">2.Kaohsiung Railway Station --> Tainan Railway Station</br></br></div>
                 Take the train to Tainan. The journey will take 30~50 minutes, and the fare is about $69-107 NTD, depending on the types of the train. Please check here for the information of the train schedule.</br></br>
-                Tainan Railway Station --> Shangri-La Hotel</br></br>
+                <div class="instructions">3.Tainan Railway Station --> Shangri-La Hotel</br></br></div>
                 At Tainan Railway Station, exit the station via the Rear Exit and the Shangri-La Hotel is right across the street.</br></br>
               </div>
               </div>
@@ -361,6 +375,7 @@
                 <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
               </div>
                <div data-role="content" class="ui-content" role="main">
+                <div class="map_title">Kaosiung To Tainan By Taxi </div>
                 <div class="map_text_guide">
                  You can also take taxi from Kaohsiung International Airport to Shangri-La Hotel in Tainan city.</br></br> 
                  It takes about 1 hour and 20 minutes and the fare is about $1700 NTD.   </br></br>
