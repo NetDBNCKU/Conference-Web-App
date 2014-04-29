@@ -84,6 +84,11 @@ a {
    margin: 0px auto;
 }
 
+.index_btn {
+	font-size: 20px;
+	margin:15px;
+}
+
 /*----------------------------
 	Thumbnails
 -----------------------------*/
@@ -228,6 +233,10 @@ a.control_next {
 	}
 }
 @media screen and (max-width: 480px) {
+.index_btn {
+	font-size: 12px;
+	margin:5px;
+}
 .info-btn {
 	margin-left: 10%;
 	margin-right: 10%;
