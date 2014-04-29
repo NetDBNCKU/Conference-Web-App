@@ -37,7 +37,7 @@
         <script src="/javascripts/loadXMLauthor.js"></script>
         <script src="/javascripts/loadXMLData.js"></script>
         <script src="/javascripts/storageMyProgram.js"></script>
-
+        <script src="/javascripts/infoSlider.js"></script>
         <title>PAKDD</title>
     </head>
 <body class="ui-mobile-viewport ui-overlay-c" screen_capture_injected="true">
@@ -53,20 +53,34 @@
        
         
         <div data-role="popup" id="popupInfo" data-overlay-theme="a">
-            <div data-role="collapsibleset" data-theme="a" data-content-theme="a" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" style="margin:0; width:300px;">
-                <div data-role="collapsible" data-inset="false">
-                <h2>Travel Info</h2>
-                    <ul data-role="listview">
-                        <li><a href="http://www.vztaiwan.com/" >Visist Smart Tourism Taiwan</a></li>
-                        <li><a href="https://itunes.apple.com/us/app/smart-tourism-pro/id649680814?ls=1&mt=8">Download APP for iOS</a></li>
-                        <li><a href="https://play.google.com/store/apps/details?id=tw.org.iii.ari.smarttourism">Download APP for Android</a></li>
-                    </ul>
-                </div><!-- /collapsible -->
-                <div data-role="collapsible" data-inset="false">
-                <h2>Developer Info</h2>
-                    
-                </div><!-- /collapsible -->
-            </div><!-- /collapsible set -->
+            <div id="InfoPage">
+            <div id="slider">
+              <a href="#" class="control_next">></a>
+              <a href="#" class="control_prev"><</a>
+              <ul>
+                <li> 
+                  <div id="travelInfo">
+                  <h2>Travel Info</h2>
+                      <a class="ui-btn info-btn ui-shadow ui-corner-all" href="http://www.vztaiwan.com/" >Visist Smart Tourism Taiwan</a>
+                      <br>
+                      <a class="ui-btn info-btn ui-shadow ui-corner-all" href="https://itunes.apple.com/us/app/smart-tourism-pro/id649680814?ls=1&mt=8">Download APP for iOS</a>
+                      <br>
+                      <a class="ui-btn info-btn ui-shadow ui-corner-all" href="https://play.google.com/store/apps/details?id=tw.org.iii.ari.smarttourism">Download APP for Android</a>
+                  </div>
+                </li>
+                <li>
+                  <div id="helpInfo">
+                    <h2>Help Info</h2>
+                  </div>
+                </li>
+                 <li>
+                  <div id="helpInfo2">
+                    <h2>How-to</h2>
+                  </div>
+                </li>
+              </ul>  
+            </div>
+            </div>
         </div><!-- /popup -->
 
 <!--
