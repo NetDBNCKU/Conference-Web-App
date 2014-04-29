@@ -29,6 +29,7 @@ function parseDay(data){
 	var xmlData = $(data);
 	$('#list-browse-sessions').append('<li><a id="May_13_2014" href="#May_13_program"><h1>May 13, 2014</h1></a></li>');
 	$('#May_13_2014').on('click', function(){ time_gTmp = 'May 13, 2014'; });  //Save to global var. myProgram need it while constructed
+	// $('#May_13_program').on('pagebeforeshow', function(){ time_gTmp = 'May 13, 2014'; });
 
 	xmlData.find('day').each(function(){
 		var day = $(this);
@@ -42,6 +43,7 @@ function parseDay(data){
 													'</a></li>');
 		
 		$('#'+dateID).on('click', function(){ time_gTmp = date; });  //Record the date u r in and save to global var. myProgram needs it while constructed
+		// $('#'+dateID+'_program').on('pagebeforeshow', function(){ time_gTmp = date; }); 
 	});
 }
 
@@ -124,7 +126,9 @@ function parseSession(data,date){
 	                                 +'&nbsp'
 	                                 +'<span style="display:inline-block"><h2 style="color:black" id="pcVenue">'+venue+'</h2></span>'
 	                                 +'<hr>'
-                                 	 +'<a href="#" id="'+imgID+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
+                                 	 +'<a href="#" id="'+imgID+'" data-rel="popup" ><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
+	                                 +'<div data-role="popup" id="myPopupDialog_ADD_'+panelID+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is added!</h2></div></div>'
+                        			 +'<div data-role="popup" id="myPopupDialog_REMOVE_'+panelID+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is removed!</h2></div></div>'
 	                                 +'</div>'
 	                                 +'</div>');
 
@@ -134,9 +138,11 @@ function parseSession(data,date){
 									var idList = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
 									if(idList != null && idList.search(panelID+"_info"+"_splitPattern_") != "-1"){
 										$(this).find('#'+imgID).find('img').attr('src', "/images/removeProgram.png");
+										$('#'+imgID).attr('href', '#myPopupDialog_REMOVE_'+panelID);
 									}
 									else{
 										$(this).find('#'+imgID).find('img').attr('src', "/images/addProgram.png");
+										$('#'+imgID).attr('href', '#myPopupDialog_ADD_'+panelID);
 									}
 								});
 
@@ -154,10 +160,12 @@ function parseSession(data,date){
 										if($(this).find('img').attr('src') == '/images/addProgram.png'){
 											storageType1(storageTime, storageId, storagePanel, storageChair, storageVenue); 
 											$(this).find('img').attr('src','/images/removeProgram.png');
+											$('#'+imgID).attr('href', '#myPopupDialog_ADD_'+panelID);
 										}
 										else{
 											removeProgram(storageId);
 											$(this).find('img').attr('src','/images/addProgram.png');
+											$('#'+imgID).attr('href', '#myPopupDialog_REMOVE_'+panelID);
 										}
 
 
@@ -208,7 +216,9 @@ function parseSession(data,date){
                                  +'<span style="display:inline-block"><h2 style="color:black" id="keynoteVenue">'+venue+'</h2></span>'
                                  +'</div>'
                                  +'<hr>'
-                                 +'<a href="#" id="'+imgID+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
+                                 +'<a href="#" id="'+imgID+'" data-rel="popup" ><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
+                                 +'<div data-role="popup" id="myPopupDialog_ADD_'+keynoteID+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is added!</h2></div></div>'
+                        		 +'<div data-role="popup" id="myPopupDialog_REMOVE_'+keynoteID+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is removed!</h2></div></div>'
                                  +'</div>'
                                  +'</div>');
 
@@ -217,9 +227,11 @@ function parseSession(data,date){
 							var idList = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
 							if(idList != null && idList.search(keynoteID+'_info'+"_splitPattern_") != "-1"){
 								$(this).find('#'+imgID).find('img').attr('src', "/images/removeProgram.png");
+								$('#'+imgID).attr('href', '#myPopupDialog_REMOVE_'+keynoteID);
 							}
 							else{
 								$(this).find('#'+imgID).find('img').attr('src', "/images/addProgram.png");
+								$('#'+imgID).attr('href', '#myPopupDialog_ADD_'+keynoteID);
 							}
 						});
 						
@@ -238,10 +250,12 @@ function parseSession(data,date){
 								if($(this).find('img').attr('src') == '/images/addProgram.png'){  
 									storageType2(storageTime, storageId, storageTitle, storageSpeaker, storageChair, storageVenue); 
 									$(this).find('img').attr('src','/images/removeProgram.png');
+									$('#'+imgID).attr('href', '#myPopupDialog_ADD_'+keynoteID);
 								}
 								else{
 									removeProgram(storageId);
 									$(this).find('img').attr('src','/images/addProgram.png');
+									$('#'+imgID).attr('href', '#myPopupDialog_REMOVE_'+keynoteID);
 								}
 						});
 
@@ -285,8 +299,10 @@ function parseSession(data,date){
 	                                 +'&nbsp'
 	                                 +'<span style="display:inline-block"><h2 style="color:black" id="svVenue">'+venue+'</h2></span>'
 	                                 +'<hr>'
-                                	 +'<a href="#" id="'+imgID+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
+                                	 +'<a href="#" id="'+imgID+'" data-rel="popup" ><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
 	                                 +'</div>'
+	                                 +'<div data-role="popup" id="myPopupDialog_ADD_'+contestID+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is added!</h2></div></div>'
+                        			 +'<div data-role="popup" id="myPopupDialog_REMOVE_'+contestID+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is removed!</h2></div></div>'
 	                                 +'</div>'
 	                                 +'</div>');
 
@@ -295,9 +311,11 @@ function parseSession(data,date){
 									var idList = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
 									if(idList != null && idList.search(contestID+'_info'+"_splitPattern_") != "-1"){
 										$(this).find('#'+imgID).find('img').attr('src', "/images/removeProgram.png");
+										$('#'+imgID).attr('href', '#myPopupDialog_REMOVE_'+contestID);
 									}
 									else{
 										$(this).find('#'+imgID).find('img').attr('src', "/images/addProgram.png");
+										$('#'+imgID).attr('href', '#myPopupDialog_ADD_'+contestID);
 									}
 								});
 				
@@ -312,10 +330,12 @@ function parseSession(data,date){
 										if($(this).find('img').attr('src') == '/images/addProgram.png'){
 											storageType3(storageTime, storageId, storageName, storageVenue); 
 											$(this).find('img').attr('src','/images/removeProgram.png');
+											$('#'+imgID).attr('href', '#myPopupDialog_ADD_'+contestID);
 										}
 										else{
 											removeProgram(storageId);
 											$(this).find('img').attr('src','/images/addProgram.png');
+											$('#'+imgID).attr('href', '#myPopupDialog_REMOVE_'+contestID);
 										}
 								});
 							}
@@ -354,7 +374,9 @@ function parseSession(data,date){
 		                                 +'&nbsp'
 		                                 +'<span style="display:inline-block"><h2 style="color:black" id="lecVenue">'+venue+'</h2></span>'
 		                                 +'<hr>'
-                            		     +'<a href="#" id="'+imgID+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
+                            		     +'<a href="#" id="'+imgID+'" data-rel="popup" ><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
+		                                 +'<div data-role="popup" id="myPopupDialog_ADD_'+tutorialID+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is added!</h2></div></div>'
+                        			 	 +'<div data-role="popup" id="myPopupDialog_REMOVE_'+tutorialID+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is removed!</h2></div></div>'
 		                                 +'</div>'
 		                                 +'</div>');
 
@@ -363,9 +385,11 @@ function parseSession(data,date){
 									var idList = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
 									if(idList != null && idList.search(tutorialID+'_info'+"_splitPattern_") != "-1"){
 										$(this).find('#'+imgID).find('img').attr('src', "/images/removeProgram.png");
+										$('#'+imgID).attr('href', '#myPopupDialog_REMOVE_'+tutorialID);
 									}
 									else{
 										$(this).find('#'+imgID).find('img').attr('src', "/images/addProgram.png");
+										$('#'+imgID).attr('href', '#myPopupDialog_ADD_'+tutorialID);
 									}
 								});
 
@@ -383,10 +407,12 @@ function parseSession(data,date){
 										if($(this).find('img').attr('src') == '/images/addProgram.png'){
 											storageType4(storageTime, storageId, storageName, storageTitle, storageLecturer, storageVenue); 
 											$(this).find('img').attr('src','/images/removeProgram.png');
+											$('#'+imgID).attr('href', '#myPopupDialog_ADD_'+tutorialID);
 										}
 										else{
 											removeProgram(storageId);
 											$(this).find('img').attr('src','/images/addProgram.png');
+											$('#'+imgID).attr('href', '#myPopupDialog_REMOVE_'+tutorialID);
 										}
 								});
 							}
@@ -430,9 +456,11 @@ function parseSession(data,date){
 	                                 +'&nbsp'
 	                                 +'<span style="display:inline-block"><h2 style="color:black" id="scVenue">'+venue+'</h2></span>'
 	                                 +'<hr>'
-                           		     +'<a href="#" id="'+imgID+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
+                           		     +'<a href="#" id="'+imgID+'" data-rel="popup" ><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
 	                                 +'</div>'
 	                                 +'<ul data-role="listview" data-inset="true" class="ui-listview" id="'+dateID+'_session_'+ID+'" ></ul>'
+	                                 +'<div data-role="popup" id="myPopupDialog_ADD_'+ID+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is added!</h2></div></div>'
+                        			 +'<div data-role="popup" id="myPopupDialog_REMOVE_'+ID+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is removed!</h2></div></div>'
 	                                 +'</div>'
 	                                 +'</div>');
 
@@ -444,9 +472,11 @@ function parseSession(data,date){
 									if(idList != null && idList.search(ID+"_list"+"_splitPattern_") != "-1"){
 	//									console.log("add of type5");
 										$(this).find('#'+imgID).find('img').attr('src', "/images/removeProgram.png");
+										$('#'+imgID).attr('href', '#myPopupDialog_REMOVE_'+ID);
 									}
 									else{
 										$(this).find('#'+imgID).find('img').attr('src', "/images/addProgram.png");
+										$('#'+imgID).attr('href', '#myPopupDialog_ADD_'+ID);
 									}
 								});
 
@@ -463,10 +493,12 @@ function parseSession(data,date){
 										if($(this).find('img').attr('src') == '/images/addProgram.png'){
 											storageType5(storageTime, storageId, storageName, storageChair, storageVenue); 
 											$(this).find('img').attr('src','/images/removeProgram.png');
+											$('#'+imgID).attr('href', '#myPopupDialog_ADD_'+ID);
 										}
 										else{
 											removeProgram(storageId);
 											$(this).find('img').attr('src','/images/addProgram.png');
+											$('#'+imgID).attr('href', '#myPopupDialog_REMOVE_'+ID);
 										}
 								});
 							}
@@ -613,21 +645,41 @@ function createWorkshopPage(data){
                          +'&nbsp'
                          +'<span style="display:inline-block"><h1 id="venue" style="color:black">'+venue+'</h1></span>'
                          +'<hr>'
-                         +'<a href="#" id="'+imgID+'" workshopName="'+workshopName+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
+                         +'<a id="'+imgID+'" href="#myPopupDialog_ADD_'+workshopID_forpage+'" data-rel="popup"  workshopName="'+workshopName+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
                          +'<ul data-role="listview" data-inset="true" id="list-browse-workshop-'+workshopID_forpage+'" class="ui-listview"></ul>'
+                         +'<div data-role="popup" id="myPopupDialog_ADD_'+workshopID_forpage+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is added!</h2></div></div>'
+                         +'<div data-role="popup" id="myPopupDialog_REMOVE_'+workshopID_forpage+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is removed!</h2></div></div>'
                          +'</div>'
                          +'</div>');
 
 		// here to change img if the program was added to myProgram
 		$(document).on("pagecreate", '#'+workshopID_forpage+'_workshopdetail', function(){
-			var idList = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
-			if(idList != null && idList.search(workshopID_forpage+'_workshopdetail'+"_splitPattern_") != "-1"){
-				$(this).find('#'+imgID).find('img').attr('src', "/images/removeProgram.png");
-			}
-			else{
-				$(this).find('#'+imgID).find('img').attr('src', "/images/addProgram.png");
-			}
+				console.log("workshop pagecreate");
+				var idList = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
+				if(idList != null && idList.search(workshopID_forpage+'_workshopdetail'+"_splitPattern_") != "-1"){
+					$(this).find('#'+imgID).find('img').attr('src', "/images/removeProgram.png");
+					$('#'+imgID).attr('href', '#myPopupDialog_REMOVE_'+workshopID_forpage);
+					
+					console.log("remove");
+				}
+				else{
+					$(this).find('#'+imgID).find('img').attr('src', "/images/addProgram.png");
+					$('#'+imgID).attr('href', '#myPopupDialog_ADD_'+workshopID_forpage);
+					console.log("add");
+				}
 		});
+
+		// var idList = localStorage.getItem("MYPROGRAM_LIST_RECORDED");
+		// if(idList != null){
+		// 	if(idList.search(workshopID_forpage+'_workshopdetail'+"_splitPattern_") != "-1"){
+		// 		$(this).find('#'+imgID).find('img').attr('src', "/images/removeProgram.png");
+		// 		console.log("remove");
+		// 	}
+		// 	else{
+		// 		$(this).find('#'+imgID).find('img').attr('src', "/images/addProgram.png");
+		// 		console.log("add");
+		// 	}
+		// }
 
 		/// here to add session to myProgramList
 		$('#addProgram_workshop_'+workshopID_forpage).off('click').on('click',function(){
@@ -640,10 +692,12 @@ function createWorkshopPage(data){
 				if($(this).find('img').attr('src') == '/images/addProgram.png'){
 					storageType6(storageTime, storageId, storageName, storageVenue);  
 					$(this).find('img').attr('src','/images/removeProgram.png');
+					$('#'+imgID).attr('href', '#myPopupDialog_ADD_'+workshopID_forpage);
 				}
 				else{
 					removeProgram(storageId);
 					$(this).find('img').attr('src','/images/addProgram.png');
+					$('#'+imgID).attr('href', '#myPopupDialog_REMOVE_'+workshopID_forpage);
 				} 
 		});
 	

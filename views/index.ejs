@@ -26,8 +26,10 @@
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
         <link rel="stylesheet" href="/stylesheets/style.css" />
         <link rel="stylesheet" href="/touchTouch/touchTouch.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
         <script src="/touchTouch/touchTouch.jquery.js"></script>
         <script src="/javascripts/phototouch.js"></script>
@@ -51,26 +53,37 @@
        
         
         <div data-role="popup" id="popupInfo" data-theme="a">
-    <div data-role="collapsibleset" data-theme="a" data-content-theme="a" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" style="margin:0; width:300px;">
-        <div data-role="collapsible" data-inset="false">
-        <h2>Travel Info</h2>
-            <ul data-role="listview">
-                <li><a href="http://www.vztaiwan.com/" >Visist Smart Tourism Taiwan</a></li>
-                <li><a href="https://itunes.apple.com/us/app/smart-tourism-pro/id649680814?ls=1&mt=8">Download APP for iOS</a></li>
-                <li><a href="https://play.google.com/store/apps/details?id=tw.org.iii.ari.smarttourism">Download APP for Android</a></li>
-            </ul>
-        </div><!-- /collapsible -->
-        <div data-role="collapsible" data-inset="false">
-        <h2>Developer Info</h2>
-            <ul data-role="listview">
-                 <li><a href="#" >Arvin Huang</a></li>
-                <li><a href="#" >Boheng Chen</a></li>
-                <li><a href="#" >Charlie Hsu</a></li>
-                <li><a href="#" >Peihsuan Hsieh</a></li>
-            </ul>
-        </div><!-- /collapsible -->
-    </div><!-- /collapsible set -->
-</div><!-- /popup -->
+            <div data-role="collapsibleset" data-theme="a" data-content-theme="a" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" style="margin:0; width:300px;">
+                <div data-role="collapsible" data-inset="false">
+                <h2>Travel Info</h2>
+                    <ul data-role="listview">
+                        <li><a href="http://www.vztaiwan.com/" >Visist Smart Tourism Taiwan</a></li>
+                        <li><a href="https://itunes.apple.com/us/app/smart-tourism-pro/id649680814?ls=1&mt=8">Download APP for iOS</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=tw.org.iii.ari.smarttourism">Download APP for Android</a></li>
+                    </ul>
+                </div><!-- /collapsible -->
+                <div data-role="collapsible" data-inset="false">
+                <h2>Developer Info</h2>
+                    <ul data-role="listview">
+                         <li><a href="#" >Arvin Huang</a></li>
+                        <li><a href="#" >Boheng Chen</a></li>
+                        <li><a href="#" >Charlie Hsu</a></li>
+                        <li><a href="#" >Peihsuan Hsieh</a></li>
+                    </ul>
+                </div><!-- /collapsible -->
+            </div><!-- /collapsible set -->
+        </div><!-- /popup -->
+
+<!--
+        <a href="#popupBasic" data-rel="popup" class="ui-btn-right">Open Popup</a>
+        <a href="#popupBasic" data-rel="popup" workshopName="'+workshopName+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>
+
+        <div data-role="popup" id="popupBasic">
+          <p>This is a completely basic popup, no options set.<p>
+        </div>
+-->
+
+
 		</div><!-- /header -->
 		<div data-role="content" class="ui-content" role="main" >
 			<div class="ui-grid-a mainpage_grid">
@@ -204,7 +217,6 @@
                         </ul>
                </div>
         </div>
-
         
         <!--<script type="text/javascript" src="phonegap.js"></script>-->
     </body>
