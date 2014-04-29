@@ -144,7 +144,7 @@
 					<paperID>32</paperID>
 					<title>Fast Triangle Core Decomposition for Mining Large Graphs</title>
 					<type>Regular</type>
-					<author>Ryan </author>
+					<author>Ryan Rossi</author>
 				</paper>
 				<paper>
 					<paperID>231</paperID>
@@ -375,7 +375,7 @@
 					<paperID>36</paperID>
 					<title>An Iterative Fusion Approach to Graph-based Semi-supervised Learning from Multiple Views</title>
 					<type>Short</type>
-					<author>Yang Wang, Jian Pei, Xuemin Lin, Qing Zhang</author>
+					<author>Yang Wang, Jian Pei, Xuemin Lin, Qing Zhang, Wenjie Zhang</author>
 				</paper>
 			</session>
 			<session>
@@ -506,7 +506,7 @@
 					<paperID>240</paperID>
 					<title>Forward Classification on Data Streams</title>
 					<type>Regular</type>
-					<author>Peng Wang, Peng Zhang, Yanan Cao, Li Guo</author>
+					<author>Peng Wang, Peng Zhang, Yanan Cao, Li Guo, Bingxing Fang</author>
 				</paper>
 				<paper>
 					<paperID>202</paperID>
@@ -554,7 +554,7 @@
 					<paperID>315</paperID>
 					<title>Fault-tolerant Concept Detection in Information Networks</title>
 					<type>Short</type>
-					<author>Tobias Koetter, Stephan Gunnemann, Christos Faloutsos, Michael Berthold</author>
+					<author>Tobias Koetter, Stephan Günnemann, Christos Faloutsos, Michael Berthold</author>
 				</paper>
 				<paper>
 					<paperID>294</paperID>
@@ -724,13 +724,13 @@
 					<paperID>190</paperID>
 					<title>Inferring Metapopulation Based Disease Transmission Networks</title>
 					<type>Regular</type>
-					<author>Xiaofei YANG, Jiming Liu, Kwok Wai Cheung, Xiaonong Zhou</author>
+					<author>Xiaofei Yang, Jiming Liu, Kwok Wai Cheung, Xiaonong Zhou</author>
 				</paper>
 				<paper>
 					<paperID>285</paperID>
 					<title>A Novel Framework to Improve siRNA Efficacy Prediction</title>
 					<type>Short</type>
-					<author>Bui </author>
+					<author>Bui Thang</author>
 				</paper>
 			</session>
 			<session>
@@ -742,13 +742,13 @@
 					<paperID>80</paperID>
 					<title>A Selectively Re-train Approach Based on Clustering To Classify Concept-drifting Data Streams with Skewed Distribution</title>
 					<type>Regular</type>
-					<author>Dandan Zhang, Shen Hong, tian Hui, Yidong Li, Jun Wu, Yingpeng Sang</author>
+					<author>Dandan Zhang, Shen Hong, Tian Hui, Yidong Li, Jun Wu, Yingpeng Sang</author>
 				</paper>
 				<paper>
 					<paperID>10</paperID>
 					<title>Recurring and Novel Class Detection in Concept-Drifting Data Streams using Class-Based Ensemble</title>
 					<type>Short</type>
-					<author>Mohammad </author>
+					<author>Mohammad Islam</author>
 				</paper>
 				<paper>
 					<paperID>166</paperID>
@@ -857,7 +857,7 @@
 					<paperID>213</paperID>
 					<title>Semi-supervised clustering on heterogeneous information networks</title>
 					<type>Short</type>
-					<author>Chen Luo, Wei pang, Zhe Wang</author>
+					<author>Chen Luo, Wei Pang, Zhe Wang</author>
 				</paper>
 				<paper>
 					<paperID>241</paperID>

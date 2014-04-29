@@ -7,10 +7,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Fang  Zhang ()</name>
+		<name>Tsung-Ting Kuo (National Taiwan University)</name>
 		<paper>
-			<paperID>50</paperID>
-			<paperTitle>Detecting and Analyzing Influenza Epidemics with Social Media in China</paperTitle>
+			<paperID>241</paperID>
+			<paperTitle>A Content-based Matrix Factorization Model for Recipe Recommendation</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -85,10 +85,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Tsung-Ting Kuo (National Taiwan University)</name>
+		<name>Ross Gayler ()</name>
 		<paper>
-			<paperID>241</paperID>
-			<paperTitle>A Content-based Matrix Factorization Model for Recipe Recommendation</paperTitle>
+			<paperID>237</paperID>
+			<paperTitle>Noise-Tolerant Approximate Blocking for Dynamic Real-time Entity Resolution</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -106,10 +106,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Bingxing Fang ()</name>
+		<name>Richard Wartell (Mandiant)</name>
 		<paper>
-			<paperID>240</paperID>
-			<paperTitle>Forward Classification on Data Streams</paperTitle>
+			<paperID>202</paperID>
+			<paperTitle>Shingled Graph Disassembly: Finding the Undecideable Path</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -128,6 +128,13 @@
 		<paper>
 			<paperID>290</paperID>
 			<paperTitle>Activity Recognition Using a Few Label Samples</paperTitle>
+		</paper>
+	</author>
+	<author>
+		<name>Aijun An (Department of Computer Science and Engineering,York University, Canada)</name>
+		<paper>
+			<paperID>354</paperID>
+			<paperTitle>Topic Modeling using Collapsed Typed Dependency Relations</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -163,13 +170,6 @@
 		<paper>
 			<paperID>121</paperID>
 			<paperTitle>Structure-aware Distance Measures for Comparing Clusterings in Graphs</paperTitle>
-		</paper>
-	</author>
-	<author>
-		<name>Daling Wang (northeastern university(China))</name>
-		<paper>
-			<paperID>122</paperID>
-			<paperTitle>CTROF: A Collaborative Tweet Ranking Framework for Online Personalized Recommendation</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -237,6 +237,13 @@
 		</paper>
 	</author>
 	<author>
+		<name>Chih-Ping Wei (National Taiwan University, Taiwan)</name>
+		<paper>
+			<paperID>164</paperID>
+			<paperTitle>Mining Biomedical Literature and Ontologies for Drug Repositioning Discovery</paperTitle>
+		</paper>
+	</author>
+	<author>
 		<name>Hechang Chen (College of Computer Science and Technology, Jilin University, Changchun, China)</name>
 		<paper>
 			<paperID>344</paperID>
@@ -251,10 +258,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Tomas Olovsson (Chalmers University of Technology)</name>
+		<name>Liang Chen (Zhejiang University)</name>
 		<paper>
-			<paperID>298</paperID>
-			<paperTitle>Overlapping Communities for Identifying Misbehavior in Network Communications</paperTitle>
+			<paperID>271</paperID>
+			<paperTitle>Data Augmented Maximum Margin Matrix Factorization for Flickr Group Recommendation</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -296,6 +303,13 @@
 		</paper>
 	</author>
 	<author>
+		<name>Zhe Wang (College of Computer Science and Technology, Jilin University)</name>
+		<paper>
+			<paperID>213</paperID>
+			<paperTitle>Semi-supervised clustering on heterogeneous information networks</paperTitle>
+		</paper>
+	</author>
+	<author>
 		<name>Li Liu (BIT)</name>
 		<paper>
 			<paperID>360</paperID>
@@ -318,6 +332,13 @@
 		<paper>
 			<paperID>74</paperID>
 			<paperTitle>Net-Ray: Visualizing and Mining Web-Scale Graphs</paperTitle>
+		</paper>
+	</author>
+	<author>
+		<name>Kwok Wai Cheung ()</name>
+		<paper>
+			<paperID>190</paperID>
+			<paperTitle>Inferring Metapopulation Based Disease Transmission Networks</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -364,10 +385,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Wenjie Zhang (University of New South Wales, Australia)</name>
+		<name>Arnaud Giacometti (University of Tours)</name>
 		<paper>
-			<paperID>36</paperID>
-			<paperTitle>An Iterative Fusion Approach to Graph-based Semi-supervised Learning from Multiple Views</paperTitle>
+			<paperID>92</paperID>
+			<paperTitle>Balancing the Analysis of Frequent Patterns</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -392,13 +413,6 @@
 		</paper>
 	</author>
 	<author>
-		<name>IMRAN KHAN (SIAT(UCAS))</name>
-		<paper>
-			<paperID>46</paperID>
-			<paperTitle>Extensions to Quantile Regression Forests for Very High Dimensional Data</paperTitle>
-		</paper>
-	</author>
-	<author>
 		<name>Marcel Salathe (Pennsylvania State University)</name>
 		<paper>
 			<paperID>314</paperID>
@@ -413,17 +427,17 @@
 		</paper>
 	</author>
 	<author>
-		<name>Xiaofei YANG (Hong Kong Baptist University)</name>
-		<paper>
-			<paperID>190</paperID>
-			<paperTitle>Inferring Metapopulation Based Disease Transmission Networks</paperTitle>
-		</paper>
-	</author>
-	<author>
 		<name>Kai Ming Ting (Monash University)</name>
 		<paper>
 			<paperID>254</paperID>
 			<paperTitle>Improving iForest with relative mass</paperTitle>
+		</paper>
+	</author>
+	<author>
+		<name>Yoshimitsu Tomita (Tokyo Metro Co., Ltd.)</name>
+		<paper>
+			<paperID>334</paperID>
+			<paperTitle>A Framework for Large-Scale Train Trip Record Analysis and Its Application to Passengers' Flow Prediction after Train Accidents</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -441,10 +455,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Liang Chen (Zhejiang University)</name>
+		<name>Li Guo ()</name>
 		<paper>
-			<paperID>271</paperID>
-			<paperTitle>Data Augmented Maximum Margin Matrix Factorization for Flickr Group Recommendation</paperTitle>
+			<paperID>240</paperID>
+			<paperTitle>Forward Classification on Data Streams</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -497,10 +511,24 @@
 		</paper>
 	</author>
 	<author>
+		<name>Tomas Olovsson (Chalmers University of Technology)</name>
+		<paper>
+			<paperID>298</paperID>
+			<paperTitle>Overlapping Communities for Identifying Misbehavior in Network Communications</paperTitle>
+		</paper>
+	</author>
+	<author>
 		<name>Wenhao Shu (Beijing Jiaotong University)</name>
 		<paper>
 			<paperID>140</paperID>
 			<paperTitle>A New Evaluation Function for Entropy-based Feature Selection from Incomplete Data</paperTitle>
+		</paper>
+	</author>
+	<author>
+		<name>Wenjie Zhang ()</name>
+		<paper>
+			<paperID>36</paperID>
+			<paperTitle>An Iterative Fusion Approach to Graph-based Semi-supervised Learning from Multiple Views</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -532,13 +560,6 @@
 		</paper>
 	</author>
 	<author>
-		<name>Xiaoli Li (Institute for Infocomm Research)</name>
-		<paper>
-			<paperID>290</paperID>
-			<paperTitle>Activity Recognition Using a Few Label Samples</paperTitle>
-		</paper>
-	</author>
-	<author>
 		<name>Jay-Yoon Lee (Carnegie Mellon University)</name>
 		<paper>
 			<paperID>77</paperID>
@@ -567,17 +588,6 @@
 		</paper>
 	</author>
 	<author>
-		<name>tian Hui ()</name>
-		<paper>
-			<paperID>80</paperID>
-			<paperTitle>A Selectively Re-train Approach Based on Clustering To Classify Concept-drifting Data Streams with Skewed Distribution</paperTitle>
-		</paper>
-		<paper>
-			<paperID>123</paperID>
-			<paperTitle>Two-Phase Layered Learning Recommendation via Category Structure</paperTitle>
-		</paper>
-	</author>
-	<author>
 		<name>Ting Guo (QCIS Centre, UTS)</name>
 		<paper>
 			<paperID>231</paperID>
@@ -589,6 +599,13 @@
 		<paper>
 			<paperID>147</paperID>
 			<paperTitle>Visualization of PICO Elements for Information Needs Clarification and Query Refinement</paperTitle>
+		</paper>
+	</author>
+	<author>
+		<name>Lichuan Ji (Zhejiang University)</name>
+		<paper>
+			<paperID>271</paperID>
+			<paperTitle>Data Augmented Maximum Margin Matrix Factorization for Flickr Group Recommendation</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -631,10 +648,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Yee Wei Law (The University of Melbourne)</name>
+		<name>Yanzhe Wang ()</name>
 		<paper>
-			<paperID>259</paperID>
-			<paperTitle>Privacy-Preserving Collaborative Anomaly Detection for Participatory Sensing</paperTitle>
+			<paperID>237</paperID>
+			<paperTitle>Noise-Tolerant Approximate Blocking for Dynamic Real-time Entity Resolution</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -649,6 +666,13 @@
 		<paper>
 			<paperID>82</paperID>
 			<paperTitle>Gaussian Processes Autoencoder for Dimensionality Reduction</paperTitle>
+		</paper>
+	</author>
+	<author>
+		<name>Zhichun Fu (ANU)</name>
+		<paper>
+			<paperID>343</paperID>
+			<paperTitle>A Graph Matching Method for Historical Census Household Linkage</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -708,10 +732,17 @@
 		</paper>
 	</author>
 	<author>
-		<name>Minoru Yoshida (University of Tokushima)</name>
+		<name>Bingxing Fang ()</name>
 		<paper>
-			<paperID>387</paperID>
-			<paperTitle>Unsupervised Analysis of Web Page Semantic Structures by Hierarchical Bayesian Modeling</paperTitle>
+			<paperID>240</paperID>
+			<paperTitle>Forward Classification on Data Streams</paperTitle>
+		</paper>
+	</author>
+	<author>
+		<name>Wen Qu ()</name>
+		<paper>
+			<paperID>122</paperID>
+			<paperTitle>CTROF: A Collaborative Tweet Ranking Framework for Online Personalized Recommendation</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -726,10 +757,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Peng Wang (ICT, CAS)</name>
+		<name>Sen Wang (The University of Queensland)</name>
 		<paper>
-			<paperID>240</paperID>
-			<paperTitle>Forward Classification on Data Streams</paperTitle>
+			<paperID>178</paperID>
+			<paperTitle>Semi-supervised Feature Analysis for Multimedia Annotation by Mining Label Correlation</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -772,10 +803,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Manuel Campos (University of Murcia)</name>
+		<name>Hung-Yu Kao (National Cheng Kung University, Taiwan)</name>
 		<paper>
-			<paperID>215</paperID>
-			<paperTitle>Fast Vertical Mining of Sequential Patterns  Using Co-occurrence Information</paperTitle>
+			<paperID>378</paperID>
+			<paperTitle>Latent Features Based Prediction on New Users’ Tastes</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -786,10 +817,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Antonio Gomariz (University of Murcia)</name>
+		<name>Xiaoli Li (Institute for Infocomm Research)</name>
 		<paper>
-			<paperID>215</paperID>
-			<paperTitle>Fast Vertical Mining of Sequential Patterns  Using Co-occurrence Information</paperTitle>
+			<paperID>290</paperID>
+			<paperTitle>Activity Recognition Using a Few Label Samples</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -853,10 +884,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Aijun An (Department of Computer Science and Engineering,York University, Canada)</name>
+		<name>Meng-Fen Chiang ()</name>
 		<paper>
-			<paperID>354</paperID>
-			<paperTitle>Topic Modeling using Collapsed Typed Dependency Relations</paperTitle>
+			<paperID>196</paperID>
+			<paperTitle>Dynamic Circle Recommendation: A Probabilistic Model</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -888,17 +919,17 @@
 		</paper>
 	</author>
 	<author>
-		<name>Yoshimitsu Tomita (Tokyo Metro Co., Ltd.)</name>
+		<name>Xiaofei Yang (Hong Kong Baptist University)</name>
 		<paper>
-			<paperID>334</paperID>
-			<paperTitle>A Framework for Large-Scale Train Trip Record Analysis and Its Application to Passengers' Flow Prediction after Train Accidents</paperTitle>
+			<paperID>190</paperID>
+			<paperTitle>Inferring Metapopulation Based Disease Transmission Networks</paperTitle>
 		</paper>
 	</author>
 	<author>
-		<name>Li Guo ()</name>
+		<name>Wei Pang (School of Natural and Computing Sciences, University of Aberdeen)</name>
 		<paper>
-			<paperID>240</paperID>
-			<paperTitle>Forward Classification on Data Streams</paperTitle>
+			<paperID>213</paperID>
+			<paperTitle>Semi-supervised clustering on heterogeneous information networks</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -916,10 +947,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Huamin Qu (Hong Kong University of Science of Technology)</name>
+		<name>Yang Liu (Singapore Management University)</name>
 		<paper>
-			<paperID>98</paperID>
-			<paperTitle>Visual Analysis of Uncertainty in Trajectories</paperTitle>
+			<paperID>265</paperID>
+			<paperTitle>An Integrated Model for User Attribute Discovery: A Case Study on Political Affiliation Identification</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -955,6 +986,13 @@
 		<paper>
 			<paperID>255</paperID>
 			<paperTitle>Signed-Error Conformal Regression</paperTitle>
+		</paper>
+	</author>
+	<author>
+		<name>Akiko Campbell (Pacific Blue Cross)</name>
+		<paper>
+			<paperID>200</paperID>
+			<paperTitle>Mining Contrast Subspaces</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -1004,10 +1042,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Xiaonong ZHOU ()</name>
+		<name>Bo Yang (Jilin University, China)</name>
 		<paper>
-			<paperID>190</paperID>
-			<paperTitle>Inferring Metapopulation Based Disease Transmission Networks</paperTitle>
+			<paperID>344</paperID>
+			<paperTitle>Efficiently and Fast Learning a Fine-grained Stochastic Blockmodel from Large Networks</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -1018,10 +1056,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Kazuyuki Matsumoto ()</name>
+		<name>Yee Wei Law (The University of Melbourne)</name>
 		<paper>
-			<paperID>387</paperID>
-			<paperTitle>Unsupervised Analysis of Web Page Semantic Structures by Hierarchical Bayesian Modeling</paperTitle>
+			<paperID>259</paperID>
+			<paperTitle>Privacy-Preserving Collaborative Anomaly Detection for Participatory Sensing</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -1039,24 +1077,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Xiongcai  Cai (UNSW)</name>
-		<paper>
-			<paperID>357</paperID>
-			<paperTitle>Self-Training Temporal Dynamic Collaborative Filtering</paperTitle>
-		</paper>
-	</author>
-	<author>
 		<name>Geoffrey Webb (Faculty of Information Technology, Monash University)</name>
 		<paper>
 			<paperID>62</paperID>
 			<paperTitle>Highly Scalable Attribute Selection for Averaged One-Dependence Estimators</paperTitle>
-		</paper>
-	</author>
-	<author>
-		<name>Zhichun FU (ANU)</name>
-		<paper>
-			<paperID>343</paperID>
-			<paperTitle>A Graph Matching Method for Historical Census Household Linkage</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -1179,13 +1203,6 @@
 		</paper>
 	</author>
 	<author>
-		<name>Bo Yang (Jilin University, China)</name>
-		<paper>
-			<paperID>344</paperID>
-			<paperTitle>Efficiently and Fast Learning a Fine-grained Stochastic Blockmodel from Large Networks</paperTitle>
-		</paper>
-	</author>
-	<author>
 		<name>Xiaoqiu Huang (Tsinghua University)</name>
 		<paper>
 			<paperID>364</paperID>
@@ -1207,10 +1224,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Shenglei Chen (Nanjing Audit University)</name>
+		<name>Miao Lin (Nanyang Technological University)</name>
 		<paper>
-			<paperID>62</paperID>
-			<paperTitle>Highly Scalable Attribute Selection for Averaged One-Dependence Estimators</paperTitle>
+			<paperID>11</paperID>
+			<paperTitle>Brownian Bridge Model for High Resolution Location Predictions</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -1291,13 +1308,6 @@
 		</paper>
 	</author>
 	<author>
-		<name>Xingpeng Jiang ()</name>
-		<paper>
-			<paperID>401</paperID>
-			<paperTitle>Document Clustering with an Augmented Nonnegative Matrix Factorization Model</paperTitle>
-		</paper>
-	</author>
-	<author>
 		<name>Chien-Chih Chen (National Chiao Tung University)</name>
 		<paper>
 			<paperID>295</paperID>
@@ -1323,10 +1333,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Ross Gayler ()</name>
+		<name>Chaogui Zhang (Sun Yat-sen University)</name>
 		<paper>
-			<paperID>237</paperID>
-			<paperTitle>Noise-Tolerant Approximate Blocking for Dynamic Real-time Entity Resolution</paperTitle>
+			<paperID>12</paperID>
+			<paperTitle>Domain Transfer via Multiple Sources Regularization</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -1337,10 +1347,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Miao Lin (Nanyang Technological Universi)</name>
+		<name>Daling Wang (northeastern university(China))</name>
 		<paper>
-			<paperID>11</paperID>
-			<paperTitle>Brownian Bridge Model for High Resolution Location Predictions</paperTitle>
+			<paperID>122</paperID>
+			<paperTitle>CTROF: A Collaborative Tweet Ranking Framework for Online Personalized Recommendation</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -1414,6 +1424,20 @@
 		</paper>
 	</author>
 	<author>
+		<name>Li Zhang (Beihang University)</name>
+		<paper>
+			<paperID>280</paperID>
+			<paperTitle>For User-driven Software Evolution: Requirements Elicitation Derived from Mining Online Reviews</paperTitle>
+		</paper>
+	</author>
+	<author>
+		<name>Peng Wang (ICT, CAS)</name>
+		<paper>
+			<paperID>240</paperID>
+			<paperTitle>Forward Classification on Data Streams</paperTitle>
+		</paper>
+	</author>
+	<author>
 		<name>Nan Cao (IBM T.J. Watson)</name>
 		<paper>
 			<paperID>98</paperID>
@@ -1453,10 +1477,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Richard Wartell (Mandiant)</name>
+		<name>Yanan Cao ()</name>
 		<paper>
-			<paperID>202</paperID>
-			<paperTitle>Shingled Graph Disassembly: Finding the Undecideable Path</paperTitle>
+			<paperID>240</paperID>
+			<paperTitle>Forward Classification on Data Streams</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -1527,10 +1551,14 @@
 		</paper>
 	</author>
 	<author>
-		<name>Ryan Rossi (Purdue University)</name>
+		<name>Tian Hui ()</name>
 		<paper>
-			<paperID>32</paperID>
-			<paperTitle>Fast Triangle Core Decomposition for Mining Large Graphs</paperTitle>
+			<paperID>80</paperID>
+			<paperTitle>A Selectively Re-train Approach Based on Clustering To Classify Concept-drifting Data Streams with Skewed Distribution</paperTitle>
+		</paper>
+		<paper>
+			<paperID>123</paperID>
+			<paperTitle>Two-Phase Layered Learning Recommendation via Category Structure</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -1541,31 +1569,17 @@
 		</paper>
 	</author>
 	<author>
-		<name>Devin Guan (Drawbridge inc)</name>
-		<paper>
-			<paperID>395</paperID>
-			<paperTitle>Programmatic buying bidding strategies with win rate and winning price estimation in real time mobile advertising </paperTitle>
-		</paper>
-	</author>
-	<author>
 		<name>Philippe Fournier-Viger (University of Moncton, Canada)</name>
 		<paper>
 			<paperID>215</paperID>
-			<paperTitle>Fast Vertical Mining of Sequential Patterns  Using Co-occurrence Information</paperTitle>
+			<paperTitle>Fast Vertical Mining of Sequential Patterns Using Co-occurrence Information</paperTitle>
 		</paper>
 	</author>
 	<author>
-		<name>Dandan Zhang (Beijing Jiaotong University)</name>
+		<name>Ryan Rossi (Purdue University)</name>
 		<paper>
-			<paperID>80</paperID>
-			<paperTitle>A Selectively Re-train Approach Based on Clustering To Classify Concept-drifting Data Streams with Skewed Distribution</paperTitle>
-		</paper>
-	</author>
-	<author>
-		<name>wei pang (School of Natural and Computing Sciences, University of Aberdeen)</name>
-		<paper>
-			<paperID>213</paperID>
-			<paperTitle>Semi-supervised clustering on heterogeneous information networks</paperTitle>
+			<paperID>32</paperID>
+			<paperTitle>Fast Triangle Core Decomposition for Mining Large Graphs</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -1597,10 +1611,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Yanan Cao ()</name>
+		<name>Devin Guan (Drawbridge inc)</name>
 		<paper>
-			<paperID>240</paperID>
-			<paperTitle>Forward Classification on Data Streams</paperTitle>
+			<paperID>395</paperID>
+			<paperTitle>Programmatic buying bidding strategies with win rate and winning price estimation in real time mobile advertising </paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -1632,10 +1646,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Li Zhang (Beihang University)</name>
+		<name>Fang Zhang ()</name>
 		<paper>
-			<paperID>280</paperID>
-			<paperTitle>For User-driven Software Evolution: Requirements Elicitation Derived from Mining Online Reviews</paperTitle>
+			<paperID>50</paperID>
+			<paperTitle>Detecting and Analyzing Influenza Epidemics with Social Media in China</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -1681,10 +1695,17 @@
 		</paper>
 	</author>
 	<author>
+		<name>Dominique Li (University of Tours)</name>
+		<paper>
+			<paperID>92</paperID>
+			<paperTitle>Balancing the Analysis of Frequent Patterns</paperTitle>
+		</paper>
+	</author>
+	<author>
 		<name>Rincy Thomas (SCT)</name>
 		<paper>
 			<paperID>215</paperID>
-			<paperTitle>Fast Vertical Mining of Sequential Patterns  Using Co-occurrence Information</paperTitle>
+			<paperTitle>Fast Vertical Mining of Sequential Patterns Using Co-occurrence Information</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -1787,10 +1808,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Sen Wang (The University of Queensland)</name>
+		<name>Haitao Yu (The University of Tokushima)</name>
 		<paper>
-			<paperID>178</paperID>
-			<paperTitle>Semi-supervised Feature Analysis for Multimedia Annotation by Mining Label Correlation</paperTitle>
+			<paperID>174</paperID>
+			<paperTitle>Subtopic Mining via Modifier Graph Clustering</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -1841,6 +1862,13 @@
 		<paper>
 			<paperID>36</paperID>
 			<paperTitle>An Iterative Fusion Approach to Graph-based Semi-supervised Learning from Multiple Views</paperTitle>
+		</paper>
+	</author>
+	<author>
+		<name>Kazuyuki Matsumoto ()</name>
+		<paper>
+			<paperID>387</paperID>
+			<paperTitle>Unsupervised Analysis of Web Page Semantic Structures by Hierarchical Bayesian Modeling</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -1969,6 +1997,13 @@
 		</paper>
 	</author>
 	<author>
+		<name>Minoru Yoshida (University of Tokushima)</name>
+		<paper>
+			<paperID>387</paperID>
+			<paperTitle>Unsupervised Analysis of Web Page Semantic Structures by Hierarchical Bayesian Modeling</paperTitle>
+		</paper>
+	</author>
+	<author>
 		<name>Yidong Li (Beijing Jiaotong Univeristy, China)</name>
 		<paper>
 			<paperID>80</paperID>
@@ -2043,10 +2078,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Lichuan Ji (Zhejiang University)</name>
+		<name>Tien-Cheu Kao ()</name>
 		<paper>
-			<paperID>271</paperID>
-			<paperTitle>Data Augmented Maximum Margin Matrix Factorization for Flickr Group Recommendation</paperTitle>
+			<paperID>249</paperID>
+			<paperTitle>MalSpot: Multi^2 Malicious Network Behavior Patterns Analysis</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -2057,10 +2092,14 @@
 		</paper>
 	</author>
 	<author>
-		<name>Hai-Tao Yu (The University of Tokushima)</name>
+		<name>Evangelos Papalexakis (Carnegie Mellon University)</name>
 		<paper>
-			<paperID>174</paperID>
-			<paperTitle>Subtopic Mining via Modifier Graph Clustering</paperTitle>
+			<paperID>208</paperID>
+			<paperTitle>Com2: Fast Automatic Discovery of Temporal (’Comet’) Communities</paperTitle>
+		</paper>
+		<paper>
+			<paperID>249</paperID>
+			<paperTitle>MalSpot: Multi^2 Malicious Network Behavior Patterns Analysis</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -2106,17 +2145,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Liu Yang (Singapore Management University)</name>
+		<name>Manuel Campos (University of Murcia)</name>
 		<paper>
-			<paperID>265</paperID>
-			<paperTitle>An Integrated Model for User Attribute Discovery: A Case Study on Political Affiliation Identification</paperTitle>
-		</paper>
-	</author>
-	<author>
-		<name>wen Qu ()</name>
-		<paper>
-			<paperID>122</paperID>
-			<paperTitle>CTROF: A Collaborative Tweet Ranking Framework for Online Personalized Recommendation</paperTitle>
+			<paperID>215</paperID>
+			<paperTitle>Fast Vertical Mining of Sequential Patterns Using Co-occurrence Information</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -2135,6 +2167,13 @@
 		<paper>
 			<paperID>85</paperID>
 			<paperTitle>NLPMM: a Next Location Predictor with Markov Modeling</paperTitle>
+		</paper>
+	</author>
+	<author>
+		<name>Xiongcai Cai (UNSW)</name>
+		<paper>
+			<paperID>357</paperID>
+			<paperTitle>Self-Training Temporal Dynamic Collaborative Filtering</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -2180,17 +2219,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Chih-Ping Wei (National Taiwan University, Taiwan)</name>
+		<name>Ping Chen (University of Massachusetts Boston)</name>
 		<paper>
-			<paperID>164</paperID>
-			<paperTitle>Mining Biomedical Literature and Ontologies for Drug Repositioning Discovery</paperTitle>
-		</paper>
-	</author>
-	<author>
-		<name>zhe wang (College of Computer Science and Technology, Jilin University)</name>
-		<paper>
-			<paperID>213</paperID>
-			<paperTitle>Semi-supervised clustering on heterogeneous information networks</paperTitle>
+			<paperID>130</paperID>
+			<paperTitle>Crime Forecasting Using Spatio-Temporal Pattern with Ensemble Learning</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -2201,10 +2233,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>meng-Fen Chiang ()</name>
+		<name>Antonio Gomariz (University of Murcia)</name>
 		<paper>
-			<paperID>196</paperID>
-			<paperTitle>Dynamic Circle Recommendation: A Probabilistic Model</paperTitle>
+			<paperID>215</paperID>
+			<paperTitle>Fast Vertical Mining of Sequential Patterns Using Co-occurrence Information</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -2254,10 +2286,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Arnaud Giacometti (University of Tours)</name>
+		<name>Huamin Qu (Hong Kong University of Science of Technology)</name>
 		<paper>
-			<paperID>92</paperID>
-			<paperTitle>Balancing the Analysis of Frequent Patterns</paperTitle>
+			<paperID>98</paperID>
+			<paperTitle>Visual Analysis of Uncertainty in Trajectories</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -2272,13 +2304,6 @@
 		<paper>
 			<paperID>315</paperID>
 			<paperTitle>Fault-tolerant Concept Detection in Information Networks</paperTitle>
-		</paper>
-	</author>
-	<author>
-		<name>Hung-Yu Kao (National Cheng Kung University, Taiwan)</name>
-		<paper>
-			<paperID>378</paperID>
-			<paperTitle>Latent Features Based Prediction on New Users’ Tastes</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -2365,13 +2390,6 @@
 		</paper>
 	</author>
 	<author>
-		<name>Kwok Wai CHEUNG ()</name>
-		<paper>
-			<paperID>190</paperID>
-			<paperTitle>Inferring Metapopulation Based Disease Transmission Networks</paperTitle>
-		</paper>
-	</author>
-	<author>
 		<name>Meng Chen (ShanDong University)</name>
 		<paper>
 			<paperID>85</paperID>
@@ -2407,14 +2425,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Evangelos Papalexakis (Carnegie Mellon University)</name>
+		<name>Xingpeng Jiang ()</name>
 		<paper>
-			<paperID>208</paperID>
-			<paperTitle>Com2: Fast Automatic Discovery of Temporal (’Comet’) Communities</paperTitle>
-		</paper>
-		<paper>
-			<paperID>249</paperID>
-			<paperTitle>MalSpot: Multi^2 Malicious Network Behavior Patterns Analysis</paperTitle>
+			<paperID>401</paperID>
+			<paperTitle>Document Clustering with an Augmented Nonnegative Matrix Factorization Model</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -2446,17 +2460,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Akiko Campbell (Pacific Blue Cross)</name>
+		<name>Imran Khan (SIAT(UCAS))</name>
 		<paper>
-			<paperID>200</paperID>
-			<paperTitle>Mining Contrast Subspaces</paperTitle>
-		</paper>
-	</author>
-	<author>
-		<name>chaogui Zhang (Sun Yat-sen University)</name>
-		<paper>
-			<paperID>12</paperID>
-			<paperTitle>Domain Transfer via Multiple Sources Regularization</paperTitle>
+			<paperID>46</paperID>
+			<paperTitle>Extensions to Quantile Regression Forests for Very High Dimensional Data</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -2467,24 +2474,24 @@
 		</paper>
 	</author>
 	<author>
-		<name>Ping Chen (University of Massachusetts Boston)</name>
+		<name>Shenglei Chen (Nanjing Audit University)</name>
 		<paper>
-			<paperID>130</paperID>
-			<paperTitle>Crime Forecasting Using Spatio-Temporal Pattern with Ensemble Learning</paperTitle>
+			<paperID>62</paperID>
+			<paperTitle>Highly Scalable Attribute Selection for Averaged One-Dependence Estimators</paperTitle>
 		</paper>
 	</author>
 	<author>
-		<name>yanzhe Wang ()</name>
+		<name>Xiaonong Zhou ()</name>
 		<paper>
-			<paperID>237</paperID>
-			<paperTitle>Noise-Tolerant Approximate Blocking for Dynamic Real-time Entity Resolution</paperTitle>
+			<paperID>190</paperID>
+			<paperTitle>Inferring Metapopulation Based Disease Transmission Networks</paperTitle>
 		</paper>
 	</author>
 	<author>
-		<name>dominique Li (University of Tours)</name>
+		<name>Dandan Zhang (Beijing Jiaotong University)</name>
 		<paper>
-			<paperID>92</paperID>
-			<paperTitle>Balancing the Analysis of Frequent Patterns</paperTitle>
+			<paperID>80</paperID>
+			<paperTitle>A Selectively Re-train Approach Based on Clustering To Classify Concept-drifting Data Streams with Skewed Distribution</paperTitle>
 		</paper>
 	</author>
 	<author>
