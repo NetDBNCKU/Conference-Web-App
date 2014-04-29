@@ -13,6 +13,10 @@ $(document).on("pagecreate", '#myProgramPage', function() {
         console.log("date="+date);
         time_gTmp = date;
    });
+
+   
+   $( "#popupBasic" ).popup("open");
+
 });
 
 //Example of localStorage
