@@ -1,9 +1,6 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-.ui_content{
-	height: 430px;
-}
 
 a {
   
@@ -152,14 +149,14 @@ a {
 }
 
 .map_simple_guide{
-	width:500px;
+	font-size: 25px;
 	color: brown;
-	margin-left: 24%;
-	margin-right:24%;
+	margin-left: 39%;
+	margin-right:10%;
 }
 .map_text_guide{
 	margin-left: 24%;
-	margin-right:24%;
+	margin-right:10%;
 	text-align: left;
 	font-size: 25px;
 }
@@ -167,12 +164,16 @@ a {
    text-align: center;
    margin: 0px auto;
 }
+.instructions{
+	color: darkblue;
+}
 
-img{
+.map_content img{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
+
 /*----------------------------
 	Thumbnails
 -----------------------------*/
@@ -231,6 +232,11 @@ img{
 	footer{
 		display:none;
 	}
+	.map_simple_guide{
+		margin-left: 25%;
+		margin-right: 0%;
+		font-size:18px;
+	}
 	
 	#bsaHolder{
 		display:none;
@@ -242,7 +248,8 @@ img{
 		font-size:15px;
 	}
 	.map_text_guide{
-		font-size:20px;
+		margin-left: 10%;
+		font-size:18px;
 	}
 	.map_font{
 		font-size: 20px;
@@ -252,5 +259,17 @@ img{
 	}
 	.map_title{
 		font-size: 20px;
+	}
+	.map_content img{
+		height: 120px;
+		width: 130px;
+	}
+	.map_text_guide img{
+		height: 75%;
+		width: 75%;
+	}
+	#fixed_img{
+		height: 100%;
+		width: 100%;
 	}
 }

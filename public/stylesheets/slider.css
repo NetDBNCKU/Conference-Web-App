@@ -1,0 +1,141 @@
+body{
+    background-color: #ffffff; 
+    font-family: Arial, Verdana, Sans-Serif;
+}
+#slider1_container{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#loading_screen{
+    position: absolute;
+}
+
+#loading_screen{
+    filter: alpha(opacity=70); 
+    opacity:0.7; 
+    position: absolute; 
+    display: block;
+    background-color: #000;
+}
+
+#loading_pic{
+    position: absolute; 
+    display: block; 
+    background: url(../images/loading.gif) 
+    no-repeat center center;
+}
+#slide{
+    cursor: move; 
+    overflow: hidden;
+    position: absolute; 
+}
+#thumbnavigator{
+    position: absolute;
+}
+#ThumbnailNavigator{
+    filter: alpha(opacity=40); 
+    opacity:0.4; 
+    position: absolute; 
+    display: block;
+    background-color: #ffffff;
+    top: 0px; left: 0px; width: 100%; height: 100%;
+}
+#Thumbnail_Item{
+    POSITION: absolute; 
+}
+/*copy2*/
+#slider1_container2{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#loading_screen2{
+    position: absolute;
+}
+
+#loading_screen2{
+    filter: alpha(opacity=70); 
+    opacity:0.7; 
+    position: absolute; 
+    display: block;
+    background-color: #000;
+}
+
+#loading_pic2{
+    position: absolute; 
+    display: block; 
+    background: url(../images/loading.gif) 
+    no-repeat center center;
+}
+#slide2{
+    cursor: move; 
+    overflow: hidden;
+    position: absolute; 
+}
+#thumbnavigator2{
+    position: absolute;
+}
+#ThumbnailNavigator2{
+    filter: alpha(opacity=40); 
+    opacity:0.4; 
+    position: absolute; 
+    display: block;
+    background-color: #ffffff;
+    top: 0px; left: 0px; width: 100%; height: 100%;
+}
+#Thumbnail_Item2{
+    POSITION: absolute; 
+}
+/*
+Bullet Navigator Skin Begin
+jssor slider bullet navigator skin 01
+*/
+
+/*
+.jssorb01 div           (normal)
+.jssorb01 div:hover     (normal mouseover)
+.jssorb01 .av           (active)
+.jssorb01 .av:hover     (active mouseover)
+.jssorb01 .dn           (mousedown)
+*/
+.jssorb01 div, .jssorb01 div:hover, .jssorb01 .av
+{
+    filter: alpha(opacity=70);
+    opacity: .7;
+    overflow:hidden;
+    cursor: pointer;
+    border: #000 1px solid;
+}
+.jssorb01 div { background-color: gray; }
+.jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
+.jssorb01 .av { background-color: #fff; }
+.jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+/*
+Arrow Navigator Skin Begin 
+jssor slider arrow navigator skin 05 css */
+/*
+.jssora05l              (normal)
+.jssora05r              (normal)
+.jssora05l:hover        (normal mouseover)
+.jssora05r:hover        (normal mouseover)
+.jssora05ldn            (mousedown)
+.jssora05rdn            (mousedown)
+*/
+
+.jssora05l, .jssora05r, .jssora05ldn, .jssora05rdn
+{
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    background: url(../images/a17.png) no-repeat;
+    overflow:hidden;
+}
+    .jssora05l { background-position: -10px -40px; }
+    .jssora05r { background-position: -70px -40px; }
+    .jssora05l:hover { background-position: -130px -40px; }
+    .jssora05r:hover { background-position: -190px -40px; }
+    .jssora05ldn { background-position: -250px -40px; }
+    .jssora05rdn { background-position: -310px -40px; }
