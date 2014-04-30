@@ -126,9 +126,9 @@ function parseSession(data,date){
 	                                 +'&nbsp'
 	                                 +'<span style="display:inline-block"><h2 style="color:black" id="pcVenue">'+venue+'</h2></span>'
 	                                 +'<hr>'
-                                 	 +'<a href="#" id="'+imgID+'" data-rel="popup" ><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
-	                                 +'<div data-role="popup" id="myPopupDialog_ADD_'+panelID+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is added!</h2></div></div>'
-                        			 +'<div data-role="popup" id="myPopupDialog_REMOVE_'+panelID+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is removed!</h2></div></div>'
+                                 	 +'<a href="#" id="'+imgID+'" data-rel="popup" data-position-to="window" ><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
+	                                 +'<div data-role="popup" class="addProgramDialog" id="myPopupDialog_ADD_'+panelID+'" ><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is added!</h2></div></div>'
+                        			 +'<div data-role="popup" class="addProgramDialog" id="myPopupDialog_REMOVE_'+panelID+'" ><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is removed!</h2></div></div>'
 	                                 +'</div>'
 	                                 +'</div>');
 
@@ -219,9 +219,9 @@ function parseSession(data,date){
                                  +'<span style="display:inline-block"><h2 style="color:black" id="keynoteVenue">'+venue+'</h2></span>'
                                  +'</div>'
                                  +'<hr>'
-                                 +'<a href="#" id="'+imgID+'" data-rel="popup" ><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
-                                 +'<div data-role="popup" id="myPopupDialog_ADD_'+keynoteID+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is added!</h2></div></div>'
-                        		 +'<div data-role="popup" id="myPopupDialog_REMOVE_'+keynoteID+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is removed!</h2></div></div>'
+                                 +'<a href="#" id="'+imgID+'" data-rel="popup" data-position-to="window" ><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
+                                 +'<div data-role="popup" class="addProgramDialog" id="myPopupDialog_ADD_'+keynoteID+'" ><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is added!</h2></div></div>'
+                        		 +'<div data-role="popup" class="addProgramDialog" id="myPopupDialog_REMOVE_'+keynoteID+'" ><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is removed!</h2></div></div>'
                                  +'</div>'
                                  +'</div>');
 
@@ -302,10 +302,10 @@ function parseSession(data,date){
 	                                 +'&nbsp'
 	                                 +'<span style="display:inline-block"><h2 style="color:black" id="svVenue">'+venue+'</h2></span>'
 	                                 +'<hr>'
-                                	 +'<a href="#" id="'+imgID+'" data-rel="popup" ><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
+                                	 +'<a href="#" id="'+imgID+'" data-rel="popup" data-position-to="window" ><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
 	                                 +'</div>'
-	                                 +'<div data-role="popup" id="myPopupDialog_ADD_'+contestID+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is added!</h2></div></div>'
-                        			 +'<div data-role="popup" id="myPopupDialog_REMOVE_'+contestID+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is removed!</h2></div></div>'
+	                                 +'<div data-role="popup" class="addProgramDialog" id="myPopupDialog_ADD_'+contestID+'" ><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is added!</h2></div></div>'
+                        			 +'<div data-role="popup" class="addProgramDialog" id="myPopupDialog_REMOVE_'+contestID+'" ><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is removed!</h2></div></div>'
 	                                 +'</div>'
 	                                 +'</div>');
 
@@ -377,9 +377,9 @@ function parseSession(data,date){
 		                                 +'&nbsp'
 		                                 +'<span style="display:inline-block"><h2 style="color:black" id="lecVenue">'+venue+'</h2></span>'
 		                                 +'<hr>'
-                            		     +'<a href="#" id="'+imgID+'" data-rel="popup" ><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
-		                                 +'<div data-role="popup" id="myPopupDialog_ADD_'+tutorialID+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is added!</h2></div></div>'
-                        			 	 +'<div data-role="popup" id="myPopupDialog_REMOVE_'+tutorialID+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is removed!</h2></div></div>'
+                            		     +'<a href="#" id="'+imgID+'" data-rel="popup" data-position-to="window" ><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
+		                                 +'<div data-role="popup" class="addProgramDialog" id="myPopupDialog_ADD_'+tutorialID+'" ><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is added!</h2></div></div>'
+                        			 	 +'<div data-role="popup" class="addProgramDialog" id="myPopupDialog_REMOVE_'+tutorialID+'" ><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is removed!</h2></div></div>'
 		                                 +'</div>'
 		                                 +'</div>');
 
@@ -460,11 +460,11 @@ function parseSession(data,date){
 	                                 +'&nbsp'
 	                                 +'<span style="display:inline-block"><h2 style="color:black" id="scVenue">'+venue+'</h2></span>'
 	                                 +'<hr>'
-                           		     +'<a href="#" id="'+imgID+'" data-rel="popup" ><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
+                           		     +'<a href="#" id="'+imgID+'" data-rel="popup" data-position-to="window"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
 	                                 +'</div>'
 	                                 +'<ul data-role="listview" data-inset="true" class="ui-listview" id="'+dateID+'_session_'+ID+'" ></ul>'
-	                                 +'<div data-role="popup" id="myPopupDialog_ADD_'+ID+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is added!</h2></div></div>'
-                        			 +'<div data-role="popup" id="myPopupDialog_REMOVE_'+ID+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is removed!</h2></div></div>'
+	                                 +'<div data-role="popup" class="addProgramDialog" id="myPopupDialog_ADD_'+ID+'" ><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is added!</h2></div></div>'
+                        			 +'<div data-role="popup" class="addProgramDialog" id="myPopupDialog_REMOVE_'+ID+'" ><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is removed!</h2></div></div>'
 	                                 +'</div>'
 	                                 +'</div>');
 
@@ -650,10 +650,10 @@ function createWorkshopPage(data){
                          +'&nbsp'
                          +'<span style="display:inline-block"><h1 id="venue" style="color:black">'+venue+'</h1></span>'
                          +'<hr>'
-                         +'<a id="'+imgID+'" href="#myPopupDialog_ADD_'+workshopID_forpage+'" data-rel="popup"  workshopName="'+workshopName+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
+                         +'<a id="'+imgID+'" href="#myPopupDialog_ADD_'+workshopID_forpage+'" data-rel="popup" data-position-to="window"  workshopName="'+workshopName+'"><img src="/images/addProgram.png" style="width:40px;height:40px;padding:5px;" class="myProgramIcon" ></a>'
                          +'<ul data-role="listview" data-inset="true" id="list-browse-workshop-'+workshopID_forpage+'" class="ui-listview"></ul>'
-                         +'<div data-role="popup" id="myPopupDialog_ADD_'+workshopID_forpage+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is added!</h2></div></div>'
-                         +'<div data-role="popup" id="myPopupDialog_REMOVE_'+workshopID_forpage+'" style="height:100px; position:fixed; top:45%; left:40%"><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is removed!</h2></div></div>'
+                         +'<div data-role="popup" class="addProgramDialog" id="myPopupDialog_ADD_'+workshopID_forpage+'" ><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is added!</h2></div></div>'
+                         +'<div data-role="popup" class="addProgramDialog" id="myPopupDialog_REMOVE_'+workshopID_forpage+'" ><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a><div data-role="header"><h1>Info</h1></div><div data-role="main" class="ui-content"><h2>Your Program is removed!</h2></div></div>'
                          +'</div>'
                          +'</div>');
 
