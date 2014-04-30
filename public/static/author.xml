@@ -196,13 +196,6 @@
 		</paper>
 	</author>
 	<author>
-		<name>Jay-Yoon Lee (CMU)</name>
-		<paper>
-			<paperID>74</paperID>
-			<paperTitle>Net-Ray: Visualizing and Mining Web-Scale Graphs</paperTitle>
-		</paper>
-	</author>
-	<author>
 		<name>Wang-Chien Lee (Pennsylvania State University, USA)</name>
 		<paper>
 			<paperID>348</paperID>
@@ -603,10 +596,14 @@
 		</paper>
 	</author>
 	<author>
-		<name>Shen Hong ()</name>
+		<name>Shen Hong (Beijing Jiaotong University)</name>
 		<paper>
 			<paperID>80</paperID>
 			<paperTitle>A Selectively Re-train Approach Based on Clustering To Classify Concept-drifting Data Streams with Skewed Distribution</paperTitle>
+		</paper>
+		<paper>
+			<paperID>123</paperID>
+			<paperTitle>Two-Phase Layered Learning Recommendation via Category Structure</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -617,7 +614,11 @@
 		</paper>
 	</author>
 	<author>
-		<name>Xiaohua Hu ()</name>
+		<name>Xiaohua Hu (Drexel University, USA)</name>
+		<paper>
+			<paperID>128</paperID>
+			<paperTitle>Hash-based Stream LDA: Topic Modeling in Social Streams</paperTitle>
+		</paper>
 		<paper>
 			<paperID>401</paperID>
 			<paperTitle>Document Clustering with an Augmented Nonnegative Matrix Factorization Model</paperTitle>
@@ -1339,13 +1340,6 @@
 		</paper>
 	</author>
 	<author>
-		<name>Shen Hong (Beijing Jiaotong University)</name>
-		<paper>
-			<paperID>123</paperID>
-			<paperTitle>Two-Phase Layered Learning Recommendation via Category Structure</paperTitle>
-		</paper>
-	</author>
-	<author>
 		<name>Xiaohui Yu (Shandong University)</name>
 		<paper>
 			<paperID>85</paperID>
@@ -1576,6 +1570,14 @@
 		<paper>
 			<paperID>208</paperID>
 			<paperTitle>Com2: Fast Automatic Discovery of Temporal (’Comet’) Communities</paperTitle>
+		</paper>
+		<paper>
+			<paperID>77</paperID>
+			<paperTitle>Influence Propagation: Patterns, Model and a Case Study</paperTitle>
+		</paper>
+		<paper>
+			<paperID>74</paperID>
+			<paperTitle>Net-Ray: Visualizing and Mining Web-Scale Graphs</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -1821,13 +1823,6 @@
 		</paper>
 	</author>
 	<author>
-		<name>Xiaohua Hu (Drexel University, USA)</name>
-		<paper>
-			<paperID>128</paperID>
-			<paperTitle>Hash-based Stream LDA: Topic Modeling in Social Streams</paperTitle>
-		</paper>
-	</author>
-	<author>
 		<name>John Yen (Penn State University)</name>
 		<paper>
 			<paperID>348</paperID>
@@ -1945,17 +1940,6 @@
 		</paper>
 	</author>
 	<author>
-		<name>Danai Koutra (CMU)</name>
-		<paper>
-			<paperID>77</paperID>
-			<paperTitle>Influence Propagation: Patterns, Model and a Case Study</paperTitle>
-		</paper>
-		<paper>
-			<paperID>74</paperID>
-			<paperTitle>Net-Ray: Visualizing and Mining Web-Scale Graphs</paperTitle>
-		</paper>
-	</author>
-	<author>
 		<name>Tianqing Zhu (Deakin university)</name>
 		<paper>
 			<paperID>51</paperID>
@@ -2042,6 +2026,10 @@
 			<paperID>77</paperID>
 			<paperTitle>Influence Propagation: Patterns, Model and a Case Study</paperTitle>
 		</paper>
+		<paper>
+			<paperID>74</paperID>
+			<paperTitle>Net-Ray: Visualizing and Mining Web-Scale Graphs</paperTitle>
+		</paper>
 	</author>
 	<author>
 		<name>Ting Guo (QCIS Centre, UTS)</name>
@@ -2051,10 +2039,14 @@
 		</paper>
 	</author>
 	<author>
-		<name>Yi-Cheng Chen ()</name>
+		<name>Yi-Cheng Chen (Tamkang University)</name>
 		<paper>
 			<paperID>196</paperID>
 			<paperTitle>Dynamic Circle Recommendation: A Probabilistic Model</paperTitle>
+		</paper>
+		<paper>
+			<paperID>295</paperID>
+			<paperTitle>Mining Correlation Patterns among Appliances in Smart Home Environment</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -2241,13 +2233,6 @@
 		</paper>
 	</author>
 	<author>
-		<name>Yi-Cheng Chen (Tamkang University)</name>
-		<paper>
-			<paperID>295</paperID>
-			<paperTitle>Mining Correlation Patterns among Appliances in Smart Home Environment</paperTitle>
-		</paper>
-	</author>
-	<author>
 		<name>Xue Li (The University of Queensland, Australia)</name>
 		<paper>
 			<paperID>178</paperID>
@@ -2273,6 +2258,10 @@
 		<paper>
 			<paperID>265</paperID>
 			<paperTitle>An Integrated Model for User Attribute Discovery: A Case Study on Political Affiliation Identification</paperTitle>
+		</paper>
+		<paper>
+			<paperID>280</paperID>
+			<paperTitle>For User-driven Software Evolution: Requirements Elicitation Derived from Mining Online Reviews</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -2329,13 +2318,6 @@
 		<paper>
 			<paperID>360</paperID>
 			<paperTitle>ReadBehavior: Reading Probabilities Modeling of Tweets via the Users' Retweeting Behaviors</paperTitle>
-		</paper>
-	</author>
-	<author>
-		<name>Jing Jiang ()</name>
-		<paper>
-			<paperID>280</paperID>
-			<paperTitle>For User-driven Software Evolution: Requirements Elicitation Derived from Mining Online Reviews</paperTitle>
 		</paper>
 	</author>
 	<author>
