@@ -116,11 +116,11 @@ function insertPaperAuthors(authors, paperID){
 	$('#'+paperID+'_paper-list-authors').empty();
 	for(i=0;i<authorArray.length;i++){
 					var authorName = authorArray[i];
-					var tempname = authorName.replace(/\s/g,'_').split('(')[0];
+					var tempname = authorName.replace(/\s/g,'_').replace(/\./g,'_point_').split('(')[0];
 					var name = tempname.substring(0,tempname.length);
 					$('#'+paperID+'_paper-list-authors').append('<li><a id = "'+name+'_info_paper" href="#'+name+'_info">'
 																+'<h1>'
-																+name.replace(/_/g,' ')
+																+name.replace(/_point_/g,'.').replace(/_/g,' ')
 																+'</h1>'
 																+'</a></li>');	
 				}
@@ -133,11 +133,11 @@ function insertPaperAuthorsForPaperList(authors, paperID){
 	$('#'+paperID+'_paper-list-authors').listview().empty();
 	for(i=0;i<authorArray.length;i++){
 					var authorName = authorArray[i];
-					var tempname = authorName.replace(/\s/g,'_').split('(')[0];
+					var tempname = authorName.replace(/\s/g,'_').replace(/\./g,'_point_').split('(')[0];
 					var name = tempname.substring(0,tempname.length-1);
 					$('#'+paperID+'_paper-list-authors').append('<li><a id = "'+name+'_info_paper" href="#'+name+'_info">'
 																+'<h1>'
-																+name.replace(/_/g,' ')
+																+name.replace(/_point_/g,'.').replace(/_/g,' ')
 																+'</h1>'
 																+'</a></li>');	
 				}

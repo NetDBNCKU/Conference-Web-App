@@ -30,7 +30,14 @@
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
         <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-
+         <script type="text/javascript" src="/javascripts/jssor.core.js"></script>
+        <script type="text/javascript" src="/javascripts/jssor.utils.js"></script>
+        <script type="text/javascript" src="/javascripts/jssor.slider.js"></script>
+        <script type="text/javascript" src="/javascripts/slider.js"></script>
+        <link href="/stylesheets/slider.css" rel="stylesheet" type="text/css"/>
+      
+        <script src="/javascripts/jquery-scrollto.js"></script>
+  
         <script src="/touchTouch/touchTouch.jquery.js"></script>
         <script src="/javascripts/phototouch.js"></script>
         <script src="/javascripts/loadXMLpaper.js"></script>
@@ -38,6 +45,7 @@
         <script src="/javascripts/loadXMLData.js"></script>
         <script src="/javascripts/storageMyProgram.js"></script>
         <script src="/javascripts/infoSlider.js"></script>
+        
         <title>PAKDD</title>
     </head>
 <body class="ui-mobile-viewport ui-overlay-c" screen_capture_injected="true">
@@ -105,7 +113,7 @@
 					</a>
 				</div>
 				<div class="ui-block-b">
-					<a href="#MapPage" data-transition="fade">
+					<a href="#InmapPage" data-transition="fade">
 						<div class="home_btn">
 						<img src="/images/map.png"></img>
 						<div class="index_btn">Traffic Information</div>
@@ -192,11 +200,12 @@
                </div>
         </div>
     
-        <div id="MapPage" data-role="page" data-add-back-btn="true">
+       <div id="MapPage" data-role="page" data-add-back-btn="true">
               <div data-role="header" data-position="fixed" >
                  <h1>PAKDD 2014 Map</h1>
                   <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
                 <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+                <a href="#" class="ui-btn-left ui-link ui-btn ui-shadow ui-corner-all" data-rel="back" data-role="button" role="button">Back</a>
               </div>
                <div data-role="content" class="ui-content" role="main">
                         <div class="map_content">
@@ -211,6 +220,385 @@
         </div>
 
 
+<!-- new add-->
+        <!--Taoyaun to Tainan -->
+        <div id="MapPage_a" data-role="page" data-add-back-btn="true">
+              <div data-role="header" data-position="fixed" >
+                 <h1>PAKDD 2014 Map</h1>
+                  <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
+                <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+                <a href="#" class="ui-btn-left ui-link ui-btn ui-shadow ui-corner-all" data-rel="back" data-role="button" role="button">Back</a>
+              </div>
+               <div data-role="content" class="ui-content" role="main">
+                        <div class="map_content">
+                         <div class="map_title"> Taoyuan To Tainan </br></br></div>
+                         <div class="ui-block-c">
+                          <div class="map_btn">
+                          <a href="#a_OptionA"  data-transition="fade" >
+                         <!--   <img src="/images/mylist.png"></img>  -->
+                            <div class="option" >Option A:By Taiwan High Speed Rail (THSR)</div>
+                            <img src="/images/THSR.png">
+                          </a> 
+                          </div> 
+                          </div> 
+                          <div class="ui-block-c">
+                          <div class="map_btn">
+                          <a href="#a_OptionB"  data-transition="fade" >
+                         <!--   <img src="/images/mylist.png"></img>  -->
+                            <div class="option">Option B:By Taiwan Railway Train</div>
+                            <img src="/images/Railway.png">
+                          </a> 
+                          </div> 
+                          </div>
+                        </div>
+              </div>
+        </div>
+        <div id="a_OptionA" data-role="page" data-add-back-btn="true">
+              <div data-role="header" data-position="fixed" >
+                 <h1>PAKDD 2014 Map</h1>
+                  <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
+                <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+                <a href="#" class="ui-btn-left ui-link ui-btn ui-shadow ui-corner-all" data-rel="back" data-role="button" role="button">Back</a>
+              </div>
+               <div data-role="content" class="ui_content" role="main">
+                <div class="map_title">Taoyuan To Tainan By Taiwan High Speed Rail (THSR) </div>
+                  <div id="slider1_container" style="width: 600px;height: 300px;">
+        <!-- Loading Screen -->
+        <div id="loading_screen"u="loading" style="top: 0px; left: 0px;">
+            <div id="loading_pic"style="top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+        </div>
+        <!-- Slides Container -->
+        <div id="slides" u="slides" style="left: 0px; top: 0px; width: 600px; height: 300px;overflow: hidden;">
+            <div>
+                <img u=image src="images/Tao_air.jpg" />
+                <div u="thumb">Taoyan International Airport</div>
+            </div>
+            <div>
+                <img u=image src="images/THSR_tation_taoyuan.jpeg" />
+                <div u="thumb">THSR-Taoyuan Station</div>
+            </div>
+            <div>
+                <img u=image src="images/THSR_tainan.jpg" />
+                <div u="thumb">THSR-Tainan Statoin</div>
+            </div>
+            <div>
+                <img u=image src="images/shalun.jpg" />
+                <div u="thumb">Taiwan Railways-Shalun Station</div>
+            </div>
+            <div>
+                <img u=image src="images/Tainan_Railways.jpg" />
+                <div u="thumb">Taiwan Railways-Tainan Station(Rear)</div>
+            </div>
+            <div>
+                <img u=image src="images/hotel-Shang.jpg" />
+                <div u="thumb">Shangri-La's Far Eastern Plaza Hotel </div>
+            </div>
+
+           <!-- <div>
+                <img u=image src="../img/landscape/01.jpg" />
+                <div u="thumb">Do you notice arrows appear when mouse over?</div>
+            </div>
+            <div>
+                <img u=image src="../img/landscape/02.jpg" />
+                <div u="thumb">Do you notice the slideshow plays outside?</div>
+            </div>
+            <div>
+                <img u=image src="../img/landscape/03.jpg" />
+                <div u="thumb">Do you notice the slideshow plays outside?</div>
+            </div>
+            <div>
+                <img u=image src="../img/landscape/04.jpg" />
+                <div u="thumb">Do you notice the slideshow plays outside?</div>
+            </div>-->
+        </div>
+
+        <!-- ThumbnailNavigator Skin Begin -->
+        <div id="thumbnavigator"u="thumbnavigator" class="slider1-T" style="bottom: 0px; left: 0px; height:60px; width:600px;">
+            <div id="ThumbnailNavigator">
+            </div>
+            <!-- Thumbnail Item Skin Begin -->
+            <div u="slides">
+                <div id="Thumbnail_Item"u="prototype" style="WIDTH: 600px; HEIGHT: 60px; TOP: 0; LEFT: 0;">
+                    <thumbnailtemplate style="font-family: verdana; font-weight: normal; POSITION: absolute; WIDTH: 100%; HEIGHT: 100%; TOP: 0; LEFT: 0; color:#000; line-height: 60px; font-size:20px; padding-left:10px;"></thumbnailtemplate>
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+        </div>
+        <!-- ThumbnailNavigator Skin End -->
+        <!-- bullet navigator container -->
+        <div u="navigator" class="jssorb01" style="position: absolute; bottom: 16px; right: 10px;">
+            <!-- bullet navigator item prototype -->
+            <div u="prototype" style="POSITION: absolute; WIDTH: 12px; HEIGHT: 12px;"></div>
+        </div>
+        <!-- Bullet Navigator Skin End -->
+        
+        <!-- Arrow Navigator Skin Begin -->
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora05l" style="width: 40px; height: 40px; top: 123px; left: 8px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora05r" style="width: 40px; height: 40px; top: 123px; right: 8px">
+        </span>
+        <!-- Arrow Navigator Skin End -->
+        <a style="display: none" href="http://www.jssor.com">jQuery Slider</a>
+        <!-- Trigger -->
+    </div>
+    <!-- Jssor Slider End -->
+              </div>
+              <div class="map_simple_guide">
+                  <div id="aa">1.Taoyuan International Airport </br> </div>
+                  2.THSR Taoyuan Station </br>
+                  3.THSR Tainan Station </br>
+                  4.Tainan Railway Station </br>
+                  5. Shangri-La Hotel </br></br>
+                  </div>
+                <div class="map_text_guide">
+                  <div class="instructions">
+                    1.Taoyuan International Airport --> THSR Taoyuan Station </br></br>
+                  </div>
+                  There are two ways to get to the THSR Taoyuan Station(Shuttle bus/Taxi).</br></br>
+                  Shuttle bus:</br>
+                  By United Highway Bus at Terminal 1(Ubus 705)</br></br>
+                  Ticket price: full fare $30 NTD, half fare $15 NTD</br>
+                  Travel time: about 20 minutes</br></br>
+                  Taxi:</br>
+                  Price: about $350 NTD</br></br>
+                  
+                  <div class="instructions">
+                    2.THSR Taoyuan Station --> THSR Tainan Station </br></br> 
+                  </div>
+                  <img src="/images/map_THSR.png"></br></br>
+                  Ticket price: adult $1305 NTD</br>
+                                children/senior/disabled $650 NTD</br>
+                  Travel Time: about 83 minutes</br></br>
+
+                  <div id="xx" class="instructions">
+                    3.THSR Tainan Station --> Tainan Railway Station</br></br> 
+                  </div>
+                    You can get to Tainan Railway Station by train or by taxi</br></br>
+                    By train: </br>
+                    In the THSR Tainan Station, follow the direction(1 minute walk) to take Taiwan Railway Shuttle Train (ShaLun Line) to Tainan Railway Station.</br>The entrance of the Shalun Railway Station is on 2F of THSR Tainan Station</br>
+                    Price: $25NTD</br>
+                    Travel time: 20minutes</br></br>
+                    By taxi:</br>
+                    Price: about $300NTD</br></br>
+                  <img id="fixed_img"src="/images/THSR_Railway_Tainan.png"></br></br>
+                  
+                  <div class="instructions">
+                    4.Tainan Railway Station --> Shangri-La's Far Eastern Plaza Hotel</br></br> 
+                  </div>
+                  It's a 1-minute walk.</br>
+                  At Tainan Railway Station, exit the station via the <font color="red">Rear Exit </font> and the Shangri-La Hotel is right across the street.</br></br>
+
+                </div>
+        </div>
+        <div id="a_OptionB" data-role="page" data-add-back-btn="true">
+              <div data-role="header" data-position="fixed" >
+                 <h1>PAKDD 2014 Map</h1>
+                  <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
+                <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+                <a href="#" class="ui-btn-left ui-link ui-btn ui-shadow ui-corner-all" data-rel="back" data-role="button" role="button">Back</a>
+              </div>
+               <div data-role="content" class="ui-content" role="main">
+              <div class="map_title">Taoyuan To Tainan By Taiwan Railway Train </div>
+          <div id="slider1_container2" style="width: 600px;height: 300px;">
+        <!-- Loading Screen -->
+        <div id="loading_screen2"u="loading" style="top: 0px; left: 0px;">
+            <div id="loading_pic"style="top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+        </div>
+        <div id="slides2" u="slides" style="left: 0px; top: 0px; width: 600px; height: 300px;overflow: hidden;">
+            <div>
+                <img u=image src="images/Tao_air.jpg" />
+                <div u="thumb">Taoyan International Airport</div>
+            </div>
+            <div>
+                <img u=image src="images/THSR_tation_taoyuan.jpeg" />
+                <div u="thumb">THSR-Taoyuan Station</div>
+            </div>
+            <div>
+                <img u=image src="images/THSR_tainan.jpg" />
+                <div u="thumb">THSR-Tainan Statoin</div>
+            </div>
+            <div>
+                <img u=image src="images/shalun.jpg" />
+                <div u="thumb">Taiwan Railways-Shalun Station</div>
+            </div>
+            <div>
+                <img u=image src="images/Tainan_Railways.jpg" />
+                <div u="thumb">Taiwan Railways-Tainan Station(Rear)</div>
+            </div>
+            <div>
+                <img u=image src="images/hotel-Shang.jpg" />
+                <div u="thumb">Shangri-La's Far Eastern Plaza Hotel </div>
+            </div>
+
+           <!-- <div>
+                <img u=image src="../img/landscape/01.jpg" />
+                <div u="thumb">Do you notice arrows appear when mouse over?</div>
+            </div>
+            <div>
+                <img u=image src="../img/landscape/02.jpg" />
+                <div u="thumb">Do you notice the slideshow plays outside?</div>
+            </div>
+            <div>
+                <img u=image src="../img/landscape/03.jpg" />
+                <div u="thumb">Do you notice the slideshow plays outside?</div>
+            </div>
+            <div>
+                <img u=image src="../img/landscape/04.jpg" />
+                <div u="thumb">Do you notice the slideshow plays outside?</div>
+            </div>-->
+        </div>
+
+        <!-- ThumbnailNavigator Skin Begin -->
+        <div id="thumbnavigator2"u="thumbnavigator" class="slider1-T" style="bottom: 0px; left: 0px; height:60px; width:600px;">
+            <div id="ThumbnailNavigator2">
+            </div>
+            <!-- Thumbnail Item Skin Begin -->
+            <div u="slides">
+                <div id="Thumbnail_Item"u="prototype" style="WIDTH: 600px; HEIGHT: 60px; TOP: 0; LEFT: 0;">
+                    <thumbnailtemplate style="font-family: verdana; font-weight: normal; POSITION: absolute; WIDTH: 100%; HEIGHT: 100%; TOP: 0; LEFT: 0; color:#000; line-height: 60px; font-size:20px; padding-left:10px;"></thumbnailtemplate>
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+        </div>
+        <!-- ThumbnailNavigator Skin End -->
+        <!-- bullet navigator container -->
+        <div u="navigator" class="jssorb01" style="position: absolute; bottom: 16px; right: 10px;">
+            <!-- bullet navigator item prototype -->
+            <div u="prototype" style="POSITION: absolute; WIDTH: 12px; HEIGHT: 12px;"></div>
+        </div>
+        <!-- Bullet Navigator Skin End -->
+        
+        <!-- Arrow Navigator Skin Begin -->
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora05l" style="width: 40px; height: 40px; top: 123px; left: 8px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora05r" style="width: 40px; height: 40px; top: 123px; right: 8px">
+        </span>
+        <!-- Arrow Navigator Skin End -->
+        <a style="display: none" href="http://www.jssor.com">jQuery Slider</a>
+        <!-- Trigger -->
+    </div>
+    <!-- Jssor Slider End -->
+               <div class="map_simple_guide">
+                  1.Taoyuan International Airport </br>
+                  2.Taipei Railway Station </br>
+                  4.Tainan Railway Station </br>
+                  5. Shangri-La Hotel </br></br>
+                  </div>
+                <div class="map_text_guide">
+                <div class="instructions">
+                  1.Taoyuan International Airport --> Taipei Railway Station 
+                </div>
+                In the airport, locate Kuo-kuang Motor Transport counter and purchase a bus ticket of Kuo-kuang Line [1840] to Taipei Railway Station.</br> 
+                The fare is about $125 NTD and take about 55 minutes.</br></br>
+
+                <div class="instructions">
+                  2.Taipei Railway Station --> Tainan Railway Station</br></br> 
+                </div>
+                The journey will take 4~6 hours, and the fare is $480~741 NTD, depending on the types of the train. Please check here for the information of the train schedule.</br></br>
+
+                <div class="instructions">
+                  3.Tainan Railway Station --> Shangri-La Hotel</br></br> 
+                </div>
+                At Tainan Railway Station, exit the station via the Rear Exit and the Shangri-La Hotel is right across the street.  </br></br>
+                </div>      
+              </div>
+        </div>
+
+        <!--Kaosiung to Tainan -->
+         <div id="MapPage_b" data-role="page" data-add-back-btn="true">
+              <div data-role="header" data-position="fixed" >
+                 <h1>PAKDD 2014 Map</h1>
+                  <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
+                <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+                <a href="#" class="ui-btn-left ui-link ui-btn ui-shadow ui-corner-all" data-rel="back" data-role="button" role="button">Back</a>
+              </div>
+               <div data-role="content" class="ui-content" role="main">
+                        <div class="map_content">
+                          <div class="ui-block-c">
+                          <div class="map_btn">
+                          <a href="#b_OptionA"  data-transition="fade" >
+                         <!--   <img src="/images/mylist.png"></img>  -->
+                            <div class="option">Option A:By Taiwan Railway Train</div>
+                            <img src="/images/Railway.png">
+                          </a> 
+                          </div> 
+                          </div>
+                        </div>
+              </div>
+        </div>
+        <div id="b_OptionA" data-role="page" data-add-back-btn="true">
+              <div data-role="header" data-position="fixed" >
+                 <h1>PAKDD 2014 Map</h1>
+                  <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
+                <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+                <a href="#" class="ui-btn-left ui-link ui-btn ui-shadow ui-corner-all" data-rel="back" data-role="button" role="button">Back</a>
+              </div>
+               <div data-role="content" class="ui-content" role="main">
+                <div class="map_title">Kaosiung To Tainan By Taiwan Railway Train </div>
+                <div class="map_text_guide">
+                <div class="map_simple_guide">
+                  1.Kaosiung International Airport </br> </a>
+                  2.Kaosiung Railway Station </br>
+                  4.Tainan Railway Station </br>
+                  5. Shangri-La Hotel </br></br>
+                </div>
+                <div class="instructions">1.Kaohsiung International Airport >>> Kaohsiung Railway Station [MAP]</br></br> 
+                </div>
+                Take Kaohsiung Rapid Transit (KRT) to Kaohsiung Railway Station. The fare is about $35 NTD.</br></br>
+                <div class="instructions">2.Kaohsiung Railway Station --> Tainan Railway Station</br></br></div>
+                Take the train to Tainan. The journey will take 30~50 minutes, and the fare is about $69-107 NTD, depending on the types of the train. Please check here for the information of the train schedule.</br></br>
+                <div class="instructions">3.Tainan Railway Station --> Shangri-La Hotel</br></br></div>
+                At Tainan Railway Station, exit the station via the Rear Exit and the Shangri-La Hotel is right across the street.</br></br>
+              </div>
+              </div>
+        </div>
+<!--Main Page of the MapPage -->
+        <div id="InmapPage" data-role="page" data-add-back-btn="true">
+          <div data-role="header" data-position="fixed" >
+                <h1>PAKDD 2014 Map</h1>
+                <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
+                <a href="#" class="ui-btn-left ui-link ui-btn ui-shadow ui-corner-all" data-rel="back" data-role="button" role="button">Back</a>
+          </div>      
+          <div data-role="content" class="ui-content" role="main">
+                        <div class="map_content ">
+                          <div class="ui-block-c">
+                          <div class="map_btn">
+                          <a href="#MapPage_a"  data-transition="fade" >
+                         <!--   <img src="/images/mylist.png"></img>  -->
+                            <div class="map_font">Taoyuan to Tainan</div>
+                          </a> 
+                          </div> 
+                          </div>
+                          <div class="ui-block-c">
+                          <div class="map_btn">
+                          <a href="#MapPage_b"  data-transition="fade" >
+                         <!--   <img src="/images/mylist.png"></img>  -->
+                            <div class="map_font">Kaohsiung to Tainan</div>
+                          </a> 
+                          </div> 
+                          </div>
+                          <div class="ui-block-c">
+                          <div class="map_btn">
+                            <a href="#MapPage">
+                         <!--    <img src="/images/mylist.png"></img> -->
+                            <div class="map_font">Conference venue</div>
+                          </a>
+                          </div>
+                        </div>
+          </div>
+        </div>
+   </div>
+<!--Conference venue -->       
+        <div id="Map_In_Venue">
+        
+        </div>
+<!-- new add-->
         <div id="myProgramPage" data-role="page" data-add-back-btn="true">
               <div data-role="header" >
                 

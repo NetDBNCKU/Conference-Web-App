@@ -3,7 +3,7 @@ body {
 }
 
 a {
-  
+  text-decoration: none; 
   outline: 0;
 }
 .headerButton {
@@ -73,16 +73,95 @@ img .myProgramIcon {
   border-style:solid;
 */
 }
+
+.map_btn {
+  margin: auto;
+  height: 95%;
+  width: 50%;
+  margin: 1%;
+  -moz-box-shadow:inset 0px 1px 0px 1px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 1px #ffffff;
+  box-shadow:inset 0px 1px 0px 1px #ffffff;
+  background: rgb(237, 237, 237); /* Fall-back */
+  background: rgba(237, 237, 237, .6);
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  color:#777777;
+  font-family:arial;
+  text-align:center;
+  font-size:17px;
+  font-weight:bold;
+  text-decoration:none;
+  text-shadow:1px 1px 0px #ffffff;
+  overflow:hidden;
+}
+.map_font{
+  color:darkblue;
+  padding-top: 3%;
+  font-size: 30px;
+}
+.option{
+  color:darkblue;
+  font-size: 25px;
+
+}
+.ui-block-c 
+{
+  margin-left: 10%;
+  margin-bottom: 4%;
+  padding-left: 10%;
+  width: 70%;
+  height: 60%;
+/*
+  background-color: #6b6665;
+  border: 5px;
+  border-color: rgba(60, 60, 60, 0.43);
+  border-style:solid;
+*/
+}
 /* GENERAL */
 
 a {
    outline: 0;
 }
+.map_title{
+  margin-top: 1%;
+  margin-bottom: 1%;
+  text-align: center;
+  color: #E03A3A;
+  font-size: 30px;
+}
 
+.map_simple_guide{
+  font-size: 25px;
+  color: brown;
+  margin-left: 39%;
+  margin-right:10%;
+}
+.map_text_guide{
+  margin-left: 24%;
+  margin-right:10%;
+  text-align: left;
+  font-size: 25px;
+}
 .map_content {
    text-align: center;
    margin: 0px auto;
 }
+.instructions{
+  color: darkblue;
+}
+
+.map_text_guide img{
+  text-align: center;
+  display: block;
+  margin-left: 15%;
+  margin-right: auto;
+}
+
 
 .index_btn {
 	font-size: 20px;
@@ -222,15 +301,47 @@ a.control_next {
 		display:none;
 	}
 	
-	#bsaHolder{
-		display:none;
-	}
-	.title h1{
-		font-size:20px;
-	}
-	.title h2{
-		font-size:15px;
-	}
+	.map_simple_guide{
+    margin-left: 25%;
+    margin-right: 0%;
+    font-size:18px;
+  }
+  
+  #bsaHolder{
+    display:none;
+  }
+  .title h1{
+    font-size:20px;
+  }
+  .title h2{
+    font-size:15px;
+  }
+  .map_text_guide{
+    margin-left: 10%;
+    font-size:18px;
+  }
+  .map_font{
+    font-size: 20px;
+  }
+  .option{
+    font-size: 10px;
+  }
+  .map_title{
+    font-size: 20px;
+  }
+  .map_content img{
+    height: 120px;
+    width: 130px;
+  }
+  .map_text_guide img{
+    height: 75%;
+    width: 75%;
+  }
+  #fixed_img{
+    margin-left: 0%;
+    height: 100%;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 480px) {
 .index_btn {

@@ -33,7 +33,7 @@ function parseAuthor(data){
 	});
 	temp = temp.sort();
 	for(authorkey in temp){
-		var tempname = temp[authorkey].replace(/\s/g,'_').split('(')[0];
+		var tempname = temp[authorkey].replace(/\s/g,'_').replace(/\./g,'_point_').split('(')[0];
 		$('#list-author').append('<li><a id="'+tempname.substring(0,tempname.length-1)
 												+'" href="#'+tempname.substring(0,tempname.length-1)
 												+'_info">'
@@ -54,7 +54,7 @@ function createAuthorInfo(data){
 	authorlist.find('author').each(function(){
 		var author = $(this);
 		var authorpaperlist = author.find('paper');
-		//var authorName = author.find('name').text().toUpperCase();
+		//var authorName = author.find('name').text().toUpperCase();;
 		var authorName = author.find('name').text();
 		var regexForOrg = /\(.*\)/;
 		var orgMatches = regexForOrg.exec(authorName);
@@ -72,14 +72,14 @@ function createAuthorInfo(data){
 			paperIDandTitlelist.push($(this).find('paperTitle').text());
 		});
 		
-		var tempname = authorName.replace(/\s/g,'_').split('(')[0];
+		var tempname = authorName.replace(/\s/g,'_').replace(/\./g,'_point_').split('(')[0];
 		var name = tempname.substring(0,tempname.length-1);
 		$('body').append('<div id="'+name+'_info" data-role="page" data-add-back-btn="true">'
                          +'<div data-role="header" ><h1>People details</h1><a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
                          +'<a href="#" class="ui-btn-left" data-rel="back">Back</a>'
                          +'</div>'
                          +'<div data-role="content" class="ui-content" role="main" >'
-                         +'<h2>'+name.replace(/_/g,' ')+'</h2>'
+                         +'<h2>'+name.replace(/_point_/g,'.').replace(/_/g,' ')+'</h2>'
                          +'<hr>'
                          +'<p>'+Org+'</p><hr>'
                		 	 +'<h3>paper list</h3><hr>'

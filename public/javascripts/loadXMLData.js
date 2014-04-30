@@ -132,6 +132,9 @@ function parseSession(data,date){
 	                                 +'</div>'
 	                                 +'</div>');
 
+							
+					
+
 								// here to change img if the program was added to myProgram
 								$(document).on("pagecreate", '#'+panelID+'_info', function(){
 
@@ -429,6 +432,7 @@ function parseSession(data,date){
 								else	     
 									pageMap[ID+"_list"] = 1;
 
+
 								$('#list-browse-sessions-'+dateID).append('<li><a id="'+ID+'" href="#'+ID+'_list"><div><span style="display:inline-block"><h1 style="color:#E03A3A">'
 																+'Session: </h1></span>&nbsp<span  style="display:inline-block"> <h1 style="color:black">'+ID+'</h1>'
 																+'</span></div>'
@@ -538,7 +542,7 @@ function parsePaperList(data,date,sessionID,listviewID){
 																+'Author: '+$(this).find('author').text()
 																+'</h1>'+
 																'</a></li>');
-									//var authors = $(this).find('author').text().toUpperCase();
+									//var authors = $(this).find('author').text().toUpperCase();;
 									var authors = $(this).find('author').text();
 									var paperDetailID;
 									var tempId;
