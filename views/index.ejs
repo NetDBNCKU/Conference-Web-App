@@ -37,7 +37,7 @@
         <script src="/javascripts/loadXMLauthor.js"></script>
         <script src="/javascripts/loadXMLData.js"></script>
         <script src="/javascripts/storageMyProgram.js"></script>
-
+        <script src="/javascripts/infoSlider.js"></script>
         <title>PAKDD</title>
     </head>
 <body class="ui-mobile-viewport ui-overlay-c" screen_capture_injected="true">
@@ -48,30 +48,39 @@
 			<h1 class="ui-title" role="heading" aria-level="1">18th PAKDD 2014</h1>
         
         
-          <a href="#popupInfo" data-role="button" data-rel="popup" class="ui-btn-left ui-shadow ui-corner-all ui-btn-icon-left ui-icon-info" data-transition="slideup" >info</a>
+          <a href="#popupInfo" data-role="button" data-rel="popup" class="ui-btn-left ui-shadow ui-corner-all ui-btn-icon-left ui-icon-info"data-position-to="window" data-transition="pop" >info</a>
           <a href="#page-home" data-icon="home" class="ui-btn-right" >Home</a>
        
         
-        <div data-role="popup" id="popupInfo" data-theme="a">
-            <div data-role="collapsibleset" data-theme="a" data-content-theme="a" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" style="margin:0; width:300px;">
-                <div data-role="collapsible" data-inset="false">
-                <h2>Travel Info</h2>
-                    <ul data-role="listview">
-                        <li><a href="http://www.vztaiwan.com/" >Visist Smart Tourism Taiwan</a></li>
-                        <li><a href="https://itunes.apple.com/us/app/smart-tourism-pro/id649680814?ls=1&mt=8">Download APP for iOS</a></li>
-                        <li><a href="https://play.google.com/store/apps/details?id=tw.org.iii.ari.smarttourism">Download APP for Android</a></li>
-                    </ul>
-                </div><!-- /collapsible -->
-                <div data-role="collapsible" data-inset="false">
-                <h2>Developer Info</h2>
-                    <ul data-role="listview">
-                         <li><a href="#" >Arvin Huang</a></li>
-                        <li><a href="#" >Boheng Chen</a></li>
-                        <li><a href="#" >Charlie Hsu</a></li>
-                        <li><a href="#" >Peihsuan Hsieh</a></li>
-                    </ul>
-                </div><!-- /collapsible -->
-            </div><!-- /collapsible set -->
+        <div data-role="popup" id="popupInfo" data-overlay-theme="a">
+            <div id="InfoPage">
+            <div id="slider">
+              <a href="#" class="control_next">></a>
+              <a href="#" class="control_prev"><</a>
+              <ul>
+                <li> 
+                  <div id="travelInfo">
+                  <h2>Travel Info</h2>
+                      <a class="ui-btn info-btn ui-shadow ui-corner-all" href="http://www.vztaiwan.com/" >Visist Smart Tourism Taiwan</a>
+                      <br>
+                      <a class="ui-btn info-btn ui-shadow ui-corner-all" href="https://itunes.apple.com/us/app/smart-tourism-pro/id649680814?ls=1&mt=8">Download APP for iOS</a>
+                      <br>
+                      <a class="ui-btn info-btn ui-shadow ui-corner-all" href="https://play.google.com/store/apps/details?id=tw.org.iii.ari.smarttourism">Download APP for Android</a>
+                  </div>
+                </li>
+                <li>
+                  <div id="helpInfo">
+                    <h2>Help Info</h2>
+                  </div>
+                </li>
+                 <li>
+                  <div id="helpInfo2">
+                    <h2>How-to</h2>
+                  </div>
+                </li>
+              </ul>  
+            </div>
+            </div>
         </div><!-- /popup -->
 
 <!--
@@ -91,7 +100,7 @@
 					<a href="#programPage"  data-transition="fade">
 						<div class="home_btn">
 						<img src="/images/schedule.png"></img>
-						<div>PAKDD 2014 Technical Program</div>
+						<div class="index_btn">PAKDD 2014 Technical Program</div>
 						</div>
 					</a>
 				</div>
@@ -99,7 +108,7 @@
 					<a href="#MapPage" data-transition="fade">
 						<div class="home_btn">
 						<img src="/images/map.png"></img>
-						<div>Traffic Information</div>
+						<div class="index_btn">Traffic Information</div>
 						</div>
 					</a>
 				</div>	
@@ -107,7 +116,7 @@
 					<a href="#paperListPage" data-transition="fade">
 						<div class="home_btn">
 						<img src="/images/paper.png"></img>
-						<div>List of All Papers</div>
+						<div class="index_btn">List of All Papers</div>
 						</div>
 					</a>
 				</div>
@@ -115,7 +124,7 @@
 					<a href="#myProgramPage" data-transition="fade" id="btn_myProgram">
 						<div class="home_btn">
 						<img src="/images/mylist.png"></img>
-						<div>My Schedule</div> 
+						<div class="index_btn">My Schedule</div> 
 						</div>
 					</a>
 				</div>	
