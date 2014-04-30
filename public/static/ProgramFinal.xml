@@ -36,13 +36,13 @@
 					<paperID>249</paperID>
 					<title>MalSpot: Multi^2 Malicious Network Behavior Patterns Analysis</title>
 					<type>Regular</type>
-					<author>Ching-Hao Mao, Chung-Jung Wu, Evangelos Papalexakis, Christos Faloutsos, Kuo-Chen Lee, Tien-Cheu Kao</author>
+					<author>Ching-Hao Mao, Chung-Jung Wu, Evangelos E. Papalexakis, Christos Faloutsos, Kuo-Chen Lee, Tien-Cheu Kao</author>
 				</paper>
 				<paper>
 					<paperID>177</paperID>
 					<title>Extracting Diverse Patterns with Unbalanced Concept Hierarchy</title>
 					<type>Short</type>
-					<author>Kumara Swamy Mittapally, P. Reddy, Somya Srivatsava</author>
+					<author>M. Kumara Swamy, P. Krishna Reddy, Somya Srivastava</author>
 				</paper>
 				<paper>
 					<paperID>204</paperID>
@@ -60,7 +60,7 @@
 					<paperID>92</paperID>
 					<title>Balancing the Analysis of Frequent Patterns</title>
 					<type>Short</type>
-					<author>Arnaud Giacometti, Dominique Li, Arnaud Soulet</author>
+					<author>Arnaud Giacometti, Dominique H. Li, Arnaud Soulet</author>
 				</paper>
 			</session>
 			<session>
@@ -84,7 +84,7 @@
 					<paperID>50</paperID>
 					<title>Detecting and Analyzing Influenza Epidemics with Social Media in China</title>
 					<type>Short</type>
-					<author>Fang Zhang, Jun Luo, chao Li, Xin Wang, Zhongying Zhao</author>
+					<author>Fang Zhang, Jun Luo, Chao Li, Xin Wang, Zhongying Zhao</author>
 				</paper>
 				<paper>
 					<paperID>104</paperID>
@@ -144,7 +144,7 @@
 					<paperID>32</paperID>
 					<title>Fast Triangle Core Decomposition for Mining Large Graphs</title>
 					<type>Regular</type>
-					<author>Ryan Rossi</author>
+					<author>Ryan A. Rossi</author>
 				</paper>
 				<paper>
 					<paperID>231</paperID>
@@ -156,19 +156,19 @@
 					<paperID>174</paperID>
 					<title>Subtopic Mining via Modifier Graph Clustering</title>
 					<type>Short</type>
-					<author>Haitao Yu, Fuji Ren</author>
+					<author>Hai-Tao Yu, Fuji Ren</author>
 				</paper>
 				<paper>
 					<paperID>74</paperID>
 					<title>Net-Ray: Visualizing and Mining Web-Scale Graphs</title>
 					<type>Short</type>
-					<author>U Kang, Jay-Yoon Lee, Danai Koutra, Christos Faloutsos</author>
+					<author>U. Kang, Jay-Yoon Lee, Danai Koutra, Christos Faloutsos</author>
 				</paper>
 				<paper>
 					<paperID>121</paperID>
 					<title>Structure-aware Distance Measures for Comparing Clusterings in Graphs</title>
 					<type>Short</type>
-					<author>Jeffrey Chan, Xuan Vinh Nguyen, Wei Liu, James Bailey, Christopher Leckie, Kotagiri Ramamohanarao, Jian Pei</author>
+					<author>Jeffrey Chan, Nguyen Xuan Vinh, Wei Liu, James Bailey, Christopher A. Leckie, Kotagiri Ramamohanarao, Jian Pei</author>
 				</paper>
 			</session>
 			<session>
@@ -180,7 +180,7 @@
 					<paperID>265</paperID>
 					<title>An Integrated Model for User Attribute Discovery: A Case Study on Political Affiliation Identification</title>
 					<type>Regular</type>
-					<author>Swapna Gottipati, Minghui Qiu, Yang Liu, Feida Zhu, Jing Jiang</author>
+					<author>Swapna Gottipati, Minghui Qiu, Liu Yang, Feida Zhu, Jing Jiang</author>
 				</paper>
 				<paper>
 					<paperID>395</paperID>
@@ -261,7 +261,7 @@
 					<paperID>259</paperID>
 					<title>Privacy-Preserving Collaborative Anomaly Detection for Participatory Sensing</title>
 					<type>Regular</type>
-					<author>Sarah Erfani, Yee Wei Law, Shanika Karunasekera, Christopher Leckie, marimuthu Palaniswam</author>
+					<author>Sarah M. Erfani, Yee Wei Law, Shanika Karunasekera, Christopher A. Leckie, Marimuthu Palaniswami</author>
 				</paper>
 				<paper>
 					<paperID>42</paperID>
@@ -333,13 +333,13 @@
 					<paperID>62</paperID>
 					<title>Highly Scalable Attribute Selection for Averaged One-Dependence Estimators</title>
 					<type>Short</type>
-					<author>Shenglei Chen, Ana Martinez, Geoffrey Webb</author>
+					<author>Shenglei Chen, Ana M. Martinez, Geoffrey I. Webb</author>
 				</paper>
 				<paper>
 					<paperID>140</paperID>
 					<title>A New Evaluation Function for Entropy-based Feature Selection from Incomplete Data</title>
 					<type>Short</type>
-					<author>Wenhao Shu, Shen Hong, Yingpeng Sang, Yidong Li, Yanbo Wu</author>
+					<author>Wenhao Shu, Hong Shen, Yingpeng Sang, Yidong Li, Jun Wu</author>
 				</paper>
 			</session>
 			<session>
@@ -470,7 +470,7 @@
 					<paperID>87</paperID>
 					<title>Inferring Attitude in Online Social Networks Based on Quadratic Correlation</title>
 					<type>Short</type>
-					<author>Cong Wang, Andrei Bulatov</author>
+					<author>Cong Wang, Andrei A. Bulatov</author>
 				</paper>
 				<paper>
 					<paperID>128</paperID>
@@ -512,19 +512,19 @@
 					<paperID>202</paperID>
 					<title>Shingled Graph Disassembly: Finding the Undecideable Path</title>
 					<type>Short</type>
-					<author>Richard Wartell, Yan Zhou, Kevin Hamlen, Murat Kantarcioglu</author>
+					<author>Richard Wartell, Yan Zhou, Kevin W. Hamlen, Murat Kantarcioglu</author>
 				</paper>
 				<paper>
 					<paperID>388</paperID>
 					<title>Collective Matrix Factorization of Predictors, Neighborhood and Targets for Semi-Supervised Classification</title>
 					<type>Short</type>
-					<author>Lucas Drumond, Lars Schmidt-Thieme, Christoph Freudenthaler, Artus Krohn-Grimberghe</author>
+					<author>Lucas Rego Drumond, Lars Schmidt-Thieme, Christoph Freudenthaler, Artus Krohn-Grimberghe</author>
 				</paper>
 				<paper>
 					<paperID>78</paperID>
 					<title>Ranking Tweets with Local and Global Consistency Using Rich Features</title>
 					<type>Short</type>
-					<author>Zhankun Huang, Shenghua Liu, Pan Du, Xue-Qi Cheng</author>
+					<author>Zhankun Huang, Shenghua Liu, Pan Du, Xueqi Cheng</author>
 				</paper>
 			</session>
 			<session>
@@ -554,13 +554,13 @@
 					<paperID>315</paperID>
 					<title>Fault-tolerant Concept Detection in Information Networks</title>
 					<type>Short</type>
-					<author>Tobias Koetter, Stephan Günnemann, Christos Faloutsos, Michael Berthold</author>
+					<author>Tobias Koetter, Stephan Günnemann, Michael R. Berthold, Christos Faloutsos</author>
 				</paper>
 				<paper>
 					<paperID>294</paperID>
 					<title>Characterizing Temporal Anomalies in Evolving Networks</title>
 					<type>Short</type>
-					<author>Ranga Suri, Narasimha Murty, Athithan G</author>
+					<author>N.N.R. Ranga Suri, M. Narasimha Murty, G. Athithan</author>
 				</paper>
 			</session>
 			<session>
@@ -572,19 +572,19 @@
 					<paperID>118</paperID>
 					<title>Intervention-Driven Predictive Framework for Modeling Healthcare Data</title>
 					<type>Regular</type>
-					<author>Santu Rana, Sunil Gupta, Dinh Phung, Svetha Venkatesh</author>
+					<author>Santu Rana, Sunil Kumar Gupta, Dinh Phung, Svetha Venkatesh</author>
 				</paper>
 				<paper>
 					<paperID>98</paperID>
 					<title>Visual Analysis of Uncertainty in Trajectories</title>
 					<type>Short</type>
-					<author>Lu Lu, Nan Cao, Siyuan Liu, Huamin Qu, Lionel Ni, Xiaoru Yuan</author>
+					<author>Lu Lu, Nan Cao, Siyuan Liu, Lionel Ni, Xiaoru Yuan, Huamin Qu</author>
 				</paper>
 				<paper>
 					<paperID>290</paperID>
 					<title>Activity Recognition Using a Few Label Samples</title>
 					<type>Short</type>
-					<author>Heidar Davoudi, Xiaoli Li, Minh Nhut Nguyen, Shonali Krishnaswamy</author>
+					<author>Heidar Davoudi, Xiao-Li Li, Nguyen Minh Nhut, Shonali Priyadarsini Krishnaswamy</author>
 				</paper>
 				<paper>
 					<paperID>334</paperID>
@@ -712,7 +712,7 @@
 					<paperID>147</paperID>
 					<title>Visualization of PICO Elements for Information Needs Clarification and Query Refinement</title>
 					<type>Regular</type>
-					<author>Wan-Tze Vong, Patrick Then</author>
+					<author>Wan-Tze Vong, Patrick Hang Hui Then</author>
 				</paper>
 				<paper>
 					<paperID>164</paperID>
@@ -724,13 +724,13 @@
 					<paperID>190</paperID>
 					<title>Inferring Metapopulation Based Disease Transmission Networks</title>
 					<type>Regular</type>
-					<author>Xiaofei Yang, Jiming Liu, Kwok Wai Cheung, Xiaonong Zhou</author>
+					<author>Xiaofei Yang, Jiming Liu, William Kwok Wai Cheung, Xiao-Nong Zhou</author>
 				</paper>
 				<paper>
 					<paperID>285</paperID>
 					<title>A Novel Framework to Improve siRNA Efficacy Prediction</title>
 					<type>Short</type>
-					<author>Bui Thang</author>
+					<author>Bui Thang Ngoc</author>
 				</paper>
 			</session>
 			<session>
@@ -748,7 +748,7 @@
 					<paperID>10</paperID>
 					<title>Recurring and Novel Class Detection in Concept-Drifting Data Streams using Class-Based Ensemble</title>
 					<type>Short</type>
-					<author>Mohammad Islam</author>
+					<author>Mohammad Raihanul Islam</author>
 				</paper>
 				<paper>
 					<paperID>166</paperID>
@@ -833,7 +833,7 @@
 					<paperID>254</paperID>
 					<title>Improving iForest with relative mass</title>
 					<type>Regular</type>
-					<author>Sunil Aryal, Kai Ming Ting, Jonathan Wells, Takashi Washio</author>
+					<author>Sunil Aryal, Kai Ming Ting, Jonathan R. Wells, Takashi Washio</author>
 				</paper>
 			</session>
 			<session>

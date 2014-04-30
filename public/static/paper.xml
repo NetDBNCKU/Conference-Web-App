@@ -2,7 +2,7 @@
 	<paper>
 		<ID>10</ID>
 		<title>Recurring and Novel Class Detection in Concept-Drifting Data Streams using Class-Based Ensemble</title>
-		<authors>Mohammad Islam (BUET)</authors>
+		<authors>Mohammad Raihanul Islam (BUET)</authors>
 		<abstract>Over the recent years concept-evolution has received a lot of attention because of its importance in the context of mining data streams. Mining data stream has become an important task due to its wide range of applications such as network intrusion detection, credit card fraud protection, identifying trends in the social networks etc. Concept-evolution means introduction of novel class in the data stream. Many recent works address this phenomenon. In addition, a class may appear in the stream, disappears for a while and then reemerges. This scenario is known as recurring classes and remained unaddressed in most of the cases. As a result, generally where a novel class detection system is present, any recurring class is falsely detected as novel class. This results in unnecessary waste of human and computational resources. In this paper, we have proposed a class-based ensemble of classification model addressing the issues of recurring and novel class in the presence of concept drift and noise. Our approach has shown impressive performance compared to the state-of-art methods in the literature.</abstract>
 	</paper>
 	<paper>
@@ -26,7 +26,7 @@
 	<paper>
 		<ID>32</ID>
 		<title>Fast Triangle Core Decomposition for Mining Large Graphs</title>
-		<authors>Ryan Rossi (Purdue University)</authors>
+		<authors>Ryan A. Rossi (Purdue University)</authors>
 		<abstract>Large triangle cores represent dense subgraphs for which each edge has at least $k-2$ triangles (same as cliques). This paper presents a fast algorithm for computing the triangle core decomposition on big graphs. The proposed triangle core algorithm adapts both the computations and representation based on the properties of the graph. In addition, we develop a fast edge-based parallel triangle counting algorithm, which lies at the heart of the triangle core decomposition. The proposed algorithm is orders of magnitude faster than the currently available approach. We also investigate and propose fast methods for two variants of the triangle core problem: computing only the top-k triangle cores fast and finding the maximum triangle core number of the graph. The experiments demonstrate the scalability and effectiveness of our approach on 150+ networks with up to 1.8 billion-edges. Further, we apply the proposed methods for graph mining tasks including finding dense subgraphs, temporal strong components, and maximum cliques.</abstract>
 	</paper>
 	<paper>
@@ -68,7 +68,7 @@
 	<paper>
 		<ID>50</ID>
 		<title>Detecting and Analyzing Influenza Epidemics with Social Media in China</title>
-		<authors>Fang Zhang (),Jun Luo (Chinese Academy of Sciences),chao Li (),Xin Wang (University of Calgary, Canada),Zhongying Zhao ()</authors>
+		<authors>Fang Zhang (),Jun Luo (Chinese Academy of Sciences),Chao Li (),Xin Wang (University of Calgary, Canada),Zhongying Zhao ()</authors>
 		<abstract>In recent years, social media has become important and omnipresent for social network and information sharing. Researchers and scientists have begun to mine social media data to predict varieties of social, economic, health and entertainment related real-world phenomena. In this paper, we exhibit how social media data can be used to detect and analyze real-world phenomena with several data mining techniques. Specifically, we use posts from TencentWeibo to detect influenza and analyze influenza trends. We build a support vector machine (SVM) based classifier to classify influenza posts. In addition, we use  association rule mining to extract strongly associated features as additional features of posts to overcome the limitation of 140 words for posts. We also use sentimental analysis to classify the reposts without feature and uncommented reposts. The experimental results show that by combining those techniques, we can improve the precision and recall by at least ten percent.  Finally, we analyze the spatial and temporal patterns for positive influenza posts and tell when and where influenza epidemic is more likely to occur.</abstract>
 	</paper>
 	<paper>
@@ -80,7 +80,7 @@
 	<paper>
 		<ID>62</ID>
 		<title>Highly Scalable Attribute Selection for Averaged One-Dependence Estimators</title>
-		<authors>Shenglei Chen (Nanjing Audit University),Ana Martinez (Faculty of Information Technology, Monash University),Geoffrey Webb (Faculty of Information Technology, Monash University)</authors>
+		<authors>Shenglei Chen (Nanjing Audit University),Ana M. Martinez (Faculty of Information Technology, Monash University),Geoffrey I. Webb (Faculty of Information Technology, Monash University)</authors>
 		<abstract> Averaged One-Dependence Estimators (AODE) is a popular and effective approach to Bayesian learning. In this paper, a new attribute selection approach is proposed for AODE. It can search in a large model space, while it requires only a single extra pass through the training data, resulting in a computationally efficient two-pass learning algorithm.  The experimental results indicate that the new technique significantly reduces AODE's bias at the cost of a modest increase in training time. Its low bias and computational efficiency make it an attractive algorithm for learning from big data.</abstract>
 	</paper>
 	<paper>
@@ -104,7 +104,7 @@
 	<paper>
 		<ID>74</ID>
 		<title>Net-Ray: Visualizing and Mining Web-Scale Graphs</title>
-		<authors>U Kang (KAIST),Jay-Yoon Lee (CMU),Danai Koutra (CMU),Christos Faloutsos (CMU)</authors>
+		<authors>U. Kang (KAIST),Jay-Yoon Lee (CMU),Danai Koutra (CMU),Christos Faloutsos (CMU)</authors>
 		<abstract>How can we visualize billion-scale graphs? How to spot outliers in such graphs quickly? Visualizing graphs is the most direct way of understanding them; however, billion-scale graphs are very difficult to visualize since the amount of information overflows the resolution of a typical screen.   In this paper we propose Net-Ray, an open-source package for visualization-based mining on billion-scale graphs. Net-Ray visualizes graphs using the spy plot (adjacency matrix patterns), distribution plot, and correlation plot which involve careful node ordering and scaling. In addition, Net-Ray efficiently summarizes scatter clusters of graphs in a way that finds outliers automatically, and makes it easy to interpret them visually. To the best of our knowledge, Net-Ray is the first work for visual mining on billion-scale graphs.  Extensive experiments show that Net-Ray handles very large graphs with billions of nodes and edges efficiently and effectively. Specifically, among the various datasets that we study, we visualize in multiple ways the YahooWeb graph which spans 1.4 billion webpages and 6.6 billion links, and the Twitter who-follows-whom graph, which consists of 62.5 million users and 1.8 billion edges. We report interesting clusters and outliers spotted and summarized by Net-Ray. </abstract>
 	</paper>
 	<paper>
@@ -116,7 +116,7 @@
 	<paper>
 		<ID>78</ID>
 		<title>Ranking Tweets with Local and Global Consistency Using Rich Features</title>
-		<authors>Zhankun Huang (ICT),Shenghua Liu (),Pan Du (),Xue-Qi Cheng (ICT)</authors>
+		<authors>Zhankun Huang (ICT),Shenghua Liu (),Pan Du (),Xueqi Cheng (ICT)</authors>
 		<abstract>Ranking tweets is more challenging in Microblog search because of content sparseness and lack of context. Traditional ranking methods essentially using Euclidean distance are limited to local structure. Manifold structure helps to rank with local and global consistency. However such structure is empirically built on content similarity in an unsupervised way, suffering from sparseness while being adopted in tweet ranking. In this paper, we explore rich features to alleviate content sparseness problem, where time locality feature is proposed to consider context dependency. We then propose a supervised learning model that aggregates rich features to construct manifold structure. A learning algorithm is then designed for solving the model by minimizing the loss of labeled queries. At last we conduct a series of experiments to demonstrate the performance on 109 labeled queries from TREC Microblogging. Compared with the well-known baselines and empirical manifold structure, our algorithm achieves consistent improvements on the metrics.</abstract>
 	</paper>
 	<paper>
@@ -140,7 +140,7 @@
 	<paper>
 		<ID>87</ID>
 		<title>Inferring Attitude in Online Social Networks Based on Quadratic Correlation</title>
-		<authors>Cong Wang (Simon Fraser University),Andrei Bulatov (Simon Fraser University)</authors>
+		<authors>Cong Wang (Simon Fraser University),Andrei A. Bulatov (Simon Fraser University)</authors>
 		<abstract>The structure of an online social network in most cases cannot be described just by links between its members. We study online social networks, in which members may have certain attitude, positive or negative, toward each other, and so the network consists of a mixture of both positive and negative relationships. Our goal is to predict the sign of a given relationship based on the evidences provided in the current snapshot of the network. More precisely, using machine learning techniques we develop a model that after being trained on a particular network predicts the sign of an unknown or hidden link. The model uses relation- ships and influences from peers as evidences for the guess, however, the set of peers used is not predefined but rather learned during the training process. We use quadratic correlation between peer members to train the predictor. The model is tested on popular online datasets such as Epinions, Slashdot, and Wikipedia. In many cases it shows almost perfect predic- tion accuracy. Moreover, our model can also be efficiently updated as the underlying social network evolves.</abstract>
 	</paper>
 	<paper>
@@ -152,7 +152,7 @@
 	<paper>
 		<ID>92</ID>
 		<title>Balancing the Analysis of Frequent Patterns</title>
-		<authors>Arnaud Giacometti (University of Tours),Dominique Li (University of Tours),Arnaud Soulet (University of Tours)</authors>
+		<authors>Arnaud Giacometti (University of Tours),Dominique H. Li (University of Tours),Arnaud Soulet (University of Tours)</authors>
 		<abstract>A main challenge in pattern mining is to focus the discovery on high-quality patterns. One popular solution is to compute a numerical score on how well each discovered pattern describes the data. The best rating patterns are then the most analyzed by the data expert. In this paper, we evaluate the quality of discovered patterns by anticipating of how user analyzes them. We show that the examination of frequent patterns with the notion of support led to an unbalanced analysis of the dataset. Certain transactions are indeed completely ignored. Hence, we propose the notion of balanced support that weights the transactions to let each of them receive user specified attention. We also develop an algorithm ABSOLUTE for calculating these weights leading to evaluate the quality of patterns. Our experiments on frequent itemsets validate its effectiveness and show the relevance of the balanced support.</abstract>
 	</paper>
 	<paper>
@@ -188,7 +188,7 @@
 	<paper>
 		<ID>118</ID>
 		<title>Intervention-Driven Predictive Framework for Modeling Healthcare Data</title>
-		<authors>Santu Rana (Deakin University),Sunil Gupta (Deakin University),Dinh Phung (Deakin University, Australia ),Svetha Venkatesh (Deakin University)</authors>
+		<authors>Santu Rana (Deakin University),Sunil Kumar Gupta (Deakin University),Dinh Phung (Deakin University, Australia ),Svetha Venkatesh (Deakin University)</authors>
 		<abstract>Assessing prognostic risk is crucial to clinical care, and critically dependent on both diagnosis and medical interventions. Current methods use this augmented information to build a single prediction rule. But this may not be expressive enough to capture differential effects of interventions on prognosis. To this end, we propose a supervised, Bayesian nonparametric framework that simultaneously discovers the latent intervention groups and builds a separate prediction rule for each intervention group. The prediction rule is learnt using diagnosis data through a Bayesian logistic regression. For inference, we develop an efficient collapsed Gibbs sampler. We demonstrate that our method outperforms baselines in predicting 30-day hospital readmission using two patient cohorts - Acute Myocardial Infarction and Pneumonia. The significance of this model is that it can be applied widely across a broad range of medical prognosis tasks.</abstract>
 	</paper>
 	<paper>
@@ -200,7 +200,7 @@
 	<paper>
 		<ID>121</ID>
 		<title>Structure-aware Distance Measures for Comparing Clusterings in Graphs</title>
-		<authors>Jeffrey Chan (University of Melbourne),Xuan Vinh Nguyen (University of Melbourne, Australia),Wei Liu (NICTA),James Bailey (University of Melbourne, Australia),Christopher Leckie (University of Melbourne),Kotagiri Ramamohanarao (University of Melbourne),Jian Pei (Simon Fraser University, Canana)</authors>
+		<authors>Jeffrey Chan (University of Melbourne),Nguyen Xuan Vinh (University of Melbourne, Australia),Wei Liu (NICTA),James Bailey (University of Melbourne, Australia),Christopher A. Leckie (University of Melbourne),Kotagiri Ramamohanarao (University of Melbourne),Jian Pei (Simon Fraser University, Canana)</authors>
 		<abstract>Clustering in graphs aims to group vertices with similar patterns of connections.  Applications include discovering communities and latent structures in graphs.  Many algorithms have been proposed to find graph clusterings, but an open problem is the need for suitable comparison measures to quantitatively validate these algorithms, performing consensus clustering and to track evolving (graph) clusters across time.  To date, most comparison measures have focused on comparing the vertex groupings, and completely ignore the difference in the structural approximations in the clusterings, which can lead to counter-intuitive comparisons.  In this paper, we propose new measures that account for differences in the approximations.  We focus on comparison measures for two important graph clustering approaches, community detection and blockmodelling, and propose comparison measures that work for weighted (and unweighted) graphs.</abstract>
 	</paper>
 	<paper>
@@ -236,13 +236,13 @@
 	<paper>
 		<ID>140</ID>
 		<title>A New Evaluation Function for Entropy-based Feature Selection from Incomplete Data</title>
-		<authors>Wenhao Shu (Beijing Jiaotong University),Shen Hong (),Yingpeng Sang (),Yidong Li (Beijing Jiaotong Univeristy, China),Jun Wu (Beijing Jiaotong University)</authors>
+		<authors>Wenhao Shu (Beijing Jiaotong University),Hong Shen (),Yingpeng Sang (),Yidong Li (Beijing Jiaotong Univeristy, China),Jun Wu (Beijing Jiaotong University)</authors>
 		<abstract>In data mining and knowledge discovery, evaluation functions for evaluating the quality of features have great influence on the outputs of feature selection algorithms. However, in the existing entropy-based feature selection algorithms from incomplete data, evaluation functions are often inadequately computed as a result of two drawbacks. One is that the existing evaluation functions have not taken into consideration the differences of discernibility abilities of features. The other is that in the feature selection algorithms of forward greedy search, if the feature with the same entropy value is not only one, the arbitrary selection may affect the classification performance. This paper introduces a new evaluation function to overcome the drawbacks. A main advantage of the proposed evaluation function is that the granularity of classification is considered in the evaluation computations for candidate features. Based on the new evaluation function, an entropy-based feature selection algorithm from incomplete data is developed. Experimental results show that the proposed evaluation function is more effective than the existing evaluation functions in terms of classification accuracy.</abstract>
 	</paper>
 	<paper>
 		<ID>147</ID>
 		<title>Visualization of PICO Elements for Information Needs Clarification and Query Refinement</title>
-		<authors>Patrick Then (Swinburne Univ of Technology),Wan-Tze Vong (Swinburne University of Techno)</authors>
+		<authors>Patrick Hang Hui Then (Swinburne Univ of Technology),Wan-Tze Vong (Swinburne University of Techno)</authors>
 		<abstract>The UMLS semantic types and natural language processing techniques were collectively utilized to extract PICO elements from the titles and abstracts of 114 MEDLINE articles. 24 sets of PICO elements were generated from the articles based on the derivation of, and the tokenization methods and weighting schemes applied to the elements. The similarity of the I and C elements (called jointly the “Interventions”) between pairs of documents was calculated using 42 similarity/distance measures. Similar interventions were grouped together using complete-/average-/ward-link hierarchical clustering. The similarity measure, Yule, performed significantly better than other measures in identifying paired interventions derived from the titles and which had been pre-processed into single term and weighted by binary term-occurrence. The clustering algorithm, complete-link, provides the most appropriate structure for the visualization of interventions. Similarity-based clustering gave a higher mean average precision than random-baseline clustering (MAP = 0.4298 vs. 0.2364) over the 25 queries evaluated. </abstract>
 	</paper>
 	<paper>
@@ -266,13 +266,13 @@
 	<paper>
 		<ID>174</ID>
 		<title>Subtopic Mining via Modifier Graph Clustering</title>
-		<authors>Haitao Yu (The University of Tokushima),Fuji Ren (The University of Tokushima)</authors>
+		<authors>Hai-Tao Yu (The University of Tokushima),Fuji Ren (The University of Tokushima)</authors>
 		<abstract>Understanding the information need encoded in a user query has long been regarded as a crucial step of effective information retrieval. In this paper, we focus on subtopic mining that aims at generating a ranked list of subtopic strings for a given topic. We propose the modifier graph based approach, under which the problem of subtopic mining reduces to that of graph clustering over the modifier graph. Compared with the existing methods, the experimental results show that our modifier-graph based approaches are robust to the sparseness problem. In particular, our approaches that perform subtopic mining at a fine-grained term-level outperform the baseline methods that perform subtopic mining at a whole query-level in terms of I-rec, D-nDCG and D#-nDCG.</abstract>
 	</paper>
 	<paper>
 		<ID>177</ID>
 		<title>Extracting Diverse Patterns with Unbalanced Concept Hierarchy</title>
-		<authors>Kumara Swamy Mittapally (International Institute of Information Technology, Hyderabad),P. Reddy (International Institute of Information Technology, Hyderabad (IIIT-H), India),Somya Srivatsava (Amazon)</authors>
+		<authors>M. Kumara Swamy (International Institute of Information Technology, Hyderabad),P. Krishna Reddy (International Institute of Information Technology, Hyderabad (IIIT-H), India),Somya Srivastava (Amazon)</authors>
 		<abstract>The process of frequent pattern extraction finds interesting information about the association among the items in a transactional database. The notion of support is employed to extract the frequent patterns. Normally, in a given domain, a set of items can be grouped into a category and a pattern may contain the items which belong to multiple categories. In several applications, it may be useful to distinguish between the pattern having items belonging to multiple categories and the pattern having items belonging to one or a few categories. The notion of diversity captures the extent the items in the pattern belong to multiple categories. The items and the categories form a concept hierarchy. In the literature, an approach has been proposed to rank the patterns by considering the balanced concept hierarchy. In a real life scenario, the concept hierarchies are normally unbalanced. In this paper, we propose a general approach to calculate the rank based on the diversity, called drank, by considering the unbalanced concept hierarchy. The experiment results show that the patterns ordered based on drank are different from the patterns ordered based on support, and the proposed approach could assign the drank to different kinds of unbalanced patterns.</abstract>
 	</paper>
 	<paper>
@@ -296,7 +296,7 @@
 	<paper>
 		<ID>190</ID>
 		<title>Inferring Metapopulation Based Disease Transmission Networks</title>
-		<authors>Xiaofei Yang (Hong Kong Baptist University),Jiming Liu (Hong Kong Baptist University, Hong Kong),Kwok Wai Cheung (),Xiaonong Zhou ()</authors>
+		<authors>Xiaofei Yang (Hong Kong Baptist University),Jiming Liu (Hong Kong Baptist University, Hong Kong),William Kwok Wai Cheung (),Xiao-Nong Zhou ()</authors>
 		<abstract>To investigate how an infectious disease spreads, it is most desirable to discover the underlying disease transmission networks based on surveillance data. Existing studies have provided some methods for inferring information diffusion networks, where nodes correspond to individual persons. However, in the case of disease transmission, to effectively develop intervention strategies, it would be more realistic and reasonable for policy makers to study the diffusion patterns at the metapopulation level, that is, to consider disease transmission networks where nodes represent subpopulations, and links indicate their interrelationships. Such networks are useful to: (i) investigate hidden factors that influence epidemic dynamics, (ii) reveal possible sources of epidemic outbreaks, and (iii) practically develop and improve strategies for disease control. Therefore, based on such a real-world motivation, we aim to address the problem of inferring disease transmission networks at the metapopulation level. Specifically, we propose an inference method called NetEpi (Network Epidemic), and evaluate the method by utilizing synthetic and real-world datasets. The experiments show that NetEpi can recover most of the ground-truth disease transmission networks based only on the surveillance data. Moreover, it can help detect and interpret patterns and transmission pathways from the real-world data.</abstract>
 	</paper>
 	<paper>
@@ -314,7 +314,7 @@
 	<paper>
 		<ID>202</ID>
 		<title>Shingled Graph Disassembly: Finding the Undecideable Path</title>
-		<authors>Richard Wartell (Mandiant),Yan Zhou (University of Texas at Dallas),Kevin Hamlen (University of Texas at Dallas),Murat Kantarcioglu (University of Texas at Dallas, USA)</authors>
+		<authors>Richard Wartell (Mandiant),Yan Zhou (University of Texas at Dallas),Kevin W. Hamlen (University of Texas at Dallas),Murat Kantarcioglu (University of Texas at Dallas, USA)</authors>
 		<abstract>A probabilistic finite state machine approach to statically disassembling x86 machine language programs is presented and evaluated. Static disassembly is a crucial prerequisite for software reverse engineering, and has many applications in computer security and binary analysis. The general problem is provably undecidable because of the heavy use of unaligned instruction encodings and dynamically computed control flows in the x86 architecture. Limited work in machine learning and data mining has been undertaken on this subject. This paper shows that semantic meanings of opcode sequences can be leveraged to infer similarities between groups of opcode and operand sequences. This empowers a probabilistic finite state machine to learn statistically significant opcode and operand sequences in a training corpus of disassemblies. The similarities demonstrate the statistical significance of opcodes and operands in a surrounding context, facilitating more accurate disassembly of new binaries. Empirical results demonstrate that the algorithm is more efficient and effective than comparable approaches used by state-of-the-art disassembly tools.</abstract>
 	</paper>
 	<paper>
@@ -392,13 +392,13 @@
 	<paper>
 		<ID>249</ID>
 		<title>MalSpot: Multi^2 Malicious Network Behavior Patterns Analysis</title>
-		<authors>Ching-Hao Mao (III),Chung-Jung Wu (),Evangelos Papalexakis (Carnegie Mellon University),Christos Faloutsos (CMU),Kuo-Chen Lee (),Tien-Cheu Kao ()</authors>
+		<authors>Ching-Hao Mao (III),Chung-Jung Wu (),Evangelos E. Papalexakis (Carnegie Mellon University),Christos Faloutsos (CMU),Kuo-Chen Lee (),Tien-Cheu Kao ()</authors>
 		<abstract>What are the patterns that typical network attackers exhibit? For a given malicious network behaviors, are its attacks spread uniformly over time? In this work, we develop MalSpot, multi-resolution and multi-linear (Multi2) network analysis system in order to discover such malicious patterns, so that we can use them later for attack detection, when attacks are concurrent with legitimate traffic. We designed and deployed MalSpot, which employs multi-linear analysis with different time resolutions, running on top of MapReduce (Hadoop), and we identify patterns across attackers, attacked institutions and variation of time scales. We collect over a terabyte of proven malicious traces (along with benign ones), from the Taiwanese government security operation center (G-SOC) , during the entire year of 2012. We showcase the effectiveness of MalSpot, by discovering interesting patterns and anomalies on this enormous dataset. We observed static and time-evolving pat- terns, that a vast majority of the known malicious behavior seem to follow.</abstract>
 	</paper>
 	<paper>
 		<ID>254</ID>
 		<title>Improving iForest with relative mass</title>
-		<authors>Sunil Aryal (Monash University),Kai Ming Ting (Monash University),Jonathan Wells (Monash University),Takashi Washio (Osaka University, Japan)</authors>
+		<authors>Sunil Aryal (Monash University),Kai Ming Ting (Monash University),Jonathan R. Wells (Monash University),Takashi Washio (Osaka University, Japan)</authors>
 		<abstract>iForest uses a collection of isolation trees to detect anomalies. While it is effective in detecting global anomalies, it fails to detect local anomalies in data sets having multiple clusters of normal instances because the local anomalies are masked by normal clusters of similar density and they become less susceptible to isolation. In this paper, we propose a very simple but effective solution to overcome this limitation by replacing the global ranking measure based on path length with a local ranking measure based on relative mass that takes local data distribution into consideration. We demonstrate the utility of relative mass by improving the task specific performance of iForest in anomaly detection and information retrieval tasks.</abstract>
 	</paper>
 	<paper>
@@ -410,7 +410,7 @@
 	<paper>
 		<ID>259</ID>
 		<title>Privacy-Preserving Collaborative Anomaly Detection for Participatory Sensing</title>
-		<authors>Sarah Erfani (The University of Melbourne),Yee Wei Law (The University of Melbourne),Shanika Karunasekera (The University of Melbourne),Christopher Leckie (University of Melbourne),marimuthu Palaniswam ()</authors>
+		<authors>Sarah M. Erfani (The University of Melbourne),Yee Wei Law (The University of Melbourne),Shanika Karunasekera (The University of Melbourne),Christopher A. Leckie (University of Melbourne),Marimuthu Palaniswami ()</authors>
 		<abstract>In collaborative anomaly detection, multiple data sources submit their data to an on-line service, in order to detect anomalies with respect to the wider population. A major challenge is how to achieve reasonable detection accuracy without disclosing the actual values of the participants' data. We propose a lightweight and scalable privacy-preserving collaborative anomaly detection scheme called Random Multiparty Perturbation (RMP), which uses a combination of nonlinear and participant-specific linear perturbation. Each participant uses an individually perturbed uniformly distributed random matrix, in contrast to existing approaches that use a common random matrix. A privacy analysis is given for Bayesian Estimation and Independent Component Analysis attacks. Experimental results on real and synthetic datasets using an auto-encoder show that RMP yields comparable results to non-privacy preserving anomaly detection. </abstract>
 	</paper>
 	<paper>
@@ -422,7 +422,7 @@
 	<paper>
 		<ID>265</ID>
 		<title>An Integrated Model for User Attribute Discovery: A Case Study on Political Affiliation Identification</title>
-		<authors>Swapna Gottipati (Singapore Management Universit),Minghui Qiu (Singapore Management University),Yang Liu (Singapore Management University),Feida Zhu (Singapore Management University, Singapore),Jing Jiang (Singapore Management University)</authors>
+		<authors>Swapna Gottipati (Singapore Management Universit),Minghui Qiu (Singapore Management University),Liu Yang (Singapore Management University),Feida Zhu (Singapore Management University, Singapore),Jing Jiang (Singapore Management University)</authors>
 		<abstract>Discovering user demographic attributes from social media is a problem of considerable interest. The problem setting can be generalized to include three components &#45;&#45;- users, topics and behaviors. In recent studies on this problem, however, the behavior between users and topics are not effectively incorporated. In our work, we proposed an integrated unsupervised model which takes into consideration all the three components integral to the task. Furthermore, our model incorporates collaborative filtering with probabilistic matrix factorization to solve the data sparsity problem, a computational challenge common to all such tasks. We evaluated our method on a case study of user political affiliation identification, and compared against state-of-the-art baselines. Our model achieved an accuracy of 70.1\ for user party detection task.</abstract>
 	</paper>
 	<paper>
@@ -446,19 +446,19 @@
 	<paper>
 		<ID>285</ID>
 		<title>A Novel Framework to Improve siRNA Efficacy Prediction</title>
-		<authors>Bui Thang (JAIST)</authors>
+		<authors>Bui Thang Ngoc (JAIST)</authors>
 		<abstract>Short interfering RNA sequences (siRNAs) can knockdown target genes and thus have an immense impact on biology and pharmacy research. The key question of which siRNAs have high knockdown ability in siRNA research remains challenging as current known results are still far from expectation. This work aims to develop a generic framework to enhance siRNA knockdown efficacy prediction. The key idea is first to enrich siRNA sequences by incorporating them with rules found for de- signing effective siRNAs and representing them as transformed matrices, then to employ the bilinear tensor regression to do prediction on those matrices. Experiments show that the proposed method achieves results better than existing models in most cases.</abstract>
 	</paper>
 	<paper>
 		<ID>290</ID>
 		<title>Activity Recognition Using a Few Label Samples</title>
-		<authors>Heidar Davoudi (NTU),Xiaoli Li (Institute for Infocomm Research),Minh Nhut Nguyen (Institute for Infocomm Research (I2R),),Shonali Krishnaswamy (Institute for Infocomm Research, Singapore)</authors>
+		<authors>Heidar Davoudi (NTU),Xiao-Li Li (Institute for Infocomm Research),Nguyen Minh Nhut (Institute for Infocomm Research (I2R),),Shonali Priyadarsini Krishnaswamy (Institute for Infocomm Research, Singapore)</authors>
 		<abstract>Sensor-based human activity recognition aims to automatically identify human activities from a series of sensor observations, which is a crucial task for supporting wide range applications. Typically, given sufficient training examples for all activities (or activity classes), supervised learning techniques have been applied to build a classification model using sufficient training samples for differentiating various activities. However, it is often impractical to manually label large amounts of training data for each individual activities. As such, semi-supervised learning techniques sound promising alternatives as they have been designed to utilize a small training set L, enhanced by a large unlabeled set U. However, we observe that directly applying semi-supervised learning techniques may not produce accurate classification. In this paper, we have designed a novel dynamic temporal extension technique to ex- tend L into a bigger training set, and then build a final semi-supervised learning model for more accurate classification. Extensive experiments demonstrate that our proposed technique outperforms existing 7 state- of-the-art supervised learning and semi-supervised learning techniques.</abstract>
 	</paper>
 	<paper>
 		<ID>294</ID>
 		<title>Characterizing Temporal Anomalies in Evolving Networks</title>
-		<authors>Ranga Suri (CAIR),Narasimha Murty (Indian Institute of Science),Athithan G ()</authors>
+		<authors>N.N.R. Ranga Suri (CAIR),M. Narasimha Murty (Indian Institute of Science),G. Athithan ()</authors>
 		<abstract>Many real world networks evolve over time indicating their dynamic nature to cope up with the changing real life scenarios. Detection of various categories of anomalies, also known as outliers, in graph representation of such network data is essential for discovering different irregular connectivity patterns with potential adverse effects such as intrusions into a computer network. Characterizing the behavior of such anomalies (outliers) during the evolution of the network over time is critical for their mitigation. In this context, a novel method for an effective characterization of network anomalies is proposed here by defining various categories of graph outliers depending on their temporal behavior noticeable across multiple instances of the network during its evolution. The efficacy of the proposed method is demonstrated through an experimental evaluation using various benchmark graph data sets.</abstract>
 	</paper>
 	<paper>
@@ -500,7 +500,7 @@
 	<paper>
 		<ID>315</ID>
 		<title>Fault-tolerant Concept Detection in Information Networks</title>
-		<authors>Tobias Koetter (Carnegie Mellon University),Stephan Günnemann (Carnegie Mellon University),Christos Faloutsos (CMU),Michael Berthold (University of Konstanz, Germany)</authors>
+		<authors>Tobias Koetter (Carnegie Mellon University),Stephan Günnemann (Carnegie Mellon University),Michael R. Berthold (University of Konstanz, Germany),Christos Faloutsos (CMU)</authors>
 		<abstract>Given information about medical drugs and their properties, how can we automatically discover that Aspirin has blood-thinning properties, and thus prevents heart attacks? Expressed in more general terms, if we have a large information network that integrates data from heterogeneous data sources, how can we extract semantic information that provides a better understanding of the integrated data and also helps us to identify missing links? We propose to extract concepts that describe groups of objects and their common properties from the integrated data. The discovered concepts provide semantic information as well as an abstract view on the integrated data and thus improve the understanding of complex systems. Our proposed method has the following desirable properties: (a) it is parameter-free and therefore requires no user-defined parameters (b) it is fault-tolerant, allowing for the detection of missing links and (c) it is scalable, being linear on the input size. We demonstrate the effectiveness and scalability of the proposed method on real, publicly available graphs.</abstract>
 	</paper>
 	<paper>
@@ -584,7 +584,7 @@
 	<paper>
 		<ID>388</ID>
 		<title>Collective Matrix Factorization of Predictors, Neighborhood and Targets for Semi-Supervised Classification</title>
-		<authors>Lucas Drumond (University of Hildesheim),Lars Schmidt-Thieme (University of Hildesheim),Christoph Freudenthaler (),Artus Krohn-Grimberghe ()</authors>
+		<authors>Lucas Rego Drumond (University of Hildesheim),Lars Schmidt-Thieme (University of Hildesheim),Christoph Freudenthaler (),Artus Krohn-Grimberghe ()</authors>
 		<abstract>Due to the small size of available labeled data for semi-supervised learning, approaches to this problem make strong assumptions about the data, performing well only when such assumptions hold true. However, a lot of effort may have to be spent in understanding the data so that the most suitable model can be applied. This process can be as critical as gathering labeled data. One way to overcome this hindrance is to control the contribution of different assumptions to the model, rendering it capable of performing reasonably in a wide range of applications. In this paper we propose a collective matrix factorization model that simultaneously decomposes the predictor, neighborhood and target matrices (PNT-CMF) to achieve semi-supervised classification. By controlling how strongly the model relies on different assumptions, PNT-CMF is able to perform well on a wider variety of datasets. Experiments on synthetic and real world datasets show that, while state-of-the-art models (TSVM and LapSVM) excel on datasets that match their characteristics and have a performance drop on the others, our approach  outperforms them being consistently competitive in different situations.</abstract>
 	</paper>
 	<paper>
