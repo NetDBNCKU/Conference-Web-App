@@ -84,7 +84,7 @@
 					<paperID>50</paperID>
 					<title>Detecting and Analyzing Influenza Epidemics with Social Media in China</title>
 					<type>Short</type>
-					<author>Fang Zhang, Jun Luo, chao Li, Xin Wang, Zhongying Zhao</author>
+					<author>Fang Zhang, Jun Luo, Chao Li, Xin Wang, Zhongying Zhao</author>
 				</paper>
 				<paper>
 					<paperID>104</paperID>
@@ -162,13 +162,13 @@
 					<paperID>74</paperID>
 					<title>Net-Ray: Visualizing and Mining Web-Scale Graphs</title>
 					<type>Short</type>
-					<author>U Kang, Jay-Yoon Lee, Danai Koutra, Christos Faloutsos</author>
+					<author>U. Kang, Jay-Yoon Lee, Danai Koutra, Christos Faloutsos</author>
 				</paper>
 				<paper>
 					<paperID>121</paperID>
 					<title>Structure-aware Distance Measures for Comparing Clusterings in Graphs</title>
 					<type>Short</type>
-					<author>Jeffrey Chan, Xuan Vinh Nguyen, Wei Liu, James Bailey, Christopher Leckie, Kotagiri Ramamohanarao, Jian Pei</author>
+					<author>Jeffrey Chan, Nguyen Xuan Vinh, Wei Liu, James Bailey, Christopher A. Leckie, Kotagiri Ramamohanarao, Jian Pei</author>
 				</paper>
 			</session>
 			<session>
@@ -261,7 +261,7 @@
 					<paperID>259</paperID>
 					<title>Privacy-Preserving Collaborative Anomaly Detection for Participatory Sensing</title>
 					<type>Regular</type>
-					<author>Sarah M. Erfani, Yee Wei Law, Shanika Karunasekera, Christopher Leckie, marimuthu Palaniswam</author>
+					<author>Sarah M. Erfani, Yee Wei Law, Shanika Karunasekera, Christopher A. Leckie, Marimuthu Palaniswam</author>
 				</paper>
 				<paper>
 					<paperID>42</paperID>
@@ -470,7 +470,7 @@
 					<paperID>87</paperID>
 					<title>Inferring Attitude in Online Social Networks Based on Quadratic Correlation</title>
 					<type>Short</type>
-					<author>Cong Wang, Andrei Bulatov</author>
+					<author>Cong Wang, Andrei A. Bulatov</author>
 				</paper>
 				<paper>
 					<paperID>128</paperID>
@@ -518,13 +518,13 @@
 					<paperID>388</paperID>
 					<title>Collective Matrix Factorization of Predictors, Neighborhood and Targets for Semi-Supervised Classification</title>
 					<type>Short</type>
-					<author>Lucas Drumond, Lars Schmidt-Thieme, Christoph Freudenthaler, Artus Krohn-Grimberghe</author>
+					<author>Lucas Rego Drumond, Lars Schmidt-Thieme, Christoph Freudenthaler, Artus Krohn-Grimberghe</author>
 				</paper>
 				<paper>
 					<paperID>78</paperID>
 					<title>Ranking Tweets with Local and Global Consistency Using Rich Features</title>
 					<type>Short</type>
-					<author>Zhankun Huang, Shenghua Liu, Pan Du, Xue-Qi Cheng</author>
+					<author>Zhankun Huang, Shenghua Liu, Pan Du, Xueqi Cheng</author>
 				</paper>
 			</session>
 			<session>
@@ -554,7 +554,7 @@
 					<paperID>315</paperID>
 					<title>Fault-tolerant Concept Detection in Information Networks</title>
 					<type>Short</type>
-					<author>Tobias Koetter, Stephan Günnemann, Christos Faloutsos, Michael Berthold</author>
+					<author>Tobias Koetter, Stephan Günnemann, Michael R. Berthold, Christos Faloutsos</author>
 				</paper>
 				<paper>
 					<paperID>294</paperID>
@@ -578,13 +578,13 @@
 					<paperID>98</paperID>
 					<title>Visual Analysis of Uncertainty in Trajectories</title>
 					<type>Short</type>
-					<author>Lu Lu, Nan Cao, Siyuan Liu, Huamin Qu, Lionel Ni, Xiaoru Yuan</author>
+					<author>Lu Lu, Nan Cao, Siyuan Liu, Lionel Ni, Xiaoru Yuan, Huamin Qu</author>
 				</paper>
 				<paper>
 					<paperID>290</paperID>
 					<title>Activity Recognition Using a Few Label Samples</title>
 					<type>Short</type>
-					<author>Heidar Davoudi, Xiao-Li Li, Minh Nhut Nguyen, Shonali Krishnaswamy</author>
+					<author>Heidar Davoudi, Xiao-Li Li, Nguyen Minh Nhut, Shonali Priyadarsini Krishnaswamy</author>
 				</paper>
 				<paper>
 					<paperID>334</paperID>

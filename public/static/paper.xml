@@ -68,7 +68,7 @@
 	<paper>
 		<ID>50</ID>
 		<title>Detecting and Analyzing Influenza Epidemics with Social Media in China</title>
-		<authors>Fang Zhang (),Jun Luo (Chinese Academy of Sciences),chao Li (),Xin Wang (University of Calgary, Canada),Zhongying Zhao ()</authors>
+		<authors>Fang Zhang (),Jun Luo (Chinese Academy of Sciences),Chao Li (),Xin Wang (University of Calgary, Canada),Zhongying Zhao ()</authors>
 		<abstract>In recent years, social media has become important and omnipresent for social network and information sharing. Researchers and scientists have begun to mine social media data to predict varieties of social, economic, health and entertainment related real-world phenomena. In this paper, we exhibit how social media data can be used to detect and analyze real-world phenomena with several data mining techniques. Specifically, we use posts from TencentWeibo to detect influenza and analyze influenza trends. We build a support vector machine (SVM) based classifier to classify influenza posts. In addition, we use  association rule mining to extract strongly associated features as additional features of posts to overcome the limitation of 140 words for posts. We also use sentimental analysis to classify the reposts without feature and uncommented reposts. The experimental results show that by combining those techniques, we can improve the precision and recall by at least ten percent.  Finally, we analyze the spatial and temporal patterns for positive influenza posts and tell when and where influenza epidemic is more likely to occur.</abstract>
 	</paper>
 	<paper>
@@ -104,7 +104,7 @@
 	<paper>
 		<ID>74</ID>
 		<title>Net-Ray: Visualizing and Mining Web-Scale Graphs</title>
-		<authors>U Kang (KAIST),Jay-Yoon Lee (CMU),Danai Koutra (CMU),Christos Faloutsos (CMU)</authors>
+		<authors>U. Kang (KAIST),Jay-Yoon Lee (CMU),Danai Koutra (CMU),Christos Faloutsos (CMU)</authors>
 		<abstract>How can we visualize billion-scale graphs? How to spot outliers in such graphs quickly? Visualizing graphs is the most direct way of understanding them; however, billion-scale graphs are very difficult to visualize since the amount of information overflows the resolution of a typical screen.   In this paper we propose Net-Ray, an open-source package for visualization-based mining on billion-scale graphs. Net-Ray visualizes graphs using the spy plot (adjacency matrix patterns), distribution plot, and correlation plot which involve careful node ordering and scaling. In addition, Net-Ray efficiently summarizes scatter clusters of graphs in a way that finds outliers automatically, and makes it easy to interpret them visually. To the best of our knowledge, Net-Ray is the first work for visual mining on billion-scale graphs.  Extensive experiments show that Net-Ray handles very large graphs with billions of nodes and edges efficiently and effectively. Specifically, among the various datasets that we study, we visualize in multiple ways the YahooWeb graph which spans 1.4 billion webpages and 6.6 billion links, and the Twitter who-follows-whom graph, which consists of 62.5 million users and 1.8 billion edges. We report interesting clusters and outliers spotted and summarized by Net-Ray. </abstract>
 	</paper>
 	<paper>
@@ -116,7 +116,7 @@
 	<paper>
 		<ID>78</ID>
 		<title>Ranking Tweets with Local and Global Consistency Using Rich Features</title>
-		<authors>Zhankun Huang (ICT),Shenghua Liu (),Pan Du (),Xue-Qi Cheng (ICT)</authors>
+		<authors>Zhankun Huang (ICT),Shenghua Liu (),Pan Du (),Xueqi Cheng (ICT)</authors>
 		<abstract>Ranking tweets is more challenging in Microblog search because of content sparseness and lack of context. Traditional ranking methods essentially using Euclidean distance are limited to local structure. Manifold structure helps to rank with local and global consistency. However such structure is empirically built on content similarity in an unsupervised way, suffering from sparseness while being adopted in tweet ranking. In this paper, we explore rich features to alleviate content sparseness problem, where time locality feature is proposed to consider context dependency. We then propose a supervised learning model that aggregates rich features to construct manifold structure. A learning algorithm is then designed for solving the model by minimizing the loss of labeled queries. At last we conduct a series of experiments to demonstrate the performance on 109 labeled queries from TREC Microblogging. Compared with the well-known baselines and empirical manifold structure, our algorithm achieves consistent improvements on the metrics.</abstract>
 	</paper>
 	<paper>
@@ -140,7 +140,7 @@
 	<paper>
 		<ID>87</ID>
 		<title>Inferring Attitude in Online Social Networks Based on Quadratic Correlation</title>
-		<authors>Cong Wang (Simon Fraser University),Andrei Bulatov (Simon Fraser University)</authors>
+		<authors>Cong Wang (Simon Fraser University),Andrei A. Bulatov (Simon Fraser University)</authors>
 		<abstract>The structure of an online social network in most cases cannot be described just by links between its members. We study online social networks, in which members may have certain attitude, positive or negative, toward each other, and so the network consists of a mixture of both positive and negative relationships. Our goal is to predict the sign of a given relationship based on the evidences provided in the current snapshot of the network. More precisely, using machine learning techniques we develop a model that after being trained on a particular network predicts the sign of an unknown or hidden link. The model uses relation- ships and influences from peers as evidences for the guess, however, the set of peers used is not predefined but rather learned during the training process. We use quadratic correlation between peer members to train the predictor. The model is tested on popular online datasets such as Epinions, Slashdot, and Wikipedia. In many cases it shows almost perfect predic- tion accuracy. Moreover, our model can also be efficiently updated as the underlying social network evolves.</abstract>
 	</paper>
 	<paper>
@@ -200,7 +200,7 @@
 	<paper>
 		<ID>121</ID>
 		<title>Structure-aware Distance Measures for Comparing Clusterings in Graphs</title>
-		<authors>Jeffrey Chan (University of Melbourne),Xuan Vinh Nguyen (University of Melbourne, Australia),Wei Liu (NICTA),James Bailey (University of Melbourne, Australia),Christopher Leckie (University of Melbourne),Kotagiri Ramamohanarao (University of Melbourne),Jian Pei (Simon Fraser University, Canana)</authors>
+		<authors>Jeffrey Chan (University of Melbourne),Nguyen Xuan Vinh (University of Melbourne, Australia),Wei Liu (NICTA),James Bailey (University of Melbourne, Australia),Christopher A. Leckie (University of Melbourne),Kotagiri Ramamohanarao (University of Melbourne),Jian Pei (Simon Fraser University, Canana)</authors>
 		<abstract>Clustering in graphs aims to group vertices with similar patterns of connections.  Applications include discovering communities and latent structures in graphs.  Many algorithms have been proposed to find graph clusterings, but an open problem is the need for suitable comparison measures to quantitatively validate these algorithms, performing consensus clustering and to track evolving (graph) clusters across time.  To date, most comparison measures have focused on comparing the vertex groupings, and completely ignore the difference in the structural approximations in the clusterings, which can lead to counter-intuitive comparisons.  In this paper, we propose new measures that account for differences in the approximations.  We focus on comparison measures for two important graph clustering approaches, community detection and blockmodelling, and propose comparison measures that work for weighted (and unweighted) graphs.</abstract>
 	</paper>
 	<paper>
@@ -410,7 +410,7 @@
 	<paper>
 		<ID>259</ID>
 		<title>Privacy-Preserving Collaborative Anomaly Detection for Participatory Sensing</title>
-		<authors>Sarah M. Erfani (The University of Melbourne),Yee Wei Law (The University of Melbourne),Shanika Karunasekera (The University of Melbourne),Christopher Leckie (University of Melbourne),marimuthu Palaniswam ()</authors>
+		<authors>Sarah M. Erfani (The University of Melbourne),Yee Wei Law (The University of Melbourne),Shanika Karunasekera (The University of Melbourne),Christopher A. Leckie (University of Melbourne),Marimuthu Palaniswam ()</authors>
 		<abstract>In collaborative anomaly detection, multiple data sources submit their data to an on-line service, in order to detect anomalies with respect to the wider population. A major challenge is how to achieve reasonable detection accuracy without disclosing the actual values of the participants' data. We propose a lightweight and scalable privacy-preserving collaborative anomaly detection scheme called Random Multiparty Perturbation (RMP), which uses a combination of nonlinear and participant-specific linear perturbation. Each participant uses an individually perturbed uniformly distributed random matrix, in contrast to existing approaches that use a common random matrix. A privacy analysis is given for Bayesian Estimation and Independent Component Analysis attacks. Experimental results on real and synthetic datasets using an auto-encoder show that RMP yields comparable results to non-privacy preserving anomaly detection. </abstract>
 	</paper>
 	<paper>
@@ -452,7 +452,7 @@
 	<paper>
 		<ID>290</ID>
 		<title>Activity Recognition Using a Few Label Samples</title>
-		<authors>Heidar Davoudi (NTU),Xiao-Li Li (Institute for Infocomm Research),Minh Nhut Nguyen (Institute for Infocomm Research (I2R),),Shonali Krishnaswamy (Institute for Infocomm Research, Singapore)</authors>
+		<authors>Heidar Davoudi (NTU),Xiao-Li Li (Institute for Infocomm Research),Nguyen Minh Nhut (Institute for Infocomm Research (I2R),),Shonali Priyadarsini Krishnaswamy (Institute for Infocomm Research, Singapore)</authors>
 		<abstract>Sensor-based human activity recognition aims to automatically identify human activities from a series of sensor observations, which is a crucial task for supporting wide range applications. Typically, given sufficient training examples for all activities (or activity classes), supervised learning techniques have been applied to build a classification model using sufficient training samples for differentiating various activities. However, it is often impractical to manually label large amounts of training data for each individual activities. As such, semi-supervised learning techniques sound promising alternatives as they have been designed to utilize a small training set L, enhanced by a large unlabeled set U. However, we observe that directly applying semi-supervised learning techniques may not produce accurate classification. In this paper, we have designed a novel dynamic temporal extension technique to ex- tend L into a bigger training set, and then build a final semi-supervised learning model for more accurate classification. Extensive experiments demonstrate that our proposed technique outperforms existing 7 state- of-the-art supervised learning and semi-supervised learning techniques.</abstract>
 	</paper>
 	<paper>
@@ -500,7 +500,7 @@
 	<paper>
 		<ID>315</ID>
 		<title>Fault-tolerant Concept Detection in Information Networks</title>
-		<authors>Tobias Koetter (Carnegie Mellon University),Stephan Günnemann (Carnegie Mellon University),Christos Faloutsos (CMU),Michael Berthold (University of Konstanz, Germany)</authors>
+		<authors>Tobias Koetter (Carnegie Mellon University),Stephan Günnemann (Carnegie Mellon University),Michael R. Berthold (University of Konstanz, Germany),Christos Faloutsos (CMU)</authors>
 		<abstract>Given information about medical drugs and their properties, how can we automatically discover that Aspirin has blood-thinning properties, and thus prevents heart attacks? Expressed in more general terms, if we have a large information network that integrates data from heterogeneous data sources, how can we extract semantic information that provides a better understanding of the integrated data and also helps us to identify missing links? We propose to extract concepts that describe groups of objects and their common properties from the integrated data. The discovered concepts provide semantic information as well as an abstract view on the integrated data and thus improve the understanding of complex systems. Our proposed method has the following desirable properties: (a) it is parameter-free and therefore requires no user-defined parameters (b) it is fault-tolerant, allowing for the detection of missing links and (c) it is scalable, being linear on the input size. We demonstrate the effectiveness and scalability of the proposed method on real, publicly available graphs.</abstract>
 	</paper>
 	<paper>
@@ -584,7 +584,7 @@
 	<paper>
 		<ID>388</ID>
 		<title>Collective Matrix Factorization of Predictors, Neighborhood and Targets for Semi-Supervised Classification</title>
-		<authors>Lucas Drumond (University of Hildesheim),Lars Schmidt-Thieme (University of Hildesheim),Christoph Freudenthaler (),Artus Krohn-Grimberghe ()</authors>
+		<authors>Lucas Rego Drumond (University of Hildesheim),Lars Schmidt-Thieme (University of Hildesheim),Christoph Freudenthaler (),Artus Krohn-Grimberghe ()</authors>
 		<abstract>Due to the small size of available labeled data for semi-supervised learning, approaches to this problem make strong assumptions about the data, performing well only when such assumptions hold true. However, a lot of effort may have to be spent in understanding the data so that the most suitable model can be applied. This process can be as critical as gathering labeled data. One way to overcome this hindrance is to control the contribution of different assumptions to the model, rendering it capable of performing reasonably in a wide range of applications. In this paper we propose a collective matrix factorization model that simultaneously decomposes the predictor, neighborhood and target matrices (PNT-CMF) to achieve semi-supervised classification. By controlling how strongly the model relies on different assumptions, PNT-CMF is able to perform well on a wider variety of datasets. Experiments on synthetic and real world datasets show that, while state-of-the-art models (TSVM and LapSVM) excel on datasets that match their characteristics and have a performance drop on the others, our approach  outperforms them being consistently competitive in different situations.</abstract>
 	</paper>
 	<paper>
