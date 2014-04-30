@@ -77,6 +77,13 @@
 		</paper>
 	</author>
 	<author>
+		<name>Marimuthu Palaniswami ()</name>
+		<paper>
+			<paperID>259</paperID>
+			<paperTitle>Privacy-Preserving Collaborative Anomaly Detection for Participatory Sensing</paperTitle>
+		</paper>
+	</author>
+	<author>
 		<name>Mohammad Raihanul Islam (BUET)</name>
 		<paper>
 			<paperID>10</paperID>
@@ -1103,10 +1110,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Yi Shen (CAS)</name>
+		<name>Guoqiang Li ()</name>
 		<paper>
-			<paperID>261</paperID>
-			<paperTitle>Automatic Fake Followers Detection in Chinese Micro-blogging System</paperTitle>
+			<paperID>360</paperID>
+			<paperTitle>ReadBehavior: Reading Probabilities Modeling of Tweets via the Users' Retweeting Behaviors</paperTitle>
 		</paper>
 	</author>
 	<author>
@@ -1888,13 +1895,6 @@
 		</paper>
 	</author>
 	<author>
-		<name>Guoqiang Li ()</name>
-		<paper>
-			<paperID>360</paperID>
-			<paperTitle>ReadBehavior: Reading Probabilities Modeling of Tweets via the Users' Retweeting Behaviors</paperTitle>
-		</paper>
-	</author>
-	<author>
 		<name>Richard Wartell (Mandiant)</name>
 		<paper>
 			<paperID>202</paperID>
@@ -2346,10 +2346,10 @@
 		</paper>
 	</author>
 	<author>
-		<name>Marimuthu Palaniswam ()</name>
+		<name>Yi Shen (CAS)</name>
 		<paper>
-			<paperID>259</paperID>
-			<paperTitle>Privacy-Preserving Collaborative Anomaly Detection for Participatory Sensing</paperTitle>
+			<paperID>261</paperID>
+			<paperTitle>Automatic Fake Followers Detection in Chinese Micro-blogging System</paperTitle>
 		</paper>
 	</author>
 	<author>

@@ -410,7 +410,7 @@
 	<paper>
 		<ID>259</ID>
 		<title>Privacy-Preserving Collaborative Anomaly Detection for Participatory Sensing</title>
-		<authors>Sarah M. Erfani (The University of Melbourne),Yee Wei Law (The University of Melbourne),Shanika Karunasekera (The University of Melbourne),Christopher A. Leckie (University of Melbourne),Marimuthu Palaniswam ()</authors>
+		<authors>Sarah M. Erfani (The University of Melbourne),Yee Wei Law (The University of Melbourne),Shanika Karunasekera (The University of Melbourne),Christopher A. Leckie (University of Melbourne),Marimuthu Palaniswami ()</authors>
 		<abstract>In collaborative anomaly detection, multiple data sources submit their data to an on-line service, in order to detect anomalies with respect to the wider population. A major challenge is how to achieve reasonable detection accuracy without disclosing the actual values of the participants' data. We propose a lightweight and scalable privacy-preserving collaborative anomaly detection scheme called Random Multiparty Perturbation (RMP), which uses a combination of nonlinear and participant-specific linear perturbation. Each participant uses an individually perturbed uniformly distributed random matrix, in contrast to existing approaches that use a common random matrix. A privacy analysis is given for Bayesian Estimation and Independent Component Analysis attacks. Experimental results on real and synthetic datasets using an auto-encoder show that RMP yields comparable results to non-privacy preserving anomaly detection. </abstract>
 	</paper>
 	<paper>
