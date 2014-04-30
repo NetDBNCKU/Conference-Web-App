@@ -1,0 +1,919 @@
+<program>
+	<day>
+		<date>May 14, 2014</date>		
+		<time_interval>
+			<time>08:30 – 09:00</time>
+			<session>
+				<venue>Auditorium (9F)</venue>
+				<name>Conference Opening</name>				
+			</session>
+		</time_interval>
+		<time_interval>
+			<time>09:00 – 10:00</time>
+			<session>
+				<venue>Auditorium (9F)</venue>
+				<name>Keynote Speech I</name>
+				<speaker>Dr. Jian Pei</speaker>
+				<title>Being a Happy Dwarf in the Age of Big Data</title>
+				<chair>Arbee L. P. Chen</chair>
+			</session>
+		</time_interval>
+		<time_interval>
+			<time>10:00 – 10:20</time>
+			<session>
+				<venue>Far Eastern Grand Ballroom (B2)</venue>
+				<name>Coffee Break</name>				
+			</session>
+		</time_interval>
+		<time_interval>
+			<time>10:20 – 12:20</time>
+			<session>
+				<ID>1A</ID>
+				<name>Pattern Mining</name>
+				<chair>Longbing Cao</chair>
+				<venue>An Ping Room (B2)</venue>
+				<paper>
+					<paperID>249</paperID>
+					<title>MalSpot: Multi^2 Malicious Network Behavior Patterns Analysis</title>
+					<type>Regular</type>
+					<author>Ching-Hao Mao, Chung-Jung Wu, Evangelos E. Papalexakis, Christos Faloutsos, Kuo-Chen Lee, Tien-Cheu Kao</author>
+				</paper>
+				<paper>
+					<paperID>177</paperID>
+					<title>Extracting Diverse Patterns with Unbalanced Concept Hierarchy</title>
+					<type>Short</type>
+					<author>M. Kumara Swamy, P. Krishna Reddy, Somya Srivastava</author>
+				</paper>
+				<paper>
+					<paperID>204</paperID>
+					<title>Efficiently Depth-First Minimal Pattern Mining</title>
+					<type>Short</type>
+					<author>Arnaud Soulet, François Rioult</author>
+				</paper>
+				<paper>
+					<paperID>215</paperID>
+					<title>Fast Vertical Mining of Sequential Patterns Using Co-occurrence Information</title>
+					<type>Short</type>
+					<author>Philippe Fournier-Viger, Antonio Gomariz, Manuel Campos, Rincy Thomas</author>
+				</paper>
+				<paper>
+					<paperID>92</paperID>
+					<title>Balancing the Analysis of Frequent Patterns</title>
+					<type>Short</type>
+					<author>Arnaud Giacometti, Dominique H. Li, Arnaud Soulet</author>
+				</paper>
+			</session>
+			<session>
+				<ID>1B</ID>
+				<name>Social Network and Social Media (I)</name>
+				<chair>Jian Pei</chair>
+				<venue>Fu Cheng Room (B2)</venue>
+				<paper>
+					<paperID>301</paperID>
+					<title>Balanced Seed Selection for Budgeted Influence Maximization in Social Networks</title>
+					<type>Regular</type>
+					<author>Shuo Han, Fuzhen Zhuang, Qing He, Zhongzhi Shi</author>
+				</paper>
+				<paper>
+					<paperID>18</paperID>
+					<title>Persistent Community Detection in Dynamic Social Networks</title>
+					<type>Short</type>
+					<author>Siyuan Liu, Shuhui Wang, Ramayya Krishnan</author>
+				</paper>
+				<paper>
+					<paperID>50</paperID>
+					<title>Detecting and Analyzing Influenza Epidemics with Social Media in China</title>
+					<type>Short</type>
+					<author>Fang Zhang, Jun Luo, Chao Li, Xin Wang, Zhongying Zhao</author>
+				</paper>
+				<paper>
+					<paperID>104</paperID>
+					<title>Analyzing Location Predictability on Location-Based Social Networks</title>
+					<type>Short</type>
+					<author>Defu Lian, Yin Zhu, Xing Xie, Enhong Chen</author>
+				</paper>
+				<paper>
+					<paperID>360</paperID>
+					<title>ReadBehavior: Reading Probabilities Modeling of Tweets via the Users' Retweeting Behaviors</title>
+					<type>Short</type>
+					<author>Jianguang Du, Dandan Song, Lejian Liao, Xin Li, Li Liu, Guoqiang Li, Guanguo Gao, Guiying Wu</author>
+				</paper>
+			</session>
+			<session>
+				<ID>1C</ID>
+				<name>Classification (I)</name>
+				<chair>Min-Ling Zhang</chair>
+				<venue>South Gate Room (B1)</venue>
+				<paper>
+					<paperID>115</paperID>
+					<title>Supervised Nonlinear Factorizations Excel In Semi-supervised Regression</title>
+					<type>Regular</type>
+					<author>Josif Grabocka, Erind Bedalli, Lars Schmidt-Thieme</author>
+				</paper>
+				<paper>
+					<paperID>89</paperID>
+					<title>Learning from Crowds under Experts’ Supervision</title>
+					<type>Short</type>
+					<author>Qingyang Hu, Qinming He, Hao Huang, Kevin Chiew, Zhenguang Liu</author>
+				</paper>
+				<paper>
+					<paperID>183</paperID>
+					<title>A Robust Classifier for Imbalanced Datasets</title>
+					<type>Short</type>
+					<author>Sori Kang, Kotagiri Ramamohanarao</author>
+				</paper>
+				<paper>
+					<paperID>255</paperID>
+					<title>Signed-Error Conformal Regression</title>
+					<type>Short</type>
+					<author>Henrik Linusson, Ulf Johansson, Tuve Löfström</author>
+				</paper>
+				<paper>
+					<paperID>136</paperID>
+					<title>Multi-Instance Learning from Positive and Unlabeled Bags</title>
+					<type>Short</type>
+					<author>Jia Wu, Xingquan Zhu, Chengqi Zhang, Zhihua Cai</author>
+				</paper>
+			</session>
+			<session>
+				<ID>1D</ID>
+				<name>Graph and Network Mining (I)</name>
+				<chair>Wei Wang</chair>
+				<venue>West Gate Room (B1)</venue>
+				<paper>
+					<paperID>32</paperID>
+					<title>Fast Triangle Core Decomposition for Mining Large Graphs</title>
+					<type>Regular</type>
+					<author>Ryan A. Rossi</author>
+				</paper>
+				<paper>
+					<paperID>231</paperID>
+					<title>Super Graph Classification</title>
+					<type>Regular</type>
+					<author>Ting Guo, Xingquan Zhu</author>
+				</paper>
+				<paper>
+					<paperID>174</paperID>
+					<title>Subtopic Mining via Modifier Graph Clustering</title>
+					<type>Short</type>
+					<author>Hai-Tao Yu, Fuji Ren</author>
+				</paper>
+				<paper>
+					<paperID>74</paperID>
+					<title>Net-Ray: Visualizing and Mining Web-Scale Graphs</title>
+					<type>Short</type>
+					<author>U. Kang, Jay-Yoon Lee, Danai Koutra, Christos Faloutsos</author>
+				</paper>
+				<paper>
+					<paperID>121</paperID>
+					<title>Structure-aware Distance Measures for Comparing Clusterings in Graphs</title>
+					<type>Short</type>
+					<author>Jeffrey Chan, Nguyen Xuan Vinh, Wei Liu, James Bailey, Christopher A. Leckie, Kotagiri Ramamohanarao, Jian Pei</author>
+				</paper>
+			</session>
+			<session>
+				<ID>1E</ID>
+				<name>Applications (I)</name>
+				<chair>PhilippeFournier-Viger</chair>
+				<venue>East Gate Room (B1)</venue>
+				<paper>
+					<paperID>265</paperID>
+					<title>An Integrated Model for User Attribute Discovery: A Case Study on Political Affiliation Identification</title>
+					<type>Regular</type>
+					<author>Swapna Gottipati, Minghui Qiu, Liu Yang, Feida Zhu, Jing Jiang</author>
+				</paper>
+				<paper>
+					<paperID>395</paperID>
+					<title>Programmatic buying bidding strategies with win rate and winning price estimation in real time mobile advertising</title>
+					<type>Short</type>
+					<author>Xiang Li, Devin Guan</author>
+				</paper>
+				<paper>
+					<paperID>357</paperID>
+					<title>Self-Training Temporal Dynamic Collaborative Filtering</title>
+					<type>Short</type>
+					<author>Cheng Luo, Xiongcai Cai, Nipa Chowdhury</author>
+				</paper>
+				<paper>
+					<paperID>271</paperID>
+					<title>Data Augmented Maximum Margin Matrix Factorization for Flickr Group Recommendation</title>
+					<type>Short</type>
+					<author>Liang Chen, Yilun Wang, Tingting Liang, Lichuan Ji, Jian Wu</author>
+				</paper>
+				<paper>
+					<paperID>343</paperID>
+					<title>A Graph Matching Method for Historical Census Household Linkage</title>
+					<type>Regular</type>
+					<author>Zhichun Fu, Peter Christen, Jun Zhou</author>
+				</paper>
+			</session>
+			<session>
+				<venue>Auditorium (9F)</venue>
+				<name>Tutorial 1</name>
+				<lecturer>Xia Hu and Huan Liu </lecturer>
+				<title>Mining Spammers in Social Media: Techniques and Applications</title>				
+			</session>
+		</time_interval>
+		<time_interval>
+			<time>12:20 – 13:45</time>
+			<session>
+				<venue>Far Eastern Grand Ballroom (B2)</venue>
+				<name>Lunch</name>				
+			</session>
+		</time_interval>
+		<time_interval>
+			<time>13:45 – 14:45</time>
+			<session>
+				<venue>Auditorium (9F)</venue>
+				<name>Keynote Speech II</name>
+				<speaker>Dr. Ming-Syan Chen</speaker>
+				<title>On Information Extraction for Social Networks</title>
+				<chair>Tu Bao Ho</chair>
+			</session>
+		</time_interval>
+		<time_interval>
+			<time>14:45 – 15:15</time>
+			<session>
+				<venue>Far Eastern Grand Ballroom (B2)</venue>
+				<name>Coffee Break</name>				
+			</session>
+		</time_interval>
+		<time_interval>
+			<time>15:15 – 17:15</time>
+			<session>
+				<ID>2A</ID>
+				<name>Privacy Preserving</name>
+				<chair>Gang Li</chair>
+				<venue>An Ping Room (B2)</venue>
+				<paper>
+					<paperID>51</paperID>
+					<title>Deferentially Private Tagging Recommendation based on Topic Model</title>
+					<type>Regular</type>
+					<author>Tianqing Zhu, Gang Li, Wanlei Zhou, Ping Xiong, Cao Yuan</author>
+				</paper>
+				<paper>
+					<paperID>229</paperID>
+					<title>Matrix Factorization Without User Data Retention</title>
+					<type>Regular</type>
+					<author>David Vallet, Arik Friedman, Shlomo Berkovsky</author>
+				</paper>
+				<paper>
+					<paperID>259</paperID>
+					<title>Privacy-Preserving Collaborative Anomaly Detection for Participatory Sensing</title>
+					<type>Regular</type>
+					<author>Sarah M. Erfani, Yee Wei Law, Shanika Karunasekera, Christopher A. Leckie, Marimuthu Palaniswami</author>
+				</paper>
+				<paper>
+					<paperID>42</paperID>
+					<title>Privacy Preserving Publication of Locations Based on Delaunay Triangulation</title>
+					<type>Short</type>
+					<author>Jun Luo, Jinfei Liu, Li Xiong</author>
+				</paper>
+				<paper>
+					<paperID>188</paperID>
+					<title>A Fast Secure Dot Product Protocol with Application to Privacy Preserving Association Rule Mining</title>
+					<type>Short</type>
+					<author>Changyu Dong, Liqun Chen</author>
+				</paper>
+			</session>
+			<session>
+				<ID>2B</ID>
+				<name>Recommendation</name>
+				<chair>Guandong Xu</chair>
+				<venue>Fu Cheng Room (B2)</venue>
+				<paper>
+					<paperID>122</paperID>
+					<title>CTROF: A Collaborative Tweet Ranking Framework for Online Personalized Recommendation</title>
+					<type>Regular</type>
+					<author>Kaisong Song, Daling Wang, Shi Feng, Wen Qu, Ge Yu, Yifei Zhang</author>
+				</paper>
+				<paper>
+					<paperID>123</paperID>
+					<title>Two-Phase Layered Learning Recommendation via Category Structure</title>
+					<type>Regular</type>
+					<author>Ke Ji, Shen Hong, Tian Hui, Yanbo Wu, Jun Wu</author>
+				</paper>
+				<paper>
+					<paperID>196</paperID>
+					<title>Dynamic Circle Recommendation: A Probabilistic Model</title>
+					<type>Regular</type>
+					<author>Fan-Kai Chou, Meng-Fen Chiang, Yi-Cheng Chen, Wen-Chih Peng</author>
+				</paper>
+				<paper>
+					<paperID>369</paperID>
+					<title>HOSLIM: Higher-Order Sparse LInear Method for Top-N Recommender Systems</title>
+					<type>Short</type>
+					<author>Evangelia Christakopoulou, George Karypis</author>
+				</paper>
+				<paper>
+					<paperID>310</paperID>
+					<title>Mining GPS Data for Trajectory Recommendation</title>
+					<type>Short</type>
+					<author>Peifeng Yin, Mao Ye, Wang-Chien Lee, Zhenhui Li</author>
+				</paper>
+			</session>
+			<session>
+				<ID>2C</ID>
+				<name>Feature Selection and Reduction</name>
+				<chair>Guozhu Dong</chair>
+				<venue>South Gate Room (B1)</venue>
+				<paper>
+					<paperID>82</paperID>
+					<title>Gaussian Processes Autoencoder for Dimensionality Reduction</title>
+					<type>Regular</type>
+					<author>Xinwei Jiang, Junbin Gao, Xia Hong, Zhihua Cai</author>
+				</paper>
+				<paper>
+					<paperID>178</paperID>
+					<title>Semi-supervised Feature Analysis for Multimedia Annotation by Mining Label Correlation</title>
+					<type>Regular</type>
+					<author>Xiaojun Chang, Haoquan Shen, Sen Wang, Jiajun Liu, Xue Li</author>
+				</paper>
+				<paper>
+					<paperID>62</paperID>
+					<title>Highly Scalable Attribute Selection for Averaged One-Dependence Estimators</title>
+					<type>Short</type>
+					<author>Shenglei Chen, Ana M. Martinez, Geoffrey I. Webb</author>
+				</paper>
+				<paper>
+					<paperID>140</paperID>
+					<title>A New Evaluation Function for Entropy-based Feature Selection from Incomplete Data</title>
+					<type>Short</type>
+					<author>Wenhao Shu, Hong Shen, Yingpeng Sang, Yidong Li, Jun Wu</author>
+				</paper>
+			</session>
+			<session>
+				<ID>2D</ID>
+				<name>Machine Learning</name>
+				<chair>Carson K. Leung</chair>
+				<venue>West Gate Room (B1)</venue>
+				<paper>
+					<paperID>72</paperID>
+					<title>Constrained Least Squares Regression for Semi-Supervised Learning</title>
+					<type>Regular</type>
+					<author>Bo Liu, Liping Jing, Jian Yu, Jia Li</author>
+				</paper>
+				<paper>
+					<paperID>222</paperID>
+					<title>Machine Learning Approaches for Interactive Verification</title>
+					<type>Regular</type>
+					<author>Yu-Cheng Chou, Hsuan-Tien Lin</author>
+				</paper>
+				<paper>
+					<paperID>69</paperID>
+					<title>Positional Translation Language Model for Ad-hoc Information Retrieval</title>
+					<type>Regular</type>
+					<author>Xinhui Tu, Jing Luo, Bo Li, Tingting He, Jinguang Gu</author>
+				</paper>
+				<paper>
+					<paperID>354</paperID>
+					<title>Topic Modeling using Collapsed Typed Dependency Relations</title>
+					<type>Short</type>
+					<author>Elnaz Delpisheh, Aijun An</author>
+				</paper>
+				<paper>
+					<paperID>36</paperID>
+					<title>An Iterative Fusion Approach to Graph-based Semi-supervised Learning from Multiple Views</title>
+					<type>Short</type>
+					<author>Yang Wang, Jian Pei, Xuemin Lin, Qing Zhang, Wenjie Zhang</author>
+				</paper>
+			</session>
+			<session>
+				<ID>2E</ID>
+				<name>PAKDD 14 Contest</name>				
+				<venue>East Gate Room (B1)</venue>
+			</session>
+			<session>
+				<venue>Auditorium (9F)</venue>
+				<name>Tutorial 2</name>
+				<lecturer>Ee-Peng Lim and Freddy Chong Tat Chua</lecturer>
+				<title>Social Media and Network Mining - Models, Systems and Applications</title>				
+			</session>
+		</time_interval>
+		<time_interval>
+			<time>18:30 – 21:00</time>
+			<session>
+				<venue>Far Eastern Grand Ballroom (B2)</venue>
+				<name>Reception</name>
+			</session>
+		</time_interval>
+	</day>
+	<day>
+		<date>May 15, 2014</date>
+		<time_interval>
+			<time>08:45 – 09:45</time>
+			<session>
+				<venue>Auditorium (9F)</venue>
+				<name>Keynote Speech III</name>
+				<speaker>Dr. Vipin Kumar</speaker>
+				<title>Understanding Climate Change: Opportunities and Challenges for Data Driven Research</title>
+				<chair>Zhi-Hua Zhou</chair>
+			</session>
+		</time_interval>
+		<time_interval>
+			<time>09:45 – 10:10</time>
+			<session>
+				<venue>Far Eastern Grand Ballroom (B2)</venue>
+				<name>Coffee Break</name>				
+			</session>
+		</time_interval>
+		<time_interval>
+			<time>10:10 – 12:10</time>
+			<session>
+				<ID>3A</ID>
+				<name>Temporal and Spatial Data</name>
+				<chair>Wei Ding</chair>
+				<venue>An Ping Room (B2)</venue>
+				<paper>
+					<paperID>130</paperID>
+					<title>Crime Forecasting Using Spatio-Temporal Pattern with Ensemble Learning</title>
+					<type>Regular</type>
+					<author>Chung-Hsien Yu, Wei Ding, Ping Chen, Melissa Morabito</author>
+				</paper>
+				<paper>
+					<paperID>85</paperID>
+					<title>NLPMM: a Next Location Predictor with Markov Modeling</title>
+					<type>Regular</type>
+					<author>Meng Chen, Yang Liu, Xiaohui Yu</author>
+				</paper>
+				<paper>
+					<paperID>305</paperID>
+					<title>Beyond Poisson: Modeling Inter-Arrival Time of Requests in a Datacenter</title>
+					<type>Short</type>
+					<author>Da-Cheng Juan, Lei Li, Huan-Kai Peng, Diana Marculescu, Christos Faloutsos</author>
+				</paper>
+				<paper>
+					<paperID>11</paperID>
+					<title>Brownian Bridge Model for High Resolution Location Predictions</title>
+					<type>Short</type>
+					<author>Miao Lin, Wen-Jing Hsu</author>
+				</paper>
+				<paper>
+					<paperID>295</paperID>
+					<title>Mining Correlation Patterns among Appliances in Smart Home Environment</title>
+					<type>Short</type>
+					<author>Yi-Cheng Chen, Chien-Chih Chen, Wen-Chih Peng, Wang-Chien Lee</author>
+				</paper>
+			</session>
+			<session>
+				<ID>3B</ID>
+				<name>Social Network and Social Media (II)</name>
+				<chair>Huan Liu</chair>
+				<venue>Fu Jian Room (B2)</venue>
+				<paper>
+					<paperID>148</paperID>
+					<title>Inferring Strange Behavior from Connectivity Pattern in Social Networks</title>
+					<type>Regular</type>
+					<author>Meng Jiang, Peng Cui, Alex Beutel, Christos Faloutsos, Shiqiang Yang</author>
+				</paper>
+				<paper>
+					<paperID>87</paperID>
+					<title>Inferring Attitude in Online Social Networks Based on Quadratic Correlation</title>
+					<type>Short</type>
+					<author>Cong Wang, Andrei A. Bulatov</author>
+				</paper>
+				<paper>
+					<paperID>128</paperID>
+					<title>Hash-based Stream LDA: Topic Modeling in Social Streams</title>
+					<type>Short</type>
+					<author>Anton Slutsky, Xiaohua Hu, Yuan An</author>
+				</paper>
+				<paper>
+					<paperID>314</paperID>
+					<title>Two sides of a coin: Separating Personal Communication and Public Dissemination Accounts in Twitter</title>
+					<type>Short</type>
+					<author>Peifeng Yin, Nilam Ram, Wang-Chien Lee, Conrad Tucker, Shashank Khandelwal, Marcel Salathe</author>
+				</paper>
+				<paper>
+					<paperID>378</paperID>
+					<title>Latent Features Based Prediction on New Users’ Tastes</title>
+					<type>Short</type>
+					<author>Ming-Chu Chen, Hung-Yu Kao</author>
+				</paper>
+			</session>
+			<session>
+				<ID>3C</ID>
+				<name>Classification (II)</name>
+				<chair>See-Kiong Ng</chair>
+				<venue>South Gate Room (B1)</venue>
+				<paper>
+					<paperID>200</paperID>
+					<title>Mining Contrast Subspaces</title>
+					<type>Regular</type>
+					<author>Lei Duan, Guanting Tang, Jian Pei, James Bailey, Guozhu Dong, Akiko Campbell, Changjie Tang</author>
+				</paper>
+				<paper>
+					<paperID>240</paperID>
+					<title>Forward Classification on Data Streams</title>
+					<type>Regular</type>
+					<author>Peng Wang, Peng Zhang, Yanan Cao, Li Guo, Bingxing Fang</author>
+				</paper>
+				<paper>
+					<paperID>202</paperID>
+					<title>Shingled Graph Disassembly: Finding the Undecideable Path</title>
+					<type>Short</type>
+					<author>Richard Wartell, Yan Zhou, Kevin W. Hamlen, Murat Kantarcioglu</author>
+				</paper>
+				<paper>
+					<paperID>388</paperID>
+					<title>Collective Matrix Factorization of Predictors, Neighborhood and Targets for Semi-Supervised Classification</title>
+					<type>Short</type>
+					<author>Lucas Rego Drumond, Lars Schmidt-Thieme, Christoph Freudenthaler, Artus Krohn-Grimberghe</author>
+				</paper>
+				<paper>
+					<paperID>78</paperID>
+					<title>Ranking Tweets with Local and Global Consistency Using Rich Features</title>
+					<type>Short</type>
+					<author>Zhankun Huang, Shenghua Liu, Pan Du, Xueqi Cheng</author>
+				</paper>
+			</session>
+			<session>
+				<ID>3D</ID>
+				<name>Graph and Network Mining (II)</name>
+				<chair>Feida Zhu</chair>
+				<venue>West Gate Room (B1)</venue>
+				<paper>
+					<paperID>344</paperID>
+					<title>Efficiently and Fast Learning a Fine-grained Stochastic Blockmodel from Large Networks</title>
+					<type>Regular</type>
+					<author>Xuehua Zhao, Bo Yang, Hechang Chen</author>
+				</paper>
+				<paper>
+					<paperID>77</paperID>
+					<title>Influence Propagation: Patterns, Model and a Case Study</title>
+					<type>Short</type>
+					<author>Yibin Lin, Agha Ali Raza, Jay-Yoon Lee, Danai Koutra, Roni Rosenfeld, Christos Faloutsos</author>
+				</paper>
+				<paper>
+					<paperID>298</paperID>
+					<title>Overlapping Communities for Identifying Misbehavior in Network Communications</title>
+					<type>Short</type>
+					<author>Farnaz Moradi, Tomas Olovsson, Philippas Tsigas</author>
+				</paper>
+				<paper>
+					<paperID>315</paperID>
+					<title>Fault-tolerant Concept Detection in Information Networks</title>
+					<type>Short</type>
+					<author>Tobias Koetter, Stephan Günnemann, Michael R. Berthold, Christos Faloutsos</author>
+				</paper>
+				<paper>
+					<paperID>294</paperID>
+					<title>Characterizing Temporal Anomalies in Evolving Networks</title>
+					<type>Short</type>
+					<author>N.N.R. Ranga Suri, M. Narasimha Murty, G. Athithan</author>
+				</paper>
+			</session>
+			<session>
+				<ID>3E</ID>
+				<name>Applications (II)</name>
+				<chair>Jun Juo</chair>
+				<venue>East Gate Room (B1)</venue>
+				<paper>
+					<paperID>118</paperID>
+					<title>Intervention-Driven Predictive Framework for Modeling Healthcare Data</title>
+					<type>Regular</type>
+					<author>Santu Rana, Sunil Kumar Gupta, Dinh Phung, Svetha Venkatesh</author>
+				</paper>
+				<paper>
+					<paperID>98</paperID>
+					<title>Visual Analysis of Uncertainty in Trajectories</title>
+					<type>Short</type>
+					<author>Lu Lu, Nan Cao, Siyuan Liu, Lionel Ni, Xiaoru Yuan, Huamin Qu</author>
+				</paper>
+				<paper>
+					<paperID>290</paperID>
+					<title>Activity Recognition Using a Few Label Samples</title>
+					<type>Short</type>
+					<author>Heidar Davoudi, Xiao-Li Li, Nguyen Minh Nhut, Shonali Priyadarsini Krishnaswamy</author>
+				</paper>
+				<paper>
+					<paperID>334</paperID>
+					<title>A Framework for Large-Scale Train Trip Record Analysis and Its Application to Passengers' Flow Prediction after Train Accidents</title>
+					<type>Short</type>
+					<author>Daisaku Yokoyama, Masahiko Itoh, Masashi Toyoda, Yoshimitsu Tomita, Satoshi Kawamura, Masaru Kitsuregawa</author>
+				</paper>
+				<paper>
+					<paperID>348</paperID>
+					<title>Patent Evaluation Based on Technological Trajectory Revealed in Relevant Prior Patents</title>
+					<type>Short</type>
+					<author>Sooyoung Oh, Zhen Lei, Wang-Chien Lee, John Yen</author>
+				</paper>
+			</session>
+			<session>
+				<venue>Auditorium (9F)</venue>
+				<name>Tutorial 3</name>
+				<lecturer>Ning Zhong</lecturer>
+				<title>Research Issues and Challenges on Brain Informatics</title>				
+			</session>
+		</time_interval>
+		<time_interval>
+			<time>12:10 – 13:30</time>
+			<session>
+				<venue>Far Eastern Grand Ballroom (B2)</venue>
+				<name>Lunch</name>				
+			</session>
+		</time_interval>
+		<time_interval>
+			<time>13:30 – 18:00</time>
+			<session>
+				<name>Excursion</name>				
+			</session>
+		</time_interval>
+		<time_interval>
+			<time>18:30 – 21:30</time>
+			<session>
+				<venue>Far Eastern Grand Ballroom (B2)</venue>
+				<name>Banquet &amp; Performance</name>
+			</session>
+		</time_interval>
+	</day>
+	<day>
+		<date>May 16, 2014</date>
+		<time_interval>
+			<time>08:30 – 10:30</time>
+			<session>
+				<ID>4A</ID>
+				<name>Novel Algorithms</name>
+				<chair>Hsuan-Tien Lin</chair>
+				<venue>An Ping Room (B2)</venue>
+				<paper>
+					<paperID>119</paperID>
+					<title>Shifting Hypergraphs by Probabilistic Voting</title>
+					<type>Regular</type>
+					<author>Yang Wang, Xuemin Lin, Qing Zhang, Lin Wu</author>
+				</paper>
+				<paper>
+					<paperID>46</paperID>
+					<title>Extensions to Quantile Regression Forests for Very High Dimensional Data</title>
+					<type>Regular</type>
+					<author>Nguyen Thanh Tung, Joshua Zhexue Huang, Imran Khan, Mark Junjie Li, Graham Williams</author>
+				</paper>
+				<paper>
+					<paperID>347</paperID>
+					<title>Inducing controlled error over variable length ranked lists</title>
+					<type>Short</type>
+					<author>Laurence Park, Glenn Stone</author>
+				</paper>
+				<paper>
+					<paperID>208</paperID>
+					<title>Com2: Fast Automatic Discovery of Temporal (’Comet’) Communities</title>
+					<type>Regular</type>
+					<author>Miguel Araujo, Spiros Papadimitriou, Stephan Günnemann, Christos Faloutsos, Prithwish Basu, Ananthram Swami, Evangelos Papalexakis, Danai Koutra</author>
+				</paper>
+				<paper>
+					<paperID>34</paperID>
+					<title>A Graphical Model for Collective Behavior Learning Using Minority Games</title>
+					<type>Short</type>
+					<author>Farhan Khawar, Zengchang Qin</author>
+				</paper>
+			</session>
+			<session>
+				<ID>4B</ID>
+				<name>Clustering</name>
+				<chair>Junbin Gao</chair>
+				<venue>Fu Cheng Room (B2)</venue>
+				<paper>
+					<paperID>43</paperID>
+					<title>Finding Better Topics: Features, Priors and Constraints</title>
+					<type>Regular</type>
+					<author>Xiaona Wu, Jia Zeng, Jianfeng Yan, Xiaosheng Liu</author>
+				</paper>
+				<paper>
+					<paperID>335</paperID>
+					<title>Finding Well-Clusterable Subspaces for High Dimensional Data A Numerical One-Dimension Approach</title>
+					<type>Short</type>
+					<author>Chuanren Liu, Tianming Hu, Yong Ge, Hui Xiong</author>
+				</paper>
+				<paper>
+					<paperID>45</paperID>
+					<title>Determine optimal number of clusters with an elitist evolutionary approach</title>
+					<type>Short</type>
+					<author>Lydia Boudjeloud-Assala, Ta Minh Thuy</author>
+				</paper>
+				<paper>
+					<paperID>112</paperID>
+					<title>Crowdordering</title>
+					<type>Short</type>
+					<author>Toshiko Matsui, Yukino Baba, Toshihiro Kamishima, Hisashi Kashima</author>
+				</paper>
+				<paper>
+					<paperID>401</paperID>
+					<title>Document Clustering with an Augmented Nonnegative Matrix Factorization Model</title>
+					<type>Short</type>
+					<author>Zunyan Xiong, Yizhou Zang, Xingpeng Jiang, Xiaohua Hu</author>
+				</paper>
+			</session>
+			<session>
+				<ID>4C</ID>
+				<name>Biomedical Data Mining</name>
+				<chair>Xiaoli Li</chair>
+				<venue>South Gate Room (B1)</venue>
+				<paper>
+					<paperID>147</paperID>
+					<title>Visualization of PICO Elements for Information Needs Clarification and Query Refinement</title>
+					<type>Regular</type>
+					<author>Wan-Tze Vong, Patrick Hang Hui Then</author>
+				</paper>
+				<paper>
+					<paperID>164</paperID>
+					<title>Mining Biomedical Literature and Ontologies for Drug Repositioning Discovery</title>
+					<type>Regular</type>
+					<author>Chih-Ping Wei, Kuei-An Chen, Lien-Chin Chen</author>
+				</paper>
+				<paper>
+					<paperID>190</paperID>
+					<title>Inferring Metapopulation Based Disease Transmission Networks</title>
+					<type>Regular</type>
+					<author>Xiaofei Yang, Jiming Liu, William Kwok Wai Cheung, Xiao-Nong Zhou</author>
+				</paper>
+				<paper>
+					<paperID>285</paperID>
+					<title>A Novel Framework to Improve siRNA Efficacy Prediction</title>
+					<type>Short</type>
+					<author>Bui Thang Ngoc</author>
+				</paper>
+			</session>
+			<session>
+				<ID>4D</ID>
+				<name>Stream Mining</name>
+				<chair>George Karypis</chair>
+				<venue>West Gate Room (B1)</venue>
+				<paper>
+					<paperID>80</paperID>
+					<title>A Selectively Re-train Approach Based on Clustering To Classify Concept-drifting Data Streams with Skewed Distribution</title>
+					<type>Regular</type>
+					<author>Dandan Zhang, Shen Hong, Tian Hui, Yidong Li, Jun Wu, Yingpeng Sang</author>
+				</paper>
+				<paper>
+					<paperID>10</paperID>
+					<title>Recurring and Novel Class Detection in Concept-Drifting Data Streams using Class-Based Ensemble</title>
+					<type>Short</type>
+					<author>Mohammad Raihanul Islam</author>
+				</paper>
+				<paper>
+					<paperID>166</paperID>
+					<title>Detecting Changes in Rare Patterns from Data Streams</title>
+					<type>Short</type>
+					<author>David Tse Jung Huang, Yun Sing Koh, Gillian Dobbie, Russel Pears</author>
+				</paper>
+				<paper>
+					<paperID>237</paperID>
+					<title>Noise-Tolerant Approximate Blocking for Dynamic Real-time Entity Resolution</title>
+					<type>Short</type>
+					<author>Huizhi Liang, Yanzhe Wang, Peter Christen, Ross Gayler</author>
+				</paper>
+				<paper>
+					<paperID>277</paperID>
+					<title>A Relevance Weighted Ensemble Model for Anomaly Detection in Switching Data Streams</title>
+					<type>Short</type>
+					<author>Mahsa Salehi, Christopher Leckie, Masud Moshtaghi, Tharshan Vaithianathan</author>
+				</paper>
+			</session>
+			<session>
+				<venue>East Gate Room (B1)</venue>
+				<name>Tutorial 4</name>
+				<lecturer>Reynold Cheng</lecturer>
+				<title>Managing the Quality of Crowdsourced Databases</title>				
+			</session>
+			<session>
+				<venue>Auditorium (9F)</venue>
+				<name>Tutorial 5</name>
+				<lecturer>Longbing Cao</lecturer>
+				<title>Non-IIDness Learning in Big Data</title>				
+			</session>
+		</time_interval>
+		<time_interval>
+			<time>10:30 – 10:50</time>
+			<session>
+				<venue>Far Eastern Grand Ballroom (B2)</venue>
+				<name>Coffee Break</name>				
+			</session>
+		</time_interval>
+		<time_interval>
+			<time>10:50 – 12:20</time>
+			<session>
+				<venue>Far Eastern Grand Ballroom (B2)</venue>
+				<name>Panel: Data Mining in Big Data Era - Opportunities, Challenges and Practice</name>				
+				<chair>Dr. Huan Liu</chair>
+			</session>
+		</time_interval>
+		<time_interval>
+			<time>12:20 – 14:00</time>
+			<session>
+				<venue>Far Eastern Grand Ballroom (B2)</venue>
+				<name>Lunch</name>				
+			</session>
+		</time_interval>
+		<time_interval>
+			<time>14:00 – 16:00</time>
+			<session>
+				<ID>5A</ID>
+				<name>Outlier and Anomaly Detection</name>
+				<chair>Hung-Yu Kao</chair>
+				<venue>An Ping Room (B2)</venue>
+				<paper>
+					<paperID>95</paperID>
+					<title>MultiAspectSpotting: Spotting Anomalous Behavior within Count Data using Tensor</title>
+					<type>Regular</type>
+					<author>Koji Maruhashi, Nobuhiro Yugami</author>
+				</paper>
+				<paper>
+					<paperID>234</paperID>
+					<title>Outlier Detection based on Leave-one-out Density using Binary Decision Diagrams</title>
+					<type>Regular</type>
+					<author>Takuro Kutsuna, Akihiro Yamamoto</author>
+				</paper>
+				<paper>
+					<paperID>73</paperID>
+					<title>Rare Category Detection on O(dN) Time Complexity</title>
+					<type>Regular</type>
+					<author>Zhenguang Liu, Hao Huang, Qinming He, Kevin Chiew, Lianhang Ma</author>
+				</paper>
+				<paper>
+					<paperID>254</paperID>
+					<title>Improving iForest with relative mass</title>
+					<type>Regular</type>
+					<author>Sunil Aryal, Kai Ming Ting, Jonathan R. Wells, Takashi Washio</author>
+				</paper>
+			</session>
+			<session>
+				<ID>5B</ID>
+				<name>Multi-Sources Mining</name>
+				<chair>De-Nian Yang</chair>
+				<venue>Fu Cheng Room (B2)</venue>
+				<paper>
+					<paperID>12</paperID>
+					<title>Domain Transfer via Multiple Sources Regularization</title>
+					<type>Short</type>
+					<author>Shaofeng Hu, Jiangtao Ren, Changshui Zhang, Chaogui Zhang</author>
+				</paper>
+				<paper>
+					<paperID>205</paperID>
+					<title>Mining Diversified Shared Decision Tree Sets for Discovering Cross Domain Similarities</title>
+					<type>Short</type>
+					<author>Guozhu Dong, Qian Han</author>
+				</paper>
+				<paper>
+					<paperID>213</paperID>
+					<title>Semi-supervised clustering on heterogeneous information networks</title>
+					<type>Short</type>
+					<author>Chen Luo, Wei Pang, Zhe Wang</author>
+				</paper>
+				<paper>
+					<paperID>241</paperID>
+					<title>A Content-based Matrix Factorization Model for Recipe Recommendation</title>
+					<type>Regular</type>
+					<author>Chia-Jen Lin, Tsung-Ting Kuo, Shou-De Lin</author>
+				</paper>
+			</session>
+			<session>
+				<ID>5C</ID>
+				<name>Unstructured Data and Text Mining</name>
+				<chair>Chih-Ping Wei</chair>
+				<venue>South Gate Room (B1)</venue>
+				<paper>
+					<paperID>261</paperID>
+					<title>Automatic Fake Followers Detection in Chinese Micro-blogging System</title>
+					<type>Short</type>
+					<author>Yi Shen, jianjun Yu, Kejun Dong, Kai Nan</author>
+				</paper>
+				<paper>
+					<paperID>387</paperID>
+					<title>Unsupervised Analysis of Web Page Semantic Structures by Hierarchical Bayesian Modeling</title>
+					<type>Regular</type>
+					<author>Minoru Yoshida, Kazuyuki Matsumoto, Kenji Kita, Hiroshi Nakagawa</author>
+				</paper>
+				<paper>
+					<paperID>280</paperID>
+					<title>For User-driven Software Evolution: Requirements Elicitation Derived from Mining Online Reviews</title>
+					<type>Regular</type>
+					<author>Wei Jiang, Haibin Ruan, Li Zhang, Philip Lew, Jing Jiang</author>
+				</paper>
+				<paper>
+					<paperID>364</paperID>
+					<title>Constrained-hLDA for Topic Discovery in Chinese Microblogs</title>
+					<type>Short</type>
+					<author>Wei Wang, Hua Xu, Weiwei Yang, Xiaoqiu Huang</author>
+				</paper>
+			</session>
+			<session>
+				<venue>South Gate Room (B1)</venue>
+				<name>Tutorial 6</name>
+				<lecturer>Jian Cao</lecturer>
+				<title>Towards Building Analytical Models for Monitoring Large-scale Systems</title>				
+			</session>
+			<session>
+				<venue>East Gate Room (B1)</venue>
+				<name>Tutorial 7</name>
+				<lecturer>Fei Wang</lecturer>
+				<title>Feature Engineering in Health Informatics</title>				
+			</session>
+		</time_interval>
+		<time_interval>
+			<time>16:15 – 16:45</time>
+			<session>
+				<name>Closing Ceremony</name>				
+			</session>
+		</time_interval>
+	</day>
+</program>
