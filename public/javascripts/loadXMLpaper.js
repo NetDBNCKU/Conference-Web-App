@@ -50,7 +50,7 @@ function parsePaperListForpaperList(data){
 													+'</p>'
 													+'</a></li>');
 		authors = paperContent[1];
-		authors = authors.toUpperCase();
+		//authors = authors.toUpperCase();
 		$('#'+paperContent[2]).on('click', (function(authors) {
 				return function(){
 					tempID = $(this).attr('id');
@@ -82,7 +82,7 @@ function createPaperDetail(data){
 		paperID = $(this).find('ID').text();
 		abstract = $(this).find('abstract').text();
 		authors = $(this).find('authors').text();
-		authors = authors.toUpperCase();
+		//authors = authors.toUpperCase();
 		authorArray = authors.split(';');
 		$('body').append('<div id="'+paperID+'_detail" data-role="page" data-add-back-btn="true">'
 	                 +'<div data-role="header" ><h1>Paper details</h1><a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
@@ -110,7 +110,8 @@ function createPaperDetail(data){
 }
 
 function insertPaperAuthors(authors, paperID){
-	var authors = authors.toUpperCase();
+	//var authors = authors.toUpperCase();
+	var authors = authors;
 	var authorArray = authors.split(', ');
 	$('#'+paperID+'_paper-list-authors').empty();
 	for(i=0;i<authorArray.length;i++){
@@ -126,7 +127,8 @@ function insertPaperAuthors(authors, paperID){
 }
 
 function insertPaperAuthorsForPaperList(authors, paperID){
-	var authors = authors.toUpperCase();
+	//var authors = authors.toUpperCase();
+	var authors = authors;
 	var authorArray = authors.split('),');
 	$('#'+paperID+'_paper-list-authors').listview().empty();
 	for(i=0;i<authorArray.length;i++){

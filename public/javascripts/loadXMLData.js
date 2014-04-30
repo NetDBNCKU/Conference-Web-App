@@ -538,7 +538,8 @@ function parsePaperList(data,date,sessionID,listviewID){
 																+'Author: '+$(this).find('author').text()
 																+'</h1>'+
 																'</a></li>');
-									var authors = $(this).find('author').text().toUpperCase();;
+									//var authors = $(this).find('author').text().toUpperCase();
+									var authors = $(this).find('author').text();
 									var paperDetailID;
 									var tempId;
 									$('#'+$(this).find('paperID').text()+'_id').on('click', (function(authors) {
