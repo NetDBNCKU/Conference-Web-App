@@ -102,14 +102,14 @@ function parseSession(data,date){
 							else	     
 									pageMap[panelID+"_info"] = 1;
 
-							$('#list-browse-sessions-'+dateID).append('<li><a id="'+panelID+'" href="#'+panelID+'_info">'
+							$('#list-browse-sessions-'+dateID).append('<li><a id="'+panelID+'" href="#'+panelID+'_info" >'
 														+'<h1 style="color:#E03A3A">Panel: </h1>'
 														+'<h1>'
 														+name[1]
 														+'</h1>'
 														+'</a></li>');
 
-							$('body').append('<div id="'+panelID+'_info" data-role="page" >'
+							$('body').append('<div id="'+panelID+'_info" data-role="page" timeDetails="'+time+'">'
 	                                 +'<div data-role="header"  ><h1>Panel</h1><a href="#" class="ui-btn-left" data-rel="back">Back</a>'
 	                                 +'<a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
 	                                 +'</div>'
@@ -155,13 +155,14 @@ function parseSession(data,date){
 
 										//Store info of workshop to localStorage, used in myProgram
 										var storageTime = time_gTmp;
+										var storageTime_details = $('#'+panelID+'_info').attr('timeDetails');
 										var storageId = panelID+"_info";
 										var storagePanel = $("#pcName").html();   // Strange!! here cannot not use... $(panelID+"_info" + " #pcName").html(); 
 										var storageChair = $("#pcChair").html();
 										var storageVenue = $("#pcVenue").html();
 
 										if($(this).find('img').attr('src') == '/images/addProgram.png'){
-											storageType1(storageTime, storageId, storagePanel, storageChair, storageVenue); 
+											storageType1(storageTime, storageTime_details, storageId, storagePanel, storageChair, storageVenue); 
 											$(this).find('img').attr('src','/images/removeProgram.png');
 											$('#'+imgID).attr('href', '#myPopupDialog_ADD_'+panelID);
 										}
@@ -199,7 +200,7 @@ function parseSession(data,date){
 														+'</h2>'+
 														'</a></li>');
 
-						$('body').append('<div id="'+keynoteID+'_info" data-role="page" >'
+						$('body').append('<div id="'+keynoteID+'_info" data-role="page" timeDetails="'+time+'">'
                                  +'<div data-role="header"  ><h1>'+name+'</h1><a href="#" class="ui-btn-left" data-rel="back">Back</a>'
                                  +'<a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
                                  +'</div>'
@@ -244,6 +245,7 @@ function parseSession(data,date){
 						$('#addProgram_keynote_'+keynoteID).off('click').on('click',function(){   	
 								//Store/Remove info of workshop to localStorage, used in myProgram
 								var storageTime = time_gTmp;
+								var storageTime_details = $('#'+keynoteID+'_info').attr("timeDetails");
 								var storageId = keynoteID+'_info';
 								var storageSpeaker = $("#"+storageId + " #keynoteSpeaker").html();
 								var storageChair = $("#"+storageId + " #keynoteChair").html();
@@ -251,7 +253,7 @@ function parseSession(data,date){
 								var storageTitle = $("#"+storageId + " #keynoteTitle").html();
 
 								if($(this).find('img').attr('src') == '/images/addProgram.png'){  
-									storageType2(storageTime, storageId, storageTitle, storageSpeaker, storageChair, storageVenue); 
+									storageType2(storageTime, storageTime_details, storageId, storageTitle, storageSpeaker, storageChair, storageVenue); 
 									$(this).find('img').attr('src','/images/removeProgram.png');
 									$('#'+imgID).attr('href', '#myPopupDialog_ADD_'+keynoteID);
 								}
@@ -288,7 +290,7 @@ function parseSession(data,date){
 																+'</span></div>'
 																+'</a></li>');
 
-								$('body').append('<div id="'+contestID+'_info" data-role="page" >'
+								$('body').append('<div id="'+contestID+'_info" data-role="page" timeDetails="'+time+'">'
 	                                 +'<div data-role="header"  ><h1>Session '+ID+'</h1><a href="#" class="ui-btn-left" data-rel="back">Back</a>'
 	                                 +'<a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
 	                                 +'</div>'
@@ -326,12 +328,13 @@ function parseSession(data,date){
 								$('#addProgram_session_'+contestID).off('click').on('click',function(){
 										//Store info of workshop to localStorage, used in myProgram
 										var storageTime = time_gTmp;
+										var storageTime_details = $('#'+contestID+'_info').attr('timeDetails');
 										var storageId = contestID+'_info';
 										var storageName = $("#"+storageId + " #svName").html();
 										var storageVenue = $("#"+storageId + " #svVenue").html();
 
 										if($(this).find('img').attr('src') == '/images/addProgram.png'){
-											storageType3(storageTime, storageId, storageName, storageVenue); 
+											storageType3(storageTime, storageTime_details, storageId, storageName, storageVenue); 
 											$(this).find('img').attr('src','/images/removeProgram.png');
 											$('#'+imgID).attr('href', '#myPopupDialog_ADD_'+contestID);
 										}
@@ -360,7 +363,7 @@ function parseSession(data,date){
 																+name+': </h1></span>&nbsp<span  style="display:inline-block"> <h1 style="color:black">'+title+'</h1>'
 																+'</span></div>'
 																+'</a></li>');
-								$('body').append('<div id="'+tutorialID+'_info" data-role="page" >'
+								$('body').append('<div id="'+tutorialID+'_info" data-role="page" timeDetails="'+time+'">'
 		                                 +'<div data-role="header"  ><h1>Panel</h1><a href="#" class="ui-btn-left" data-rel="back">Back</a>'
 		                                 +'<a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
 		                                 +'</div>'
@@ -401,6 +404,7 @@ function parseSession(data,date){
 								$('#addProgram_tutorial_'+tutorialID).off('click').on('click',function(){
 										//Store info of workshop to localStorage, used in myProgram
 										var storageTime = time_gTmp;
+										var storageTime_details = $('#'+tutorialID+'_info').attr('timeDetails');
 										var storageId = tutorialID+'_info';
 										var storageName = $("#"+storageId + " #lecName").html();
 										var storageTitle = $("#"+storageId + " #lecTitle").html();
@@ -408,7 +412,7 @@ function parseSession(data,date){
 										var storageVenue = $("#"+storageId + " #lecVenue").html();
 
 										if($(this).find('img').attr('src') == '/images/addProgram.png'){
-											storageType4(storageTime, storageId, storageName, storageTitle, storageLecturer, storageVenue); 
+											storageType4(storageTime, storageTime_details, storageId, storageName, storageTitle, storageLecturer, storageVenue); 
 											$(this).find('img').attr('src','/images/removeProgram.png');
 											$('#'+imgID).attr('href', '#myPopupDialog_ADD_'+tutorialID);
 										}
@@ -442,7 +446,7 @@ function parseSession(data,date){
 																+'</a></li>');
 
 
-								$('body').append('<div id="'+ID+'_list" data-role="page" >'
+								$('body').append('<div id="'+ID+'_list" data-role="page" timeDetails="'+time+'">'
 	                                 +'<div data-role="header"  ><h1>Session '+ID+'</h1><a href="#" class="ui-btn-left" data-rel="back">Back</a>'
 	                                 +'<a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>'
 	                                 +'</div>'
@@ -489,13 +493,14 @@ function parseSession(data,date){
 
 										//Store info of workshop to localStorage, used in myProgram
 										var storageTime = time_gTmp;
+										var storageTime_details = $('#'+ID+'_list').attr('timeDetails');
 										var storageId = ID+"_list";
 										var storageName = $("#"+storageId + " #scName").html();
 										var storageChair = $("#"+storageId + " #scChair").html();
 										var storageVenue = $("#"+storageId + " #scVenue").html();
 
 										if($(this).find('img').attr('src') == '/images/addProgram.png'){
-											storageType5(storageTime, storageId, storageName, storageChair, storageVenue); 
+											storageType5(storageTime, storageTime_details, storageId, storageName, storageChair, storageVenue); 
 											$(this).find('img').attr('src','/images/removeProgram.png');
 											$('#'+imgID).attr('href', '#myPopupDialog_ADD_'+ID);
 										}

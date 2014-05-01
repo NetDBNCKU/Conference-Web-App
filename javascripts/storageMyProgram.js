@@ -1,6 +1,7 @@
 window.pageMap = {};
 
 $(document).on("pagecreate", '#myProgramPage', function() {
+
    $('#deleteAll_myProgram').on("click", clearAllProgram);
 
    $("#myProgramPage").on("pagebeforeshow", function(){

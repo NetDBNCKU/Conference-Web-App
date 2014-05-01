@@ -213,6 +213,12 @@ a {
     text-align: center;
     white-space: nowrap;
 }
+/*----------------------------
+myProgramList
+-----------------------------*/
+#myProgramList h2{
+  margin:2px;
+}
 
 
 /*----------------------------

@@ -2,7 +2,6 @@ window.pageMap = {};
 
 $(document).on("pagecreate", '#myProgramPage', function() {
    $('#deleteAll_myProgram').on("click", clearAllProgram);
-
    $("#myProgramPage").on("pagebeforeshow", function(){
         $('#myProgramList').empty().listview().listview("refresh");
         loadList();
@@ -105,6 +104,7 @@ function loadList(){
             mySession.myId = datas[0];
             mySession.myType = datas[1];
             mySession.myDate = datas[2];
+            mySession.myTime_details = datas[3];
             mySessionAry.push(mySession);
         }
 
@@ -114,7 +114,7 @@ function loadList(){
         while(swap == true){
             swap = false;
             for(i=1; i<mySessionAry.length; i++){
-                if(mySessionAry[i-1].myDate > mySessionAry[i].myDate){
+                if(mySessionAry[i-1].myDate > mySessionAry[i].myDate || mySessionAry[i-1].myDate == mySessionAry[i].myDate && mySessionAry[i-1].myTime_details > mySessionAry[i].myTime_details){
                     //SWAP
                     var tmp = mySessionAry[i-1];
                     mySessionAry[i-1] = mySessionAry[i];
@@ -194,14 +194,15 @@ the types of each day
 5/16 1,4,5
 *//*-*****************************************************************************************************************/
 /*-------------------------------TYPE 1---------------------------------------*/
-function storageType1(time, id, panel, chair, venue){ 
-    localStorage.setItem(id, time + "_splitPattern_" + panel + "_splitPattern_" + chair + "_splitPattern_" + venue);
-    add2List(id+"_splitPattern_1_splitPattern_"+time); 
+function storageType1(time, time_details, id, panel, chair, venue){ 
+    console.log("storageTime_details type1 = "+time_details)
+    localStorage.setItem(id, time + "_splitPattern_" + time_details + "_splitPattern_" + panel + "_splitPattern_" + chair + "_splitPattern_" + venue);
+    add2List(id+"_splitPattern_1_splitPattern_"+time+"_splitPattern_"+time_details); 
 }
 
 function append2MyProgram1(id){
     var data;
-    var time, panel, chair, venue;
+    var time, time_details, panel, chair, venue;
 
     data = localStorage.getItem(id);
 
@@ -209,9 +210,10 @@ function append2MyProgram1(id){
 
     data = data.split("_splitPattern_");
     time = data[0];
-    panel = data[1];
-    chair = data[2];
-    venue = data[3]; 
+    time_details = data[1];
+    panel = data[2];
+    chair = data[3];
+    venue = data[4]; 
 
     if($('#myProgram_'+id).length <= 0){
         $('#myProgramList').append('<li id="myProgram_'+id+'" date="'+time+'"><a href="#'+id+'">'
@@ -226,18 +228,22 @@ function append2MyProgram1(id){
                                    +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Venue: </h2></span>'
                                    +'&nbsp'
                                    +'<span style="display:inline-block"><h2 style="color:black">'+venue+'</h2></span>'
+                                   +'<br>'
+                                   +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Time: </h2></span>'
+                                   +'&nbsp'
+                                   +'<span style="display:inline-block"><h2 style="color:black">'+time_details+'</h2></span>'
                             +'</a></li>').listview().listview('refresh');
     }
 }
 /*-------------------------------TYPE 2---------------------------------------*/
-function storageType2(time, id, title, speaker, chair, venue){
-    localStorage.setItem(id, time + "_splitPattern_" + title + "_splitPattern_" + speaker + "_splitPattern_" + chair + "_splitPattern_" + venue);
-    add2List(id+"_splitPattern_2_splitPattern_"+time);  
+function storageType2(time, time_details, id, title, speaker, chair, venue){
+    localStorage.setItem(id, time + "_splitPattern_" + time_details + "_splitPattern_" + title + "_splitPattern_" + speaker + "_splitPattern_" + chair + "_splitPattern_" + venue);
+    add2List(id+"_splitPattern_2_splitPattern_"+time+"_splitPattern_"+time_details);  
 }
 
 function append2MyProgram2(id){
     var data;
-    var time, title, speaker, chair, venue;
+    var time, time_details, title, speaker, chair, venue;
 
     data = localStorage.getItem(id);
 
@@ -245,15 +251,15 @@ function append2MyProgram2(id){
 
     data = data.split("_splitPattern_");
     time = data[0];
-    title = data[1];
-    speaker = data[2];
-    chair = data[3];
-    venue = data[4]; 
+    time_details = data[1];
+    title = data[2];
+    speaker = data[3];
+    chair = data[4];
+    venue = data[5]; 
 
     if($('#myProgram_'+id).length <= 0){
         $('#myProgramList').append('<li id="myProgram_'+id+'" date="'+time+'"><a href="#'+id+'">'
                                  +'<h1 id="keynoteTitle">'+title+'</h1>'
-                                 +'<br>'
                                  +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Speaker: </h2></span>'
                                  +'&nbsp'
                                  +'<span style="display:inline-block"><h2 style="color:black" id="keynoteSpeaker">'+speaker+'</h2></span>'
@@ -265,26 +271,32 @@ function append2MyProgram2(id){
                                  +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Venue: </h2></span>'
                                  +'&nbsp'
                                  +'<span style="display:inline-block"><h2 style="color:black" id="keynoteVenue">'+venue+'</h2></span>'
+                                 +'<br>'
+                                 +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Time: </h2></span>'
+                                 +'&nbsp'
+                                 +'<span style="display:inline-block"><h2 style="color:black" id="keynoteVenue">'+time_details+'</h2></span>'
                             +'</a></li>').listview().listview('refresh');
     }
 }
 /*-------------------------------TYPE 3---------------------------------------*/
-function storageType3(time, id, session, venue){
-    localStorage.setItem(id, time + "_splitPattern_" + session + "_splitPattern_" + venue);
-    add2List(id+"_splitPattern_3_splitPattern_"+time);  
+function storageType3(time, time_details, id, session, venue){
+    localStorage.setItem(id, time + "_splitPattern_"  + time_details + "_splitPattern_" + session + "_splitPattern_" + venue);
+    add2List(id+"_splitPattern_3_splitPattern_"+time+"_splitPattern_"+time_details);  
 }
 
 function append2MyProgram3(id){
     var data;
-    var time, session, venue;
+    var time, time_details, session, venue;
 
     data = localStorage.getItem(id);
 
     if(data == null) return;
 
     data = data.split("_splitPattern_");
-    session = data[0];
-    venue = data[1]; 
+    time = data[0];
+    time_details = data[1];
+    session = data[2];
+    venue = data[3]; 
 
 
     if($('#myProgram_'+id).length <= 0){
@@ -296,19 +308,23 @@ function append2MyProgram3(id){
                                    +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Venue: </h2></span>'
                                    +'&nbsp'
                                    +'<span style="display:inline-block"><h2 style="color:black">'+venue+'</h2></span>'
+                                   +'<br>'
+                                   +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Time: </h2></span>'
+                                   +'&nbsp'
+                                   +'<span style="display:inline-block"><h2 style="color:black">'+time_details+'</h2></span>'
                             +'</a></li>').listview().listview('refresh');
     }
 }
 
 /*-------------------------------TYPE 4---------------------------------------*/
-function storageType4(time, id, name, title, lecturer, venue){
-    localStorage.setItem(id, time + "_splitPattern_" + name + "_splitPattern_" + title + "_splitPattern_" + lecturer + "_splitPattern_" + venue);
-    add2List(id+"_splitPattern_4_splitPattern_"+time);  
+function storageType4(time, time_details, id, name, title, lecturer, venue){
+    localStorage.setItem(id, time + "_splitPattern_" + time_details + "_splitPattern_" + name + "_splitPattern_" + title + "_splitPattern_" + lecturer + "_splitPattern_" + venue);
+    add2List(id+"_splitPattern_4_splitPattern_"+time+ "_splitPattern_" + time_details);  
 }
 
 function append2MyProgram4(id){
     var data;
-    var time, name, title, lecturer, venue;
+    var time, time_details, name, title, lecturer, venue;
 
     data = localStorage.getItem(id);
 
@@ -316,10 +332,11 @@ function append2MyProgram4(id){
 
     data = data.split("_splitPattern_");
     time = data[0];
-    name = data[1];
-    title = data[2];
-    lecturer = data[3];
-    venue = data[4]; 
+    time_details = data[1];
+    name = data[2];
+    title = data[3];
+    lecturer = data[4];
+    venue = data[5]; 
 
     if($('#myProgram_'+id).length <= 0){
       $('#myProgramList').append('<li id="myProgram_'+id+'" date="'+time+'"><a href="#'+id+'">'
@@ -334,18 +351,22 @@ function append2MyProgram4(id){
                                      +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Venue: </h2></span>'
                                      +'&nbsp'
                                      +'<span style="display:inline-block"><h2 style="color:black">'+venue+'</h2></span>'
+                                     +'<br>'
+                                     +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Time: </h2></span>'
+                                     +'&nbsp'
+                                     +'<span style="display:inline-block"><h2 style="color:black">'+time_details+'</h2></span>'
                             +'</a></li>').listview().listview('refresh');
     }
 }
 /*-------------------------------TYPE 5---------------------------------------*/
-function storageType5(time, id, session, chair, venue){
-    localStorage.setItem(id, time + "_splitPattern_" + session + "_splitPattern_" + chair + "_splitPattern_" + venue);
-    add2List(id+"_splitPattern_5_splitPattern_"+time);   
+function storageType5(time, time_details, id, session, chair, venue){
+    localStorage.setItem(id, time + "_splitPattern_" + time_details + "_splitPattern_" + session + "_splitPattern_" + chair + "_splitPattern_" + venue);
+    add2List(id+"_splitPattern_5_splitPattern_"+time+ "_splitPattern_" + time_details);   
 }
 
 function append2MyProgram5(id){
     var data;
-    var time, session, chair, venue;
+    var time, time_details, session, chair, venue;
 
     data = localStorage.getItem(id);
 
@@ -353,9 +374,10 @@ function append2MyProgram5(id){
 
     data = data.split("_splitPattern_");
     time = data[0];
-    session = data[1];
-    chair = data[2];
-    venue = data[3]; 
+    time_details = data[1];
+    session = data[2];
+    chair = data[3];
+    venue = data[4]; 
 
     if($('#myProgram_'+id).length <= 0){
       $('#myProgramList').append('<li id="myProgram_'+id+'" date="'+time+'"><a href="#'+id+'">'
@@ -370,6 +392,10 @@ function append2MyProgram5(id){
                                    +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Venue: </h2></span>'
                                    +'&nbsp'
                                    +'<span style="display:inline-block"><h2 style="color:black" id="scVenue">'+venue+'</h2></span>'
+                                   +'<br>'
+                                   +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Time: </h2></span>'
+                                   +'&nbsp'
+                                   +'<span style="display:inline-block"><h2 style="color:black" id="scVenue">'+time_details+'</h2></span>'
                             +'</a></li>').listview().listview('refresh');
     }
 }
@@ -398,7 +424,6 @@ function append2MyProgram6(id){
                          +'<span style="display:inline-block"><h1 style="color:#E03A3A"> WorkShop Name: </h1></span>'
                          +'&nbsp'
                          +'<span><h1 id="workshopName" style="color:black">'+workshopName+'</h1></span>'
-                         +'<br>'
                          +'<span style="display:inline-block"><h1 style="color:#E03A3A"> Venue: </h1></span>'
                          +'&nbsp'
                          +'<span style="display:inline-block"><h1 id="venue" style="color:black">'+venue+'</h1></span>'
