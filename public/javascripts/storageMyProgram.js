@@ -259,7 +259,10 @@ function append2MyProgram2(id){
 
     if($('#myProgram_'+id).length <= 0){
         $('#myProgramList').append('<li id="myProgram_'+id+'" date="'+time+'"><a href="#'+id+'">'
-                                 +'<h1 id="keynoteTitle">'+title+'</h1>'
+                                 +'<span style="display:inline-block"><h1 style="color:#E03A3A"> Keynote: </h1></span>'
+                                 +'&nbsp'
+                                 +'<span style="display:inline-block"><h1 id="keynoteTitle">'+title+'</h1></span>'
+                                 +'<br>'
                                  +'<span style="display:inline-block"><h2 style="color:#E03A3A"> Speaker: </h2></span>'
                                  +'&nbsp'
                                  +'<span style="display:inline-block"><h2 style="color:black" id="keynoteSpeaker">'+speaker+'</h2></span>'
@@ -423,7 +426,7 @@ function append2MyProgram6(id){
       $('#myProgramList').append('<li id="myProgram_'+id+'" date="'+time+'"><a href="#'+id+'">'
                          +'<span style="display:inline-block"><h1 style="color:#E03A3A"> WorkShop Name: </h1></span>'
                          +'&nbsp'
-                         +'<span><h1 id="workshopName" style="color:black">'+workshopName+'</h1></span>'
+                         +'<span ><h1 id="workshopName" style="color:black">'+workshopName+'</h1></span>'
                          +'<span style="display:inline-block"><h1 style="color:#E03A3A"> Venue: </h1></span>'
                          +'&nbsp'
                          +'<span style="display:inline-block"><h1 id="venue" style="color:black">'+venue+'</h1></span>'
