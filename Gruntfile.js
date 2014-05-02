@@ -24,7 +24,7 @@
                  "public/javascripts/storageMyProgram.js"
 
              ],
-             dest: "public/javascripts/default.js"
+             dest: "public/javascripts/pakdd.js"
          }
      },
      uglify: {
@@ -32,7 +32,7 @@
          },
          dist: {
              files: {
-                 'public/javascripts/default.min.js': 'public/javascripts/default.js'
+                 'public/javascripts/pakdd.min.js': 'public/javascripts/pakdd.js'
              }
          }
      },
@@ -42,7 +42,7 @@
          },
          compress: {
              files: {
-                 'public/stylesheets/default.css': [
+                 'public/stylesheets/pakdd.css': [
                      "public/stylesheets/slider.css",
                      "public/stylesheets/style.css"
                  ]

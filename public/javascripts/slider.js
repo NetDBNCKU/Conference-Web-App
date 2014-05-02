@@ -94,20 +94,39 @@
             };
 
             var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+            var jssor_slider2 = new $JssorSlider$("slider2_container", options);
+            var jssor_slider3 = new $JssorSlider$("slider3_container", options);
             //responsive code begin
             //you can remove responsive code if you don't want the slider scales while window resizes
             function ScaleSlider() {
                 var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
                 if (parentWidth)
-                    jssor_slider1.$SetScaleWidth(Math.min(parentWidth, 600));
+                    jssor_slider1.$SetScaleWidth(Math.min(parentWidth-25, 600));
                 else
                     window.setTimeout(ScaleSlider, 30);
             }
+            function ScaleSlider2() {
+                var parentWidth2 = jssor_slider2.$Elmt.parentNode.clientWidth;
+                if (parentWidth2)
+                    jssor_slider2.$SetScaleWidth(Math.min(parentWidth2-25, 600));
+                else
+                    window.setTimeout(ScaleSlider2, 30);
+            }
+            function ScaleSlider3() {
+                var parentWidth3 = jssor_slider3.$Elmt.parentNode.clientWidth;
+                if (parentWidth3)
+                    jssor_slider3.$SetScaleWidth(Math.min(parentWidth3-25,600));
+                else
+                    window.setTimeout(ScaleSlider3, 30);
+            }
 
             ScaleSlider();
+            ScaleSlider2();
+            ScaleSlider3();
 
             if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
                 $(window).bind('resize', ScaleSlider);
             }
             //responsive code end
+
         }); 

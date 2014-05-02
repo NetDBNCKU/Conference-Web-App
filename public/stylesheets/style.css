@@ -98,6 +98,30 @@ img .myProgramIcon {
   text-shadow:1px 1px 0px #ffffff;
   overflow:hidden;
 }
+.option_btn{
+  margin: auto;
+  height: 95%;
+  width: 95%;
+  margin: 1%;
+  -moz-box-shadow:inset 0px 1px 0px 1px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 1px #ffffff;
+  box-shadow:inset 0px 1px 0px 1px #ffffff;
+  background: rgb(237, 237, 237); /* Fall-back */
+  background: rgba(237, 237, 237, .6);
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  color:#777777;
+  font-family:arial;
+  text-align:center;
+  font-size:17px;
+  font-weight:bold;
+  text-decoration:none;
+  text-shadow:1px 1px 0px #ffffff;
+  overflow:hidden;
+}
 .map_font{
   color:darkblue;
   padding-top: 3%;
@@ -107,6 +131,19 @@ img .myProgramIcon {
   color:darkblue;
   font-size: 25px;
 
+}
+.ui-block-bc 
+{
+  margin: auto;
+  margin-bottom: 4%;
+  width: 70%;
+  height: 60%;
+/*
+  background-color: #6b6665;
+  border: 5px;
+  border-color: rgba(60, 60, 60, 0.43);
+  border-style:solid;
+*/
 }
 .ui-block-c 
 {
@@ -138,18 +175,17 @@ a {
 .map_simple_guide{
   font-size: 25px;
   color: brown;
-  margin-left: 39%;
+  margin-left: 36%;
   margin-right:10%;
 }
 .map_text_guide{
   margin-left: 24%;
-  margin-right:10%;
+  margin-right:15%;
   text-align: left;
   font-size: 25px;
 }
 .map_content {
    text-align: center;
-   margin: 0px auto;
 }
 .instructions{
   color: darkblue;
@@ -158,10 +194,29 @@ a {
 .map_text_guide img{
   text-align: center;
   display: block;
-  margin-left: 15%;
-  margin-right: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 100%;
+  max-height: 100%;
+}
+#fig_label{
+  font-size: 20px;
+}
+#fig_caption{
+  text-align: center;
+  width: 60%;
 }
 
+.time_fee{
+  color: darkgoldenrod;
+  padding-left: 3%;
+}
+.popphoto img{
+  height:70%; 
+  width:70%;
+  margin-left: 0%;
+  display:block;
+}
 
 .index_btn {
 	font-size: 20px;
@@ -362,13 +417,22 @@ a.control_next {
     width: 130px;
   }
   .map_text_guide img{
-    height: 75%;
-    width: 75%;
+    max-width: 80%;
+    max-height: 80%;
   }
+
+  #fig_label{
+    font-size: 12px;
+  }
+  #fig_caption{
+  text-align: center;
+  width:100%;
+}
+
   #fixed_img{
     margin-left: 0%;
-    height: 100%;
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%; 
   }
 }
 @media screen and (max-width: 480px) {
