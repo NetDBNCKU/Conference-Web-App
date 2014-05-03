@@ -537,8 +537,8 @@ function parsePaperList(data,date,sessionID,listviewID){
 							if($(this).find('ID').text() == sessionID){
 								$(listviewID).empty();
 								$(this).find('paper').each(function(){
-									$(listviewID).append('<li><a id="'+$(this).find('paperID').text()+'_id" href="#'+$(this).find('paperID').text()+'_detail"><h1>'
-																+'Title: '+$(this).find('title').text()
+									$(listviewID).append('<li><a id="'+$(this).find('paperID').text()+'_id" href="#'+$(this).find('paperID').text()+'_detail" ><h1>'
+																+'Title : '+$(this).find('title').text()
 																+'</h1>'
 																+'<h1>'
 																+'Type: '+$(this).find('type').text()

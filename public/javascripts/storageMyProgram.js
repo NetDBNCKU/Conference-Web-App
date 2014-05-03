@@ -1,6 +1,21 @@
 window.pageMap = {};
 
+$(document).ready(function(){
+    $(document).on('mousedown','#travelInfo a', function(e) {
+            e.preventDefault();
+            var elem = $(this);
+            var url = elem.attr('ex-href');
+            if (url.indexOf('http://') !== -1 || url.indexOf('https://') !== -1) {
+                console.log("caught");
+                window.open(url, '_system');
+            }
+    });
+
+});
+
 $(document).on("pagecreate", '#myProgramPage', function() {
+
+
    $('#deleteAll_myProgram').on("click", clearAllProgram);
    $("#myProgramPage").on("pagebeforeshow", function(){
         $('#myProgramList').empty().listview().listview("refresh");
