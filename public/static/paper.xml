@@ -1,7 +1,7 @@
 <paperlist>
 	<paper>
 		<ID>10</ID>
-		<title>Recurring and Novel Class Detection in Concept-Drifting Data Streams using Class-Based Ensemble</title>
+		<title>Recurring and Novel Class Detection in Concept-Drifting Data Streams Using Class-Based Ensemble</title>
 		<authors>Mohammad Raihanul Islam (BUET)</authors>
 		<abstract>Over the recent years concept-evolution has received a lot of attention because of its importance in the context of mining data streams. Mining data stream has become an important task due to its wide range of applications such as network intrusion detection, credit card fraud protection, identifying trends in the social networks etc. Concept-evolution means introduction of novel class in the data stream. Many recent works address this phenomenon. In addition, a class may appear in the stream, disappears for a while and then reemerges. This scenario is known as recurring classes and remained unaddressed in most of the cases. As a result, generally where a novel class detection system is present, any recurring class is falsely detected as novel class. This results in unnecessary waste of human and computational resources. In this paper, we have proposed a class-based ensemble of classification model addressing the issues of recurring and novel class in the presence of concept drift and noise. Our approach has shown impressive performance compared to the state-of-art methods in the literature.</abstract>
 	</paper>
@@ -37,7 +37,7 @@
 	</paper>
 	<paper>
 		<ID>36</ID>
-		<title>An Iterative Fusion Approach to Graph-based Semi-supervised Learning from Multiple Views</title>
+		<title>An Iterative Fusion Approach to Graph-Based Semi-Supervised Learning from Multiple Views</title>
 		<authors>Yang Wang (UNSW),Jian Pei (Simon Fraser University, Canana),Xuemin Lin (The University of New South Wales, Australia),Qing Zhang (Australia e-health research center),Wenjie Zhang ()</authors>
 		<abstract>Often, a data object described by many features can be naturally decomposed into multiple “views”, where each view consists of a subset of features. For example, a video clip may have a video view and an audio view. Given a set of training data objects with multiple views, where some objects are labeled and the others are not, semi-supervised learning with graphs from multi-views tries to learn a classifier by treating each view as a similarity graph on all ob- jects, where edges are defined by the similarity on object pairs based on the view attributes. Labels and label relevance ranking scores of labeled objects can be propagated from labeled objects to unlabeled objects on the similarity graphs so that similar objects receive similar labels. The state-of-the-art, one-combo-fits-all methods linearly combine either the metrics or the label propagation results from multi-views and then build a model based on the combined results. However,  the similarities between various objects may be manifested differently by different views. In such situations, the one-combo-fits-all methods may not perform well. To tackle the problem, we develop an iterative Semi- Supervised Metric Fusion (SSMF) approach in this paper. SSMF fuses metrics and label propagation results from multi-views iteratively until the fused metric and label propagation results converge simultaneously. Views are weighted dynamically during the fusion process so that the adversary effect of irrelevant views, identified at each iteration of fusion process, can be reduced effectively. To evaluate the effectiveness of SSMF, we apply it on multi-view based and content based image retrieval and multi-view based multi-label image classification on real world data set, which demonstrates that our method outperforms the state-of-the-art methods.</abstract>
 	</paper>
@@ -55,13 +55,13 @@
 	</paper>
 	<paper>
 		<ID>45</ID>
-		<title>Determine optimal number of clusters with an elitist evolutionary approach</title>
+		<title>Determine Optimal Number of Clusters with an Elitist Evolutionary Approach</title>
 		<authors>Lydia Boudjeloud-Assala (LITA - University Lorraine),Ta Minh Thuy (LITA University Lorraine)</authors>
 		<abstract>This article proposes an elitist evolutionary approach to determine the optimal number of clusters for clustering data sets. The proposed method is based on the cluster number optimization and in the same time, finds the potential clusters seeds. This method can be used as an initialization of k-means algorithm or directly as a clustering algorithm without prior knowledge of the clusters number. In this approach, elitist population is composed of the individuals with potential clusters seeds. We introduce a new mutation strategy according to the neighborhood search and new evaluation criteria. This strategy allows us to find the global optimal solution or near-optimal solution for clustering tasks, precisely finding the optimal clusters seeds. The experimental results  show that our algorithm performs well on multi-class and large-size data sets.</abstract>
 	</paper>
 	<paper>
 		<ID>46</ID>
-		<title>Extensions to Quantile Regression Forests for Very High Dimensional Data</title>
+		<title>Extensions to Quantile Regression Forests for Very High-Dimensional Data</title>
 		<authors>Nguyen Thanh Tung (Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, China),Joshua Zhexue Huang (SZU),Imran Khan (SIAT(UCAS)),Mark Junjie Li (SZU),Graham Williams ()</authors>
 		<abstract>This paper describes new extensions to the state-of-the-art regression random forests Quantile Regression Forests (QRF) for applications to high dimensional data with thousands of features. We propose a new subspace sampling method that randomly samples a subset of features from two separate feature sets, one containing important features and the other one containing less important features. The two feature sets partition the input data based on the importance measures of features. The partition is generated by using feature permutation to produce raw importance feature scores first and then applying $p$-value assessment to separate important features from the less important ones. The new subspace sampling method enables to generate trees from bagged sample data with smaller regression errors. For point regression, we choose the prediction value of $Y$ from the range between two quantiles $Q_{0.05}$ and $Q_{0.95}$ instead of the conditional mean used in regression random forests. Our experiment results have shown that random forests with these extensions outperformed regression random forests and quantile regression forests in reduction of root mean square residuals.</abstract>
 	</paper>
@@ -73,7 +73,7 @@
 	</paper>
 	<paper>
 		<ID>51</ID>
-		<title>Deferentially Private Tagging Recommendation based on Topic Model</title>
+		<title>Deferentially Private Tagging Recommendation Based on Topic Model</title>
 		<authors>Tianqing Zhu (Deakin university),Gang Li (Deakin University),Wanlei Zhou (),Ping Xiong (),Cao Yuan ()</authors>
 		<abstract>Tagging recommender system allows Internet users to annotate resources with personalized tags and provides users the freedom to obtain recommendations. However, It is usually confronted with serious privacy concerns, because adversaries may re-identify a user and her/his sensitive tags with only a little background information. This paper proposes a privacy preserving tagging release algorithm, PriTop, which is designed to protect users under the notion of differential privacy. The proposed Pri-Top algorithm includes three privacy preserving operations: Private Topic Model Generation structures the uncontrolled tags, Private Weight Perturbation adds Laplace noise into the weights to hide the numbers of tags; while Private Tag Selection finally finds the most suitable replacement tags for the original tags. We present extensive experimental results on four real world datasets and results suggest the proposed PriTop algorithm can successfully retain the utility of the datasets while preserving privacy.</abstract>
 	</paper>
@@ -85,7 +85,7 @@
 	</paper>
 	<paper>
 		<ID>69</ID>
-		<title>Positional Translation Language Model for Ad-hoc Information Retrieval</title>
+		<title>Positional Translation Language Model for Ad-Hoc Information Retrieval</title>
 		<authors>Xinhui Tu (WUST),Jing Luo (),Bo Li (),Tingting He (),Jinguang Gu ()</authors>
 		<abstract>Most existing language modeling approaches are based on the term independence hypothesis. To go beyond this assumption, two main directions were investigated. The first one considers the use of the proximity features that capture the degree to which search terms appear close to each other in a document. Another one considers the use of semantic relationships between words. Previous studies have proven that these two types of information, including term proximity features and semantic relationships between words, are both useful to improve retrieval performance. Intuitionally, we can use them in combination to further improve retrieval performance. Based on this idea, this paper propose a positional translation language model to explicitly incorporate both of these two types of information under language modeling framework in a unified way. In the first step, we present a proximity-based method to estimate word-word translation probabilities. Then, we define a translation document model for each position of a document and use these document models to score the document. Experimental results on standard TREC collections show that the proposed model achieves significant improvements over the state-of-the-art models, including positional language model, and translation language models.</abstract>
 	</paper>
@@ -103,7 +103,7 @@
 	</paper>
 	<paper>
 		<ID>74</ID>
-		<title>Net-Ray: Visualizing and Mining Web-Scale Graphs</title>
+		<title>Net-Ray: Visualizing and Mining Billion-Scale Graphs</title>
 		<authors>U. Kang (KAIST),Jay-Yoon Lee (CMU),Danai Koutra (CMU),Christos Faloutsos (CMU)</authors>
 		<abstract>How can we visualize billion-scale graphs? How to spot outliers in such graphs quickly? Visualizing graphs is the most direct way of understanding them; however, billion-scale graphs are very difficult to visualize since the amount of information overflows the resolution of a typical screen.   In this paper we propose Net-Ray, an open-source package for visualization-based mining on billion-scale graphs. Net-Ray visualizes graphs using the spy plot (adjacency matrix patterns), distribution plot, and correlation plot which involve careful node ordering and scaling. In addition, Net-Ray efficiently summarizes scatter clusters of graphs in a way that finds outliers automatically, and makes it easy to interpret them visually. To the best of our knowledge, Net-Ray is the first work for visual mining on billion-scale graphs.  Extensive experiments show that Net-Ray handles very large graphs with billions of nodes and edges efficiently and effectively. Specifically, among the various datasets that we study, we visualize in multiple ways the YahooWeb graph which spans 1.4 billion webpages and 6.6 billion links, and the Twitter who-follows-whom graph, which consists of 62.5 million users and 1.8 billion edges. We report interesting clusters and outliers spotted and summarized by Net-Ray. </abstract>
 	</paper>
@@ -121,8 +121,8 @@
 	</paper>
 	<paper>
 		<ID>80</ID>
-		<title>A Selectively Re-train Approach Based on Clustering To Classify Concept-drifting Data Streams with Skewed Distribution</title>
-		<authors>Dandan Zhang (Beijing Jiaotong University),Shen Hong (),Tian Hui (),Yidong Li (Beijing Jiaotong Univeristy, China),Jun Wu (Beijing Jiaotong University),Yingpeng Sang ()</authors>
+		<title>A Selectively Re-train Approach Based on Clustering To Classify Concept-Drifting Data Streams with Skewed Distribution</title>
+		<authors>Dandan Zhang (Beijing Jiaotong University), Hong Shen (),Tian Hui (),Yidong Li (Beijing Jiaotong Univeristy, China),Jun Wu (Beijing Jiaotong University),Yingpeng Sang ()</authors>
 		<abstract>  Classification is an important and practical tool which uses a model built on historical data to predict class labels for new arrival data. In the last few years, there have been many interesting studies on classification in data streams. However, most such studies assume that those data streams are relatively balanced and stable. Actually, skewed data streams (e.g., few positive but lots of negatives) are very important and typical, which appear in many real world applications. Concept drifts and skewed distributions, two common properties of data streams, make the task of learning in streams particularly difficult and  the traditional data mining algorithms no longer work. In this paper, we propose a method (Selectively Re-train Approach Based on Clustering) which can deal with concept-drifting and skewed distribution simultaneously. We evaluate our algorithm on both synthetic and real data sets simulating skewed data streams. Empirical results show the proposed method yields  better performance than the previous work.</abstract>
 	</paper>
 	<paper>
@@ -133,7 +133,7 @@
 	</paper>
 	<paper>
 		<ID>85</ID>
-		<title>NLPMM: a Next Location Predictor with Markov Modeling</title>
+		<title>NLPMM: A Next Location Predictor with Markov Modeling</title>
 		<authors>Meng Chen (ShanDong University),Yang Liu (Shandong University),Xiaohui Yu (Shandong University)</authors>
 		<abstract>In this paper, we solve the problem of predicting the next locations of the moving objects with a historical dataset of trajectories. We present a Next Location Predictor with Markov Modeling (NLPMM) which has the following advantages: (1) it considers both individual and collective movement patterns in making prediction, (2) it is effective even when the trajectory data is sparse, (3) it considers the time factor and builds models that are suited to different time periods. We have conducted extensive experiments on a real dataset, and the results demonstrate the superiority of NLPMM over existing methods.</abstract>
 	</paper>
@@ -157,7 +157,7 @@
 	</paper>
 	<paper>
 		<ID>95</ID>
-		<title>MultiAspectSpotting: Spotting Anomalous Behavior within Count Data using Tensor</title>
+		<title>MultiAspectSpotting: Spotting Anomalous Behavior within Count Data Using Tensor</title>
 		<authors>Koji Maruhashi (Fujitsu Laboratories Ltd.),Nobuhiro Yugami (Fujitsu Laboratories Ltd.)</authors>
 		<abstract>Methods for finding anomalous behaviors are attracting much attention, especially for very large datasets with several attributes with tens of thousands of categorical values. For example, security engineers try to find anomalous behaviors, i.e., remarkable attacks which greatly differ from the day's trend of attacks, on the basis of intrusion detection system logs with source IPs, destination IPs, port numbers, and additional information. However, there are large amount of abnormal records caused by noise, which can be repeated more abnormally than those caused by anomalous behaviors, and they are hard to be distinguished from each other. To tackle these difficulties, we propose a two-step anomaly detection. First, we detect abnormal records as individual anomalies by using a statistical anomaly detection, which can be improved by Poisson Tensor Factorization. Next, we gather the individual anomalies into groups of records with similar attribute values, which can be implemented by CANDECOMP/PARAFAC Decomposition. We conduct experiments using datasets added with synthesized anomalies and prove that our method can spot anomalous behaviors effectively. Moreover, our method can spot interesting patterns within some real world datasets such as IDS logs and web-access logs.</abstract>
 	</paper>
@@ -199,31 +199,31 @@
 	</paper>
 	<paper>
 		<ID>121</ID>
-		<title>Structure-aware Distance Measures for Comparing Clusterings in Graphs</title>
+		<title>Structure-Aware Distance Measures for Comparing Clusterings in Graphs</title>
 		<authors>Jeffrey Chan (University of Melbourne),Nguyen Xuan Vinh (University of Melbourne, Australia),Wei Liu (NICTA),James Bailey (University of Melbourne, Australia),Christopher A. Leckie (University of Melbourne),Kotagiri Ramamohanarao (University of Melbourne),Jian Pei (Simon Fraser University, Canana)</authors>
 		<abstract>Clustering in graphs aims to group vertices with similar patterns of connections.  Applications include discovering communities and latent structures in graphs.  Many algorithms have been proposed to find graph clusterings, but an open problem is the need for suitable comparison measures to quantitatively validate these algorithms, performing consensus clustering and to track evolving (graph) clusters across time.  To date, most comparison measures have focused on comparing the vertex groupings, and completely ignore the difference in the structural approximations in the clusterings, which can lead to counter-intuitive comparisons.  In this paper, we propose new measures that account for differences in the approximations.  We focus on comparison measures for two important graph clustering approaches, community detection and blockmodelling, and propose comparison measures that work for weighted (and unweighted) graphs.</abstract>
 	</paper>
 	<paper>
 		<ID>122</ID>
 		<title>CTROF: A Collaborative Tweet Ranking Framework for Online Personalized Recommendation</title>
-		<authors>Kaisong Song (Northeastern University),Daling Wang (northeastern university(China)),Shi Feng (Northeastern University(China)),Wen Qu (),Ge Yu (Northeastern University(China)),Yifei Zhang (Northeastern University in P. R. China)</authors>
+		<authors>Kaisong Song (Northeastern University),Daling Wang (northeastern university(China)),Shi Feng (Northeastern University(China)),Yifei Zhang (Northeastern University in P. R. China),Wen Qu (),Ge Yu (Northeastern University(China))</authors>
 		<abstract>Current social media services like Twitter and Sina Weibo have become an indispensable platform, and provide a large number of real-time messages. However, users are often overwhelmed with large amounts of information delivered via their followees, and may miss out on much enjoyable or useful content. An information overload problem has troubled many users, especially those with many followees and thousands of tweets arriving every day. In this case, real-time personalized recommendation plays an extreme important role in microblog, which needs analyzing users’ preference and recommending most relevant and newest content. Both of them pose serious challenges. In this paper, we focus on personal online tweet recommendation and propose a Collaborative Tweet Ranking Online Framework (CTROF) for the recommendation, which has integrated the Optimized Collaborative Tweet Ranking model CTR+ and Reservoir Sampling algorithm together. The experiment conducted on a real dataset from Sina microblog shows good performance and our algorithm outperforms the other baseline methods.</abstract>
 	</paper>
 	<paper>
 		<ID>123</ID>
 		<title>Two-Phase Layered Learning Recommendation via Category Structure</title>
-		<authors>Ke Ji (Beijing Jiaotong University),Shen Hong (Beijing Jiaotong University),Tian Hui (),Yanbo Wu (),Jun Wu (Beijing Jiaotong University)</authors>
+		<authors>Ke Ji (Beijing Jiaotong University), Hong Shen (Beijing Jiaotong University), Hui Tian (),Yanbo Wu (),Jun Wu (Beijing Jiaotong University)</authors>
 		<abstract>Context and social network information have been introduced to improve recommendation systems. However, most existing work still models users' rating for every item directly. This approach has two disadvantages: high cost for handling large amount of items and unable to handle the dynamic update of items. Generally, items are classified into many categories. Items in the same category have similar/relevant content, and hence may attract users of the same interest. These characteristics determine that we can utilize the item's content similarity to overcome the difficultiess of large amount and dynamic update of items. In this paper, aiming at fusing the category structure, we propose a novel two-phase layered learning recommendation framework, which is matrix factorization approach and can be seen as a greedy layer-wise training: first learn user's average rating to every category, and then, based on this, learn more accurate estimates of user's rating for individual item with content and social relation ensembled. Based on two kinds of classifications, we design two layered gradient algorithms in our framework. Systematic experiments on real data demonstrate that our algorithms outperform other state-of-the-art methods, especially for recommending new items.</abstract>
 	</paper>
 	<paper>
 		<ID>128</ID>
-		<title>Hash-based Stream LDA: Topic Modeling in Social Streams</title>
+		<title>Hash-Based Stream LDA: Topic Modeling in Social Streams</title>
 		<authors>Anton Slutsky (Drexel University),Xiaohua Hu (Drexel University, USA),Yuan An (Drexel University)</authors>
 		<abstract>We study the problem of topic modeling in continuous social media streams and propose a new generative probabilistic model called Hash-Based Stream LDA (HS-LDA), which is a generalization of the popular LDA approach. The model differs from LDA in that it exposes facilities to include inter- document similarity in topic modeling. The corresponding inference algorithm outlined in the paper relies on efficient estimation of document similarity with Locality Sensitive Hashing to retain the knowledge of past social discourse in a scalable way. The historical knowledge of previous messages is used in inference to improve quality of topic discovery. Performance of the new algorithm was evaluated against classical LDA approach as well as the streamoriented On-line LDA and SparseLDA using data sets collected from the Twitter microblog system and an IRC chat community. Experimental results showed that HS-LDA outperformed other techniques by more than 12% for the Twitter dataset and by 21% for the IRC data in terms of average perplexity.</abstract>
 	</paper>
 	<paper>
 		<ID>130</ID>
-		<title>Crime Forecasting Using Spatio-Temporal Pattern with Ensemble Learning</title>
+		<title>Crime Forecasting Using Spatio-temporal Pattern with Ensemble Learning</title>
 		<authors>Chung-Hsien Yu (University of Massachusetts Bo),Wei Ding (University of Massachusetts Boston, USA),Ping Chen (University of Massachusetts Boston),Melissa Morabito (University of Massachusetts Lowell)</authors>
 		<abstract>Crime forecasting is notoriously difficult. A crime incident is a multi-dimensional complex phenomenon that is closely associated with temporal, spatial, societal, and ecological factors. In an attempt to utilize all these factors in crime pattern formulation, we propose a new feature construction and feature selection framework for crime forecasting. A new concept of multi-dimensional feature denoted as spatio-temporal pattern, is constructed from local crime cluster distributions in different time periods at different granularity levels. We design and develop the Cluster-Confidence-Rate-Boosting (CCRBoost) algorithm to efficiently select relevant local spatio-temporal patterns to construct a global crime pattern from a training set. This global crime pattern is then used for future crime prediction. Using data from January 2006 to December 2009 from a police department in a northeastern city in the US, we evaluate the proposed framework on residential burglary prediction. The results show that the proposed CCRBoost algorithm has achieved about 80% on accuracy in predicting residential burglary using the grid cell of 800-meter by 800-meter in size as one single location.</abstract>
 	</paper>
@@ -235,7 +235,7 @@
 	</paper>
 	<paper>
 		<ID>140</ID>
-		<title>A New Evaluation Function for Entropy-based Feature Selection from Incomplete Data</title>
+		<title>A New Evaluation Function for Entropy-Based Feature Selection from Incomplete Data</title>
 		<authors>Wenhao Shu (Beijing Jiaotong University),Hong Shen (),Yingpeng Sang (),Yidong Li (Beijing Jiaotong Univeristy, China),Jun Wu (Beijing Jiaotong University)</authors>
 		<abstract>In data mining and knowledge discovery, evaluation functions for evaluating the quality of features have great influence on the outputs of feature selection algorithms. However, in the existing entropy-based feature selection algorithms from incomplete data, evaluation functions are often inadequately computed as a result of two drawbacks. One is that the existing evaluation functions have not taken into consideration the differences of discernibility abilities of features. The other is that in the feature selection algorithms of forward greedy search, if the feature with the same entropy value is not only one, the arbitrary selection may affect the classification performance. This paper introduces a new evaluation function to overcome the drawbacks. A main advantage of the proposed evaluation function is that the granularity of classification is considered in the evaluation computations for candidate features. Based on the new evaluation function, an entropy-based feature selection algorithm from incomplete data is developed. Experimental results show that the proposed evaluation function is more effective than the existing evaluation functions in terms of classification accuracy.</abstract>
 	</paper>
@@ -332,12 +332,12 @@
 	<paper>
 		<ID>208</ID>
 		<title>Com2: Fast Automatic Discovery of Temporal (’Comet’) Communities</title>
-		<authors>Miguel Araujo (CMU),Spiros Papadimitriou (Rutgers University),Stephan Günnemann (Carnegie Mellon University),Christos Faloutsos (CMU),Prithwish Basu (BBN Technologies),Ananthram Swami (Army Research Laboratory),Evangelos Papalexakis (Carnegie Mellon University),Danai Koutra (Carnegie Mellon University)</authors>
+		<authors>Miguel Araujo (CMU),Spiros Papadimitriou (Rutgers University),Stephan Günnemann (Carnegie Mellon University),Christos Faloutsos (CMU),Prithwish Basu (BBN Technologies),Ananthram Swami (Army Research Laboratory),Evangelos E. Papalexakis (Carnegie Mellon University),Danai Koutra (Carnegie Mellon University)</authors>
 		<abstract>Given a large network, changing over time, how can we find patterns and anomalies? We propose Com2, a novel and fast, incremental tensor analysis approach, which can discover both transient and periodic/repeating communities. The method is (a) scalable, being linear on the input size (b) general, (c) needs no user-defined parameters and (d) effective, returning results that agree with intuition. We apply our method on real datasets, including a phone-call one and a computer-traffic one. The phone call network consists of 4 million mobile users, with 51 million edges (phonecalls), over 14 days. Com2 spots intuitive patterns, that is, temporal communities (comet communities). We report our findings, which include large ’star’-like patterns, near-bipartite-cores, as well as tiny groups (5 users), calling each other hundreds of times within a few days. </abstract>
 	</paper>
 	<paper>
 		<ID>213</ID>
-		<title>Semi-supervised clustering on heterogeneous information networks</title>
+		<title>Semi-supervised Clustering on Heterogeneous Information Networks</title>
 		<authors>Chen Luo (College of Computer Science and Technology, Jilin University),Wei Pang (School of Natural and Computing Sciences, University of Aberdeen),Zhe Wang (College of Computer Science and Technology, Jilin University)</authors>
 		<abstract>Semi-supervised clustering on information networks combines both the labeled and unlabeled data sets with an aim to improve the clustering performance. However, the existing semi-supervised clustering methods are all designed for homogeneous networks and do not deal with heterogeneous ones. In this work, we propose a semi-supervised clustering approach to analyze heterogeneous information networks, which include multi-typed objects and links and may contain more useful semantic information. The major challenge in the clustering task here is how to handle multi-relations and diverse semantic meanings in heterogeneous networks. In order to deal with this challenge, we introduce the concept of relation-path to measure the similarity between two data objects of the same type. Thereafter, we make use of the labeled information to extract different weights for all relation-paths. Finally, we propose SemiRPClus, a complete framework for semi-supervised learning in heterogeneous networks. Experimental results demonstrate the distinct advantages in effectiveness and efficiency of our framework in comparison with the baseline and some state-of-the-art approaches.</abstract>
 	</paper>
@@ -355,25 +355,25 @@
 	</paper>
 	<paper>
 		<ID>229</ID>
-		<title>Matrix Factorization Without User Data Retention</title>
+		<title>Matrix Factorization without User Data Retention</title>
 		<authors>David Vallet (National ICT Australia),Arik Friedman (National ICT Australia),Shlomo Berkovsky (National ICT Australia)</authors>
 		<abstract>Recommender systems often rely on a centralized storage of user data and there is a growing concern about the misuse of the data. As recent studies have demonstrated, sensitive information could be inferred from user ratings stored by recommender systems. This work presents a novel semi-decentralized variant of the widely-used Matrix Factorization (MF) technique. The proposed approach eliminates the need for retaining user data, such that neither user ratings nor latent user vectors are stored by the recommender. Experimental evaluation indicates that the performance of the proposed approach is close to that of standard MF, and that the gap between the two diminishes as more user data becomes available. Our work paves the way to a new type of MF recommenders, which avoid user data retention, yet are capable of achieving accuracy similar to that of the state-of-the-art recommenders.</abstract>
 	</paper>
 	<paper>
 		<ID>231</ID>
-		<title>Super Graph Classification</title>
+		<title>Super-Graph Classification</title>
 		<authors>Ting Guo (QCIS Centre, UTS),Xingquan Zhu (Florida Atlantic University, USA)</authors>
 		<abstract>Graphs are popularly used to represent objects with dependency structures, yet all existing graph classification algorithms can only handle simple graphs where each node is a single attribute (or a set of independent attributes). In this paper, we formulate a new super graph classification task where each node of the super graph may contain a graph (single attribute graph), so a super graph contains a set of inter connected graphs. To support super graph classification, we propose a Weighted Random Walk Kernel (WRWK) which generates a product graph between any two super graphs, and uses the similarity (kernel value) of two single attribute graph as the node weight. Then we calculate weighted random walks on the product graph to generate kernel value between two super graphs as their similarity. Our method enjoys sound theoretical properties, including bounded similarity. Experiments con firm that our method significantly outperforms baseline approaches.</abstract>
 	</paper>
 	<paper>
 		<ID>234</ID>
-		<title>Outlier Detection based on Leave-one-out Density using Binary Decision Diagrams</title>
+		<title>Outlier Detection Based on Leave-One-Out Density Using Binary Decision Diagrams</title>
 		<authors>Takuro Kutsuna (Toyota Central R&amp;D Labs. Inc.),Akihiro Yamamoto (Kyoto University)</authors>
 		<abstract>We propose a novel method for detecting outliers based on the leave-one-out density. The leave-one-out density of a datum is defined as a ratio of the number of data inside a region to the volume of the region after the datum is removed from an original data set. We propose an efficient algorithm that evaluates the leave-one-out density of each datum on a set of regions around the datum by using binary decision diagrams. The time complexity of the proposed method is near linear with respect to the size of a data set,  while the outlier detection accuracy is still comparable to other methods. Experimental results show the usefulness of the proposed method.</abstract>
 	</paper>
 	<paper>
 		<ID>237</ID>
-		<title>Noise-Tolerant Approximate Blocking for Dynamic Real-time Entity Resolution</title>
+		<title>Noise-Tolerant Approximate Blocking for Dynamic Real-Time Entity Resolution</title>
 		<authors>Huizhi Liang (ANU),Yanzhe Wang (),Peter Christen (The Australian National University, Australia),Ross Gayler ()</authors>
 		<abstract>Entity resolution is the process of identifying records in one or multiple data sources that represent the same real-world entity. This process needs to deal with noisy data that contain for example wrong pronunciation or spelling errors. Many real world applications require rapid responses for entity queries on dynamic datasets. This brings challenges to existing approaches which are mainly aimed at the batch matching of records in static data. Locality sensitive hashing (LSH) is an approximate blocking approach that hashes objects within a certain distance into the same block with high probability. How to make approximate blocking approaches scalable to large datasets and effective for entity resolution in real-time remains an open question. Targeting this problem, we propose a noise-tolerant approximate blocking approach to index records based on their distance ranges using LSH and sorting trees within large sized hash blocks. Experiments conducted on both synthetic and real-world datasets show the effectiveness of the proposed approach.</abstract>
 	</paper>
@@ -385,19 +385,19 @@
 	</paper>
 	<paper>
 		<ID>241</ID>
-		<title>A Content-based Matrix Factorization Model for Recipe Recommendation</title>
+		<title>A Content-Based Matrix Factorization Model for Recipe Recommendation</title>
 		<authors>Chia-Jen Lin (National Taiwan University),Tsung-Ting Kuo (National Taiwan University),Shou-De Lin (National Taiwan University, Taiwan)</authors>
 		<abstract>This paper aims at bringing recommendation to the culinary domain in recipe recommendation. Recipe recommendation possesses certain unique characteristics unlike conventional item recommendation, as a recipe provides detailed heterogeneous information about ingredients and cooking procedure. Thus, we propose to treat recipes as an aggregation of features, which are extracted from ingredients, categories, preparation directions, and nutrition facts. We then propose a content-driven matrix factorization approach to model the latent dimension of recipes, users, and features. We also propose novel bias terms to incorporate time-dependent features. The recipe dataset is available at http://mslab.csie.ntu.edu.tw/~tim/recipe.zip</abstract>
 	</paper>
 	<paper>
 		<ID>249</ID>
-		<title>MalSpot: Multi^2 Malicious Network Behavior Patterns Analysis</title>
+		<title>MalSpot: Multi&#178; Malicious Network Behavior Patterns Analysis</title>
 		<authors>Ching-Hao Mao (III),Chung-Jung Wu (),Evangelos E. Papalexakis (Carnegie Mellon University),Christos Faloutsos (CMU),Kuo-Chen Lee (),Tien-Cheu Kao ()</authors>
 		<abstract>What are the patterns that typical network attackers exhibit? For a given malicious network behaviors, are its attacks spread uniformly over time? In this work, we develop MalSpot, multi-resolution and multi-linear (Multi2) network analysis system in order to discover such malicious patterns, so that we can use them later for attack detection, when attacks are concurrent with legitimate traffic. We designed and deployed MalSpot, which employs multi-linear analysis with different time resolutions, running on top of MapReduce (Hadoop), and we identify patterns across attackers, attacked institutions and variation of time scales. We collect over a terabyte of proven malicious traces (along with benign ones), from the Taiwanese government security operation center (G-SOC) , during the entire year of 2012. We showcase the effectiveness of MalSpot, by discovering interesting patterns and anomalies on this enormous dataset. We observed static and time-evolving pat- terns, that a vast majority of the known malicious behavior seem to follow.</abstract>
 	</paper>
 	<paper>
 		<ID>254</ID>
-		<title>Improving iForest with relative mass</title>
+		<title>Improving iForest with Relative Mass</title>
 		<authors>Sunil Aryal (Monash University),Kai Ming Ting (Monash University),Jonathan R. Wells (Monash University),Takashi Washio (Osaka University, Japan)</authors>
 		<abstract>iForest uses a collection of isolation trees to detect anomalies. While it is effective in detecting global anomalies, it fails to detect local anomalies in data sets having multiple clusters of normal instances because the local anomalies are masked by normal clusters of similar density and they become less susceptible to isolation. In this paper, we propose a very simple but effective solution to overcome this limitation by replacing the global ranking measure based on path length with a local ranking measure based on relative mass that takes local data distribution into consideration. We demonstrate the utility of relative mass by improving the task specific performance of iForest in anomaly detection and information retrieval tasks.</abstract>
 	</paper>
@@ -416,7 +416,7 @@
 	<paper>
 		<ID>261</ID>
 		<title>Automatic Fake Followers Detection in Chinese Micro-blogging System</title>
-		<authors>Yi Shen (CAS),jianjun Yu (),Kejun Dong (CNIC),Kai Nan ()</authors>
+		<authors>Yi Shen (CAS),Jianjun Yu (),Kejun Dong (CNIC),Kai Nan ()</authors>
 		<abstract>Micro-blogging, which has greatly influenced people's life, is experiencing fantastic success in the worldwide. However, during its rapid development, it has encountered the problem of content pollution. Various pollution in the micro-blogging platforms has hurt the credibility of micro-blogging and caused significantly negative effect. In this paper, we mainly focus on detecting fake followers which may lead to a problematic situation on social media networks. By extracting major features of fake followers in Sina Weibo, we propose a binary classifier to distinguish fake followers from the legitimate users. The experiments show that all the proposed features are important and our method greatly outperforms to detect fake followers. We also present an elaborate analysis on the phenomenon of fake followers, infer the supported algorithms and principles behind them, and finally provide several suggestions for micro-blogging systems and ordinary users to deal with the fake followers.</abstract>
 	</paper>
 	<paper>
@@ -434,12 +434,12 @@
 	<paper>
 		<ID>277</ID>
 		<title>A Relevance Weighted Ensemble Model for Anomaly Detection in Switching Data Streams</title>
-		<authors>Mahsa Salehi (University of Melbourne),Christopher Leckie (University of Melbourne),Masud Moshtaghi (Monash University),Tharshan Vaithianathan (University of Melbourne)</authors>
+		<authors>Mahsa Salehi (University of Melbourne),Christopher A. Leckie (University of Melbourne),Masud Moshtaghi (Monash University),Tharshan Vaithianathan (University of Melbourne)</authors>
 		<abstract>Anomaly detection in data streams plays a vital role in on-line data mining applications. A major challenge for anomaly detection is the dynamically changing nature of many monitoring environments. This causes a problem for traditional anomaly detection techniques in data streams, which assume a relatively static monitoring environment. In an environment that is intermittently changing (known as switching data streams), static approaches can yield a high error rate in terms of false positives. To cope with dynamic environments, we require an approach that can learn from the history of normal behaviour in data streams, while accounting for the fact that not all time periods in the past are equally relevant. Consequently, we have proposed a relevance-weighted ensemble model for learning normal behaviour, which forms the basis of our anomaly detection scheme. The advantage of this approach is that it can improve the accuracy of detection by using relevant history, while remaining computationally efficient. Our solution provides a novel contribution through the use of ensemble techniques for anomaly detection in switching data streams. Our empirical results on real and synthetic data streams show that we can achieve substantial improvements compared to a recent anomaly detection algorithm for data streams.</abstract>
 	</paper>
 	<paper>
 		<ID>280</ID>
-		<title>For User-driven Software Evolution: Requirements Elicitation Derived from Mining Online Reviews</title>
+		<title>For User-Driven Software Evolution: Requirements Elicitation Derived from Mining Online Reviews</title>
 		<authors>Wei Jiang (Beihang University),Haibin Ruan (),Li Zhang (Beihang University),Philip Lew (Beihang University),Jing Jiang ()</authors>
 		<abstract>Online reviews that manifest user feedback have become an available resource for eliciting requirements to design future releases. However, due to complex and diverse opinion expressions, it is challenging to utilize automated analysis for deriving constructive feedback from these reviews. What’s more, determining important changes in requirements based on user feedback is also challenging. To address these two problems, this paper proposes a systematic approach for transforming online reviews to evolutionary requirements. According to the characteristics of reviews, we first adapt opinion mining techniques to automatically extract opinion expressions about common software features. To provide meaningful feedback, we then present an optimized method of clustering opinion expressions in terms of a macro network topology. Based on this feedback, we finally combine user satisfaction analysis with the inherent economic attributes associated with the software’s revenue to determine evolutionary requirements. Experimental results show that our approach achieves good performance for obtaining constructive feedback even with large amounts of review data, and furthermore discovers the evolutionary requirements that tend to be ignored by developers from a technology perspective.</abstract>
 	</paper>
@@ -493,14 +493,14 @@
 	</paper>
 	<paper>
 		<ID>314</ID>
-		<title>Two sides of a coin: Separating Personal Communication and Public Dissemination Accounts in Twitter</title>
-		<authors>Peifeng Yin (Pennsylvania State University),Nilam Ram (Pennsylvania State University),Wang-Chien Lee (Pennsylvania State University, USA),Conrad Tucker (Pennsylvania State University),Shashank Khandelwal (Pennsylvania State University),Marcel Salathe (Pennsylvania State University)</authors>
+		<title>Two Sides of a Coin: Separating Personal Communication and Public Dissemination Accounts in Twitter</title>
+		<authors>Peifeng Yin (Pennsylvania State University),Nilam Ram (Pennsylvania State University),Wang-Chien Lee (Pennsylvania State University, USA),Conrad Tucker (Pennsylvania State University),Shashank Khandelwal (Pennsylvania State University),Marcel Salathé (Pennsylvania State University)</authors>
 		<abstract>There are millions of accounts in Twitter. In this paper, we categorize twitter accounts into two types, namely \emph{Personal Communication Account (PCA)} and \emph{Public Dissemination Account (PDA)}. PCAs are accounts relating to individuals and are used to express an individual's thoughts and feelings. PDAs, on the other hand, refer to accounts owned by non-individuals such as companies, governments, etc. Generally, Tweets in PDA (i) disseminate a specific type of information (e.g., job openings, shopping deals, car accidents) rather than sharing an individual's personal life; and (ii) may be produced by non-human entities (e.g., bots). We aim to develop techniques for identifying PDAs so as to (i) facilitate social scientists to reduce ``noise'' for their study in human behaviors, and (ii) to index them for potential recommendation to users looking for specific types of information. Through analysis, we find these two types of accounts follow different temporal, spatial and textual patterns. Accordingly we develop probabilistic models based on these features to identify PDAs. We also conduct a series of experiments to evaluate those algorithms for cleaning the Twitter data stream.</abstract>
 	</paper>
 	<paper>
 		<ID>315</ID>
-		<title>Fault-tolerant Concept Detection in Information Networks</title>
-		<authors>Tobias Koetter (Carnegie Mellon University),Stephan Günnemann (Carnegie Mellon University),Michael R. Berthold (University of Konstanz, Germany),Christos Faloutsos (CMU)</authors>
+		<title>Fault-Tolerant Concept Detection in Information Networks</title>
+		<authors>Tobias Kötter (Carnegie Mellon University),Stephan Günnemann (Carnegie Mellon University),Michael R. Berthold (University of Konstanz, Germany),Christos Faloutsos (CMU)</authors>
 		<abstract>Given information about medical drugs and their properties, how can we automatically discover that Aspirin has blood-thinning properties, and thus prevents heart attacks? Expressed in more general terms, if we have a large information network that integrates data from heterogeneous data sources, how can we extract semantic information that provides a better understanding of the integrated data and also helps us to identify missing links? We propose to extract concepts that describe groups of objects and their common properties from the integrated data. The discovered concepts provide semantic information as well as an abstract view on the integrated data and thus improve the understanding of complex systems. Our proposed method has the following desirable properties: (a) it is parameter-free and therefore requires no user-defined parameters (b) it is fault-tolerant, allowing for the detection of missing links and (c) it is scalable, being linear on the input size. We demonstrate the effectiveness and scalability of the proposed method on real, publicly available graphs.</abstract>
 	</paper>
 	<paper>
@@ -511,7 +511,7 @@
 	</paper>
 	<paper>
 		<ID>335</ID>
-		<title>Finding Well-Clusterable Subspaces for High Dimensional Data A Numerical One-Dimension Approach</title>
+		<title>Finding Well-Clusterable Subspaces for High Dimensional Data: A Numerical One-Dimension Approach</title>
 		<authors>Chuanren Liu (Rutgers Business School),Tianming Hu (),Yong Ge (UNCC),Hui Xiong (Rutgers University, USA)</authors>
 		<abstract>High dimensionality poses two challenges for clustering algorithms: features may be noisy and data may be sparse. To address these challenges, subspace clustering seeks to project the data onto simple yet informative subspaces. The projection process should be fast and the projected subspaces should be well-clusterable. In this paper, we describe a numerical one-dimensional subspace approach for high dimensional data. First, we show that the numerical one-dimensional subspaces can be constructed efficiently by controlling the correlation structure. Next, we propose two strategies to aggregate the representatives from each numerical one-dimensional subspace into the final projected space, where the clustering problem becomes tractable. Finally, the experiments on real-world document data sets demonstrate that, compared to competing methods, our approach can find more clusterable subspaces which align better with the true class labels.</abstract>
 	</paper>
@@ -529,8 +529,8 @@
 	</paper>
 	<paper>
 		<ID>347</ID>
-		<title>Inducing controlled error over variable length ranked lists</title>
-		<authors>Laurence Park (University of Western Sydney),Glenn Stone (University of Western Sydney)</authors>
+		<title>Inducing Controlled Error over Variable Length Ranked Lists</title>
+		<authors>Laurence A.F. Park (University of Western Sydney),Glenn Stone (University of Western Sydney)</authors>
 		<abstract>When examining the robustness of systems that take ranked lists as input, we can induce noise, measured in terms of Kendall's tau rank correlation, by applying a set number of random adjacent transpositions.  The set number of random transpositions ensures that any ranked lists, induced with this noise, has a specific expected Kendall's tau. However, if we have ranked lists of varying length, it is not clear how many random transpositions we must apply to each list to ensure that we obtain a consistent expected Kendall's tau across the collection. In this article we investigate how to compute the number of random adjacent transpositions required to obtain an expected Kendall's tau for a given list length, and find that it is infeasible to compute for lists of length more than 9. We also investigate an alternate and more efficient method of inducing noise in ranked lists called Gaussian Perturbation. We show that using this method, we can compute the parameters required to induce a consistent level of noise for lists of length $10^7$ in just over six minutes. We also provide an approximate solution to provide results in less than $10^{-5}$ seconds.</abstract>
 	</paper>
 	<paper>
@@ -541,7 +541,7 @@
 	</paper>
 	<paper>
 		<ID>354</ID>
-		<title>Topic Modeling using Collapsed Typed Dependency Relations</title>
+		<title>Topic Modeling Using Collapsed Typed Dependency Relations</title>
 		<authors>Elnaz Delpisheh (York University),Aijun An (Department of Computer Science and Engineering,York University, Canada)</authors>
 		<abstract>Topic modeling is a powerful tool to uncover hidden thematic structures of documents. Many conventional topic models represent documents as a bag-of-words, where the important linguistic structures of documents are neglected. In this paper, we propose a novel topic model that enriches text documents with collapsed typed dependency relations to effectively acquire syntactic and semantic dependencies between consecutive and nonconsecutive words of text documents. In addition, we propose to enforce coherent topic assignments for conceptually similar words by generalizing words with their synonyms. Our experimental studies show that the proposed model and strategy outperform the original LDA model and the Bigram Topic Model in terms of perplexity; and our performance is comparable to other models in terms of stability, coherence, and accuracy.</abstract>
 	</paper>
@@ -583,13 +583,13 @@
 	</paper>
 	<paper>
 		<ID>388</ID>
-		<title>Collective Matrix Factorization of Predictors, Neighborhood and Targets for Semi-Supervised Classification</title>
+		<title>Collective Matrix Factorization of Predictors, Neighborhood and Targets for Semi-supervised Classification</title>
 		<authors>Lucas Rego Drumond (University of Hildesheim),Lars Schmidt-Thieme (University of Hildesheim),Christoph Freudenthaler (),Artus Krohn-Grimberghe ()</authors>
 		<abstract>Due to the small size of available labeled data for semi-supervised learning, approaches to this problem make strong assumptions about the data, performing well only when such assumptions hold true. However, a lot of effort may have to be spent in understanding the data so that the most suitable model can be applied. This process can be as critical as gathering labeled data. One way to overcome this hindrance is to control the contribution of different assumptions to the model, rendering it capable of performing reasonably in a wide range of applications. In this paper we propose a collective matrix factorization model that simultaneously decomposes the predictor, neighborhood and target matrices (PNT-CMF) to achieve semi-supervised classification. By controlling how strongly the model relies on different assumptions, PNT-CMF is able to perform well on a wider variety of datasets. Experiments on synthetic and real world datasets show that, while state-of-the-art models (TSVM and LapSVM) excel on datasets that match their characteristics and have a performance drop on the others, our approach  outperforms them being consistently competitive in different situations.</abstract>
 	</paper>
 	<paper>
 		<ID>395</ID>
-		<title>Programmatic buying bidding strategies with win rate and winning price estimation in real time mobile advertising </title>
+		<title>Programmatic Buying Bidding Strategies with Win Rate and Winning Price Estimation in Real Time Mobile Advertising </title>
 		<authors>Xiang Li (Drawbridge Inc),Devin Guan (Drawbridge inc)</authors>
 		<abstract>A major trend in mobile advertising is the emergence of real time bidding (RTB) based marketplaces on the supply side and the corresponding programmatic impression buying on the demand side. In order to acquire the most relevant audience impression at the lowest cost, a demand side player has to accurately estimate the win rate and winning price in the auction, and incorporate that knowledge in its bid. In this paper, we describe our battle-proven techniques of predicting win rate and winning price in RTB, and the corresponding bidding strategies built on top of those predictions. We also reveal the close relationship between the win rate and winning price estimation, and demonstrate how to solve the two problems together. All of our estimation methods are developed with distributed framework and have been applied to billion order numbers of data in real business operation. </abstract>
 	</paper>

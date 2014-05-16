@@ -37,4 +37,23 @@ $(document).on('pagecreate','#page-home',function () {
         moveRight();
     });
 
+     $(document).on('mousedown','#travelInfo a', function(e) {
+            e.preventDefault();
+            var elem = $(this);
+            var url = elem.attr('ex-href');
+            if (url.indexOf('http://') !== -1 || url.indexOf('https://') !== -1) {
+                console.log("caught");
+                window.open(url, '_system');
+            }
+    });
+     $(document).on('mousedown','#exlink', function(e) {
+            e.preventDefault();
+            var elem = $(this);
+            var url = elem.attr('ex-href');
+            if (url.indexOf('http://') !== -1 || url.indexOf('https://') !== -1) {
+                console.log("caught");
+                window.open(url, '_system');
+            }
+    });
+
 });    

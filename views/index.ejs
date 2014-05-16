@@ -25,22 +25,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
         <link rel="stylesheet" href="/stylesheets/pakdd.css" />
-        <!-- <link rel="stylesheet" href="/stylesheets/style.css" /> -->
+        <!--<link rel="stylesheet" href="/stylesheets/style.css" /> -->
         <link rel="stylesheet" href="/touchTouch/touchTouch.css" />
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
         <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
-        <!--
-         <script type="text/javascript" src="/javascripts/jssor.core.js"></script>
+<!--
+        <script type="text/javascript" src="/javascripts/jssor.core.js"></script>
         <script type="text/javascript" src="/javascripts/jssor.utils.js"></script>
         <script type="text/javascript" src="/javascripts/jssor.slider.js"></script>
         <script type="text/javascript" src="/javascripts/slider.js"></script>
         <link href="/stylesheets/slider.css" rel="stylesheet" type="text/css"/>
-      
+
         <script src="/javascripts/jquery-scrollto.js"></script>
-  
-        
+
+
         <script src="/javascripts/phototouch.js"></script>
         <script src="/javascripts/loadXMLpaper.js"></script>
         <script src="/javascripts/loadXMLauthor.js"></script>
@@ -48,37 +49,38 @@
         <script src="/javascripts/storageMyProgram.js"></script>
         <script src="/javascripts/infoSlider.js"></script>
         -->
-        <script src="/javascripts/pakdd.min.js"></script> 
+        <script src="/javascripts/pakdd.min.js"></script>
+
         <script src="/touchTouch/touchTouch.jquery.js"></script>
-        
+
         <title>PAKDD</title>
     </head>
 <body class="ui-mobile-viewport ui-overlay-c" screen_capture_injected="true">
 	<div data-role="page" id="page-home" >
-	
+
 		<script src="/javascripts/setCSStrick.js"></script>
 		<div data-role="header" data-position="fixed" role="banner">
 			<h1 class="ui-title" role="heading" aria-level="1">18th PAKDD 2014</h1>
-        
-        
+
+
           <a href="#popupInfo" data-role="button" data-rel="popup" class="ui-btn-left ui-shadow ui-corner-all ui-btn-icon-left ui-icon-info"data-position-to="window" data-transition="pop" >info</a>
           <a href="#page-home" data-icon="home" class="ui-btn-right" >Home</a>
-       
-        
+
+
         <div data-role="popup" id="popupInfo" data-overlay-theme="a">
             <div id="InfoPage">
             <div id="slider">
               <a href="#" class="control_next">></a>
               <a href="#" class="control_prev"><</a>
               <ul>
-                <li> 
+                <li>
                   <div id="travelInfo">
                   <h2>Travel Info</h2>
-                      <a class="ui-btn info-btn ui-shadow ui-corner-all" href="http://www.vztaiwan.com/" >Visit Smart Tourism Taiwan</a>
+                      <a class="ui-btn info-btn ui-shadow ui-corner-all" href="#" ex-href="http://www.vztaiwan.com/" >Visit Smart Tourism Taiwan</a>
                       <br>
-                      <a class="ui-btn info-btn ui-shadow ui-corner-all" href="https://itunes.apple.com/us/app/smart-tourism-pro/id649680814?ls=1&mt=8">Download APP for iOS</a>
+                      <a class="ui-btn info-btn ui-shadow ui-corner-all" href="#" ex-href="https://itunes.apple.com/us/app/smart-tourism-pro/id649680814?ls=1&mt=8">Download APP for iOS</a>
                       <br>
-                      <a class="ui-btn info-btn ui-shadow ui-corner-all" href="https://play.google.com/store/apps/details?id=tw.org.iii.ari.smarttourism">Download APP for Android</a>
+                      <a class="ui-btn info-btn ui-shadow ui-corner-all" href="#" ex-href="https://play.google.com/store/apps/details?id=tw.org.iii.ari.smarttourism">Download APP for Android</a>
                   </div>
                 </li>
                 <li>
@@ -113,7 +115,7 @@
                 </li>
                 <li>
                   <div id="Manual">
-                    <h2>User Manual (3)</h2>
+                     <h2>User Manual (3)</h2>
                     <h4>You can also remove from here</h4>
                     <img class="info_img" src="images/helpinfo2.png">
                   </div>
@@ -159,12 +161,12 @@
                     <h3>NetDB Lab, NCKU</h3>
                     <hr>
                     <h4>Arvin Huang</h4>
-                    <h4>BoHeng Chen</h4>
-                    <h4>Chris Hsu</h4>
+                    <h4>Hendry Chen</h4>
+                    <h4>Charlie Hsu</h4>
                     <h4>PeiHsuan Hsieh</h4>
                   </div>
                 </li>
-              </ul>  
+              </ul>
             </div>
             </div>
         </div><!-- /popup -->
@@ -197,7 +199,7 @@
 						<div class="index_btn">Traffic Information</div>
 						</div>
 					</a>
-				</div>	
+				</div>
 				<div class="ui-block-a">
 					<a href="#paperListPage" data-transition="fade">
 						<div class="home_btn">
@@ -210,38 +212,38 @@
 					<a href="#myProgramPage" data-transition="fade" id="btn_myProgram">
 						<div class="home_btn">
 						<img src="/images/mylist.png"></img>
-						<div class="index_btn">My Schedule</div> 
+						<div class="index_btn">My Schedule</div>
 						</div>
 					</a>
-				</div>	
-				
+				</div>
+
 			</div><!-- /grid-a -->
-		</div> 
-		<div data-role="footer" data-position="fixed"> 
-                 
-        </div> 
+		</div>
+		<div data-role="footer" data-position="fixed">
+
+        </div>
     </div>
 
          <div id="paperListPage" data-role="page" data-add-back-btn="true">
               <div data-role="header" >
-                
+
                  <h1>Paper List</h1>
                   <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
                 <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
               </div>
                <div data-role="content" class="ui-content" role="main">
                         <ul data-role="listview" id="list-paperList" class="ui-listview" data-autodividers="true" data-filter="true">
-                           
+
                         </ul>
                </div>
-               <div id="paperListfooter" data-role="footer" data-position="fixed"> 
+               <div id="paperListfooter" data-role="footer" data-position="fixed">
                  <div data-role="navbar">
                      <ul >
                         <li ><a href="#" class="ui-btn-active ui-state-persist">PaperList</a></li>
                         <li ><a href="#peoplePage">People</a></li>
                      </ul>
                  </div><!-- /navbar -->
-              </div> 
+              </div>
         </div>
 
          <div id="peoplePage" data-role="page" data-add-back-btn="true">
@@ -254,18 +256,18 @@
               		<ul data-role="listview" id="list-author" data-autodividers="true" data-filter="true">
               		</ul>
         	      </div>
-                <div id="peoplePagefooter" data-role="footer" data-position="fixed"> 
+                <div id="peoplePagefooter" data-role="footer" data-position="fixed">
                    <div data-role="navbar">
                        <ul >
                           <li ><a href="#paperListPage">PaperList</a></li>
                           <li ><a href="#" class="ui-btn-active ui-state-persist">People</a></li>
                        </ul>
                    </div><!-- /navbar -->
-                </div> 
+                </div>
         </div>
 
         <div id="programPage" data-role="page" data-add-back-btn="true">
-       
+
               <div data-role="header"  >
                  <h1>Program</h1>
                   <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
@@ -277,10 +279,10 @@
                   </ul>
                </div>
         </div>
-    
+
        <div id="MapPage" data-role="page" data-add-back-btn="true">
               <div data-role="header" data-position="fixed" >
-                 <h1>PAKDD 2014 Traffic Information</h1>
+                 <h1 style="white-space:normal;">PAKDD 2014 Traffic Information</h1>
                   <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
                 <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
                 <a href="#" class="ui-btn-left ui-link ui-btn ui-shadow ui-corner-all" data-rel="back" data-role="button" role="button">Back</a>
@@ -288,7 +290,7 @@
                <div data-role="content" class="ui-content" role="main">
                         <div class="map_content">
                             <div class="thumbs">
-                              <a href="/images/F1.png" style="background-image:url(/images/F1.png)" title="F1"></a>
+                              <a href="/images/F1.png" style="background-image:url(/images/F1.png)" title="1F"></a>
                               <a href="/images/B1.png" style="background-image:url(/images/B1.png)" title="B1"></a>
                               <a href="/images/B2.png" style="background-image:url(/images/B2.png)" title="B2"></a>
                               <a href="/images/9F.png" style="background-image:url(/images/9F.png)" title="9F"></a>
@@ -302,7 +304,7 @@
         <!--Taoyaun to Tainan -->
         <div id="MapPage_a" data-role="page" data-add-back-btn="true">
               <div data-role="header" data-position="fixed" >
-                 <h1>PAKDD 2014 Traffic Information</h1>
+                 <h1 style="white-space:normal;">PAKDD 2014 Traffic Information</h1>
                   <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
                 <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
                 <a href="#" class="ui-btn-left ui-link ui-btn ui-shadow ui-corner-all" data-rel="back" data-role="button" role="button">Back</a>
@@ -316,24 +318,24 @@
                          <!--   <img src="/images/mylist.png"></img>  -->
                             <div class="option" >Option A:By Taiwan High Speed Rail (THSR)</div>
                             <img src="/images/THSR.png">
-                          </a> 
-                          </div> 
-                          </div> 
+                          </a>
+                          </div>
+                          </div>
                           <div class="ui-block-bc">
                           <div class="option_btn">
                           <a href="#a_OptionB"  data-transition="fade" class="option_btn">
                          <!--   <img src="/images/mylist.png"></img>  -->
                             <div class="option">Option B:By Taiwan Railway Train</div>
                             <img src="/images/Railway.png">
-                          </a> 
-                          </div> 
+                          </a>
+                          </div>
                           </div>
                         </div>
               </div>
         </div>
         <div id="a_OptionA" data-role="page" data-add-back-btn="true">
               <div data-role="header" data-position="fixed" >
-                 <h1>PAKDD 2014 Traffic Information</h1>
+                 <h1 style="white-space:normal;">PAKDD 2014 Traffic Information</h1>
                   <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
                 <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
                 <a href="#" class="ui-btn-left ui-link ui-btn ui-shadow ui-corner-all" data-rel="back" data-role="button" role="button">Back</a>
@@ -393,7 +395,7 @@
             <div u="prototype" style="POSITION: absolute; WIDTH: 12px; HEIGHT: 12px;"></div>
         </div>
         <!-- Bullet Navigator Skin End -->
-        
+
         <!-- Arrow Navigator Skin Begin -->
         <!-- Arrow Left -->
         <span u="arrowleft" class="jssora05l" style="width: 40px; height: 40px; top: 123px; left: 8px;">
@@ -426,24 +428,24 @@
                   By United Highway Bus at Terminal 1(Ubus 705)<br><br>
                   Ticket price: <div class="time_fee">full fare $30 NTD</div><div class="time_fee">half fare $15 NTD</div>
                   Travel time: <div class="time_fee">about 20 minutes</div>
-                  Please click <a href="http://www.taoyuan-airport.com/english/hight-speed-rail"  target=_blank >here</a> to get more Shuttle information.<br><br>
+                  Please click <a id="exlink" href="#" ex-href="http://www.taoyuan-airport.com/english/hight-speed-rail"  >here</a> to get more Shuttle information.<br><br>
                   Taxi:<br><a href="#THSR_Taoyuan" data-rel="popup" data-position-to="window" data-transition="fade" style="margin:8px">To The Driver <br>[Show the popup message (in Chinese)]</a><br>
                   <div data-role="popup" id="THSR_Taoyuan" data-overlay-theme="a" data-corners="false">
                   <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="images/Ask_directions/THSR_Taoyuan.png" style="max-height:512px;">
                   </div>
                   Price: <div class="time_fee">about $350 NTD</div><br>
-                  
+
 
                   <div class="instructions">
-                    2.THSR Taoyuan Station --> THSR Tainan Station <br><br> 
+                    2.THSR Taoyuan Station --> THSR Tainan Station <br><br>
                   </div>
                   <img src="/images/map_THSR.png"><br>
                   Ticket price: <div class="time_fee">adult $1305 NTD</div>
                                 <div class="time_fee">achildren/senior/disabled $650 NTD</div>
                   Travel Time: <div class="time_fee">about 83 minutes</div>
-                  Please click <a href="http://www5.thsrc.com.tw/en/"  target=_blank >here</a> to get more information for the price and schedule.<br><br>
+                  Please click <a id="exlink" href="#" ex-href="http://www5.thsrc.com.tw/en/"  >here</a> to get more information for the price and schedule.<br><br>
                   <div id="xx" class="instructions">
-                    3.THSR Tainan Station --> Tainan Railway Station<br><br> 
+                    3.THSR Tainan Station --> Tainan Railway Station<br><br>
                   </div>
                     You can get to Tainan Railway Station by train or by taxi<br><br>
                     By train:<br><a href="#Shalun_Raiway" data-rel="popup" data-position-to="window" data-transition="fade" style="margin:8px">Ask directions <br>[Show the popup message (in Chinese)]</a><br>
@@ -453,7 +455,7 @@
                     In the THSR Tainan Station, follow the direction(1 minute walk) to take Taiwan Railway Shuttle Train (ShaLun Line) to Tainan Railway Station.<br>The entrance of the Shalun Railway Station is on 2F of THSR Tainan Station<br><br>
                     Price:<div class="time_fee"> $25NTD</div>
                     Travel time:<div class="time_fee"> 20minutes</div>
-                    Please check <a href="http://twtraffic.tra.gov.tw/twrail/English/e_index.aspx" target=_blank>here</a> for the information of the train schedule.<br>
+                    Please check <a id="exlink" href="#" ex-href="http://twtraffic.tra.gov.tw/twrail/English/e_index.aspx" >here</a> for the information of the train schedule.<br>
                     <span style="color:red; margin-top:5px">Notice:</span><p style="margin:0px;color:#E03A3A;">All trains from Shalun station will stop at the Tainan station even their terminal stations are not Tainan. You can take any train at your convenient time.
                     </p>
                     <br>
@@ -483,7 +485,7 @@
                   </div>
                   <br>
                   <div class="instructions">
-                    4.Tainan Railway Station --> Shangri-La's Far Eastern Plaza Hotel<br><br> 
+                    4.Tainan Railway Station --> Shangri-La's Far Eastern Plaza Hotel<br><br>
                   </div>
                   <a href="#Shangri_La1" data-rel="popup" data-position-to="window" data-transition="fade" style="margin:8px">Ask directions <br>[Show the popup message (in Chinese)]</a><br>
                   <div data-role="popup" id="Shangri_La1" data-overlay-theme="a" data-corners="false">
@@ -504,7 +506,7 @@
         </div>
         <div id="a_OptionB" data-role="page" data-add-back-btn="true">
               <div data-role="header" data-position="fixed" >
-                 <h1>PAKDD 2014 Traffic Information</h1>
+                 <h1 style="white-space:normal;">PAKDD 2014 Traffic Information</h1>
                   <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
                 <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
                 <a href="#" class="ui-btn-left ui-link ui-btn ui-shadow ui-corner-all" data-rel="back" data-role="button" role="button">Back</a>
@@ -556,7 +558,7 @@
             <div u="prototype" style="POSITION: absolute; WIDTH: 12px; HEIGHT: 12px;"></div>
         </div>
         <!-- Bullet Navigator Skin End -->
-        
+
         <!-- Arrow Navigator Skin Begin -->
         <!-- Arrow Left -->
         <span u="arrowleft" class="jssora05l" style="width: 40px; height: 40px; top: 123px; left: 8px;">
@@ -577,7 +579,7 @@
                   </div>
                 <div class="map_text_guide">
                 <div class="instructions">
-                  1.Taoyuan International Airport --> Taipei Railway Station 
+                  1.Taoyuan International Airport --> Taipei Railway Station
                 </div>
                 In the airport, locate Kuo-kuang Motor Transport counter and purchase a bus ticket of Kuo-kuang Line [1840] to Taipei Railway Station.<br> <br>
                 <a href="#Kuo-kuang_1840" data-rel="popup" data-position-to="window" data-transition="fade" style="margin:8px;">Ask directions <br>[Show the popup message (in Chinese)]</a><br>
@@ -586,10 +588,10 @@
                   </div>
                 Ticket price:<div class="time_fee">$125 NTD</div>
                 Travel time: <div class="time_fee">about 55 minutes</div>
-                Please click <a href="http://www.kingbus.com.tw/time&price.php"  target=_blank >here</a> to check the information for the bus schedule and price.<br><br>
+                Please click <a id="exlink" href="#" ex-href="http://www.kingbus.com.tw/time&price.php"   >here</a> to check the information for the bus schedule and price.<br><br>
 
                 <div class="instructions">
-                  2.Taipei Railway Station --> Tainan Railway Station<br><br> 
+                  2.Taipei Railway Station --> Tainan Railway Station<br><br>
                 </div>
                 <a href="#Train_Tainan" data-rel="popup" data-position-to="window" data-transition="fade" style="margin:8px">Ask directions <br>[Show the popup message (in Chinese)]</a><br>
                   <div data-role="popup" id="Train_Tainan" data-overlay-theme="a"  data-corners="false">
@@ -597,10 +599,10 @@
                   </div>
                 Ticket price:<div class="time_fee"> $480~741 NTD</div>
                 Travel Time: <div class="time_fee">about 4~6 hours(depending on the types of the train)</div>
-                Please check <a href="http://twtraffic.tra.gov.tw/twrail/English/e_index.aspx" target=_blank>here</a> for the information of the train schedule.<br><br>
+                Please check <a id="exlink" href="#" ex-href="http://twtraffic.tra.gov.tw/twrail/English/e_index.aspx" >here</a> for the information of the train schedule.<br><br>
 
                 <div class="instructions">
-                  3.Tainan Railway Station --> Shangri-La Hotel<br><br> 
+                  3.Tainan Railway Station --> Shangri-La Hotel<br><br>
                 </div>
                 <a href="#Shangri_La2" data-rel="popup" data-position-to="window" data-transition="fade" style="margin:8px">Ask directions <br>[Show the popup message (in Chinese)]</a><br>
                   <div data-role="popup" id="Shangri_La2" data-overlay-theme="a"  data-corners="false">
@@ -612,14 +614,14 @@
                  <p style="margin:0px;color:#E03A3A;">(Please do not exit from the Front Exit in the First Platform. You will need a long walk from the Front Exit of the Tainan train station to the conference venue.)
                     </p>
                     <br>
-                </div>     
+                </div>
               </div>
         </div>
 
         <!--Kaosiung to Tainan -->
          <div id="MapPage_b" data-role="page" data-add-back-btn="true">
               <div data-role="header" data-position="fixed" >
-                 <h1>PAKDD 2014 Traffic Information</h1>
+                 <h1 style="white-space:normal;">PAKDD 2014 Traffic Information</h1>
                   <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
                 <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
                 <a href="#" class="ui-btn-left ui-link ui-btn ui-shadow ui-corner-all" data-rel="back" data-role="button" role="button">Back</a>
@@ -632,15 +634,15 @@
                          <!--   <img src="/images/mylist.png"></img>  -->
                             <div class="option">Option A:By Taiwan Railway Train</div>
                             <img src="/images/Railway.png">
-                          </a> 
-                          </div> 
+                          </a>
+                          </div>
                           </div>
                         </div>
               </div>
         </div>
         <div id="b_OptionA" data-role="page" data-add-back-btn="true">
               <div data-role="header" data-position="fixed" >
-                 <h1>PAKDD 2014 Traffic Information</h1>
+                 <h1 style="white-space:normal;">PAKDD 2014 Traffic Information</h1>
                   <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
                 <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
                 <a href="#" class="ui-btn-left ui-link ui-btn ui-shadow ui-corner-all" data-rel="back" data-role="button" role="button">Back</a>
@@ -692,7 +694,7 @@
             <div u="prototype" style="POSITION: absolute; WIDTH: 12px; HEIGHT: 12px;"></div>
         </div>
         <!-- Bullet Navigator Skin End -->
-        
+
         <!-- Arrow Navigator Skin Begin -->
         <!-- Arrow Left -->
         <span u="arrowleft" class="jssora05l" style="width: 40px; height: 40px; top: 123px; left: 8px;">
@@ -705,7 +707,7 @@
         <!-- Trigger -->
     </div>
     <!-- Jssor Slider End -->
-               
+
                 <div class="map_simple_guide">
                   1.Kaosiung International Airport <br> </a>
                   2.Kaosiung Railway Station <br>
@@ -713,7 +715,7 @@
                   4. Shangri-La Hotel <br><br>
                 </div>
                  <div class="map_text_guide">
-                <div class="instructions">1.Kaohsiung International Airport --> Kaohsiung Railway Station<br><br> 
+                <div class="instructions">1.Kaohsiung International Airport --> Kaohsiung Railway Station<br><br>
                 </div>
                  <a href="#KaoShiung_Raiway2" data-rel="popup" data-position-to="window" data-transition="fade" style="margin:8px">Ask directions <br>[Show the popup message (in Chinese)]</a><br>
                   <div data-role="popup" id="KaoShiung_Raiway2" data-overlay-theme="a" data-corners="false">
@@ -721,7 +723,7 @@
                   </div>
                 Take Kaohsiung Rapid Transit (KRT) to Kaohsiung Railway Station. <br><br>
                 Ticket price:<div class="time_fee"> $35 NTD</div><br>
-                Please check <a href="http://www.krtco.com.tw/en/stationGuide_map.aspx" target=_blank>here</a> for the information of KRT.<br><br>
+                Please check <a id="exlink" href="#" ex-href="http://www.krtco.com.tw/en/stationGuide_map.aspx" >here</a> for the information of KRT.<br><br>
 
                 <div class="instructions">2.Kaohsiung Railway Station --> Tainan Railway Station<br><br></div>
                 <br><a href="#Train_Tainan2" data-rel="popup" data-position-to="window" data-transition="fade" style="margin:8px">Ask directions <br>[Show the popup message (in Chinese)]</a><br>
@@ -732,7 +734,7 @@
                 Ticket price:<div class="time_fee">  $69-107 NTD</div>
                 Travel time:<div class="time_fee">  about 30~50 minutes</div>
                 (depending on the types of the train) <br>
-                Please check <a href="http://twtraffic.tra.gov.tw/twrail/English/e_index.aspx" target=_blank>here</a> for the information of the train schedule.<br><br>
+                Please check <a id="exlink" href="#" ex-href="http://twtraffic.tra.gov.tw/twrail/English/e_index.aspx" >here</a> for the information of the train schedule.<br><br>
 
                 <div class="instructions">3.Tainan Railway Station --> Shangri-La Hotel<br><br></div>
                 It's a 1-minute walk.<br>
@@ -751,10 +753,10 @@
 <!--Main Page of the MapPage -->
         <div id="InmapPage" data-role="page" data-add-back-btn="true">
           <div data-role="header" data-position="fixed" >
-                <h1>PAKDD 2014 Traffic Information</h1>
+                <h1 style="white-space:normal;">PAKDD 2014 Traffic Information</h1>
                 <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
                 <a href="#" class="ui-btn-left ui-link ui-btn ui-shadow ui-corner-all" data-rel="back" data-role="button" role="button">Back</a>
-          </div>      
+          </div>
           <div data-role="content" class="ui-content" role="main">
                         <div class="map_content ">
                           <div class="ui-block-bc">
@@ -762,16 +764,16 @@
                           <a href="#MapPage_a"  data-transition="fade" >
                          <!--   <img src="/images/mylist.png"></img>  -->
                             <div class="map_font">Taoyuan to Tainan</div>
-                          </a> 
-                          </div> 
+                          </a>
+                          </div>
                           </div>
                           <div class="ui-block-bc">
                           <div class="option_btn">
                           <a href="#MapPage_b"  data-transition="fade" >
                          <!--   <img src="/images/mylist.png"></img>  -->
                             <div class="map_font">Kaohsiung to Tainan</div>
-                          </a> 
-                          </div> 
+                          </a>
+                          </div>
                           </div>
                           <div class="ui-block-bc">
                           <div class="option_btn">
@@ -785,11 +787,11 @@
            </div>
         </div>
 
-<!--Conference venue --> 
+<!--Conference venue -->
 <!-- new add-->
         <div id="myProgramPage" data-role="page" data-add-back-btn="true">
               <div data-role="header" >
-                
+
                  <h1>My Schedule</h1>
                   <!--<a href="#" class="ui-btn-left" data-rel="back">Back</a>-->
                 <a href="#page-home" data-transition="fade" data-icon="home" class="ui-btn-right">Home</a>
@@ -798,12 +800,11 @@
                <div data-role="content" class="ui-content" role="main">
                         <ul data-role="listview" id="myProgramList" class="ui-listview" data-autodividers="true" data-inset="true">
 
-                           
+
                         </ul>
                </div>
         </div>
-        
+
         <!--<script type="text/javascript" src="phonegap.js"></script>-->
     </body>
 </html>
-

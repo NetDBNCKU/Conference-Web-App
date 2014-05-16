@@ -30,11 +30,11 @@
 			<session>
 				<ID>1A</ID>
 				<name>Pattern Mining</name>
-				<chair>Longbing Cao</chair>
+				<chair>Philippe Fournier-Viger</chair>
 				<venue>An Ping Room (B2)</venue>
 				<paper>
 					<paperID>249</paperID>
-					<title>MalSpot: Multi^2 Malicious Network Behavior Patterns Analysis</title>
+					<title>MalSpot: Multi&#178; Malicious Network Behavior Patterns Analysis</title>
 					<type>Regular</type>
 					<author>Ching-Hao Mao, Chung-Jung Wu, Evangelos E. Papalexakis, Christos Faloutsos, Kuo-Chen Lee, Tien-Cheu Kao</author>
 				</paper>
@@ -148,7 +148,7 @@
 				</paper>
 				<paper>
 					<paperID>231</paperID>
-					<title>Super Graph Classification</title>
+					<title>Super-Graph Classification</title>
 					<type>Regular</type>
 					<author>Ting Guo, Xingquan Zhu</author>
 				</paper>
@@ -160,13 +160,13 @@
 				</paper>
 				<paper>
 					<paperID>74</paperID>
-					<title>Net-Ray: Visualizing and Mining Web-Scale Graphs</title>
+					<title>Net-Ray: Visualizing and Mining Billion-Scale Graphs</title>
 					<type>Short</type>
 					<author>U. Kang, Jay-Yoon Lee, Danai Koutra, Christos Faloutsos</author>
 				</paper>
 				<paper>
 					<paperID>121</paperID>
-					<title>Structure-aware Distance Measures for Comparing Clusterings in Graphs</title>
+					<title>Structure-Aware Distance Measures for Comparing Clusterings in Graphs</title>
 					<type>Short</type>
 					<author>Jeffrey Chan, Nguyen Xuan Vinh, Wei Liu, James Bailey, Christopher A. Leckie, Kotagiri Ramamohanarao, Jian Pei</author>
 				</paper>
@@ -174,7 +174,7 @@
 			<session>
 				<ID>1E</ID>
 				<name>Applications (I)</name>
-				<chair>PhilippeFournier-Viger</chair>
+				<chair>Yuh-Jye Lee</chair>
 				<venue>East Gate Room (B1)</venue>
 				<paper>
 					<paperID>265</paperID>
@@ -184,7 +184,7 @@
 				</paper>
 				<paper>
 					<paperID>395</paperID>
-					<title>Programmatic buying bidding strategies with win rate and winning price estimation in real time mobile advertising</title>
+					<title>Programmatic Buying Bidding Strategies with Win Rate and Winning Price Estimation in Real Time Mobile Advertising</title>
 					<type>Short</type>
 					<author>Xiang Li, Devin Guan</author>
 				</paper>
@@ -210,8 +210,8 @@
 			<session>
 				<venue>Auditorium (9F)</venue>
 				<name>Tutorial 1</name>
-				<lecturer>Xia Hu and Huan Liu </lecturer>
-				<title>Mining Spammers in Social Media: Techniques and Applications</title>				
+				<lecturer>Longbing Cao</lecturer>
+				<title>Non-IIDness Learning in Big Data</title>
 			</session>
 		</time_interval>
 		<time_interval>
@@ -247,13 +247,13 @@
 				<venue>An Ping Room (B2)</venue>
 				<paper>
 					<paperID>51</paperID>
-					<title>Deferentially Private Tagging Recommendation based on Topic Model</title>
+					<title>Deferentially Private Tagging Recommendation Based on Topic Model</title>
 					<type>Regular</type>
 					<author>Tianqing Zhu, Gang Li, Wanlei Zhou, Ping Xiong, Cao Yuan</author>
 				</paper>
 				<paper>
 					<paperID>229</paperID>
-					<title>Matrix Factorization Without User Data Retention</title>
+					<title>Matrix Factorization without User Data Retention</title>
 					<type>Regular</type>
 					<author>David Vallet, Arik Friedman, Shlomo Berkovsky</author>
 				</paper>
@@ -285,13 +285,13 @@
 					<paperID>122</paperID>
 					<title>CTROF: A Collaborative Tweet Ranking Framework for Online Personalized Recommendation</title>
 					<type>Regular</type>
-					<author>Kaisong Song, Daling Wang, Shi Feng, Wen Qu, Ge Yu, Yifei Zhang</author>
+					<author>Kaisong Song, Daling Wang, Shi Feng, Yifei Zhang, Wen Qu, Ge Yu</author>
 				</paper>
 				<paper>
 					<paperID>123</paperID>
 					<title>Two-Phase Layered Learning Recommendation via Category Structure</title>
 					<type>Regular</type>
-					<author>Ke Ji, Shen Hong, Tian Hui, Yanbo Wu, Jun Wu</author>
+					<author>Ke Ji, Hong Shen, Hui Tian, Yanbo Wu, Jun Wu</author>
 				</paper>
 				<paper>
 					<paperID>196</paperID>
@@ -337,7 +337,7 @@
 				</paper>
 				<paper>
 					<paperID>140</paperID>
-					<title>A New Evaluation Function for Entropy-based Feature Selection from Incomplete Data</title>
+					<title>A New Evaluation Function for Entropy-Based Feature Selection from Incomplete Data</title>
 					<type>Short</type>
 					<author>Wenhao Shu, Hong Shen, Yingpeng Sang, Yidong Li, Jun Wu</author>
 				</paper>
@@ -361,19 +361,19 @@
 				</paper>
 				<paper>
 					<paperID>69</paperID>
-					<title>Positional Translation Language Model for Ad-hoc Information Retrieval</title>
+					<title>Positional Translation Language Model for Ad-Hoc Information Retrieval</title>
 					<type>Regular</type>
 					<author>Xinhui Tu, Jing Luo, Bo Li, Tingting He, Jinguang Gu</author>
 				</paper>
 				<paper>
 					<paperID>354</paperID>
-					<title>Topic Modeling using Collapsed Typed Dependency Relations</title>
+					<title>Topic Modeling Using Collapsed Typed Dependency Relations</title>
 					<type>Short</type>
 					<author>Elnaz Delpisheh, Aijun An</author>
 				</paper>
 				<paper>
 					<paperID>36</paperID>
-					<title>An Iterative Fusion Approach to Graph-based Semi-supervised Learning from Multiple Views</title>
+					<title>An Iterative Fusion Approach to Graph-Based Semi-Supervised Learning from Multiple Views</title>
 					<type>Short</type>
 					<author>Yang Wang, Jian Pei, Xuemin Lin, Qing Zhang, Wenjie Zhang</author>
 				</paper>
@@ -381,6 +381,7 @@
 			<session>
 				<ID>2E</ID>
 				<name>PAKDD 14 Contest</name>				
+				<chair>Shou-De Lin and Hung-Yi Lo</chair>
 				<venue>East Gate Room (B1)</venue>
 			</session>
 			<session>
@@ -426,13 +427,13 @@
 				<venue>An Ping Room (B2)</venue>
 				<paper>
 					<paperID>130</paperID>
-					<title>Crime Forecasting Using Spatio-Temporal Pattern with Ensemble Learning</title>
+					<title>Crime Forecasting Using Spatio-temporal Pattern with Ensemble Learning</title>
 					<type>Regular</type>
 					<author>Chung-Hsien Yu, Wei Ding, Ping Chen, Melissa Morabito</author>
 				</paper>
 				<paper>
 					<paperID>85</paperID>
-					<title>NLPMM: a Next Location Predictor with Markov Modeling</title>
+					<title>NLPMM: A Next Location Predictor with Markov Modeling</title>
 					<type>Regular</type>
 					<author>Meng Chen, Yang Liu, Xiaohui Yu</author>
 				</paper>
@@ -474,15 +475,15 @@
 				</paper>
 				<paper>
 					<paperID>128</paperID>
-					<title>Hash-based Stream LDA: Topic Modeling in Social Streams</title>
+					<title>Hash-Based Stream LDA: Topic Modeling in Social Streams</title>
 					<type>Short</type>
 					<author>Anton Slutsky, Xiaohua Hu, Yuan An</author>
 				</paper>
 				<paper>
 					<paperID>314</paperID>
-					<title>Two sides of a coin: Separating Personal Communication and Public Dissemination Accounts in Twitter</title>
+					<title>Two Sides of a Coin: Separating Personal Communication and Public Dissemination Accounts in Twitter</title>
 					<type>Short</type>
-					<author>Peifeng Yin, Nilam Ram, Wang-Chien Lee, Conrad Tucker, Shashank Khandelwal, Marcel Salathe</author>
+					<author>Peifeng Yin, Nilam Ram, Wang-Chien Lee, Conrad Tucker, Shashank Khandelwal, Marcel Salathé</author>
 				</paper>
 				<paper>
 					<paperID>378</paperID>
@@ -494,7 +495,7 @@
 			<session>
 				<ID>3C</ID>
 				<name>Classification (II)</name>
-				<chair>See-Kiong Ng</chair>
+				<chair>Raymond CW Wong</chair>
 				<venue>South Gate Room (B1)</venue>
 				<paper>
 					<paperID>200</paperID>
@@ -516,7 +517,7 @@
 				</paper>
 				<paper>
 					<paperID>388</paperID>
-					<title>Collective Matrix Factorization of Predictors, Neighborhood and Targets for Semi-Supervised Classification</title>
+					<title>Collective Matrix Factorization of Predictors, Neighborhood and Targets for Semi-supervised Classification</title>
 					<type>Short</type>
 					<author>Lucas Rego Drumond, Lars Schmidt-Thieme, Christoph Freudenthaler, Artus Krohn-Grimberghe</author>
 				</paper>
@@ -552,9 +553,9 @@
 				</paper>
 				<paper>
 					<paperID>315</paperID>
-					<title>Fault-tolerant Concept Detection in Information Networks</title>
+					<title>Fault-Tolerant Concept Detection in Information Networks</title>
 					<type>Short</type>
-					<author>Tobias Koetter, Stephan Günnemann, Michael R. Berthold, Christos Faloutsos</author>
+					<author>Tobias Kötter, Stephan Günnemann, Michael R. Berthold, Christos Faloutsos</author>
 				</paper>
 				<paper>
 					<paperID>294</paperID>
@@ -644,21 +645,21 @@
 				</paper>
 				<paper>
 					<paperID>46</paperID>
-					<title>Extensions to Quantile Regression Forests for Very High Dimensional Data</title>
+					<title>Extensions to Quantile Regression Forests for Very High-Dimensional Data</title>
 					<type>Regular</type>
 					<author>Nguyen Thanh Tung, Joshua Zhexue Huang, Imran Khan, Mark Junjie Li, Graham Williams</author>
 				</paper>
 				<paper>
 					<paperID>347</paperID>
-					<title>Inducing controlled error over variable length ranked lists</title>
+					<title>Inducing Controlled Error over Variable Length Ranked Lists</title>
 					<type>Short</type>
-					<author>Laurence Park, Glenn Stone</author>
+					<author>Laurence A.F. Park, Glenn Stone</author>
 				</paper>
 				<paper>
 					<paperID>208</paperID>
 					<title>Com2: Fast Automatic Discovery of Temporal (’Comet’) Communities</title>
 					<type>Regular</type>
-					<author>Miguel Araujo, Spiros Papadimitriou, Stephan Günnemann, Christos Faloutsos, Prithwish Basu, Ananthram Swami, Evangelos Papalexakis, Danai Koutra</author>
+					<author>Miguel Araujo, Spiros Papadimitriou, Stephan Günnemann, Christos Faloutsos, Prithwish Basu, Ananthram Swami, Evangelos E. Papalexakis, Danai Koutra</author>
 				</paper>
 				<paper>
 					<paperID>34</paperID>
@@ -680,13 +681,13 @@
 				</paper>
 				<paper>
 					<paperID>335</paperID>
-					<title>Finding Well-Clusterable Subspaces for High Dimensional Data A Numerical One-Dimension Approach</title>
+					<title>Finding Well-Clusterable Subspaces for High Dimensional Data: A Numerical One-Dimension Approach</title>
 					<type>Short</type>
 					<author>Chuanren Liu, Tianming Hu, Yong Ge, Hui Xiong</author>
 				</paper>
 				<paper>
 					<paperID>45</paperID>
-					<title>Determine optimal number of clusters with an elitist evolutionary approach</title>
+					<title>Determine Optimal Number of Clusters with an Elitist Evolutionary Approach</title>
 					<type>Short</type>
 					<author>Lydia Boudjeloud-Assala, Ta Minh Thuy</author>
 				</paper>
@@ -740,13 +741,13 @@
 				<venue>West Gate Room (B1)</venue>
 				<paper>
 					<paperID>80</paperID>
-					<title>A Selectively Re-train Approach Based on Clustering To Classify Concept-drifting Data Streams with Skewed Distribution</title>
+					<title>A Selectively Re-train Approach Based on Clustering To Classify Concept-Drifting Data Streams with Skewed Distribution</title>
 					<type>Regular</type>
-					<author>Dandan Zhang, Shen Hong, Tian Hui, Yidong Li, Jun Wu, Yingpeng Sang</author>
+					<author>Dandan Zhang, Hong Shen, Tian Hui, Yidong Li, Jun Wu, Yingpeng Sang</author>
 				</paper>
 				<paper>
 					<paperID>10</paperID>
-					<title>Recurring and Novel Class Detection in Concept-Drifting Data Streams using Class-Based Ensemble</title>
+					<title>Recurring and Novel Class Detection in Concept-Drifting Data Streams Using Class-Based Ensemble</title>
 					<type>Short</type>
 					<author>Mohammad Raihanul Islam</author>
 				</paper>
@@ -758,7 +759,7 @@
 				</paper>
 				<paper>
 					<paperID>237</paperID>
-					<title>Noise-Tolerant Approximate Blocking for Dynamic Real-time Entity Resolution</title>
+					<title>Noise-Tolerant Approximate Blocking for Dynamic Real-Time Entity Resolution</title>
 					<type>Short</type>
 					<author>Huizhi Liang, Yanzhe Wang, Peter Christen, Ross Gayler</author>
 				</paper>
@@ -778,8 +779,8 @@
 			<session>
 				<venue>Auditorium (9F)</venue>
 				<name>Tutorial 5</name>
-				<lecturer>Longbing Cao</lecturer>
-				<title>Non-IIDness Learning in Big Data</title>				
+				<lecturer>Xia Hu and Huan Liu </lecturer>
+				<title>Mining Spammers in Social Media: Techniques and Applications</title>
 			</session>
 		</time_interval>
 		<time_interval>
@@ -792,7 +793,7 @@
 		<time_interval>
 			<time>10:50 – 12:20</time>
 			<session>
-				<venue>Far Eastern Grand Ballroom (B2)</venue>
+				<venue>Auditorium (9F)</venue>
 				<name>Panel: Data Mining in Big Data Era - Opportunities, Challenges and Practice</name>				
 				<chair>Dr. Huan Liu</chair>
 			</session>
@@ -813,13 +814,13 @@
 				<venue>An Ping Room (B2)</venue>
 				<paper>
 					<paperID>95</paperID>
-					<title>MultiAspectSpotting: Spotting Anomalous Behavior within Count Data using Tensor</title>
+					<title>MultiAspectSpotting: Spotting Anomalous Behavior within Count Data Using Tensor</title>
 					<type>Regular</type>
 					<author>Koji Maruhashi, Nobuhiro Yugami</author>
 				</paper>
 				<paper>
 					<paperID>234</paperID>
-					<title>Outlier Detection based on Leave-one-out Density using Binary Decision Diagrams</title>
+					<title>Outlier Detection Based on Leave-One-Out Density Using Binary Decision Diagrams</title>
 					<type>Regular</type>
 					<author>Takuro Kutsuna, Akihiro Yamamoto</author>
 				</paper>
@@ -831,7 +832,7 @@
 				</paper>
 				<paper>
 					<paperID>254</paperID>
-					<title>Improving iForest with relative mass</title>
+					<title>Improving iForest with Relative Mass</title>
 					<type>Regular</type>
 					<author>Sunil Aryal, Kai Ming Ting, Jonathan R. Wells, Takashi Washio</author>
 				</paper>
@@ -855,13 +856,13 @@
 				</paper>
 				<paper>
 					<paperID>213</paperID>
-					<title>Semi-supervised clustering on heterogeneous information networks</title>
+					<title>Semi-supervised Clustering on Heterogeneous Information Networks</title>
 					<type>Short</type>
 					<author>Chen Luo, Wei Pang, Zhe Wang</author>
 				</paper>
 				<paper>
 					<paperID>241</paperID>
-					<title>A Content-based Matrix Factorization Model for Recipe Recommendation</title>
+					<title>A Content-Based Matrix Factorization Model for Recipe Recommendation</title>
 					<type>Regular</type>
 					<author>Chia-Jen Lin, Tsung-Ting Kuo, Shou-De Lin</author>
 				</paper>
@@ -875,7 +876,7 @@
 					<paperID>261</paperID>
 					<title>Automatic Fake Followers Detection in Chinese Micro-blogging System</title>
 					<type>Short</type>
-					<author>Yi Shen, jianjun Yu, Kejun Dong, Kai Nan</author>
+					<author>Yi Shen, Jianjun Yu, Kejun Dong, Kai Nan</author>
 				</paper>
 				<paper>
 					<paperID>387</paperID>
@@ -885,7 +886,7 @@
 				</paper>
 				<paper>
 					<paperID>280</paperID>
-					<title>For User-driven Software Evolution: Requirements Elicitation Derived from Mining Online Reviews</title>
+					<title>For User-Driven Software Evolution: Requirements Elicitation Derived from Mining Online Reviews</title>
 					<type>Regular</type>
 					<author>Wei Jiang, Haibin Ruan, Li Zhang, Philip Lew, Jing Jiang</author>
 				</paper>
@@ -912,7 +913,8 @@
 		<time_interval>
 			<time>16:15 – 16:45</time>
 			<session>
-				<name>Closing Ceremony</name>				
+				<venue>B1</venue>
+				<name>Closing Ceremony</name>
 			</session>
 		</time_interval>
 	</day>

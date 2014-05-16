@@ -34,7 +34,7 @@ function parsePaperListForpaperList(data){
 		 paperID = $(this).find('ID').text();
 		 paperTitle = $(this).find('title').text();
 		 authors = $(this).find('authors').text();
-		
+
 		paperList.push(paperTitle+'%'+authors+'%'+paperID);
 	});
 	paperList = paperList.sort();
@@ -55,14 +55,14 @@ function parsePaperListForpaperList(data){
 				return function(){
 					tempID = $(this).attr('id');
 					paperDetailID = tempID.split('_');
-					
+
 					insertPaperAuthorsForPaperList(authors, paperDetailID[0]);
 					$('#'+paperDetailID[0]+'_paper-list-authors').listview('refresh');
 				}
 			})(authors));
-			
+
 	}
-	
+
 }
 
 
@@ -70,7 +70,7 @@ function parsePaperListForpaperList(data){
 
 function createPaperDetail(data){
 	var paperlist = $(data);
-	
+
 	var paperTitle;
 	var abstract;
 	var paperID;
@@ -102,9 +102,9 @@ function createPaperDetail(data){
 	       			 +'<ul data-role="listview" data-inset="true" id="'+paperID+'_paper-list-authors" class="ui-listview"></ul>'
 	                 +'</div>'
 	                 +'</div>');
-      
 
-		
+
+
 		});
 
 }
@@ -122,7 +122,7 @@ function insertPaperAuthors(authors, paperID){
 																+'<h1>'
 																+name.replace(/_point_/g,'.').replace(/_/g,' ')
 																+'</h1>'
-																+'</a></li>');	
+																+'</a></li>');
 				}
 }
 
@@ -139,6 +139,6 @@ function insertPaperAuthorsForPaperList(authors, paperID){
 																+'<h1>'
 																+name.replace(/_point_/g,'.').replace(/_/g,' ')
 																+'</h1>'
-																+'</a></li>');	
+																+'</a></li>');
 				}
 }

@@ -61,7 +61,7 @@
 		</activity>
 	</workshop>
 	<workshop>
-		<workshopName>BDM - Biologically Inspired Data MiningTechniques</workshopName>
+		<workshopName>BDM - Biologically Inspired Techniques for Data Mining</workshopName>
 		<workshopID>2</workshopID>
 		<venue>East Gate Room (B1)</venue>
 		<activity>
@@ -88,7 +88,7 @@
 				<name>Session I (Yun Sing Koh)</name>
 				<paper>
 					<time>09:50-10:10</time>
-					<title>Association Rule Hiding Using Evolutionary Multi-objective Optimization by Deleting Transactions</title>
+					<title>Privacy Preserving Association Rule Mining Using Binary Encoded NSGA-II</title>
 					<author>Peng Cheng, Jeng-Shyang Pan, Chun-Wei Lin</author>
 				</paper>
 				<paper>
@@ -197,7 +197,7 @@
 		</activity>
 	</workshop>
 	<workshop>
-		<workshopName>BigEC - Big Data Science and Engineering on E-Commerce/MSMV-MBI - Mobile Sensing, Mining and Visualization for Human Behavior Inferences</workshopName>
+		<workshopName>BigEC - Big Data Science and Engineering on E-Commerce/MSMV-MBI - Mobile Sensing, Mining and Visualization for Human Behavior Inference</workshopName>
 		<workshopID>4&amp;6</workshopID>
 		<venue>Fu Cheng Room (B2)</venue>
 		<activity>
@@ -298,8 +298,8 @@
 				</paper>
 				<paper>
 					<time>09:20-09:40</time>
-					<title>Comparative expression analysis of 3D-culture system for murine neonatal heart regeneration: a systematic approach</title>
-					<author>Julia T.-Y. Weng, Pei-Chann Chang, Shin-Ping Huang (Yuan Ze University), Yu-Wei Chiu (Far-Eastern Memorial Hospital)</author>
+					<title>Toward Mining User Traversal Patterns in the Indoor Environment</title>
+					<author>Shan-Yun Teng, Tzu-Yuan Chung, Kun-Ta Chuang (National Cheng Kung University), Wei-Shinn Ku (Auburn University)</author>
 				</paper>
 			</session>
 		</activity>
@@ -316,9 +316,9 @@
 					<author>Rasaq Otunba, Jessica Lin (George Mason University), Pavel Senin (University of Hawaii)</author>
 				</paper>
 				<paper>
-					<time>10:20-10:40</time>
-					<title>Toward Mining User Traversal Patterns in the Indoor Environment</title>
-					<author>Shan-Yun Teng, Tzu-Yuan Chung, Kun-Ta Chuang (National Cheng Kung University), Wei-Shinn Ku (Auburn University)</author>
+					<time>10:20-10:40</time>					
+					<title>Comparative expression analysis of 3D-culture system for murine neonatal heart regeneration: a systematic approach</title>
+					<author>Julia T.-Y. Weng, Pei-Chann Chang, Shin-Ping Huang (Yuan Ze University), Yu-Wei Chiu (Far-Eastern Memorial Hospital)</author>
 				</paper>
 				<paper>
 					<time>10:40-11:00</time>
@@ -397,7 +397,7 @@
 		</activity>
 	</workshop>
 	<workshop>
-		<workshopName>SDA - Scalable Data Analytics: Theory and Algorithms</workshopName>
+		<workshopName>SDA - Scalable Data Analytics: Theory and Applications</workshopName>
 		<workshopID>7</workshopID>
 		<venue>Fu Cheng Room (B2)</venue>
 		<activity>
@@ -507,7 +507,7 @@
 		</activity>
 		<activity>
 			<time>11:10-12:00</time>
-			<detail>Invited Talk: (tentative) Data mining for uncertain sequences James Bailey Chair: TBA</detail>
+			<detail>Invited Talk: Matching problems for uncertain sequences: Algorithms and Applications James Bailey Chair: TBA</detail>
 		</activity>
 		<activity>
 			<time>12:00-13:15</time>
@@ -547,18 +547,18 @@
 				</paper>
 				<paper>
 					<time>15:25-16:25</time>
-					<title>Tutorial Talk: (tentative) Succinct data structures</title>
+					<title>Tutorial Talk: Succinct Data Structures for Data Mining</title>
 					<author>Rajeev Raman</author>
 				</paper>
 			</session>
 		</activity>
 		<activity>
-			<time>16:15-16:25</time>
+			<time>16:25-16:35</time>
 			<detail>Closing Workshop Co-chairs</detail>
 		</activity>
 	</workshop>
 	<workshop>
-		<workshopName>ISI - Pacific Asia Workshop on Intelligence and Security Informatics</workshopName>
+		<workshopName>PAISI - Pacific Asia Workshop on Intelligence and Security Informatics</workshopName>
 		<workshopID>10</workshopID>
 		<venue>East Gate Room (B1)</venue>
 		<activity>
@@ -577,7 +577,7 @@
 		</activity>
 		<activity>
 			<session>
-				<name>Session 1: Cybercrime and Malware (Chair: Michael Chau)</name>
+				<name>Session I: Cybercrime and Malware (Chair: Michael Chau)</name>
 				<paper>
 					<time>15:00-15:20</time>
 					<title>A Rational Choice of Malware Authors in Taiwan</title>
@@ -592,7 +592,7 @@
 		</activity>
 		<activity>
 			<session>
-				<name>Session 2: Information Security Engineering (Chair: Weiping Chang)</name>
+				<name>Session II: Information Security Engineering (Chair: Weiping Chang)</name>
 				<paper>
 					<time>15:40-16:00</time>
 					<title>User Management in Information Security Engineering Environment ISEE</title>
@@ -611,7 +611,7 @@
 		</activity>
 		<activity>
 			<session>
-				<name>Session 3: Text Mining (Chair: Joshua Huang)</name>
+				<name>Session III: Text Mining (Chair: Joshua Huang)</name>
 				<paper>
 					<time>16:30-16:50</time>
 					<title>Identify the Online Product Comments with Suspicious Chinese Content</title>
@@ -704,10 +704,6 @@
 			<time>16:40-17:30</time>
 			<detail>Panel Discussion Session Chair: Ee-Peng Lim (Singapore Management University, Singapore)</detail>
 		</activity>
-		<activity>
-			<time>17:00-17:30</time>
-			<detail>Interactive poster session</detail>
-		</activity>
 	</workshop>
 	<workshop>
 		<workshopName>DMBIH - Data Mining in Biomedical informatics and Healthcare</workshopName>
@@ -715,7 +711,7 @@
 		<venue>West Gate Room (B1)</venue>
 		<activity>
 			<time>8:30-9:30</time>
-			<detail>Invited Talk (TBD)</detail>
+			<detail>Invited Talk:Extracting Clinical Evidence from Medical Literature Prof. Jung-Hsien Chiang - Insititute of Medical Informatics, National Cheng Kung University, Taiwan</detail>
 		</activity>
 		<activity>
 			<time>9:30-10:00</time>
